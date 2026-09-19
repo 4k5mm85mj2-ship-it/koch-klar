@@ -126,6 +126,7 @@ export function App() {
   const [stepIndex, setStepIndex] = useState(0);
   const [announcement, setAnnouncement] = useState("");
   const pageHeadingRef = useRef(null);
+  const stepTextRef = useRef(null);
   const previousLocationRef = useRef("menu:");
 
   useEffect(() => {
@@ -138,7 +139,11 @@ export function App() {
       return;
     }
     previousLocationRef.current = nextLocation;
-    pageHeadingRef.current?.focus();
+    if (view === "cook") {
+      stepTextRef.current?.focus();
+    } else {
+      pageHeadingRef.current?.focus();
+    }
     window.scrollTo({ top: 0, behavior: "auto" });
   }, [view, selectedRecipe?.id]);
 
@@ -165,8 +170,8 @@ export function App() {
     if (!selectedRecipe) return;
     const nextStep = Math.min(Math.max(stepIndex + direction, 0), selectedRecipe.steps.length - 1);
     setStepIndex(nextStep);
-    setAnnouncement(`Schritt ${nextStep + 1} von ${selectedRecipe.steps.length}: ${selectedRecipe.steps[nextStep]}`);
-    requestAnimationFrame(() => pageHeadingRef.current?.focus());
+    setAnnouncement("");
+    requestAnimationFrame(() => stepTextRef.current?.focus());
   };
 
   return (
@@ -258,7 +263,15 @@ export function App() {
             <p className="eyebrow">{selectedRecipe.title}</p>
             <h1 id="cook-heading" ref={pageHeadingRef} tabIndex="-1">Schritt {stepIndex + 1} von {selectedRecipe.steps.length}</h1>
             <progress className="step-progress" value={stepIndex + 1} max={selectedRecipe.steps.length} aria-label={`Kochfortschritt: Schritt ${stepIndex + 1} von ${selectedRecipe.steps.length}`}>{stepIndex + 1} von {selectedRecipe.steps.length}</progress>
-            <div className="step-panel"><p>{selectedRecipe.steps[stepIndex]}</p></div>
+            <div
+              className="step-panel"
+              ref={stepTextRef}
+              tabIndex="-1"
+              role="group"
+              aria-label={`Schritt ${stepIndex + 1} von ${selectedRecipe.steps.length}: ${selectedRecipe.steps[stepIndex]}`}
+            >
+              <p>{selectedRecipe.steps[stepIndex]}</p>
+            </div>
             <div className="step-controls">
               <button className="button button--secondary" type="button" disabled={stepIndex === 0} onClick={() => changeStep(-1)}>Vorheriger Schritt</button>
               {stepIndex < selectedRecipe.steps.length - 1 ? (
@@ -267,7 +280,7 @@ export function App() {
                 <button className="button button--primary" type="button" onClick={() => navigate("menu")}>Fertig – zurück zum Wochenmenü</button>
               )}
             </div>
-            <aside className="keyboard-hint" aria-label="Tastaturhinweis"><strong>Tastatur:</strong> Mit Tab zu den Schaltflächen, mit Enter auslösen. Der neue Schritt wird automatisch angesagt.</aside>
+            <aside className="keyboard-hint" aria-label="Tastaturhinweis"><strong>Tastatur:</strong> Der vollständige Schritt ist fokussiert. Mit Tab gelangst du direkt zu den Schaltflächen.</aside>
           </article>
         )}
       </main>
