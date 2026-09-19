@@ -174,6 +174,11 @@ export function App() {
     requestAnimationFrame(() => stepTextRef.current?.focus());
   };
 
+  const startCooking = () => {
+    setStepIndex(0);
+    navigate("cook");
+  };
+
   return (
     <>
       <a className="skip-link" href="#main-content">Direkt zum Inhalt</a>
@@ -230,7 +235,10 @@ export function App() {
                   <div><dt>Zeit</dt><dd>{selectedRecipe.time}</dd></div>
                   <div><dt>Schwierigkeit</dt><dd>{selectedRecipe.difficulty}</dd></div>
                 </dl>
-                <a className="text-link" href="#ingredients">Direkt zur Zutatenliste</a>
+                <div className="recipe-quick-actions">
+                  <button className="button button--primary button--large" type="button" onClick={startCooking}>Kochmodus starten</button>
+                  <a className="text-link" href="#ingredients">Direkt zur Zutatenliste</a>
+                </div>
               </div>
               <img className="recipe-hero-image" src={selectedRecipe.image} alt={selectedRecipe.alt} width="1200" height="800" />
             </div>
@@ -252,7 +260,7 @@ export function App() {
             <section className="content-section" aria-labelledby="preparation-heading">
               <h2 id="preparation-heading">Zubereitung</h2>
               <p>Im Kochmodus wird immer nur ein Schritt angezeigt. Die Anleitung nennt Zeiten und Handlungen vollständig und in einer festen Reihenfolge.</p>
-              <button className="button button--primary button--large" type="button" onClick={() => { setStepIndex(0); navigate("cook"); }}>Kochmodus starten</button>
+              <button className="button button--primary button--large" type="button" onClick={startCooking}>Kochmodus starten</button>
             </section>
           </article>
         )}

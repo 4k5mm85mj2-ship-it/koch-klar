@@ -42,6 +42,7 @@ A separate crop was not needed because the normalized full-view comparison is at
 
 - Previous- and next-week controls update the visible date range and live announcement.
 - Opening the first recipe moves focus to its level-one heading.
+- Recipe details expose an additional “Kochmodus starten” action directly after the key facts and before the ingredient list; the original action remains in the preparation section. The upper action was verified to open step 1 with the complete step text focused.
 - Recipe details expose quantities and concrete packaging descriptions.
 - Cooking mode starts at step 1, advances through all five steps, enables the previous-step action after step 1, and exposes the completion action on step 5.
 - Cooking mode programmatically focuses the complete current step as one group, including “Schritt X von Y”; one Tab then reaches the next available control. This was verified both on entry and after advancing to step 2.

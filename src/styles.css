@@ -274,6 +274,15 @@ h1[tabindex="-1"]:focus { outline: none; }
 .facts dt { color: var(--gray-700); font-size: 15px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; }
 .facts dd { margin: 2px 0 0; font-size: 19px; font-weight: 700; }
 
+.recipe-quick-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 24px;
+}
+
+.recipe-quick-actions .button--large { margin-top: 0; }
+
 .recipe-hero-image {
   width: 100%;
   max-height: 430px;
@@ -364,6 +373,8 @@ h1[tabindex="-1"]:focus { outline: none; }
   .recipe-action { width: 100%; }
   .meta-break { display: block; }
   .recipe-hero { gap: 26px; }
+  .recipe-quick-actions { align-items: stretch; flex-direction: column; }
+  .recipe-quick-actions .button { width: 100%; }
   .ingredient-title { align-items: flex-start; flex-direction: column; gap: 2px; }
   .step-controls { flex-direction: column-reverse; }
   .step-controls .button { width: 100%; }
