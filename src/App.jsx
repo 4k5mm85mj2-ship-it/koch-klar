@@ -263,14 +263,11 @@ export function App() {
             <p className="eyebrow">{selectedRecipe.title}</p>
             <h1 id="cook-heading" ref={pageHeadingRef} tabIndex="-1">Schritt {stepIndex + 1} von {selectedRecipe.steps.length}</h1>
             <progress className="step-progress" value={stepIndex + 1} max={selectedRecipe.steps.length} aria-label={`Kochfortschritt: Schritt ${stepIndex + 1} von ${selectedRecipe.steps.length}`}>{stepIndex + 1} von {selectedRecipe.steps.length}</progress>
-            <div
-              className="step-panel"
-              ref={stepTextRef}
-              tabIndex="-1"
-              role="group"
-              aria-label={`Schritt ${stepIndex + 1} von ${selectedRecipe.steps.length}: ${selectedRecipe.steps[stepIndex]}`}
-            >
-              <p>{selectedRecipe.steps[stepIndex]}</p>
+            <div className="step-panel">
+              <p ref={stepTextRef} tabIndex="-1">
+                <span className="sr-only">Schritt {stepIndex + 1} von {selectedRecipe.steps.length}. </span>
+                {selectedRecipe.steps[stepIndex]}
+              </p>
             </div>
             <div className="step-controls">
               <button className="button button--secondary" type="button" disabled={stepIndex === 0} onClick={() => changeStep(-1)}>Vorheriger Schritt</button>
