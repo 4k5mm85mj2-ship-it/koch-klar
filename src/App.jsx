@@ -205,9 +205,12 @@ export function App() {
             </div>
 
             <ol className="recipe-list">
-              {recipes.map((recipe) => (
+              {recipes.map((recipe, index) => (
                 <li className="recipe-row" key={recipe.id}>
-                  <img className="recipe-thumbnail" src={recipe.image} alt={recipe.alt} width="320" height="180" />
+                  <div className="recipe-visual" role="img" aria-label={`Gericht ${index + 1} von ${recipes.length}. ${recipe.alt}`}>
+                    <span className="recipe-number" aria-hidden="true">{index + 1}.</span>
+                    <img className="recipe-thumbnail" src={recipe.image} alt="" aria-hidden="true" width="320" height="180" />
+                  </div>
                   <div className="recipe-summary">
                     <h3>{recipe.title}</h3>
                     <p className="recipe-type">{recipe.diet}</p>

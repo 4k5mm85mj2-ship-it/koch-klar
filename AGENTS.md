@@ -16,5 +16,6 @@ When implementing from a selected generated mock, treat that image as the source
 - Put “Schritt X von Y” inside the focused step text itself so VoiceOver announces the position before the instruction; do not rely only on a container label.
 - Render the step position and instruction as one literal DOM text node. Separate JSX text and number nodes cause VoiceOver to stop on each word and number individually.
 - Recipe details offer “Kochmodus starten” both near the top before the ingredient list and again in the preparation section, so returning users can start cooking quickly.
+- In the weekly menu, keep the visible recipe number hidden from assistive technology and include “Gericht X von Y” in the image alternative text, so VoiceOver reads the position and image as one element.
 
 Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts/prepare-sites-build.mjs`, and `tests/sites-worker.test.mjs` intact so the same local prototype can be handed to Sites. Before a Sites handoff, run `npm run build` and `npm run test:sites`; the build must leave `dist/client/index.html`, `dist/server/index.js`, and `dist/.openai/hosting.json`.

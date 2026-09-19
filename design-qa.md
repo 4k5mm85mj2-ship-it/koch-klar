@@ -49,6 +49,7 @@ A separate crop was not needed because the normalized full-view comparison is at
 - The focused paragraph now contains “Schritt X von Y” as real accessible text before the instruction, ensuring VoiceOver announces the current position instead of relying on a group label.
 - The complete position and instruction are rendered as one literal DOM text node. The accessibility snapshot confirms one active paragraph—without separate nodes for “Schritt”, the numbers, or “von”—on both step 1 and step 2.
 - Keyboard tab order begins with the skip link and reaches the first recipe action in a predictable order.
+- Each weekly-menu number and dish image is exposed as one atomic image element named “Gericht X von Y” plus the complete image description; the visible number is no longer a separate VoiceOver navigation stop.
 - Browser console checked: no application errors; observed errors originated only from the browser’s installed extension, not `terminal.local`.
 
 ## Follow-up polish
