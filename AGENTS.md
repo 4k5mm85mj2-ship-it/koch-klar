@@ -13,7 +13,10 @@ When implementing from a selected generated mock, treat that image as the source
 - Core flow: German weekly menu → recipe details → ingredient quantities with concrete packaging descriptions → one-step-at-a-time cooking mode.
 - Out of scope: login, ordering, box management, and a “found” state for ingredients.
 - In cooking mode, keep steps up to 250 characters as one paragraph. Split longer steps only at verified sentence or source-paragraph boundaries, preserving the original text exactly; each resulting paragraph is a separate screen-reader reading unit.
-- Keep “Schritt X von Y” in the focused cooking-mode heading and do not repeat it in the instruction paragraphs. After the instruction paragraphs, place “Nächster Schritt” before “Vorheriger Schritt” in DOM and focus order.
+- Keep “Schritt X von Y” and the first instruction segment in one screen-reader reading unit. Do not expose the first visible segment or visual progress indicator as duplicate accessibility stops. Later segments remain separate reading units. After the instruction paragraphs, place “Nächster Schritt” before “Vorheriger Schritt” in DOM and focus order.
+- On the final cooking step, replace “Nächster Schritt” with “Zurück zu den Rezeptdetails”, followed by “Vorheriger Schritt” and “Zurück zum Wochenmenü” in DOM and focus order.
+- Preserve focus on the changed week or filter control while the recipe list updates; resetting all filters keeps focus on the reset button.
+- Treat Escape, including VoiceOver's two-finger Z gesture, as one contextual back level: cooking mode to recipe details and recipe details to the weekly menu. Do nothing in the weekly menu. Do not override any other standard screen-reader gesture or keyboard interaction.
 - Recipe details offer “Kochmodus starten” both near the top before the ingredient list and again in the preparation section, so returning users can start cooking quickly.
 - In the weekly menu, keep the visible recipe number hidden from assistive technology and include “Gericht X von Y” in the image alternative text, so VoiceOver reads the position and image as one element.
 - Render weekly-menu time and difficulty as separate complete text nodes, and recipe-detail portion, time, and difficulty as one complete text node each, so every label-value pair is a single VoiceOver stop.

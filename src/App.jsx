@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import fallbackMenu from "./data/menu-snapshot.json";
 import menuWeeks from "./data/menu-weeks.json";
 import { segmentCookStep } from "./cook-step-segments.js";
@@ -21,6 +21,11 @@ export function App() {
   const [announcement, setAnnouncement] = useState("");
   const pageHeadingRef = useRef(null);
   const previousLocationRef = useRef("menu:");
+  const pendingFilterFocusRef = useRef(null);
+
+  const preserveControlFocus = (control) => {
+    pendingFilterFocusRef.current = control;
+  };
 
   useEffect(() => {
     document.title = "Einfach kochen – barrierefreier Rezept-Prototyp";
@@ -72,11 +77,27 @@ export function App() {
     window.scrollTo({ top: 0, behavior: "auto" });
   }, [view, selectedRecipe?.id]);
 
-  const navigate = (nextView) => {
+  const navigate = useCallback((nextView) => {
     if (nextView !== "menu" && !selectedRecipe) return;
     if (nextView === "cook" && view !== "cook") setStepIndex(0);
     setView(nextView);
-  };
+  }, [selectedRecipe, view]);
+
+  const goBackOneLevel = useCallback(() => {
+    if (view === "cook") navigate("recipe");
+    else if (view === "recipe") navigate("menu");
+  }, [navigate, view]);
+
+  useEffect(() => {
+    const handleEscape = (event) => {
+      if (event.key !== "Escape" || event.defaultPrevented || view === "menu") return;
+      event.preventDefault();
+      goBackOneLevel();
+    };
+
+    document.addEventListener("keydown", handleEscape);
+    return () => document.removeEventListener("keydown", handleEscape);
+  }, [goBackOneLevel, view]);
 
   const openRecipe = async (recipe) => {
     if (recipe.ingredients?.length && recipe.steps?.length) {
@@ -113,6 +134,13 @@ export function App() {
   const filtersActive = dietFilter !== "all" || difficultyFilter !== "all" || timeFilter !== "all";
   const currentStepSegments = selectedRecipe ? segmentCookStep(selectedRecipe.steps[stepIndex]) : [];
 
+  useEffect(() => {
+    const control = pendingFilterFocusRef.current;
+    if (!control || view !== "menu" || !document.contains(control)) return;
+    if (document.activeElement !== control) control.focus({ preventScroll: true });
+    pendingFilterFocusRef.current = null;
+  }, [selectedWeek, dietFilter, difficultyFilter, timeFilter, view]);
+
   const changeStep = (direction) => {
     if (!selectedRecipe) return;
     const nextStep = Math.min(Math.max(stepIndex + direction, 0), selectedRecipe.steps.length - 1);
@@ -147,19 +175,25 @@ export function App() {
               <h2 id="menu-controls-heading">Woche und Filter</h2>
               <div className="filter-field">
                 <label htmlFor="week-select">Woche auswählen</label>
-                <select id="week-select" value={selectedWeek || menu.week || "fallback"} disabled={menuLoading || availableWeeks.length < 2} onChange={(event) => {
+                <select id="week-select" value={selectedWeek || menu.week || "fallback"} disabled={availableWeeks.length < 2} onChange={(event) => {
+                  const control = event.currentTarget;
                   setDietFilter("all");
                   setDifficultyFilter("all");
                   setTimeFilter("all");
                   setSelectedRecipe(null);
-                  setSelectedWeek(event.target.value);
+                  setSelectedWeek(control.value);
+                  preserveControlFocus(control);
                 }}>
                   {availableWeeks.map((week) => <option key={week.value} value={week.value}>{week.label}</option>)}
                 </select>
               </div>
               <div className="filter-field">
                 <label htmlFor="diet-select">Gerichte auswählen</label>
-                <select id="diet-select" value={dietFilter} onChange={(event) => setDietFilter(event.target.value)}>
+                <select id="diet-select" value={dietFilter} onChange={(event) => {
+                  const control = event.currentTarget;
+                  setDietFilter(control.value);
+                  preserveControlFocus(control);
+                }}>
                   <option value="all">Alle ({menu.recipes.length})</option>
                   <option value="vegetarian">Vegetarisch und vegan ({vegetarianCount})</option>
                   <option value="non-vegetarian">Nicht vegetarisch ({menu.recipes.length - vegetarianCount})</option>
@@ -167,7 +201,11 @@ export function App() {
               </div>
               <div className="filter-field">
                 <label htmlFor="difficulty-select">Schwierigkeit filtern</label>
-                <select id="difficulty-select" value={difficultyFilter} onChange={(event) => setDifficultyFilter(event.target.value)}>
+                <select id="difficulty-select" value={difficultyFilter} onChange={(event) => {
+                  const control = event.currentTarget;
+                  setDifficultyFilter(control.value);
+                  preserveControlFocus(control);
+                }}>
                   <option value="all">Alle</option>
                   <option value="einfach">Einfach</option>
                   <option value="mittel">Mittel</option>
@@ -176,17 +214,21 @@ export function App() {
               </div>
               <div className="filter-field">
                 <label htmlFor="time-select">Gesamtzeit filtern</label>
-                <select id="time-select" value={timeFilter} onChange={(event) => setTimeFilter(event.target.value)}>
+                <select id="time-select" value={timeFilter} onChange={(event) => {
+                  const control = event.currentTarget;
+                  setTimeFilter(control.value);
+                  preserveControlFocus(control);
+                }}>
                   {TIME_FILTERS.map((filter) => <option key={filter.value} value={filter.value}>{filter.label}</option>)}
                 </select>
               </div>
-              {filtersActive && (
-                <button className="button button--secondary filter-reset" type="button" onClick={() => {
+              <button className="button button--secondary filter-reset" type="button" aria-disabled={!filtersActive} onClick={(event) => {
+                  const control = event.currentTarget;
                   setDietFilter("all");
                   setDifficultyFilter("all");
                   setTimeFilter("all");
+                  preserveControlFocus(control);
                 }}>Filter zurücksetzen</button>
-              )}
               <p className="result-count" aria-live="polite" aria-atomic="true">{menuLoading ? "Wochenmenü wird geladen." : `${filteredRecipes.length} ${filteredRecipes.length === 1 ? "Gericht" : "Gerichte"} angezeigt.`}</p>
             </section>
 
@@ -263,20 +305,23 @@ export function App() {
           <article className="cook-view" aria-labelledby="cook-heading">
             <button className="back-link" type="button" onClick={() => navigate("recipe")}>Zurück zu den Rezeptdetails</button>
             <p className="eyebrow">{selectedRecipe.title}</p>
-            <h1 id="cook-heading" ref={pageHeadingRef} tabIndex="-1">Schritt {stepIndex + 1} von {selectedRecipe.steps.length}</h1>
-            <progress className="step-progress" value={stepIndex + 1} max={selectedRecipe.steps.length} aria-label={`Kochfortschritt: Schritt ${stepIndex + 1} von ${selectedRecipe.steps.length}`}>{stepIndex + 1} von {selectedRecipe.steps.length}</progress>
+            <h1 id="cook-heading" ref={pageHeadingRef} tabIndex="-1" aria-label={`Schritt ${stepIndex + 1} von ${selectedRecipe.steps.length}. ${currentStepSegments[0]}`}>Schritt {stepIndex + 1} von {selectedRecipe.steps.length}</h1>
+            <progress className="step-progress" value={stepIndex + 1} max={selectedRecipe.steps.length} aria-hidden="true">{stepIndex + 1} von {selectedRecipe.steps.length}</progress>
             <div className="step-panel">
               <div className="step-segments">
-                {currentStepSegments.map((segment, index) => <p className="step-segment" key={`${stepIndex}-${index}`}>{segment}</p>)}
+                {currentStepSegments.map((segment, index) => <p className="step-segment" aria-hidden={index === 0 ? "true" : undefined} key={`${stepIndex}-${index}`}>{segment}</p>)}
               </div>
             </div>
             <div className="step-controls">
               {stepIndex < selectedRecipe.steps.length - 1 ? (
                 <button className="button button--primary" type="button" onClick={() => changeStep(1)}>Nächster Schritt</button>
               ) : (
-                <button className="button button--primary" type="button" onClick={() => navigate("menu")}>Fertig – zurück zum Wochenmenü</button>
+                <button className="button button--primary" type="button" onClick={() => navigate("recipe")}>Zurück zu den Rezeptdetails</button>
               )}
               <button className="button button--secondary" type="button" disabled={stepIndex === 0} onClick={() => changeStep(-1)}>Vorheriger Schritt</button>
+              {stepIndex === selectedRecipe.steps.length - 1 && (
+                <button className="button button--secondary" type="button" onClick={() => navigate("menu")}>Zurück zum Wochenmenü</button>
+              )}
             </div>
           </article>
         )}

@@ -326,3 +326,30 @@ test("keeps only the requested reduced interface guidance", async () => {
   assert.doesNotMatch(appSource, /Funktionaler Prototyp ohne Anmeldung/);
   assert.ok(appSource.indexOf("Nächster Schritt") < appSource.indexOf("Vorheriger Schritt"));
 });
+
+test("groups the step label with the first segment for assistive technology", async () => {
+  const appSource = await readFile(new URL("../src/App.jsx", import.meta.url), "utf8");
+  assert.match(appSource, /aria-label={`Schritt \$\{stepIndex \+ 1\} von \$\{selectedRecipe\.steps\.length\}\. \$\{currentStepSegments\[0\]\}`}/);
+  assert.match(appSource, /aria-hidden=\{index === 0 \? "true" : undefined\}/);
+  assert.match(appSource, /className="step-progress"[^>]+aria-hidden="true"/);
+});
+
+test("keeps filter focus and provides contextual back navigation", async () => {
+  const appSource = await readFile(new URL("../src/App.jsx", import.meta.url), "utf8");
+  assert.match(appSource, /control\.focus\(\{ preventScroll: true \}\)/);
+  assert.match(appSource, /pendingFilterFocusRef\.current = null/);
+  assert.match(appSource, /aria-disabled=\{!filtersActive\}/);
+  assert.match(appSource, /event\.key !== "Escape"/);
+  assert.match(appSource, /if \(view === "cook"\) navigate\("recipe"\)/);
+  assert.match(appSource, /else if \(view === "recipe"\) navigate\("menu"\)/);
+});
+
+test("uses the requested actions and DOM order on the last cooking step", async () => {
+  const appSource = await readFile(new URL("../src/App.jsx", import.meta.url), "utf8");
+  const lastStepActions = appSource.slice(appSource.indexOf("stepIndex < selectedRecipe.steps.length - 1"));
+  const recipeBack = lastStepActions.indexOf(">Zurück zu den Rezeptdetails</button>");
+  const previous = lastStepActions.indexOf(">Vorheriger Schritt</button>");
+  const menuBack = lastStepActions.indexOf(">Zurück zum Wochenmenü</button>");
+  assert.ok(recipeBack >= 0 && recipeBack < previous && previous < menuBack);
+  assert.doesNotMatch(appSource, /Fertig – zurück zum Wochenmenü/);
+});
