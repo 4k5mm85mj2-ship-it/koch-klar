@@ -13,7 +13,6 @@ function Navigation({ view, recipe, onNavigate }) {
 
 export function App() {
   const [menu, setMenu] = useState(fallbackMenu);
-  const [dataMode, setDataMode] = useState("fallback");
   const [view, setView] = useState("menu");
   const [selectedRecipe, setSelectedRecipe] = useState(null);
   const [stepIndex, setStepIndex] = useState(0);
@@ -41,9 +40,8 @@ export function App() {
           throw new Error("Menü enthält keine Rezepte.");
         }
         setMenu(importedMenu);
-        setDataMode("api");
       } catch (error) {
-        if (error.name !== "AbortError") setDataMode("fallback");
+        if (error.name !== "AbortError") setMenu(fallbackMenu);
       }
     }
 
@@ -112,7 +110,11 @@ export function App() {
             </div>
 
             <aside className="data-source-note" aria-label="Datenquelle">
-              <p>{`Echte Rezeptdaten von ${menu.sourceName}, importiert am ${menu.importedAt}. ${dataMode === "api" ? "Über die interne Datenschnittstelle geladen." : "Gespeicherter Datenstand geladen."}`}</p>
+              <p>{menu.dataStatus === "live"
+                ? `Echte Rezeptdaten von ${menu.sourceName}. Automatisch aktualisiert am ${menu.importedAt}.`
+                : menu.dataStatus === "cached"
+                  ? `Echte Rezeptdaten von ${menu.sourceName}. Zuletzt erfolgreich aktualisiert am ${menu.importedAt}; eine neue Prüfung läuft im Hintergrund.`
+                  : `Echte Rezeptdaten von ${menu.sourceName}, importiert am ${menu.importedAt}. Gespeicherter Datenstand geladen.`}</p>
               <a className="text-link" href={menu.sourceUrl} target="_blank" rel="noreferrer">Öffentliches HelloFresh-Rezeptarchiv öffnen</a>
             </aside>
 
