@@ -3,6 +3,7 @@ import fallbackMenu from "./data/menu-snapshot.json";
 import menuWeeks from "./data/menu-weeks.json";
 import { segmentCookStep } from "./cook-step-segments.js";
 import { filterRecipes, TIME_FILTERS } from "./recipe-filters.js";
+import { basePortionsFor, ingredientsForPortions, stepForPortions, supportedPortionsFor } from "./portion-scaling.js";
 
 const bundledDefaultMenu = menuWeeks.menus?.[menuWeeks.defaultWeek] ?? fallbackMenu;
 const recipeDetails = import.meta.glob("./data/recipes/*.json");
@@ -17,6 +18,7 @@ export function App() {
   const [loadingRecipeId, setLoadingRecipeId] = useState(null);
   const [view, setView] = useState("menu");
   const [selectedRecipe, setSelectedRecipe] = useState(null);
+  const [selectedPortions, setSelectedPortions] = useState(2);
   const [stepIndex, setStepIndex] = useState(0);
   const [announcement, setAnnouncement] = useState("");
   const pageHeadingRef = useRef(null);
@@ -102,6 +104,7 @@ export function App() {
   const openRecipe = async (recipe) => {
     if (recipe.ingredients?.length && recipe.steps?.length) {
       setSelectedRecipe(recipe);
+      setSelectedPortions(basePortionsFor(recipe));
       setView("recipe");
       setAnnouncement(`${recipe.title} geöffnet.`);
       return;
@@ -112,7 +115,9 @@ export function App() {
       const loadDetail = recipeDetails[`./data/recipes/${recipe.id}.json`];
       if (!loadDetail) throw new Error("Rezept konnte nicht geladen werden.");
       const detail = (await loadDetail()).default;
-      setSelectedRecipe({ ...recipe, ...detail, diet: recipe.diet, dietGroup: recipe.dietGroup, difficulty: recipe.difficulty });
+      const completeRecipe = { ...recipe, ...detail, diet: recipe.diet, dietGroup: recipe.dietGroup, difficulty: recipe.difficulty };
+      setSelectedRecipe(completeRecipe);
+      setSelectedPortions(basePortionsFor(completeRecipe));
       setView("recipe");
       setAnnouncement(`${recipe.title} geöffnet.`);
     } catch {
@@ -132,9 +137,12 @@ export function App() {
   });
   const vegetarianCount = menu.recipes.filter((recipe) => (recipe.dietGroup ?? (["Vegetarisch", "Vegan"].includes(recipe.diet) ? "vegetarian" : "non-vegetarian")) === "vegetarian").length;
   const filtersActive = dietFilter !== "all" || difficultyFilter !== "all" || timeFilter !== "all";
-  const currentStepSegments = selectedRecipe ? segmentCookStep(selectedRecipe.steps[stepIndex]) : [];
+  const selectedIngredients = selectedRecipe ? ingredientsForPortions(selectedRecipe, selectedPortions) : [];
+  const supportedPortions = selectedRecipe ? supportedPortionsFor(selectedRecipe) : [];
+  const currentStepText = selectedRecipe ? stepForPortions(selectedRecipe.steps[stepIndex], selectedPortions) : "";
+  const currentStepSegments = selectedRecipe ? segmentCookStep(currentStepText) : [];
   const currentStepLabel = selectedRecipe ? `Schritt ${stepIndex + 1} von ${selectedRecipe.steps.length}` : "";
-  const currentStepAccessibleText = selectedRecipe ? `${currentStepLabel}. ${currentStepSegments[0]}` : "";
+  const currentStepAccessibleText = selectedRecipe ? `${currentStepLabel}.\n${currentStepSegments[0]}` : "";
 
   useEffect(() => {
     const pendingFocus = pendingFilterFocusRef.current;
@@ -142,18 +150,22 @@ export function App() {
     if (pendingFocus.waitForMenu && menuLoading) return;
 
     let secondFrame;
+    let focusTimer;
     const firstFrame = requestAnimationFrame(() => {
       secondFrame = requestAnimationFrame(() => {
-        if (pendingFilterFocusRef.current !== pendingFocus || !document.contains(pendingFocus.control)) return;
-        pendingFocus.control.blur();
-        pendingFocus.control.focus({ preventScroll: true });
-        pendingFilterFocusRef.current = null;
+        focusTimer = window.setTimeout(() => {
+          if (pendingFilterFocusRef.current !== pendingFocus || !document.contains(pendingFocus.control)) return;
+          pendingFocus.control.blur();
+          pendingFocus.control.focus({ preventScroll: true });
+          pendingFilterFocusRef.current = null;
+        }, 120);
       });
     });
 
     return () => {
       cancelAnimationFrame(firstFrame);
       if (secondFrame) cancelAnimationFrame(secondFrame);
+      if (focusTimer) window.clearTimeout(focusTimer);
     };
   }, [selectedWeek, dietFilter, difficultyFilter, timeFilter, view, menuLoading]);
 
@@ -245,7 +257,7 @@ export function App() {
                   setTimeFilter("all");
                   preserveControlFocus(control);
                 }}>Filter zurücksetzen</button>
-              <p className="result-count" aria-live="polite" aria-atomic="true">{menuLoading ? "Wochenmenü wird geladen." : `${filteredRecipes.length} ${filteredRecipes.length === 1 ? "Gericht" : "Gerichte"} angezeigt.`}</p>
+              <p className="result-count">{menuLoading ? "Wochenmenü wird geladen." : `${filteredRecipes.length} ${filteredRecipes.length === 1 ? "Gericht" : "Gerichte"} angezeigt.`}</p>
             </section>
 
             <ol className="recipe-list">
@@ -281,7 +293,12 @@ export function App() {
                 <h1 id="recipe-heading" ref={pageHeadingRef} tabIndex="-1">{selectedRecipe.title}</h1>
                 <p className="lead">{selectedRecipe.intro}</p>
                 <ul className="facts" aria-label="Rezeptinformationen">
-                  <li>{`Portionen, ${selectedRecipe.servings}`}</li>
+                  <li className="portion-field">
+                    <label htmlFor="portion-select">Portionen</label>
+                    <select id="portion-select" value={selectedPortions} onChange={(event) => setSelectedPortions(Number(event.currentTarget.value))}>
+                      {supportedPortions.map((portions) => <option key={portions} value={portions}>{portions}</option>)}
+                    </select>
+                  </li>
                   <li>{`Zeit, ${selectedRecipe.time}`}</li>
                   <li>{`Schwierigkeit, ${selectedRecipe.difficulty}`}</li>
                 </ul>
@@ -297,9 +314,9 @@ export function App() {
             <section id="ingredients" className="content-section" aria-labelledby="ingredients-heading">
               <p className="eyebrow">Mengen und Erkennungsmerkmale</p>
               <h2 id="ingredients-heading">Zutaten und Verpackungen</h2>
-              <p className="section-intro">Die Mengen stammen aus dem öffentlichen Originalrezept. Eine Verpackungsbeschreibung erscheint nur, wenn eine konkrete Beschreibung vorhanden ist; die Verpackung kann je nach Lieferung abweichen.</p>
+              <p className="section-intro">Die Ausgangsmengen stammen aus dem öffentlichen Originalrezept und werden für die gewählte Portionszahl angepasst. Eine Verpackungsbeschreibung erscheint nur, wenn eine konkrete Beschreibung vorhanden ist; die Verpackung kann je nach Lieferung abweichen.</p>
               <ul className="ingredient-list">
-                {selectedRecipe.ingredients.map((ingredient) => (
+                {selectedIngredients.map((ingredient) => (
                   <li key={ingredient.name}>
                     <p className="ingredient-title">{`${ingredient.name}, ${ingredient.amount}`}</p>
                     {ingredient.packaging && <p>{`Verpackung erkennen: ${ingredient.packaging}`}</p>}
@@ -321,12 +338,11 @@ export function App() {
           <article className="cook-view" aria-labelledby="cook-heading">
             <button className="back-link" type="button" onClick={() => navigate("recipe")}>Zurück zu den Rezeptdetails</button>
             <p className="eyebrow">{selectedRecipe.title}</p>
-            <h1 id="cook-heading" className="sr-only" ref={pageHeadingRef} tabIndex="-1">{currentStepAccessibleText}</h1>
-            <div className="cook-step-heading" aria-hidden="true">{currentStepLabel}</div>
-            <progress className="step-progress" value={stepIndex + 1} max={selectedRecipe.steps.length} aria-hidden="true">{stepIndex + 1} von {selectedRecipe.steps.length}</progress>
+            <progress className="step-progress" value={stepIndex + 1} max={selectedRecipe.steps.length} aria-hidden="true" />
             <div className="step-panel">
               <div className="step-segments">
-                {currentStepSegments.map((segment, index) => <p className="step-segment" aria-hidden={index === 0 ? "true" : undefined} key={`${stepIndex}-${index}`}>{segment}</p>)}
+                <h1 id="cook-heading" className="cook-step-combined" ref={pageHeadingRef} tabIndex="-1">{currentStepAccessibleText}</h1>
+                {currentStepSegments.slice(1).map((segment, index) => <p className="step-segment" key={`${stepIndex}-${index + 1}`}>{segment}</p>)}
               </div>
             </div>
             <div className="step-controls">

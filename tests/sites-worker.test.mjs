@@ -4,6 +4,12 @@ import test from "node:test";
 import worker from "../worker/index.js";
 import { extractRecipeUrls, parseMenuPage, parseRecipePage } from "../worker/hello-fresh-importer.js";
 import { LONG_STEP_THRESHOLD, segmentCookStep } from "../src/cook-step-segments.js";
+import {
+  amountForPortions,
+  basePortionsFor,
+  stepForPortions,
+  supportedPortionsFor,
+} from "../src/portion-scaling.js";
 import { filterRecipes, timeFilterFor, totalMinutes } from "../src/recipe-filters.js";
 
 const recipeUrl = "https://www.hellofresh.de/recipes/testgericht-mit-gemuse-1234567890abcdef1234";
@@ -329,12 +335,76 @@ test("keeps only the requested reduced interface guidance", async () => {
 
 test("groups the step label with the first segment for assistive technology", async () => {
   const appSource = await readFile(new URL("../src/App.jsx", import.meta.url), "utf8");
-  assert.match(appSource, /const currentStepAccessibleText = selectedRecipe \? `\$\{currentStepLabel\}\. \$\{currentStepSegments\[0\]\}` : ""/);
-  assert.match(appSource, /<h1 id="cook-heading" className="sr-only"[^>]+>\{currentStepAccessibleText\}<\/h1>/);
-  assert.match(appSource, /<div className="cook-step-heading" aria-hidden="true">\{currentStepLabel\}<\/div>/);
+  assert.match(appSource, /const currentStepAccessibleText = selectedRecipe \? `\$\{currentStepLabel\}\.\\n\$\{currentStepSegments\[0\]\}` : ""/);
+  assert.match(appSource, /<h1 id="cook-heading" className="cook-step-combined"[^>]+>\{currentStepAccessibleText\}<\/h1>/);
+  assert.doesNotMatch(appSource, /cook-step-heading/);
   assert.doesNotMatch(appSource, /id="cook-heading"[^>]+aria-label=/);
-  assert.match(appSource, /aria-hidden=\{index === 0 \? "true" : undefined\}/);
+  assert.match(appSource, /currentStepSegments\.slice\(1\)\.map/);
+  assert.doesNotMatch(appSource, /aria-hidden=\{index === 0/);
   assert.match(appSource, /className="step-progress"[^>]+aria-hidden="true"/);
+});
+
+test("uses a compact native portions control and retains its state across views", async () => {
+  const appSource = await readFile(new URL("../src/App.jsx", import.meta.url), "utf8");
+  assert.match(appSource, /<select\s+id="portion-select"/);
+  assert.match(appSource, /supportedPortions\.map\(\(portions\) =>/);
+  assert.match(appSource, /setSelectedPortions\(Number\(event\.currentTarget\.value\)\)/);
+  assert.match(appSource, /const currentStepText = selectedRecipe \? stepForPortions\(/);
+  assert.ok(appSource.indexOf("const currentStepText = selectedRecipe ? stepForPortions(") < appSource.indexOf("segmentCookStep(currentStepText)"));
+
+  const startCooking = appSource.slice(appSource.indexOf("function startCooking"), appSource.indexOf("function nextStep"));
+  assert.doesNotMatch(startCooking, /setSelectedPortions/);
+  const navigate = appSource.slice(appSource.indexOf("function navigate"), appSource.indexOf("function openRecipe"));
+  assert.doesNotMatch(navigate, /setSelectedPortions/);
+});
+
+test("prioritizes explicit portion data and only scales reliable ingredient amounts", () => {
+  assert.equal(amountForPortions({ amount: "200 g", amountsByPortion: { 3: "310 g" } }, 3, 2), "310 g");
+  assert.equal(amountForPortions({ amount: "200 g" }, 3, 2), "300 g");
+  assert.equal(amountForPortions({ amount: "1,5 EL" }, 4, 2), "3 EL");
+  assert.equal(amountForPortions({ amount: "Menge laut Originalrezept" }, 4, 2), "Menge laut Originalrezept");
+  assert.equal(amountForPortions({ amount: "1 Packung" }, 3, 2), "1 Packung");
+  assert.equal(amountForPortions({ amount: "1 Packung" }, 4, 2), "2 Packungen");
+});
+
+test("selects exactly one HelloFresh step amount for 2, 3, or 4 portions", () => {
+  const step = "Mit 1 EL [1,5 EL | 2 EL] Öl und 2 [3 | 4] Patties fortfahren.";
+  assert.equal(stepForPortions(step, 2, 2), "Mit 1 EL Öl und 2 Patties fortfahren.");
+  assert.equal(stepForPortions(step, 3, 2), "Mit 1,5 EL Öl und 3 Patties fortfahren.");
+  assert.equal(stepForPortions(step, 4, 2), "Mit 2 EL Öl und 4 Patties fortfahren.");
+});
+
+test("supports 2, 3, and 4 portions across every bundled recipe without unresolved alternatives", async () => {
+  const bundle = JSON.parse(await readFile(new URL("../src/data/menu-weeks.json", import.meta.url), "utf8"));
+  const recipes = Object.values(bundle.menus).flatMap((menu) => menu.recipes);
+  let resolvedAlternatives = 0;
+
+  for (const recipe of recipes) {
+    const detail = JSON.parse(await readFile(new URL(`../src/data/recipes/${recipe.id}.json`, import.meta.url), "utf8"));
+    const basePortions = basePortionsFor(detail);
+    assert.equal(basePortions, 2, `${detail.title} has an unexpected base portion count`);
+    assert.deepEqual(supportedPortionsFor(detail), [2, 3, 4]);
+
+    for (const ingredient of detail.ingredients) {
+      for (const portions of supportedPortionsFor(detail)) {
+        assert.ok(amountForPortions(ingredient, portions, basePortions), `${detail.title}: empty ingredient amount`);
+      }
+    }
+
+    for (const step of detail.steps) {
+      for (const portions of supportedPortionsFor(detail)) {
+        const resolved = stepForPortions(step, portions, basePortions);
+        assert.ok(resolved.length > 0, `${detail.title}: empty cooking step`);
+        assert.equal(segmentCookStep(resolved).join(""), resolved, `${detail.title}: segmentation changed the resolved step`);
+        if (/\[[^\]]*\|[^\]]*\]/.test(step)) {
+          resolvedAlternatives += 1;
+          assert.doesNotMatch(resolved, /\[[^\]]*\|[^\]]*\]/, `${detail.title}: unresolved ${portions}-portion alternative`);
+        }
+      }
+    }
+  }
+
+  assert.ok(resolvedAlternatives > 3000);
 });
 
 test("keeps filter focus and provides contextual back navigation", async () => {
@@ -342,8 +412,10 @@ test("keeps filter focus and provides contextual back navigation", async () => {
   assert.match(appSource, /pendingFocus\.control\.blur\(\)/);
   assert.match(appSource, /control\.focus\(\{ preventScroll: true \}\)/);
   assert.match(appSource, /requestAnimationFrame\(\(\) =>/);
+  assert.match(appSource, /focusTimer = window\.setTimeout\(\(\) =>/);
   assert.match(appSource, /pendingFocus\.waitForMenu && menuLoading/);
   assert.match(appSource, /pendingFilterFocusRef\.current = null/);
+  assert.doesNotMatch(appSource, /className="result-count"[^>]+aria-live=/);
   assert.match(appSource, /aria-disabled=\{!filtersActive\}/);
   assert.match(appSource, /event\.key !== "Escape"/);
   assert.match(appSource, /if \(view === "cook"\) navigate\("recipe"\)/);
