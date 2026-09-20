@@ -299,8 +299,8 @@ export function App() {
                       {supportedPortions.map((portions) => <option key={portions} value={portions}>{portions}</option>)}
                     </select>
                   </li>
-                  <li>{`Zeit, ${selectedRecipe.time}`}</li>
-                  <li>{`Schwierigkeit, ${selectedRecipe.difficulty}`}</li>
+                  <li className="fact-time">{`Gesamtzeit, ${selectedRecipe.time}`}</li>
+                  <li className="fact-difficulty">{`Schwierigkeit, ${selectedRecipe.difficulty}`}</li>
                 </ul>
                 <div className="recipe-quick-actions">
                   <button className="button button--primary button--large" type="button" onClick={startCooking}>Kochmodus starten</button>
@@ -341,7 +341,7 @@ export function App() {
             <progress className="step-progress" value={stepIndex + 1} max={selectedRecipe.steps.length} aria-hidden="true" />
             <div className="step-panel">
               <div className="step-segments">
-                <h1 id="cook-heading" className="cook-step-combined" ref={pageHeadingRef} tabIndex="-1">{currentStepAccessibleText}</h1>
+                <p id="cook-heading" className="cook-step-combined" ref={pageHeadingRef} tabIndex="-1">{currentStepAccessibleText}</p>
                 {currentStepSegments.slice(1).map((segment, index) => <p className="step-segment" key={`${stepIndex}-${index + 1}`}>{segment}</p>)}
               </div>
             </div>

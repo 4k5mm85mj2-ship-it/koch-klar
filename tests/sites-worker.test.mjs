@@ -336,12 +336,28 @@ test("keeps only the requested reduced interface guidance", async () => {
 test("groups the step label with the first segment for assistive technology", async () => {
   const appSource = await readFile(new URL("../src/App.jsx", import.meta.url), "utf8");
   assert.match(appSource, /const currentStepAccessibleText = selectedRecipe \? `\$\{currentStepLabel\}\.\\n\$\{currentStepSegments\[0\]\}` : ""/);
-  assert.match(appSource, /<h1 id="cook-heading" className="cook-step-combined"[^>]+>\{currentStepAccessibleText\}<\/h1>/);
+  assert.match(appSource, /<p id="cook-heading" className="cook-step-combined"[^>]+>\{currentStepAccessibleText\}<\/p>/);
+  assert.doesNotMatch(appSource, /<h[1-6][^>]+id="cook-heading"/);
+  assert.doesNotMatch(appSource, /id="cook-heading"[^>]+(?:role="heading"|aria-level=)/);
   assert.doesNotMatch(appSource, /cook-step-heading/);
   assert.doesNotMatch(appSource, /id="cook-heading"[^>]+aria-label=/);
   assert.match(appSource, /currentStepSegments\.slice\(1\)\.map/);
   assert.doesNotMatch(appSource, /aria-hidden=\{index === 0/);
   assert.match(appSource, /className="step-progress"[^>]+aria-hidden="true"/);
+});
+
+test("lays out recipe facts in two columns without changing their linear order", async () => {
+  const appSource = await readFile(new URL("../src/App.jsx", import.meta.url), "utf8");
+  const styles = await readFile(new URL("../src/styles.css", import.meta.url), "utf8");
+  const facts = appSource.slice(appSource.indexOf('<ul className="facts"'), appSource.indexOf("</ul>", appSource.indexOf('<ul className="facts"')));
+  assert.ok(facts.indexOf("portion-field") < facts.indexOf("fact-time"));
+  assert.ok(facts.indexOf("fact-time") < facts.indexOf("fact-difficulty"));
+  assert.match(facts, /Gesamtzeit, \$\{selectedRecipe\.time\}/);
+  assert.match(styles, /\.facts \{[\s\S]*grid-template-columns: repeat\(2, minmax\(0, 1fr\)\)/);
+  assert.match(styles, /\.portion-field \{[^}]*grid-column: 1;[^}]*grid-row: 1 \/ span 2/);
+  assert.match(styles, /\.fact-time \{ grid-column: 2; grid-row: 1; \}/);
+  assert.match(styles, /\.fact-difficulty \{ grid-column: 2; grid-row: 2; \}/);
+  assert.match(styles, /@media \(max-width: 700px\)[\s\S]*\.facts \{ grid-template-columns: 1fr; \}/);
 });
 
 test("uses a compact native portions control and retains its state across views", async () => {

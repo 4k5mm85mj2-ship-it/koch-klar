@@ -39,7 +39,8 @@ a:focus-visible,
   outline-offset: 4px;
 }
 
-h1[tabindex="-1"]:focus { outline: none; }
+h1[tabindex="-1"]:focus,
+.cook-step-combined[tabindex="-1"]:focus { outline: none; }
 
 .skip-link {
   position: fixed;
@@ -236,9 +237,18 @@ h1[tabindex="-1"]:focus { outline: none; }
 
 .lead { max-width: 62ch; margin: 20px 0; font-size: 21px; }
 
-.facts { display: flex; flex-wrap: wrap; gap: 14px 36px; margin: 24px 0; padding: 0; list-style: none; }
-.facts li { min-width: 130px; font-size: 19px; font-weight: 700; }
-.portion-field { display: grid; gap: 4px; }
+.facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 36px;
+  margin: 24px 0;
+  padding: 0;
+  list-style: none;
+}
+.facts li { min-width: 0; font-size: 19px; font-weight: 700; }
+.portion-field { display: grid; grid-column: 1; grid-row: 1 / span 2; align-content: start; gap: 4px; }
+.fact-time { grid-column: 2; grid-row: 1; }
+.fact-difficulty { grid-column: 2; grid-row: 2; }
 .portion-field select {
   min-width: 130px;
   min-height: 48px;
@@ -352,6 +362,10 @@ h1[tabindex="-1"]:focus { outline: none; }
   .recipe-action { width: 100%; }
   .recipe-meta { align-items: flex-start; flex-direction: column; }
   .recipe-hero { gap: 26px; }
+  .facts { grid-template-columns: 1fr; }
+  .portion-field,
+  .fact-time,
+  .fact-difficulty { grid-column: 1; grid-row: auto; }
   .recipe-quick-actions { align-items: stretch; flex-direction: column; }
   .recipe-quick-actions .button { width: 100%; }
   .step-controls { flex-direction: column; }
