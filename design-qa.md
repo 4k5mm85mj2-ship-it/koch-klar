@@ -50,6 +50,8 @@ A separate crop was not needed because the normalized full-view comparison is at
 - The complete position and instruction are rendered as one literal DOM text node. The accessibility snapshot confirms one active paragraph—without separate nodes for “Schritt”, the numbers, or “von”—on both step 1 and step 2.
 - Keyboard tab order begins with the skip link and reaches the first recipe action in a predictable order.
 - Each weekly-menu number and dish image is exposed as one atomic image element named “Gericht X von Y” plus the complete image description; the visible number is no longer a separate VoiceOver navigation stop.
+- Weekly-menu total time and difficulty are exposed as one complete paragraph each. Recipe-detail portions, time, and difficulty are exposed as one complete list item each, preventing separate VoiceOver stops for labels and values.
+- The lower preparation action is followed by a “Zurück zum Wochenmenü” link; activating it returns to the menu and focuses its level-one heading.
 - Browser console checked: no application errors; observed errors originated only from the browser’s installed extension, not `terminal.local`.
 
 ## Follow-up polish

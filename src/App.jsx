@@ -214,7 +214,10 @@ export function App() {
                   <div className="recipe-summary">
                     <h3>{recipe.title}</h3>
                     <p className="recipe-type">{recipe.diet}</p>
-                    <p className="recipe-meta">Gesamtzeit: {recipe.time}<span aria-hidden="true"> | </span><span className="meta-break">Schwierigkeit: {recipe.difficulty}</span></p>
+                    <div className="recipe-meta">
+                      <p>{`Gesamtzeit: ${recipe.time}`}</p>
+                      <p>{`Schwierigkeit: ${recipe.difficulty}`}</p>
+                    </div>
                   </div>
                   <button className="button button--primary recipe-action" type="button" onClick={() => openRecipe(recipe)} aria-label={`Rezept öffnen: ${recipe.title}`}>Rezept öffnen</button>
                 </li>
@@ -233,11 +236,11 @@ export function App() {
                 <p className="eyebrow">Rezeptdetails</p>
                 <h1 id="recipe-heading" ref={pageHeadingRef} tabIndex="-1">{selectedRecipe.title}</h1>
                 <p className="lead">{selectedRecipe.intro}</p>
-                <dl className="facts">
-                  <div><dt>Portionen</dt><dd>{selectedRecipe.servings}</dd></div>
-                  <div><dt>Zeit</dt><dd>{selectedRecipe.time}</dd></div>
-                  <div><dt>Schwierigkeit</dt><dd>{selectedRecipe.difficulty}</dd></div>
-                </dl>
+                <ul className="facts" aria-label="Rezeptinformationen">
+                  <li>{`Portionen: ${selectedRecipe.servings}`}</li>
+                  <li>{`Zeit: ${selectedRecipe.time}`}</li>
+                  <li>{`Schwierigkeit: ${selectedRecipe.difficulty}`}</li>
+                </ul>
                 <div className="recipe-quick-actions">
                   <button className="button button--primary button--large" type="button" onClick={startCooking}>Kochmodus starten</button>
                   <a className="text-link" href="#ingredients">Direkt zur Zutatenliste</a>
@@ -264,6 +267,7 @@ export function App() {
               <h2 id="preparation-heading">Zubereitung</h2>
               <p>Im Kochmodus wird immer nur ein Schritt angezeigt. Die Anleitung nennt Zeiten und Handlungen vollständig und in einer festen Reihenfolge.</p>
               <button className="button button--primary button--large" type="button" onClick={startCooking}>Kochmodus starten</button>
+              <a className="text-link recipe-return-link" href="#main-content" onClick={(event) => { event.preventDefault(); navigate("menu"); }}>Zurück zum Wochenmenü</a>
             </section>
           </article>
         )}
