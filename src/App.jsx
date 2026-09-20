@@ -13,6 +13,10 @@ function Navigation({ view, recipe, onNavigate }) {
 
 export function App() {
   const [menu, setMenu] = useState(fallbackMenu);
+  const [selectedWeek, setSelectedWeek] = useState("");
+  const [dietFilter, setDietFilter] = useState("all");
+  const [menuLoading, setMenuLoading] = useState(true);
+  const [loadingRecipeId, setLoadingRecipeId] = useState(null);
   const [view, setView] = useState("menu");
   const [selectedRecipe, setSelectedRecipe] = useState(null);
   const [stepIndex, setStepIndex] = useState(0);
@@ -30,7 +34,9 @@ export function App() {
 
     async function loadMenu() {
       try {
-        const response = await fetch("/api/menu", {
+        setMenuLoading(true);
+        const query = selectedWeek && selectedWeek !== "fallback" ? `?week=${encodeURIComponent(selectedWeek)}` : "";
+        const response = await fetch(`/api/menu${query}`, {
           headers: { accept: "application/json" },
           signal: controller.signal,
         });
@@ -40,14 +46,20 @@ export function App() {
           throw new Error("Menü enthält keine Rezepte.");
         }
         setMenu(importedMenu);
+        setAnnouncement(`${importedMenu.weekLabel} mit ${importedMenu.recipes.length} Gerichten geladen.`);
       } catch (error) {
-        if (error.name !== "AbortError") setMenu(fallbackMenu);
+        if (error.name !== "AbortError") {
+          setAnnouncement("Diese Woche konnte nicht geladen werden. Das bisherige Menü bleibt geöffnet.");
+          if (selectedWeek) setSelectedWeek("");
+        }
+      } finally {
+        if (!controller.signal.aborted) setMenuLoading(false);
       }
     }
 
     loadMenu();
     return () => controller.abort();
-  }, []);
+  }, [selectedWeek]);
 
   useEffect(() => {
     const nextLocation = `${view}:${selectedRecipe?.id ?? ""}`;
@@ -67,11 +79,38 @@ export function App() {
     setView(nextView);
   };
 
-  const openRecipe = (recipe) => {
-    setSelectedRecipe(recipe);
-    setView("recipe");
-    setAnnouncement(`${recipe.title} geöffnet.`);
+  const openRecipe = async (recipe) => {
+    if (recipe.ingredients?.length && recipe.steps?.length) {
+      setSelectedRecipe(recipe);
+      setView("recipe");
+      setAnnouncement(`${recipe.title} geöffnet.`);
+      return;
+    }
+    setLoadingRecipeId(recipe.id);
+    setAnnouncement(`${recipe.title} wird geladen.`);
+    try {
+      const response = await fetch(`/api/recipe?url=${encodeURIComponent(recipe.sourceUrl)}`, { headers: { accept: "application/json" } });
+      if (!response.ok) throw new Error("Rezept konnte nicht geladen werden.");
+      const detail = await response.json();
+      setSelectedRecipe({ ...recipe, ...detail, diet: recipe.diet, dietGroup: recipe.dietGroup, difficulty: recipe.difficulty });
+      setView("recipe");
+      setAnnouncement(`${recipe.title} geöffnet.`);
+    } catch {
+      setAnnouncement(`${recipe.title} konnte nicht geladen werden. Bitte versuche es erneut.`);
+    } finally {
+      setLoadingRecipeId(null);
+    }
   };
+
+  const availableWeeks = menu.availableWeeks?.length
+    ? menu.availableWeeks
+    : [{ value: "fallback", label: menu.weekLabel }];
+  const filteredRecipes = menu.recipes.filter((recipe) => {
+    if (dietFilter === "all") return true;
+    const group = recipe.dietGroup ?? (["Vegetarisch", "Vegan"].includes(recipe.diet) ? "vegetarian" : "non-vegetarian");
+    return group === dietFilter;
+  });
+  const vegetarianCount = menu.recipes.filter((recipe) => (recipe.dietGroup ?? (["Vegetarisch", "Vegan"].includes(recipe.diet) ? "vegetarian" : "non-vegetarian")) === "vegetarian").length;
 
   const changeStep = (direction) => {
     if (!selectedRecipe) return;
@@ -109,19 +148,40 @@ export function App() {
               <h2 className="week-title">{menu.weekLabel}</h2>
             </div>
 
+            <section className="menu-controls" aria-labelledby="menu-controls-heading">
+              <h2 id="menu-controls-heading">Woche und Ernährungsart</h2>
+              <div className="week-select-wrap">
+                <label htmlFor="week-select">Woche auswählen</label>
+                <select id="week-select" value={selectedWeek || menu.week || "fallback"} disabled={menuLoading || availableWeeks.length < 2} onChange={(event) => {
+                  setDietFilter("all");
+                  setSelectedRecipe(null);
+                  setSelectedWeek(event.target.value);
+                }}>
+                  {availableWeeks.map((week) => <option key={week.value} value={week.value}>{week.label}</option>)}
+                </select>
+              </div>
+              <fieldset className="diet-filter">
+                <legend>Gerichte filtern</legend>
+                <label><input type="radio" name="diet" value="all" checked={dietFilter === "all"} onChange={() => setDietFilter("all")} /> Alle ({menu.recipes.length})</label>
+                <label><input type="radio" name="diet" value="vegetarian" checked={dietFilter === "vegetarian"} onChange={() => setDietFilter("vegetarian")} /> Vegetarisch und vegan ({vegetarianCount})</label>
+                <label><input type="radio" name="diet" value="non-vegetarian" checked={dietFilter === "non-vegetarian"} onChange={() => setDietFilter("non-vegetarian")} /> Nicht vegetarisch ({menu.recipes.length - vegetarianCount})</label>
+              </fieldset>
+              <p className="result-count" aria-live="polite" aria-atomic="true">{menuLoading ? "Wochenmenü wird geladen." : `${filteredRecipes.length} ${filteredRecipes.length === 1 ? "Gericht" : "Gerichte"} angezeigt.`}</p>
+            </section>
+
             <aside className="data-source-note" aria-label="Datenquelle">
               <p>{menu.dataStatus === "live"
                 ? `Echte Rezeptdaten von ${menu.sourceName}. Automatisch aktualisiert am ${menu.importedAt}.`
                 : menu.dataStatus === "cached"
                   ? `Echte Rezeptdaten von ${menu.sourceName}. Zuletzt erfolgreich aktualisiert am ${menu.importedAt}; eine neue Prüfung läuft im Hintergrund.`
                   : `Echte Rezeptdaten von ${menu.sourceName}, importiert am ${menu.importedAt}. Gespeicherter Datenstand geladen.`}</p>
-              <a className="text-link" href={menu.sourceUrl} target="_blank" rel="noreferrer">Öffentliches HelloFresh-Rezeptarchiv öffnen</a>
+              <a className="text-link" href={menu.sourceUrl} target="_blank" rel="noreferrer">Öffentliches HelloFresh-Wochenmenü öffnen</a>
             </aside>
 
             <ol className="recipe-list">
-              {menu.recipes.map((recipe, index) => (
+              {filteredRecipes.map((recipe, index) => (
                 <li className="recipe-row" key={recipe.id}>
-                  <div className="recipe-visual" role="img" aria-label={`Gericht ${index + 1} von ${menu.recipes.length}. ${recipe.alt}`}>
+                  <div className="recipe-visual" role="img" aria-label={`Gericht ${index + 1} von ${filteredRecipes.length}. ${recipe.alt}`}>
                     <span className="recipe-number" aria-hidden="true">{index + 1}.</span>
                     <img className="recipe-thumbnail" src={recipe.image} alt="" aria-hidden="true" width="320" height="180" />
                   </div>
@@ -133,7 +193,7 @@ export function App() {
                       <p>{`Schwierigkeit: ${recipe.difficulty}`}</p>
                     </div>
                   </div>
-                  <button className="button button--primary recipe-action" type="button" onClick={() => openRecipe(recipe)} aria-label={`Rezept öffnen: ${recipe.title}`}>Rezept öffnen</button>
+                  <button className="button button--primary recipe-action" type="button" disabled={loadingRecipeId === recipe.id} onClick={() => openRecipe(recipe)} aria-label={`Rezept öffnen: ${recipe.title}`}>{loadingRecipeId === recipe.id ? "Rezept wird geladen" : "Rezept öffnen"}</button>
                 </li>
               ))}
             </ol>

@@ -1,8 +1,3 @@
-const MENU_SOURCES = [
-  "https://www.hellofresh.de/essensbox/menu",
-  "https://www.hellofresh.de/recipes",
-];
-
 const REQUEST_HEADERS = {
   accept: "text/html,application/xhtml+xml",
   "accept-language": "de-DE,de;q=0.9",
@@ -72,11 +67,130 @@ export function extractRecipeUrls(html) {
   return unique;
 }
 
+function isValidWeek(value) {
+  return /^\d{4}-W(?:0[1-9]|[1-4]\d|5[0-3])$/.test(value ?? "");
+}
+
 function parseDuration(value) {
   const match = /^PT(?:(\d+)H)?(?:(\d+)M)?$/i.exec(value ?? "");
   if (!match) return "nicht angegeben";
   const minutes = Number(match[1] ?? 0) * 60 + Number(match[2] ?? 0);
   return minutes ? `${minutes} Minuten` : "nicht angegeben";
+}
+
+function addIsoWeeks(isoWeek, amount) {
+  const [yearText, weekText] = isoWeek.split("-W");
+  const year = Number(yearText);
+  const week = Number(weekText);
+  const januaryFourth = new Date(Date.UTC(year, 0, 4));
+  const monday = new Date(januaryFourth);
+  monday.setUTCDate(januaryFourth.getUTCDate() - ((januaryFourth.getUTCDay() + 6) % 7) + ((week - 1 + amount) * 7));
+  const thursday = new Date(monday);
+  thursday.setUTCDate(monday.getUTCDate() + 3);
+  const isoYear = thursday.getUTCFullYear();
+  const firstThursday = new Date(Date.UTC(isoYear, 0, 4));
+  const firstMonday = new Date(firstThursday);
+  firstMonday.setUTCDate(firstThursday.getUTCDate() - ((firstThursday.getUTCDay() + 6) % 7));
+  const isoWeekNumber = Math.round((monday - firstMonday) / 604800000) + 1;
+  return `${isoYear}-W${String(isoWeekNumber).padStart(2, "0")}`;
+}
+
+function weekDates(isoWeek) {
+  const [yearText, weekText] = isoWeek.split("-W");
+  const januaryFourth = new Date(Date.UTC(Number(yearText), 0, 4));
+  const monday = new Date(januaryFourth);
+  monday.setUTCDate(januaryFourth.getUTCDate() - ((januaryFourth.getUTCDay() + 6) % 7) + ((Number(weekText) - 1) * 7));
+  const start = new Date(monday);
+  start.setUTCDate(monday.getUTCDate() - 2);
+  const end = new Date(start);
+  end.setUTCDate(start.getUTCDate() + 6);
+  return { start, end };
+}
+
+function weekLabel(isoWeek) {
+  const { start, end } = weekDates(isoWeek);
+  const startMonth = start.toLocaleDateString("de-DE", { month: "long", timeZone: "UTC" });
+  const endMonth = end.toLocaleDateString("de-DE", { month: "long", timeZone: "UTC" });
+  if (start.getUTCMonth() === end.getUTCMonth()) {
+    return `${start.getUTCDate()}.–${end.getUTCDate()}. ${endMonth} ${end.getUTCFullYear()}`;
+  }
+  return `${start.getUTCDate()}. ${startMonth}–${end.getUTCDate()}. ${endMonth} ${end.getUTCFullYear()}`;
+}
+
+function tagsFor(recipe) {
+  return (recipe.tags ?? []).map((tag) => ({
+    name: decodeHtml(tag.name ?? tag.slug ?? ""),
+    type: normalizeName(tag.type ?? tag.slug ?? tag.name ?? ""),
+  })).filter((tag) => tag.name);
+}
+
+function menuDiet(recipe, tags) {
+  const searchable = normalizeName(`${recipe.name ?? ""} ${recipe.headline ?? ""}`);
+  const types = tags.map((tag) => tag.type);
+  if (types.includes("vegan") || /\bvegan/.test(searchable)) return { diet: "Vegan", dietGroup: "vegetarian" };
+  if (types.includes("veggie") || /\bvegetar|\bveggie/.test(searchable)) return { diet: "Vegetarisch", dietGroup: "vegetarian" };
+  if (types.includes("pescatarian") || /fisch|lachs|garnele|tilapia|kabeljau|pangasius|thunfisch/.test(searchable)) {
+    return { diet: "Mit Fisch", dietGroup: "non-vegetarian" };
+  }
+  return { diet: "Nicht vegetarisch", dietGroup: "non-vegetarian" };
+}
+
+function menuDifficulty(value) {
+  return ({ 1: "einfach", 2: "mittel", 3: "schwierig" })[Number(value)] ?? "nicht angegeben";
+}
+
+export function parseMenuPage(html, now = new Date()) {
+  const script = html.match(/<script[^>]+id=["']__NEXT_DATA__["'][^>]*>([\s\S]*?)<\/script>/i)?.[1];
+  if (!script) throw new Error("Die öffentlichen Wochendaten wurden nicht gefunden.");
+
+  const payload = JSON.parse(script).props?.pageProps?.ssrPayload;
+  const activeWeek = payload?.activeWeek;
+  if (!isValidWeek(activeWeek) || !Array.isArray(payload?.courses)) {
+    throw new Error("Die öffentlichen Wochendaten sind unvollständig.");
+  }
+
+  const seen = new Set();
+  const recipes = [];
+  for (const course of payload.courses) {
+    const recipe = course?.recipe;
+    if (!recipe?.id || !recipe?.name || !recipe?.websiteUrl || seen.has(recipe.id)) continue;
+    if (course.isHidden || (course.hideOnSoldOut && course.isSoldOut)) continue;
+    seen.add(recipe.id);
+    const tags = tagsFor(recipe);
+    const diet = menuDiet(recipe, tags);
+    const title = decodeHtml(recipe.name);
+    recipes.push({
+      id: recipe.id,
+      title,
+      ...diet,
+      time: parseDuration(recipe.prepTime ?? recipe.totalTime),
+      difficulty: menuDifficulty(recipe.difficulty),
+      image: recipe.imageLink ?? recipe.imagePath ?? "",
+      alt: `Foto des Gerichts ${title}.`,
+      intro: decodeHtml(recipe.headline) || `Rezept für ${title}.`,
+      sourceUrl: recipe.websiteUrl,
+      features: tags.map((tag) => tag.name),
+    });
+  }
+  if (!recipes.length) throw new Error("In dieser Woche wurden keine verfügbaren Gerichte gefunden.");
+
+  const firstAvailableWeek = isValidWeek(payload.currentWeek) ? payload.currentWeek : activeWeek;
+  return {
+    week: activeWeek,
+    weekLabel: weekLabel(activeWeek),
+    availableWeeks: Array.from({ length: 6 }, (_, index) => {
+      const value = addIsoWeeks(firstAvailableWeek, index);
+      const label = weekLabel(value);
+      return { value, label: index === 0 ? `Aktuelles Menü: ${label}` : label };
+    }),
+    importedAt: germanDate(now),
+    checkedAt: now.toISOString(),
+    dataStatus: "live",
+    sourceName: "HelloFresh Deutschland",
+    sourceUrl: `https://www.hellofresh.de/menus/${activeWeek}`,
+    totalRecipes: recipes.length,
+    recipes,
+  };
 }
 
 function ingredientParts(value) {
@@ -175,9 +289,9 @@ export function parseRecipePage(html, sourceUrl, fallbackMenu) {
   };
 }
 
-async function fetchHtml(fetchImpl, url) {
+export async function fetchHtml(fetchImpl, url) {
   const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), 8_000);
+  const timeout = setTimeout(() => controller.abort(), 12_000);
   try {
     const response = await fetchImpl(url, { headers: REQUEST_HEADERS, signal: controller.signal });
     if (!response.ok) throw new Error(`HelloFresh antwortet mit Status ${response.status}: ${url}`);
@@ -196,34 +310,16 @@ function germanDate(date) {
   }).format(date);
 }
 
-export async function importCurrentMenu({ fetchImpl = fetch, fallbackMenu, now = new Date() }) {
-  let urls = [];
-  for (const source of MENU_SOURCES) {
-    try {
-      urls = extractRecipeUrls(await fetchHtml(fetchImpl, source));
-      if (urls.length >= 4) break;
-    } catch {
-      // Try the next official public source.
-    }
-  }
-  if (urls.length < 4) throw new Error("Im öffentlichen HelloFresh-Menü wurden nicht genügend Rezepte gefunden.");
+export async function importCurrentMenu({ fetchImpl = fetch, week, now = new Date() }) {
+  if (week && !isValidWeek(week)) throw new Error("Ungültige Kalenderwoche.");
+  const sourceUrl = week ? `https://www.hellofresh.de/menus/${week}` : "https://www.hellofresh.de/menus";
+  return parseMenuPage(await fetchHtml(fetchImpl, sourceUrl), now);
+}
 
-  const recipes = await Promise.all(urls.slice(0, 4).map(async (url) => parseRecipePage(
-    await fetchHtml(fetchImpl, url),
-    url,
-    fallbackMenu,
-  )));
-  if (recipes.some((recipe) => !recipe.image || !recipe.steps.length || !recipe.ingredients.length)) {
-    throw new Error("Das aktualisierte Menü ist unvollständig.");
+export async function importRecipe({ fetchImpl = fetch, sourceUrl, fallbackMenu }) {
+  const url = new URL(sourceUrl);
+  if (url.protocol !== "https:" || url.hostname !== "www.hellofresh.de" || !/^\/recipes\/[a-z0-9äöüß%+._~-]+-[0-9a-f]{20,}$/i.test(url.pathname)) {
+    throw new Error("Ungültige Rezeptadresse.");
   }
-
-  return {
-    weekLabel: "Aktuelles Wochenmenü",
-    importedAt: germanDate(now),
-    checkedAt: now.toISOString(),
-    dataStatus: "live",
-    sourceName: "HelloFresh Deutschland",
-    sourceUrl: "https://www.hellofresh.de/essensbox/menu",
-    recipes,
-  };
+  return parseRecipePage(await fetchHtml(fetchImpl, url.href), url.href, fallbackMenu);
 }

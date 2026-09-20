@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { access } from "node:fs/promises";
 import test from "node:test";
 import worker from "../worker/index.js";
-import { extractRecipeUrls, parseRecipePage } from "../worker/hello-fresh-importer.js";
+import { extractRecipeUrls, parseMenuPage, parseRecipePage } from "../worker/hello-fresh-importer.js";
 
 const recipeUrl = "https://www.hellofresh.de/recipes/testgericht-mit-gemuse-1234567890abcdef1234";
 const recipeHtml = `<!doctype html><script type="application/ld+json">${JSON.stringify({
@@ -14,6 +14,24 @@ const recipeHtml = `<!doctype html><script type="application/ld+json">${JSON.str
   recipeYield: 2,
   recipeIngredient: ["400 g Kartoffeln", "1 Stück Zwiebel"],
   recipeInstructions: [{ "@type": "HowToStep", text: "<p>Kartoffeln schneiden.</p>" }],
+})}</script>`;
+const menuHtml = `<!doctype html><script id="__NEXT_DATA__" type="application/json">${JSON.stringify({
+  props: { pageProps: { ssrPayload: {
+    activeWeek: "2026-W40",
+    courses: Array.from({ length: 7 }, (_, index) => ({
+      index,
+      recipe: {
+        id: `recipe-${index}`,
+        name: index < 3 ? `Vegetarisches Gericht ${index + 1}` : `Gericht ${index + 1}`,
+        headline: "Ein Testgericht",
+        imageLink: `https://media.hellofresh.com/${index}.jpg`,
+        prepTime: "PT25M",
+        difficulty: 1,
+        websiteUrl: recipeUrl.replace("testgericht", `testgericht-${index}`),
+        tags: index < 3 ? [{ name: "Vegetarisch", type: "veggie" }] : [],
+      },
+    })),
+  } } },
 })}</script>`;
 
 test("serves existing static assets without a fallback", async () => {
@@ -60,10 +78,7 @@ test("serves the imported menu snapshot through the internal API", async () => {
     new Request("https://example.test/api/menu", { headers: { accept: "application/json" } }),
     {
       HELLOFRESH_FETCH: async (url) => {
-        if (String(url).includes("/essensbox/menu")) {
-          return new Response(Array.from({ length: 4 }, (_, index) =>
-            `<a href="${recipeUrl.replace("testgericht", `testgericht-${index}`)}">Rezept</a>`).join(""));
-        }
+        if (String(url).includes("/menus")) return new Response(menuHtml);
         return new Response(recipeHtml);
       },
       ASSETS: {
@@ -83,8 +98,18 @@ test("serves the imported menu snapshot through the internal API", async () => {
   assert.deepEqual(calls, ["/data/menu.json"]);
   const menu = await response.json();
   assert.equal(menu.dataStatus, "live");
-  assert.equal(menu.recipes.length, 4);
+  assert.equal(menu.week, "2026-W40");
+  assert.equal(menu.availableWeeks.length, 6);
+  assert.equal(menu.recipes.length, 7);
   assert.equal(menu.recipes[0].time, "25 Minuten");
+  assert.equal(menu.recipes[0].dietGroup, "vegetarian");
+});
+
+test("parses every unique available course from a weekly menu", () => {
+  const menu = parseMenuPage(menuHtml, new Date("2026-09-20T10:00:00Z"));
+  assert.equal(menu.weekLabel, "26. September–2. Oktober 2026");
+  assert.equal(menu.totalRecipes, 7);
+  assert.equal(menu.recipes.filter((recipe) => recipe.dietGroup === "vegetarian").length, 3);
 });
 
 test("extracts unique recipe detail URLs and ignores category pages", () => {
@@ -107,8 +132,26 @@ test("turns structured HelloFresh recipe data into the accessible menu shape", (
   assert.match(recipe.ingredients[0].packaging, /Gemüsebeutel/);
 });
 
+test("loads complete recipe details only when a recipe is opened", async () => {
+  const response = await worker.fetch(new Request(`https://example.test/api/recipe?url=${encodeURIComponent(recipeUrl)}`), {
+    HELLOFRESH_FETCH: async () => new Response(recipeHtml),
+    ASSETS: { fetch: async () => Response.json({ recipes: [] }) },
+  });
+  const recipe = await response.json();
+  assert.equal(response.status, 200);
+  assert.equal(recipe.steps[0], "Kartoffeln schneiden.");
+  assert.equal(recipe.ingredients[0].amount, "400 g");
+});
+
+test("rejects arbitrary recipe sources", async () => {
+  const response = await worker.fetch(new Request("https://example.test/api/recipe?url=https%3A%2F%2Fexample.org%2Frecipe"), {
+    ASSETS: { fetch: async () => Response.json({ recipes: [] }) },
+  });
+  assert.equal(response.status, 400);
+});
+
 test("keeps the bundled menu usable when the public source is unavailable", async () => {
-  const snapshot = { importedAt: "20. September 2026", recipes: [{ id: "stored" }] };
+  const snapshot = { weekLabel: "21.–27. September 2026", importedAt: "20. September 2026", recipes: [{ id: "stored" }] };
   const response = await worker.fetch(new Request("https://example.test/api/menu"), {
     HELLOFRESH_FETCH: async () => { throw new Error("offline"); },
     ASSETS: { fetch: async () => Response.json(snapshot) },

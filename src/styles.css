@@ -156,6 +156,34 @@ h1[tabindex="-1"]:focus { outline: none; }
 
 .data-source-note p { margin: 0 0 4px; }
 
+.menu-controls {
+  margin: 18px 0 10px;
+  padding: 20px;
+  border: 2px solid var(--gray-300);
+  border-radius: 6px;
+}
+
+.menu-controls h2 { margin: 0 0 16px; font-size: 24px; }
+.week-select-wrap { display: grid; grid-template-columns: max-content minmax(260px, 480px); align-items: center; gap: 12px 20px; }
+.week-select-wrap label,
+.diet-filter legend { font-weight: 700; }
+.week-select-wrap select {
+  min-height: 52px;
+  padding: 8px 44px 8px 12px;
+  border: 2px solid #555555;
+  border-radius: 5px;
+  background: #ffffff;
+  color: #111111;
+  font: inherit;
+}
+.week-select-wrap select:focus-visible,
+.diet-filter input:focus-visible { outline: 4px solid var(--focus); outline-offset: 3px; }
+.diet-filter { display: flex; flex-wrap: wrap; gap: 10px 24px; margin: 20px 0 0; padding: 0; border: 0; }
+.diet-filter legend { width: 100%; margin-bottom: 8px; }
+.diet-filter label { display: flex; align-items: center; gap: 9px; min-height: 44px; cursor: pointer; }
+.diet-filter input { width: 22px; height: 22px; margin: 0; accent-color: var(--green-800); }
+.result-count { margin: 14px 0 0; font-weight: 700; }
+
 .button {
   min-height: 52px;
   padding: 12px 22px;
@@ -372,6 +400,10 @@ h1[tabindex="-1"]:focus { outline: none; }
   .nav-link { flex: 1; min-width: max-content; }
   .page-shell { width: min(calc(100% - 32px), var(--content-width)); padding-top: 28px; }
   .week-title { text-align: left; }
+  .menu-controls { padding: 16px; }
+  .week-select-wrap { grid-template-columns: 1fr; gap: 6px; }
+  .week-select-wrap select { width: 100%; }
+  .diet-filter { align-items: flex-start; flex-direction: column; gap: 2px; }
   .recipe-row { grid-template-columns: 1fr; gap: 12px; padding: 22px 0; }
   .recipe-visual { grid-template-columns: 36px minmax(0, 1fr); gap: 14px; }
   .recipe-number { grid-row: 1; align-self: start; padding-top: 4px; font-size: 26px; }
