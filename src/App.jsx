@@ -23,8 +23,8 @@ export function App() {
   const previousLocationRef = useRef("menu:");
   const pendingFilterFocusRef = useRef(null);
 
-  const preserveControlFocus = (control) => {
-    pendingFilterFocusRef.current = control;
+  const preserveControlFocus = (control, waitForMenu = false) => {
+    pendingFilterFocusRef.current = { control, waitForMenu };
   };
 
   useEffect(() => {
@@ -133,13 +133,29 @@ export function App() {
   const vegetarianCount = menu.recipes.filter((recipe) => (recipe.dietGroup ?? (["Vegetarisch", "Vegan"].includes(recipe.diet) ? "vegetarian" : "non-vegetarian")) === "vegetarian").length;
   const filtersActive = dietFilter !== "all" || difficultyFilter !== "all" || timeFilter !== "all";
   const currentStepSegments = selectedRecipe ? segmentCookStep(selectedRecipe.steps[stepIndex]) : [];
+  const currentStepLabel = selectedRecipe ? `Schritt ${stepIndex + 1} von ${selectedRecipe.steps.length}` : "";
+  const currentStepAccessibleText = selectedRecipe ? `${currentStepLabel}. ${currentStepSegments[0]}` : "";
 
   useEffect(() => {
-    const control = pendingFilterFocusRef.current;
-    if (!control || view !== "menu" || !document.contains(control)) return;
-    if (document.activeElement !== control) control.focus({ preventScroll: true });
-    pendingFilterFocusRef.current = null;
-  }, [selectedWeek, dietFilter, difficultyFilter, timeFilter, view]);
+    const pendingFocus = pendingFilterFocusRef.current;
+    if (!pendingFocus || view !== "menu" || !document.contains(pendingFocus.control)) return;
+    if (pendingFocus.waitForMenu && menuLoading) return;
+
+    let secondFrame;
+    const firstFrame = requestAnimationFrame(() => {
+      secondFrame = requestAnimationFrame(() => {
+        if (pendingFilterFocusRef.current !== pendingFocus || !document.contains(pendingFocus.control)) return;
+        pendingFocus.control.blur();
+        pendingFocus.control.focus({ preventScroll: true });
+        pendingFilterFocusRef.current = null;
+      });
+    });
+
+    return () => {
+      cancelAnimationFrame(firstFrame);
+      if (secondFrame) cancelAnimationFrame(secondFrame);
+    };
+  }, [selectedWeek, dietFilter, difficultyFilter, timeFilter, view, menuLoading]);
 
   const changeStep = (direction) => {
     if (!selectedRecipe) return;
@@ -182,7 +198,7 @@ export function App() {
                   setTimeFilter("all");
                   setSelectedRecipe(null);
                   setSelectedWeek(control.value);
-                  preserveControlFocus(control);
+                  preserveControlFocus(control, true);
                 }}>
                   {availableWeeks.map((week) => <option key={week.value} value={week.value}>{week.label}</option>)}
                 </select>
@@ -305,7 +321,8 @@ export function App() {
           <article className="cook-view" aria-labelledby="cook-heading">
             <button className="back-link" type="button" onClick={() => navigate("recipe")}>Zurück zu den Rezeptdetails</button>
             <p className="eyebrow">{selectedRecipe.title}</p>
-            <h1 id="cook-heading" ref={pageHeadingRef} tabIndex="-1" aria-label={`Schritt ${stepIndex + 1} von ${selectedRecipe.steps.length}. ${currentStepSegments[0]}`}>Schritt {stepIndex + 1} von {selectedRecipe.steps.length}</h1>
+            <h1 id="cook-heading" className="sr-only" ref={pageHeadingRef} tabIndex="-1">{currentStepAccessibleText}</h1>
+            <div className="cook-step-heading" aria-hidden="true">{currentStepLabel}</div>
             <progress className="step-progress" value={stepIndex + 1} max={selectedRecipe.steps.length} aria-hidden="true">{stepIndex + 1} von {selectedRecipe.steps.length}</progress>
             <div className="step-panel">
               <div className="step-segments">

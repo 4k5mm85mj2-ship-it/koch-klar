@@ -329,14 +329,20 @@ test("keeps only the requested reduced interface guidance", async () => {
 
 test("groups the step label with the first segment for assistive technology", async () => {
   const appSource = await readFile(new URL("../src/App.jsx", import.meta.url), "utf8");
-  assert.match(appSource, /aria-label={`Schritt \$\{stepIndex \+ 1\} von \$\{selectedRecipe\.steps\.length\}\. \$\{currentStepSegments\[0\]\}`}/);
+  assert.match(appSource, /const currentStepAccessibleText = selectedRecipe \? `\$\{currentStepLabel\}\. \$\{currentStepSegments\[0\]\}` : ""/);
+  assert.match(appSource, /<h1 id="cook-heading" className="sr-only"[^>]+>\{currentStepAccessibleText\}<\/h1>/);
+  assert.match(appSource, /<div className="cook-step-heading" aria-hidden="true">\{currentStepLabel\}<\/div>/);
+  assert.doesNotMatch(appSource, /id="cook-heading"[^>]+aria-label=/);
   assert.match(appSource, /aria-hidden=\{index === 0 \? "true" : undefined\}/);
   assert.match(appSource, /className="step-progress"[^>]+aria-hidden="true"/);
 });
 
 test("keeps filter focus and provides contextual back navigation", async () => {
   const appSource = await readFile(new URL("../src/App.jsx", import.meta.url), "utf8");
+  assert.match(appSource, /pendingFocus\.control\.blur\(\)/);
   assert.match(appSource, /control\.focus\(\{ preventScroll: true \}\)/);
+  assert.match(appSource, /requestAnimationFrame\(\(\) =>/);
+  assert.match(appSource, /pendingFocus\.waitForMenu && menuLoading/);
   assert.match(appSource, /pendingFilterFocusRef\.current = null/);
   assert.match(appSource, /aria-disabled=\{!filtersActive\}/);
   assert.match(appSource, /event\.key !== "Escape"/);

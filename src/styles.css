@@ -84,7 +84,8 @@ h1[tabindex="-1"]:focus { outline: none; }
 
 .intro-block h1,
 .recipe-hero h1,
-.cook-view h1 {
+.cook-view h1,
+.cook-step-heading {
   max-width: 980px;
   margin: 0;
   color: #080808;
@@ -270,7 +271,8 @@ h1[tabindex="-1"]:focus { outline: none; }
 .ingredient-list p { max-width: 72ch; margin: 8px 0 0; }
 
 .cook-view { max-width: 980px; margin: 0 auto; }
-.cook-view h1 { font-size: clamp(42px, 6vw, 70px); }
+.cook-view h1,
+.cook-step-heading { font-size: clamp(42px, 6vw, 70px); }
 
 .step-progress {
   width: 100%;
