@@ -12,6 +12,15 @@ async function loadSnapshot(request, env) {
   return response.json();
 }
 
+async function loadWeekBundle(request, env) {
+  const dataUrl = new URL(request.url);
+  dataUrl.pathname = "/data/menu-weeks.json";
+  dataUrl.search = "";
+  const response = await env.ASSETS.fetch(new Request(dataUrl, request));
+  if (!response.ok) throw new Error("Weekly menu data unavailable");
+  return response.json();
+}
+
 function jsonResponse(data, method = "GET") {
   return new Response(method === "HEAD" ? null : JSON.stringify(data), {
     status: 200,
@@ -48,6 +57,17 @@ async function serveMenu(request, env, ctx) {
     return new Response("Invalid week", { status: 400 });
   }
   const fallbackMenu = await loadSnapshot(request, env);
+  let weekBundle = null;
+  try {
+    weekBundle = await loadWeekBundle(request, env);
+  } catch {
+    weekBundle = null;
+  }
+  const bundledWeek = week || weekBundle?.defaultWeek;
+  const bundledMenu = weekBundle?.menus?.[bundledWeek];
+  if (week && weekBundle && !bundledMenu) {
+    return new Response("Menu week unavailable", { status: 404 });
+  }
   const cache = globalThis.caches?.default;
   const cacheKey = `${CACHE_ROOT}/menu-v2/${week ?? "current"}`;
   let cachedMenu = null;
@@ -68,6 +88,16 @@ async function serveMenu(request, env, ctx) {
     const refresh = refreshMenu(env, week, cache, cacheKey).catch(() => undefined);
     ctx?.waitUntil?.(refresh);
     return jsonResponse({ ...cachedMenu, dataStatus: "cached" }, request.method);
+  }
+
+  if (bundledMenu) {
+    const refresh = refreshMenu(env, week, cache, cacheKey).catch(() => undefined);
+    ctx?.waitUntil?.(refresh);
+    return jsonResponse({
+      ...bundledMenu,
+      availableWeeks: weekBundle.availableWeeks,
+      dataStatus: "snapshot",
+    }, request.method);
   }
 
   try {

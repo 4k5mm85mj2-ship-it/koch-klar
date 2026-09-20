@@ -10,8 +10,9 @@ const worker = path.join(root, "worker", "index.js");
 const importer = path.join(root, "worker", "hello-fresh-importer.js");
 const hosting = path.join(root, ".openai", "hosting.json");
 const menuSnapshot = path.join(root, "src", "data", "menu-snapshot.json");
+const menuWeeks = path.join(root, "src", "data", "menu-weeks.json");
 
-for (const file of [index, worker, importer, hosting, menuSnapshot]) {
+for (const file of [index, worker, importer, hosting, menuSnapshot, menuWeeks]) {
   if (!existsSync(file)) throw new Error("Missing Sites build input: " + file);
 }
 
@@ -22,5 +23,6 @@ copyFileSync(worker, path.join(dist, "server", "index.js"));
 copyFileSync(importer, path.join(dist, "server", "hello-fresh-importer.js"));
 copyFileSync(hosting, path.join(dist, ".openai", "hosting.json"));
 copyFileSync(menuSnapshot, path.join(dist, "client", "data", "menu.json"));
+copyFileSync(menuWeeks, path.join(dist, "client", "data", "menu-weeks.json"));
 
 console.log("Prepared Sites build: worker, importer, hosting manifest, and menu snapshot");

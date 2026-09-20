@@ -1,5 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import fallbackMenu from "./data/menu-snapshot.json";
+import menuWeeks from "./data/menu-weeks.json";
+
+const bundledDefaultMenu = menuWeeks.menus?.[menuWeeks.defaultWeek] ?? fallbackMenu;
 
 function Navigation({ view, recipe, onNavigate }) {
   return (
@@ -12,7 +15,7 @@ function Navigation({ view, recipe, onNavigate }) {
 }
 
 export function App() {
-  const [menu, setMenu] = useState(fallbackMenu);
+  const [menu, setMenu] = useState({ ...bundledDefaultMenu, dataStatus: "snapshot" });
   const [selectedWeek, setSelectedWeek] = useState("");
   const [dietFilter, setDietFilter] = useState("all");
   const [menuLoading, setMenuLoading] = useState(true);
@@ -49,8 +52,14 @@ export function App() {
         setAnnouncement(`${importedMenu.weekLabel} mit ${importedMenu.recipes.length} Gerichten geladen.`);
       } catch (error) {
         if (error.name !== "AbortError") {
-          setAnnouncement("Diese Woche konnte nicht geladen werden. Das bisherige Menü bleibt geöffnet.");
-          if (selectedWeek) setSelectedWeek("");
+          const bundledWeek = selectedWeek || menuWeeks.defaultWeek;
+          const bundledMenu = menuWeeks.menus?.[bundledWeek];
+          if (bundledMenu) {
+            setMenu({ ...bundledMenu, availableWeeks: menuWeeks.availableWeeks, dataStatus: "snapshot" });
+            setAnnouncement(`${bundledMenu.weekLabel} mit ${bundledMenu.recipes.length} Gerichten aus dem gespeicherten Wochenstand geladen.`);
+          } else {
+            setAnnouncement("Diese Woche konnte nicht geladen werden. Das bisherige Menü bleibt geöffnet.");
+          }
         }
       } finally {
         if (!controller.signal.aborted) setMenuLoading(false);
@@ -160,12 +169,14 @@ export function App() {
                   {availableWeeks.map((week) => <option key={week.value} value={week.value}>{week.label}</option>)}
                 </select>
               </div>
-              <fieldset className="diet-filter">
-                <legend>Gerichte filtern</legend>
-                <label><input type="radio" name="diet" value="all" checked={dietFilter === "all"} onChange={() => setDietFilter("all")} /> Alle ({menu.recipes.length})</label>
-                <label><input type="radio" name="diet" value="vegetarian" checked={dietFilter === "vegetarian"} onChange={() => setDietFilter("vegetarian")} /> Vegetarisch und vegan ({vegetarianCount})</label>
-                <label><input type="radio" name="diet" value="non-vegetarian" checked={dietFilter === "non-vegetarian"} onChange={() => setDietFilter("non-vegetarian")} /> Nicht vegetarisch ({menu.recipes.length - vegetarianCount})</label>
-              </fieldset>
+              <div className="diet-filter">
+                <label htmlFor="diet-select">Gerichte auswählen</label>
+                <select id="diet-select" value={dietFilter} onChange={(event) => setDietFilter(event.target.value)}>
+                  <option value="all">Alle ({menu.recipes.length})</option>
+                  <option value="vegetarian">Vegetarisch und vegan ({vegetarianCount})</option>
+                  <option value="non-vegetarian">Nicht vegetarisch ({menu.recipes.length - vegetarianCount})</option>
+                </select>
+              </div>
               <p className="result-count" aria-live="polite" aria-atomic="true">{menuLoading ? "Wochenmenü wird geladen." : `${filteredRecipes.length} ${filteredRecipes.length === 1 ? "Gericht" : "Gerichte"} angezeigt.`}</p>
             </section>
 
@@ -174,7 +185,9 @@ export function App() {
                 ? `Echte Rezeptdaten von ${menu.sourceName}. Automatisch aktualisiert am ${menu.importedAt}.`
                 : menu.dataStatus === "cached"
                   ? `Echte Rezeptdaten von ${menu.sourceName}. Zuletzt erfolgreich aktualisiert am ${menu.importedAt}; eine neue Prüfung läuft im Hintergrund.`
-                  : `Echte Rezeptdaten von ${menu.sourceName}, importiert am ${menu.importedAt}. Gespeicherter Datenstand geladen.`}</p>
+                  : menu.dataStatus === "snapshot"
+                    ? `Echte Rezeptdaten von ${menu.sourceName}, importiert am ${menu.importedAt}. Vollständiger gespeicherter Wochenstand geladen.`
+                    : `Echte Rezeptdaten von ${menu.sourceName}, importiert am ${menu.importedAt}. Gespeicherter Datenstand geladen.`}</p>
               <a className="text-link" href={menu.sourceUrl} target="_blank" rel="noreferrer">Öffentliches HelloFresh-Wochenmenü öffnen</a>
             </aside>
 

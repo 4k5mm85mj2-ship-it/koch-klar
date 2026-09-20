@@ -95,7 +95,7 @@ test("serves the imported menu snapshot through the internal API", async () => {
 
   assert.equal(response.status, 200);
   assert.equal(response.headers.get("content-type"), "application/json; charset=utf-8");
-  assert.deepEqual(calls, ["/data/menu.json"]);
+  assert.deepEqual(calls, ["/data/menu.json", "/data/menu-weeks.json"]);
   const menu = await response.json();
   assert.equal(menu.dataStatus, "live");
   assert.equal(menu.week, "2026-W40");
@@ -161,6 +161,31 @@ test("keeps the bundled menu usable when the public source is unavailable", asyn
   assert.deepEqual(menu.recipes, snapshot.recipes);
 });
 
+test("serves a complete bundled week immediately when the public source is unavailable", async () => {
+  const storedWeek = {
+    week: "2026-W40",
+    weekLabel: "26. September–2. Oktober 2026",
+    importedAt: "20. September 2026",
+    sourceName: "HelloFresh Deutschland",
+    recipes: Array.from({ length: 100 }, (_, index) => ({ id: `stored-${index}` })),
+  };
+  const bundle = {
+    defaultWeek: "2026-W40",
+    availableWeeks: [{ value: "2026-W40", label: storedWeek.weekLabel }],
+    menus: { "2026-W40": storedWeek },
+  };
+  const response = await worker.fetch(new Request("https://example.test/api/menu?week=2026-W40"), {
+    HELLOFRESH_FETCH: async () => { throw new Error("offline"); },
+    ASSETS: {
+      fetch: async (request) => Response.json(new URL(request.url).pathname.endsWith("menu-weeks.json") ? bundle : { recipes: [] }),
+    },
+  }, { waitUntil() {} });
+  const menu = await response.json();
+  assert.equal(response.status, 200);
+  assert.equal(menu.dataStatus, "snapshot");
+  assert.equal(menu.recipes.length, 100);
+});
+
 test("does not turn missing API or write requests into the app shell", async () => {
   for (const request of [
     new Request("https://example.test/api/missing", { headers: { accept: "application/json" } }),
@@ -187,4 +212,5 @@ test("emits the files required by Sites packaging", async () => {
   await access(new URL("../dist/server/hello-fresh-importer.js", import.meta.url));
   await access(new URL("../dist/.openai/hosting.json", import.meta.url));
   await access(new URL("../dist/client/data/menu.json", import.meta.url));
+  await access(new URL("../dist/client/data/menu-weeks.json", import.meta.url));
 });
