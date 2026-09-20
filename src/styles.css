@@ -138,13 +138,7 @@ h1[tabindex="-1"]:focus { outline: none; }
   font-size: 21px;
 }
 
-.week-switcher {
-  display: grid;
-  grid-template-columns: minmax(180px, 220px) 1fr minmax(180px, 220px);
-  align-items: center;
-  gap: 28px;
-  margin: 22px 0 8px;
-}
+.week-heading { margin: 22px 0 10px; }
 
 .week-title {
   margin: 0;
@@ -152,6 +146,15 @@ h1[tabindex="-1"]:focus { outline: none; }
   font-size: clamp(24px, 3vw, 34px);
   line-height: 1.2;
 }
+
+.data-source-note {
+  margin: 0 0 10px;
+  padding: 14px 18px;
+  border-left: 5px solid var(--green-800);
+  background: var(--cream-100);
+}
+
+.data-source-note p { margin: 0 0 4px; }
 
 .button {
   min-height: 52px;
@@ -285,6 +288,7 @@ h1[tabindex="-1"]:focus { outline: none; }
 
 .recipe-quick-actions .button--large { margin-top: 0; }
 
+.source-link { display: inline-block; margin-top: 22px; }
 .recipe-return-link { display: block; width: max-content; margin-top: 24px; }
 
 .recipe-hero-image {
@@ -367,8 +371,7 @@ h1[tabindex="-1"]:focus { outline: none; }
   .main-nav { width: 100%; gap: 0; overflow-x: auto; }
   .nav-link { flex: 1; min-width: max-content; }
   .page-shell { width: min(calc(100% - 32px), var(--content-width)); padding-top: 28px; }
-  .week-switcher { grid-template-columns: 1fr 1fr; gap: 12px; }
-  .week-title { grid-column: 1 / -1; grid-row: 1; margin-bottom: 6px; }
+  .week-title { text-align: left; }
   .recipe-row { grid-template-columns: 1fr; gap: 12px; padding: 22px 0; }
   .recipe-visual { grid-template-columns: 36px minmax(0, 1fr); gap: 14px; }
   .recipe-number { grid-row: 1; align-self: start; padding-top: 4px; font-size: 26px; }

@@ -1,113 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-
-const weeks = [
-  "7.–13. September 2026",
-  "14.–20. September 2026",
-  "21.–27. September 2026",
-];
-
-const recipes = [
-  {
-    id: "pasta-tomate-basilikum",
-    title: "Pasta mit Tomaten-Basilikum-Sauce",
-    diet: "Vegetarisch",
-    time: "25 Minuten",
-    difficulty: "einfach",
-    image: "/assets/pasta-tomate-basilikum.webp",
-    alt: "Spaghetti mit Tomatensauce, Kirschtomaten, Basilikum und geriebenem Käse in einer weißen Schale.",
-    intro: "Eine unkomplizierte Pasta mit fruchtiger Tomatensauce, frischem Basilikum und würzigem Hartkäse.",
-    servings: "2 Portionen",
-    ingredients: [
-      { name: "Spaghetti", amount: "250 g", packaging: "Durchsichtiger, länglicher Kunststoffbeutel mit hellen, festen Nudeln." },
-      { name: "Tomatensauce", amount: "250 ml", packaging: "Kleiner roter Getränkekarton mit weißem Schraubverschluss; beim Schütteln flüssiger Inhalt." },
-      { name: "Kirschtomaten", amount: "150 g", packaging: "Kleine, durchsichtige Kunststoffschale mit Folienverschluss; runde feste Tomaten sind tastbar." },
-      { name: "Basilikum", amount: "10 g", packaging: "Sehr leichter, flacher Klarsichtbeutel mit weichen Blättern und kräftigem Kräuterduft." },
-      { name: "Geriebener Hartkäse", amount: "40 g", packaging: "Kleiner, flacher Klarsichtbeutel; der fein geriebene Inhalt fühlt sich locker und körnig an." },
-    ],
-    steps: [
-      "Bringe in einem großen Topf reichlich gesalzenes Wasser zum Kochen.",
-      "Gib die Spaghetti in das kochende Wasser und koche sie etwa 9 Minuten bissfest. Rühre nach der ersten Minute einmal um.",
-      "Halbiere währenddessen die Kirschtomaten. Zupfe die Basilikumblätter ab und schneide sie grob.",
-      "Erwärme die Tomatensauce in einer großen Pfanne. Gib die Tomaten hinzu und lasse alles 4 Minuten leise köcheln.",
-      "Gieße die Nudeln ab, mische sie mit der Sauce und verteile alles auf zwei Teller. Gib Basilikum und Käse darüber.",
-    ],
-  },
-  {
-    id: "haehnchen-gemuese-reis",
-    title: "Hähnchenbrust mit Gemüse und Reis",
-    diet: "Mit Fleisch",
-    time: "30 Minuten",
-    difficulty: "einfach",
-    image: "/assets/haehnchen-gemuese-reis.webp",
-    alt: "Gebratene Hähnchenbrust mit Reis, Brokkoli, roter Paprika und Zucchini in einer weißen Schale.",
-    intro: "Saftige Hähnchenbrust mit buntem Pfannengemüse und lockerem Reis.",
-    servings: "2 Portionen",
-    ingredients: [
-      { name: "Hähnchenbrustfilets", amount: "300 g", packaging: "Flacher, rechteckiger Vakuumbeutel mit zwei weichen Fleischstücken und einem weißen Etikett." },
-      { name: "Reis", amount: "150 g", packaging: "Kleiner, durchsichtiger Kunststoffbeutel; die trockenen Körner rieseln deutlich hörbar." },
-      { name: "Brokkoli", amount: "1 kleiner Kopf", packaging: "Lose oder in dünner Folie; fester Stiel mit deutlich tastbaren, dicht verzweigten Röschen." },
-      { name: "Rote Paprika", amount: "1 Stück", packaging: "Lose; glatte, feste, hohle Frucht mit Stielansatz." },
-      { name: "Gewürzmischung", amount: "5 g", packaging: "Sehr kleines, flaches Sachet mit geriffelter Schweißnaht; feines Pulver im Inneren." },
-    ],
-    steps: [
-      "Spüle den Reis in einem Sieb ab und koche ihn mit 300 Millilitern leicht gesalzenem Wasser auf.",
-      "Lasse den Reis zugedeckt bei kleiner Hitze etwa 15 Minuten garen.",
-      "Teile den Brokkoli in kleine Röschen und schneide die Paprika in mundgerechte Stücke.",
-      "Würze die Hähnchenbrust und brate sie in einer großen Pfanne je Seite 5 bis 6 Minuten. Nimm sie anschließend kurz heraus.",
-      "Brate das Gemüse 6 Minuten in derselben Pfanne. Schneide das Hähnchen in Scheiben und serviere es mit Gemüse und Reis.",
-    ],
-  },
-  {
-    id: "linsen-eintopf",
-    title: "Linsen-Eintopf mit Wurzelgemüse",
-    diet: "Vegetarisch",
-    time: "40 Minuten",
-    difficulty: "mittel",
-    image: "/assets/linsen-eintopf.webp",
-    alt: "Brauner Linseneintopf mit Karotten, Kartoffeln, Sellerie und Petersilie in einer hellen Schale.",
-    intro: "Ein herzhafter, wärmender Eintopf mit Linsen, Kartoffeln und aromatischem Wurzelgemüse.",
-    servings: "2 Portionen",
-    ingredients: [
-      { name: "Vorgegarte Linsen", amount: "250 g", packaging: "Weicher, standfester Kunststoffbeutel; der körnige, feuchte Inhalt lässt sich durch die Folie ertasten." },
-      { name: "Kartoffeln", amount: "300 g", packaging: "Kleines Netz mit drei bis fünf festen, unregelmäßig runden Knollen." },
-      { name: "Karotten", amount: "2 Stück", packaging: "Lose oder im durchsichtigen Beutel; länglich, fest und zum dünnen Ende spitz zulaufend." },
-      { name: "Knollensellerie", amount: "150 g", packaging: "Festes, helles Gemüsestück in eng anliegender Klarsichtfolie; unregelmäßige Oberfläche." },
-      { name: "Gemüsebrühe", amount: "10 g", packaging: "Kleines, flaches Papiersachet; feinkörniges Pulver und deutlich versiegelte Ränder." },
-    ],
-    steps: [
-      "Schäle Kartoffeln, Karotten und Sellerie und schneide alles in etwa zwei Zentimeter große Stücke.",
-      "Erhitze etwas Öl in einem großen Topf und brate das Gemüse 5 Minuten an. Rühre dabei mehrmals um.",
-      "Gib 700 Milliliter Wasser und die Gemüsebrühe hinzu und bringe alles zum Kochen.",
-      "Lasse den Eintopf zugedeckt bei mittlerer Hitze 20 Minuten köcheln, bis das Gemüse weich ist.",
-      "Gib die Linsen hinzu, erwärme alles weitere 5 Minuten und schmecke den Eintopf mit Salz und Pfeffer ab.",
-    ],
-  },
-  {
-    id: "lachs-kartoffeln-bohnen",
-    title: "Lachs aus dem Ofen mit Kartoffeln und Bohnen",
-    diet: "Mit Fisch",
-    time: "35 Minuten",
-    difficulty: "einfach",
-    image: "/assets/lachs-kartoffeln-bohnen.webp",
-    alt: "Ofenlachs mit gerösteten Kartoffeln, grünen Bohnen und einer Zitronenspalte auf einem weißen Teller.",
-    intro: "Zarter Ofenlachs mit goldenen Kartoffeln, grünen Bohnen und frischer Zitrone.",
-    servings: "2 Portionen",
-    ingredients: [
-      { name: "Lachsfilets", amount: "250 g", packaging: "Flache, rechteckige Kunststoffschale mit dunklem Boden und durchsichtiger Folie; zwei weiche Filetstücke sind tastbar." },
-      { name: "Kleine Kartoffeln", amount: "400 g", packaging: "Kleines Netz mit vielen festen, etwa walnussgroßen Knollen." },
-      { name: "Grüne Bohnen", amount: "200 g", packaging: "Länglicher Klarsichtbeutel mit vielen dünnen, festen Bohnen; die Enden sind durch die Folie tastbar." },
-      { name: "Zitrone", amount: "1 Stück", packaging: "Lose oder im dünnen Netz; ovale, feste Frucht mit fein genoppter Schale." },
-      { name: "Kräutermischung", amount: "5 g", packaging: "Kleines, flaches Sachet; getrocknete Kräuter rascheln beim Bewegen." },
-    ],
-    steps: [
-      "Heize den Backofen auf 220 Grad Ober- und Unterhitze vor.",
-      "Halbiere die Kartoffeln, mische sie mit etwas Öl und Salz und backe sie auf einem Blech 15 Minuten vor.",
-      "Schneide die Enden der Bohnen ab. Gib die Bohnen zu den Kartoffeln und backe alles weitere 8 Minuten.",
-      "Lege die Lachsfilets auf das Blech, würze sie mit der Kräutermischung und backe alles weitere 10 bis 12 Minuten.",
-      "Halbiere die Zitrone. Richte Lachs, Kartoffeln und Bohnen auf Tellern an und träufle etwas Zitronensaft darüber.",
-    ],
-  },
-];
+import fallbackMenu from "./data/menu-snapshot.json";
 
 function Navigation({ view, recipe, onNavigate }) {
   return (
@@ -120,8 +12,9 @@ function Navigation({ view, recipe, onNavigate }) {
 }
 
 export function App() {
+  const [menu, setMenu] = useState(fallbackMenu);
+  const [dataMode, setDataMode] = useState("fallback");
   const [view, setView] = useState("menu");
-  const [weekIndex, setWeekIndex] = useState(1);
   const [selectedRecipe, setSelectedRecipe] = useState(null);
   const [stepIndex, setStepIndex] = useState(0);
   const [announcement, setAnnouncement] = useState("");
@@ -134,10 +27,33 @@ export function App() {
   }, []);
 
   useEffect(() => {
-    const nextLocation = `${view}:${selectedRecipe?.id ?? ""}`;
-    if (previousLocationRef.current === nextLocation) {
-      return;
+    const controller = new AbortController();
+
+    async function loadMenu() {
+      try {
+        const response = await fetch("/api/menu", {
+          headers: { accept: "application/json" },
+          signal: controller.signal,
+        });
+        if (!response.ok) throw new Error("Menü konnte nicht geladen werden.");
+        const importedMenu = await response.json();
+        if (!Array.isArray(importedMenu.recipes) || importedMenu.recipes.length === 0) {
+          throw new Error("Menü enthält keine Rezepte.");
+        }
+        setMenu(importedMenu);
+        setDataMode("api");
+      } catch (error) {
+        if (error.name !== "AbortError") setDataMode("fallback");
+      }
     }
+
+    loadMenu();
+    return () => controller.abort();
+  }, []);
+
+  useEffect(() => {
+    const nextLocation = `${view}:${selectedRecipe?.id ?? ""}`;
+    if (previousLocationRef.current === nextLocation) return;
     previousLocationRef.current = nextLocation;
     if (view === "cook") {
       stepTextRef.current?.focus();
@@ -157,13 +73,6 @@ export function App() {
     setSelectedRecipe(recipe);
     setView("recipe");
     setAnnouncement(`${recipe.title} geöffnet.`);
-  };
-
-  const changeWeek = (direction) => {
-    const nextIndex = weekIndex + direction;
-    if (nextIndex < 0 || nextIndex >= weeks.length) return;
-    setWeekIndex(nextIndex);
-    setAnnouncement(`Wochenmenü ${weeks[nextIndex]} geladen.`);
   };
 
   const changeStep = (direction) => {
@@ -198,16 +107,19 @@ export function App() {
               <p>Wähle ein Gericht. Danach erhältst du Zutaten, Verpackungsbeschreibungen und Kochschritte.</p>
             </div>
 
-            <div className="week-switcher" aria-label="Woche auswählen">
-              <button className="button button--secondary" type="button" disabled={weekIndex === 0} onClick={() => changeWeek(-1)}>Vorherige Woche</button>
-              <h2 className="week-title">{weeks[weekIndex]}</h2>
-              <button className="button button--secondary" type="button" disabled={weekIndex === weeks.length - 1} onClick={() => changeWeek(1)}>Nächste Woche</button>
+            <div className="week-heading">
+              <h2 className="week-title">{menu.weekLabel}</h2>
             </div>
 
+            <aside className="data-source-note" aria-label="Datenquelle">
+              <p>{`Echte Rezeptdaten von ${menu.sourceName}, importiert am ${menu.importedAt}. ${dataMode === "api" ? "Über die interne Datenschnittstelle geladen." : "Gespeicherter Datenstand geladen."}`}</p>
+              <a className="text-link" href={menu.sourceUrl} target="_blank" rel="noreferrer">Öffentliches HelloFresh-Rezeptarchiv öffnen</a>
+            </aside>
+
             <ol className="recipe-list">
-              {recipes.map((recipe, index) => (
+              {menu.recipes.map((recipe, index) => (
                 <li className="recipe-row" key={recipe.id}>
-                  <div className="recipe-visual" role="img" aria-label={`Gericht ${index + 1} von ${recipes.length}. ${recipe.alt}`}>
+                  <div className="recipe-visual" role="img" aria-label={`Gericht ${index + 1} von ${menu.recipes.length}. ${recipe.alt}`}>
                     <span className="recipe-number" aria-hidden="true">{index + 1}.</span>
                     <img className="recipe-thumbnail" src={recipe.image} alt="" aria-hidden="true" width="320" height="180" />
                   </div>
@@ -245,6 +157,7 @@ export function App() {
                   <button className="button button--primary button--large" type="button" onClick={startCooking}>Kochmodus starten</button>
                   <a className="text-link" href="#ingredients">Direkt zur Zutatenliste</a>
                 </div>
+                <a className="text-link source-link" href={selectedRecipe.sourceUrl} target="_blank" rel="noreferrer">Originalrezept bei HelloFresh öffnen</a>
               </div>
               <img className="recipe-hero-image" src={selectedRecipe.image} alt={selectedRecipe.alt} width="1200" height="800" />
             </div>
@@ -252,7 +165,7 @@ export function App() {
             <section id="ingredients" className="content-section" aria-labelledby="ingredients-heading">
               <p className="eyebrow">Mengen und Erkennungsmerkmale</p>
               <h2 id="ingredients-heading">Zutaten und Verpackungen</h2>
-              <p className="section-intro">Die Verpackungsbeschreibungen sind beispielhaft und helfen dir, die Zutaten durch Form, Material und Inhalt zu unterscheiden.</p>
+              <p className="section-intro">Die Mengen stammen aus dem öffentlichen Originalrezept für zwei Portionen. Die Verpackungsbeschreibungen sind unsere beispielhafte Ergänzung und können je nach Lieferung abweichen.</p>
               <ul className="ingredient-list">
                 {selectedRecipe.ingredients.map((ingredient) => (
                   <li key={ingredient.name}>
@@ -294,7 +207,7 @@ export function App() {
         )}
       </main>
 
-      <footer className="site-footer"><p>Funktionaler Prototyp ohne Anmeldung und Bestellung.</p></footer>
+      <footer className="site-footer"><p>Funktionaler Prototyp ohne Anmeldung und Bestellung. Rezeptdaten: HelloFresh; Verpackungsbeschreibungen: eigene Ergänzung.</p></footer>
     </>
   );
 }

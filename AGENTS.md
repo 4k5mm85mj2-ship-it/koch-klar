@@ -20,5 +20,7 @@ When implementing from a selected generated mock, treat that image as the source
 - Render weekly-menu time and difficulty as separate complete text nodes, and recipe-detail portion, time, and difficulty as one complete text node each, so every label-value pair is a single VoiceOver stop.
 - Keep a “Zurück zum Wochenmenü” link after the lower “Kochmodus starten” action in recipe details.
 - Render each ingredient as exactly two literal text nodes: one combines ingredient name and quantity, and the second combines “Verpackung erkennen” with the complete packaging description. This keeps each pair together as one VoiceOver stop.
+- Load the menu through the Site's internal read-only `/api/menu` endpoint, backed by a versioned snapshot of public HelloFresh recipe data. Keep the same snapshot compiled into the client as an offline fallback.
+- Clearly distinguish imported HelloFresh recipe data from the prototype's own example packaging descriptions, and link every recipe to its public original source.
 
 Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts/prepare-sites-build.mjs`, and `tests/sites-worker.test.mjs` intact so the same local prototype can be handed to Sites. Before a Sites handoff, run `npm run build` and `npm run test:sites`; the build must leave `dist/client/index.html`, `dist/server/index.js`, and `dist/.openai/hosting.json`.

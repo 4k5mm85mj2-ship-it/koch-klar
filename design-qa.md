@@ -52,6 +52,8 @@ A separate crop was not needed because the normalized full-view comparison is at
 - Each weekly-menu number and dish image is exposed as one atomic image element named “Gericht X von Y” plus the complete image description; the visible number is no longer a separate VoiceOver navigation stop.
 - Weekly-menu total time and difficulty are exposed as one complete paragraph each. Recipe-detail portions, time, and difficulty are exposed as one complete list item each, preventing separate VoiceOver stops for labels and values.
 - Every ingredient exposes exactly two atomic text units: its name and quantity together, followed by “Verpackung erkennen” and the complete packaging description together.
+- The weekly menu now loads four genuine HelloFresh recipes from the internal read-only menu endpoint, including official source links, images, quantities, and cooking steps. The bundled snapshot remains available as a silent fallback.
+- The interface identifies HelloFresh as the recipe-data source and labels the tactile packaging descriptions as the prototype's own examples that can vary by delivery.
 - The lower preparation action is followed by a “Zurück zum Wochenmenü” link; activating it returns to the menu and focuses its level-one heading.
 - Browser console checked: no application errors; observed errors originated only from the browser’s installed extension, not `terminal.local`.
 

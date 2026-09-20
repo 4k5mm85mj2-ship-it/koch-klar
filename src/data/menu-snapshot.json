@@ -1,0 +1,126 @@
+{
+  "weekLabel": "21.–27. September 2026",
+  "importedAt": "20. September 2026",
+  "sourceName": "HelloFresh Deutschland",
+  "sourceUrl": "https://www.hellofresh.de/recipes",
+  "recipes": [
+    {
+      "id": "schweinegulasch-petersilienkartoffeln",
+      "title": "Schweinegulasch mit Petersilienkartoffeln",
+      "diet": "Mit Fleisch",
+      "time": "30 Minuten",
+      "difficulty": "einfach",
+      "image": "https://media.hellofresh.com/q_100%2Cw_3840%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R01_W37_GL_R59907-1_main_high-4348f6da.jpg",
+      "alt": "Schweinegulasch mit roter Paprika, Petersilienkartoffeln und einem Klecks saurer Sahne auf einem hellen Teller.",
+      "intro": "Wirtshausklassiker neu entdecken: Schweinefilet in würziger Gulaschsoße mit Petersilienkartoffeln und saurer Sahne.",
+      "servings": "2 Portionen",
+      "sourceUrl": "https://www.hellofresh.de/recipes/schweinegulasch-mit-petersilienkartoffeln-6a3becf44e4b173945bdeab2",
+      "ingredients": [
+        { "name": "Vorwiegend festkochende Kartoffeln", "amount": "400 g", "packaging": "Kleines Kunststoffnetz mit mehreren festen, unregelmäßig runden Knollen." },
+        { "name": "Petersilie, glatt", "amount": "10 g", "packaging": "Sehr leichter, flacher Klarsichtbeutel mit weichen Blättern und dünnen Stielen." },
+        { "name": "Zwiebeln", "amount": "2 Stück", "packaging": "Lose im Zutatenbeutel; rund bis oval mit trockener, raschelnder Schale." },
+        { "name": "Paprika multicolor", "amount": "1 Stück", "packaging": "Lose im Zutatenbeutel; glatte, feste und hohle Frucht mit deutlich tastbarem Stiel." },
+        { "name": "Knoblauchzehen", "amount": "2 Stück", "packaging": "Kleine feste Zehen mit trockener, papierartiger Schale, lose im Zutatenbeutel." },
+        { "name": "Tomatenmark", "amount": "17,5 g", "packaging": "Kleines flaches Portionssachet mit weichem, dickflüssigem Inhalt." },
+        { "name": "Worcester Sauce", "amount": "8 g", "packaging": "Sehr kleines flaches Kunststoffsachet mit flüssigem Inhalt und versiegelten Rändern." },
+        { "name": "Rinderbrühe", "amount": "6 g", "packaging": "Kleines flaches Sachet mit feinkörnigem Pulver." },
+        { "name": "Saure Sahne, Bio", "amount": "100 g", "packaging": "Kleiner runder Kunststoffbecher mit abziehbarem Folienverschluss." },
+        { "name": "Schweinefilet", "amount": "250 g", "packaging": "Flacher, rechteckiger Vakuumbeutel mit weichem Fleischstück und weißem Etikett." },
+        { "name": "Gewürzmischung Gulaschgewürz", "amount": "6 g", "packaging": "Kleines flaches Sachet mit feinem Gewürzpulver und geriffelter Schweißnaht." }
+      ],
+      "steps": [
+        "Erhitze reichlich Wasser. Schäle die Kartoffeln nach Belieben. Fülle heißes Wasser in einen großen Topf mit Deckel, salze kräftig und koche die Kartoffeln darin abgedeckt 15 bis 20 Minuten, bis sie gar sind.",
+        "Würfle die Zwiebeln grob. Halbiere und entkerne die Paprika und schneide sie in 2 Zentimeter große Würfel. Hacke Knoblauch und Petersilie fein. Schneide das Schweinefilet in 2 Zentimeter große Würfel und vermenge es mit Salz, Pfeffer und 1 Esslöffel Mehl.",
+        "Erhitze in einem zweiten großen Topf 1 Esslöffel Öl. Brate das Schweinefilet darin 2 bis 3 Minuten rundum goldbraun an. Nimm es heraus und stelle es beiseite.",
+        "Gib Tomatenmark, Zwiebeln, Knoblauch, Brühepulver, Gulaschgewürz und 1 Teelöffel Zucker in den Topf und brate alles 3 bis 4 Minuten an. Lösche mit Worcester Sauce und 400 Millilitern Wasser ab. Lasse das Gulasch abgedeckt etwa 15 Minuten köcheln.",
+        "Gieße die Kartoffeln ab und würze sie mit der Hälfte der Petersilie, 1 Esslöffel Butter, Salz und Pfeffer. Gib das Fleisch für die letzten 5 Minuten zur Soße und gare es abgedeckt, bis es innen nur noch leicht rosa ist. Schmecke das Gulasch mit Salz, Pfeffer und Zucker ab.",
+        "Verteile das Gulasch auf tiefe Teller. Richte die Petersilienkartoffeln daneben an und garniere alles mit saurer Sahne und der restlichen Petersilie."
+      ]
+    },
+    {
+      "id": "spaghetti-calabrese",
+      "title": "Spaghetti Calabrese mit Bacon-Käse-Topping",
+      "diet": "Mit Fleisch",
+      "time": "15 Minuten",
+      "difficulty": "einfach",
+      "image": "https://media.hellofresh.com/q_100%2Cw_3840%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/R24_W29_DE_EXP25587-1_Main_high-931d70bf.jpg",
+      "alt": "Spaghetti in cremiger Calabrese-Soße mit buntem Gemüse, Bacon, geriebenem Käse und Kräutern in einem tiefen Teller.",
+      "intro": "Schnelle Spaghetti in cremiger Calabrese-Soße mit Gemüse-Mix und einem würzigen Bacon-Käse-Kräuter-Topping.",
+      "servings": "2 Portionen",
+      "sourceUrl": "https://www.hellofresh.de/recipes/spaghetti-calabrese-mit-bacon-kase-topping-6a3bea1cf396cfc62f2aa508",
+      "ingredients": [
+        { "name": "Baconstreifen", "amount": "80 g", "packaging": "Flacher, transparenter Vakuumbeutel mit kurzen weichen Fleischstreifen." },
+        { "name": "Spaghetti", "amount": "270 g", "packaging": "Länglicher, durchsichtiger Kunststoffbeutel mit langen, harten Nudeln." },
+        { "name": "Kochsahne leicht", "amount": "150 g", "packaging": "Kleiner standfester Getränkekarton mit Schraubverschluss; flüssiger Inhalt." },
+        { "name": "Calabrese Pesto", "amount": "50 g", "packaging": "Kleiner flacher Kunststoffbeutel mit weichem, dickflüssigem Inhalt." },
+        { "name": "Basilikum und Oregano", "amount": "10 g", "packaging": "Leichter Klarsichtbeutel mit weichen Blättern und dünnen Kräuterstielen." },
+        { "name": "Hühnerbrühe", "amount": "4 g", "packaging": "Sehr kleines flaches Sachet mit feinkörnigem Pulver." },
+        { "name": "Knoblauchzehe", "amount": "1 Stück", "packaging": "Kleine feste Zehe mit trockener, papierartiger Schale, lose im Zutatenbeutel." },
+        { "name": "Milder Chili-Mix", "amount": "2 g", "packaging": "Sehr kleines flaches Gewürzsachet mit feinem Pulver." },
+        { "name": "Geriebener Hartkäse italienischer Art", "amount": "20 g", "packaging": "Kleiner flacher Klarsichtbeutel; der fein geriebene Inhalt fühlt sich locker und körnig an." },
+        { "name": "Stir Fry Mix", "amount": "400 g", "packaging": "Großer transparenter Kunststoffbeutel mit gemischten, vorgeschnittenen Gemüsestücken." }
+      ],
+      "steps": [
+        "Erhitze reichlich Wasser. Hacke den Knoblauch fein. Brate Bacon, Knoblauch und Chili-Mix in einer großen Pfanne ohne weiteres Fett 3 bis 4 Minuten an und gib alles anschließend in eine kleine Schüssel. Bringe gleichzeitig in einem großen Topf gesalzenes Wasser zum Kochen und gare die Spaghetti darin 7 bis 8 Minuten bissfest.",
+        "Erhitze in derselben Pfanne 1 Esslöffel Olivenöl und brate den Gemüse-Mix 3 bis 4 Minuten an. Hacke die Kräuter fein. Lösche das Gemüse mit 100 Millilitern Wasser, Calabrese Pesto, Kochsahne und Brühepulver ab und lasse die Soße 2 bis 3 Minuten einkochen.",
+        "Gieße die Spaghetti durch ein Sieb ab und gib sie in die Soße. Schmecke mit Salz und Pfeffer ab. Vermenge Käse und Kräuter mit dem Bacon. Verteile die Pasta auf tiefe Teller und garniere sie mit dem Bacon-Käse-Kräuter-Topping."
+      ]
+    },
+    {
+      "id": "tex-mex-hackpfanne",
+      "title": "Tex-Mex-Style Hackpfanne auf Kräuterreis",
+      "diet": "Mit Fleisch",
+      "time": "15 Minuten",
+      "difficulty": "einfach",
+      "image": "https://media.hellofresh.com/q_100%2Cw_3840%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y24_R36_W51_DE_EXP29715-1_Main_low-2ea72ffa.jpg",
+      "alt": "Basmatireis mit käsiger Tex-Mex-Hackpfanne, Coleslaw-Gemüse, Kräutern und saurer Sahne in einer dunklen Schale.",
+      "intro": "Schnelle Tex-Mex-Hackpfanne mit Coleslaw-Mix und geschmolzenem Gouda, serviert auf Kräuterreis mit saurer Sahne.",
+      "servings": "2 Portionen",
+      "sourceUrl": "https://www.hellofresh.de/recipes/tex-mex-style-hackpfanne-668e41bf018283f1f439b4dc",
+      "ingredients": [
+        { "name": "Gemischte Hackfleischzubereitung", "amount": "250 g", "packaging": "Flacher, rechteckiger Vakuumbeutel mit weichem, körnigem Fleischinhalt." },
+        { "name": "Basmatireis", "amount": "150 g", "packaging": "Kleiner durchsichtiger Kunststoffbeutel; die trockenen Körner rieseln hörbar." },
+        { "name": "Coleslaw-Mix", "amount": "200 g", "packaging": "Mittelgroßer transparenter Kunststoffbeutel mit fein geschnittenem Kohl und Karotten." },
+        { "name": "Zwiebel", "amount": "1 Stück", "packaging": "Lose im Zutatenbeutel; rund bis oval mit trockener, raschelnder Schale." },
+        { "name": "Saure Sahne, Bio", "amount": "100 g", "packaging": "Kleiner runder Kunststoffbecher mit abziehbarem Folienverschluss." },
+        { "name": "Junger Gouda, gerieben", "amount": "50 g", "packaging": "Kleiner flacher Klarsichtbeutel; der geriebene Käse fühlt sich locker und weich an." },
+        { "name": "Ketchup", "amount": "25 g", "packaging": "Kleines flaches Portionssachet mit weichem, dickflüssigem Inhalt." },
+        { "name": "Gewürzmischung Hello Fiesta", "amount": "4 g", "packaging": "Kleines flaches Sachet mit feinem Gewürzpulver und versiegelten Rändern." },
+        { "name": "Hühnerbrühe", "amount": "4 g", "packaging": "Sehr kleines flaches Sachet mit feinkörnigem Pulver." }
+      ],
+      "steps": [
+        "Erhitze 1 Liter Wasser. Gib das heiße Wasser in einen großen Topf, rühre den Reis ein und salze leicht. Bringe alles zum Kochen und gare den Reis etwa 12 Minuten abgedeckt. Gieße ihn anschließend durch ein Sieb ab.",
+        "Schneide die Zwiebel in Streifen. Erhitze 1 Esslöffel Öl in einer großen Pfanne und brate Hackfleisch und Zwiebelstreifen 4 bis 6 Minuten an. Gib Coleslaw-Mix, Hello Fiesta, Hühnerbrühe, Salz und Pfeffer hinzu und brate alles weitere 2 bis 3 Minuten. Lösche mit Ketchup und 50 Millilitern Wasser ab. Bedecke die Pfanne mit Käse und gare alles 1 bis 2 Minuten abgedeckt, bis der Käse geschmolzen ist.",
+        "Rühre 1 Esslöffel Butter, Salz und Pfeffer unter den Reis. Verteile den Reis auf tiefe Teller, richte die Tex-Mex-Pfanne darauf an und gib die saure Sahne darüber."
+      ]
+    },
+    {
+      "id": "spaghetti-ragu-bianco",
+      "title": "Spaghetti mit Ragù Bianco vom Weiderind",
+      "diet": "Mit Fleisch",
+      "time": "15 Minuten",
+      "difficulty": "einfach",
+      "image": "https://media.hellofresh.com/q_100%2Cw_3840%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R03_W40_DE_EXP57944-3_main_high-e0b3e4cd.jpg",
+      "alt": "Spaghetti mit cremigem Ragù Bianco aus Weiderind, Porree und Champignons in einem tiefen grauen Teller.",
+      "intro": "Extra schnelle Spaghetti mit cremigem Ragù Bianco vom Weiderind, Porree, Champignons und Knoblauch-Kräuter-Mix.",
+      "servings": "2 Portionen",
+      "sourceUrl": "https://www.hellofresh.de/recipes/spaghetti-mit-ragu-bianco-vom-weiderind-6a3bea264e4b173945bdd7e7",
+      "ingredients": [
+        { "name": "Porree", "amount": "1 Stück", "packaging": "Lange feste Gemüsestange mit weißem Schaft und flachen grünen Blättern, lose im Zutatenbeutel." },
+        { "name": "Demi-glace", "amount": "50 ml", "packaging": "Kleiner flacher Kunststoffbeutel mit dunklem, dickflüssigem Inhalt." },
+        { "name": "Kochsahne leicht", "amount": "150 g", "packaging": "Kleiner standfester Getränkekarton mit Schraubverschluss; flüssiger Inhalt." },
+        { "name": "Knoblauch-Kräuter-Mix", "amount": "4 g", "packaging": "Kleines flaches Sachet mit feiner getrockneter Gewürzmischung." },
+        { "name": "Spaghetti", "amount": "270 g", "packaging": "Länglicher, durchsichtiger Kunststoffbeutel mit langen, harten Nudeln." },
+        { "name": "Zwiebel", "amount": "1 Stück", "packaging": "Lose im Zutatenbeutel; rund bis oval mit trockener, raschelnder Schale." },
+        { "name": "Champignons", "amount": "125 g", "packaging": "Kleine durchsichtige Kunststoffschale mit Folienverschluss; runde Pilzköpfe sind tastbar." },
+        { "name": "Hackfleischzubereitung vom Weiderind", "amount": "200 g", "packaging": "Flacher, rechteckiger Vakuumbeutel mit weichem, körnigem Fleischinhalt." },
+        { "name": "Rinderbrühe", "amount": "4 g", "packaging": "Sehr kleines flaches Sachet mit feinkörnigem Pulver." }
+      ],
+      "steps": [
+        "Erhitze reichlich Wasser. Fülle es in einen großen Topf, salze kräftig und bringe es zum Kochen. Gare die Spaghetti darin 7 bis 8 Minuten bissfest. Gieße sie durch ein Sieb ab und fange 100 Milliliter Kochwasser auf. Schneide die Champignons in Scheiben, würfle die Zwiebel und schneide den Porree in Halbmonde.",
+        "Erhitze eine große Pfanne ohne zusätzliches Fett. Brate Rinderhackfleisch, Zwiebel, Champignons und Porree darin 5 bis 6 Minuten scharf an. Lösche mit Demi-glace, Kochsahne, Rinderbrühe, Knoblauch-Kräuter-Mix und 1 Teelöffel Weißweinessig ab. Reduziere die Hitze und lasse die Soße 2 Minuten köcheln.",
+        "Gib die Spaghetti mit dem aufgefangenen Kochwasser und 1 Esslöffel Butter zur Soße und vermenge alles. Würze kräftig mit Salz und Pfeffer und richte die Spaghetti auf tiefen Tellern an."
+      ]
+    }
+  ]
+}

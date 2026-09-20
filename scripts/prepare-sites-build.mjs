@@ -8,14 +8,17 @@ const dist = path.join(root, "dist");
 const index = path.join(dist, "client", "index.html");
 const worker = path.join(root, "worker", "index.js");
 const hosting = path.join(root, ".openai", "hosting.json");
+const menuSnapshot = path.join(root, "src", "data", "menu-snapshot.json");
 
-for (const file of [index, worker, hosting]) {
+for (const file of [index, worker, hosting, menuSnapshot]) {
   if (!existsSync(file)) throw new Error("Missing Sites build input: " + file);
 }
 
 mkdirSync(path.join(dist, "server"), { recursive: true });
 mkdirSync(path.join(dist, ".openai"), { recursive: true });
+mkdirSync(path.join(dist, "client", "data"), { recursive: true });
 copyFileSync(worker, path.join(dist, "server", "index.js"));
 copyFileSync(hosting, path.join(dist, ".openai", "hosting.json"));
+copyFileSync(menuSnapshot, path.join(dist, "client", "data", "menu.json"));
 
-console.log("Prepared Sites build: dist/server/index.js and dist/.openai/hosting.json");
+console.log("Prepared Sites build: worker, hosting manifest, and menu snapshot");
