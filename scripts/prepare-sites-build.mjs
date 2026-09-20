@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { copyFileSync, existsSync, mkdirSync } from "node:fs";
+import { copyFileSync, cpSync, existsSync, mkdirSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -11,8 +11,10 @@ const importer = path.join(root, "worker", "hello-fresh-importer.js");
 const hosting = path.join(root, ".openai", "hosting.json");
 const menuSnapshot = path.join(root, "src", "data", "menu-snapshot.json");
 const menuWeeks = path.join(root, "src", "data", "menu-weeks.json");
+const recipeDetails = path.join(root, "src", "data", "recipes");
+const recipeDetailsIndex = path.join(root, "src", "data", "recipe-details-index.json");
 
-for (const file of [index, worker, importer, hosting, menuSnapshot, menuWeeks]) {
+for (const file of [index, worker, importer, hosting, menuSnapshot, menuWeeks, recipeDetails, recipeDetailsIndex]) {
   if (!existsSync(file)) throw new Error("Missing Sites build input: " + file);
 }
 
@@ -24,5 +26,7 @@ copyFileSync(importer, path.join(dist, "server", "hello-fresh-importer.js"));
 copyFileSync(hosting, path.join(dist, ".openai", "hosting.json"));
 copyFileSync(menuSnapshot, path.join(dist, "client", "data", "menu.json"));
 copyFileSync(menuWeeks, path.join(dist, "client", "data", "menu-weeks.json"));
+copyFileSync(recipeDetailsIndex, path.join(dist, "client", "data", "recipe-details-index.json"));
+cpSync(recipeDetails, path.join(dist, "client", "data", "recipes"), { recursive: true });
 
 console.log("Prepared Sites build: worker, importer, hosting manifest, and menu snapshot");

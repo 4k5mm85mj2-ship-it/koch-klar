@@ -139,6 +139,16 @@ function menuDifficulty(value) {
   return ({ 1: "einfach", 2: "mittel", 3: "schwierig" })[Number(value)] ?? "nicht angegeben";
 }
 
+function menuImage(recipe) {
+  if (recipe.imagePath) {
+    const imagePath = recipe.imagePath.startsWith("/recipes/")
+      ? recipe.imagePath
+      : `/recipes${recipe.imagePath.startsWith("/") ? "" : "/"}${recipe.imagePath}`;
+    return `https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy${imagePath}`;
+  }
+  return recipe.imageLink ?? "";
+}
+
 export function parseMenuPage(html, now = new Date()) {
   const script = html.match(/<script[^>]+id=["']__NEXT_DATA__["'][^>]*>([\s\S]*?)<\/script>/i)?.[1];
   if (!script) throw new Error("Die öffentlichen Wochendaten wurden nicht gefunden.");
@@ -165,7 +175,7 @@ export function parseMenuPage(html, now = new Date()) {
       ...diet,
       time: parseDuration(recipe.prepTime ?? recipe.totalTime),
       difficulty: menuDifficulty(recipe.difficulty),
-      image: recipe.imageLink ?? recipe.imagePath ?? "",
+      image: menuImage(recipe),
       alt: `Foto des Gerichts ${title}.`,
       intro: decodeHtml(recipe.headline) || `Rezept für ${title}.`,
       sourceUrl: recipe.websiteUrl,
@@ -206,29 +216,11 @@ function curatedPackaging(name, fallbackMenu) {
   for (const recipe of fallbackMenu.recipes ?? []) {
     const ingredient = recipe.ingredients?.find((item) => {
       const candidate = normalizeName(item.name);
-      return candidate === normalized || candidate.includes(normalized) || normalized.includes(candidate);
+      return candidate === normalized;
     });
     if (ingredient) return ingredient.packaging;
   }
   return null;
-}
-
-function generatedPackaging(name) {
-  const value = normalizeName(name);
-  const rules = [
-    [/hack|filet|fleisch|hahnchen|schwein|rind|bacon/, "Flache, gekühlte Kunststoffverpackung; Form und Etikett können je nach Lieferung variieren."],
-    [/lachs|fisch|garnele/, "Flache, gekühlte Kunststoffverpackung mit versiegelten Rändern; Etikett prüfen."],
-    [/spaghetti|nudel|pasta/, "Länglicher Kunststoffbeutel mit trockenen, festen Nudeln."],
-    [/reis|couscous|bulgur|quinoa/, "Kleiner Kunststoffbeutel; der trockene Inhalt rieselt beim Bewegen."],
-    [/sahne|joghurt|schmand|creme fraiche/, "Kleiner Becher oder Karton aus dem Kühlbereich; Produktetikett prüfen."],
-    [/kase|gouda|parmesan|mozzarella/, "Kleine, gekühlte Kunststoffverpackung; Form und Inhalt sind je nach Käsesorte unterschiedlich."],
-    [/bruhe|gewurz|chili|mix/, "Kleines, flaches Sachet mit Pulver oder Gewürzmischung."],
-    [/pesto|tomatenmark|ketchup|sauce|dressing/, "Kleines, flaches Sachet oder Beutelchen mit weichem oder flüssigem Inhalt."],
-    [/petersilie|basilikum|koriander|oregano|krauter/, "Leichter Klarsichtbeutel mit weichen Blättern und dünnen Stielen."],
-    [/zwiebel|knoblauch|kartoffel|paprika|zucchini|karotte|porree|pilz|champignon|tomate/, "Lose oder in einem transparenten Gemüsebeutel; Form und Größe können variieren."],
-  ];
-  return rules.find(([pattern]) => pattern.test(value))?.[1]
-    ?? "Die Verpackung kann je nach Lieferung variieren. Prüfe das Produktetikett und die Zutatenbezeichnung.";
 }
 
 function inferDiet(ingredients) {
@@ -259,10 +251,10 @@ export function parseRecipePage(html, sourceUrl, fallbackMenu) {
   const data = recipes.find((item) => item.name && item.recipeIngredient?.length && item.recipeInstructions?.length);
   if (!data) throw new Error(`Keine strukturierten Rezeptdaten gefunden: ${sourceUrl}`);
 
-  const ingredients = data.recipeIngredient.map(ingredientParts).filter((item) => item.name).map((ingredient) => ({
-    ...ingredient,
-    packaging: curatedPackaging(ingredient.name, fallbackMenu) ?? generatedPackaging(ingredient.name),
-  }));
+  const ingredients = data.recipeIngredient.map(ingredientParts).filter((item) => item.name).map((ingredient) => {
+    const packaging = curatedPackaging(ingredient.name, fallbackMenu);
+    return packaging ? { ...ingredient, packaging } : ingredient;
+  });
   const steps = data.recipeInstructions
     .flatMap((step) => typeof step === "string" ? step : step?.itemListElement ?? step?.text ?? [])
     .map((step) => decodeHtml(typeof step === "string" ? step : step?.text ?? step?.name ?? ""))

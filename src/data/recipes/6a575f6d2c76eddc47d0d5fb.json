@@ -1,0 +1,95 @@
+{
+  "id": "6a575f6d2c76eddc47d0d5fb",
+  "title": "Nordsee Teller mit Seehecht und Garnelen dazu Gurken-Dill-Salsa und Buttermilch Soße",
+  "diet": "Mit Fisch",
+  "dietGroup": "non-vegetarian",
+  "time": "30 Minuten",
+  "difficulty": "einfach",
+  "image": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/HF_Y25_R40_W29_DE_PM40955-3_Main_17_low-946a8734.jpg",
+  "alt": "Foto des Gerichts Nordsee Teller mit Seehecht und Garnelen dazu Gurken-Dill-Salsa und Buttermilch Soße.",
+  "intro": "Heute wird es besonders proteinreich mit zartem Fischfilet und Garnelen. In Kombination mit frischen Beilagen genießt Du ausgewogen und lecker.",
+  "sourceUrl": "https://www.hellofresh.de/recipes/nordsee-teller-mit-seehecht-und-garnelen-6a575f6d2c76eddc47d0d5fb",
+  "features": [
+    "classic-plates",
+    "Gesund genießen",
+    "Viel Gemüse",
+    "High Protein",
+    "nutri-score-a",
+    "regional-specialty",
+    "source-of-fibre",
+    "Kalorien im Blick",
+    "Merchan-surcharge"
+  ],
+  "servings": "2 Portionen",
+  "ingredients": [
+    {
+      "name": "Seehecht",
+      "amount": "250 g"
+    },
+    {
+      "name": "Großgarnelen",
+      "amount": "150 g"
+    },
+    {
+      "name": "mehligk. Kartoffeln",
+      "amount": "400 g"
+    },
+    {
+      "name": "Rote Beete, vorgegart",
+      "amount": "250 g"
+    },
+    {
+      "name": "Gurke",
+      "amount": "1 Stück"
+    },
+    {
+      "name": "Frühlingszwiebel",
+      "amount": "25 g"
+    },
+    {
+      "name": "Dill/Petersilie",
+      "amount": "10 g"
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": "2 Stück",
+      "packaging": "Kleine feste Zehe mit trockener, papierartiger Schale, lose im Zutatenbeutel."
+    },
+    {
+      "name": "Buttermilch-Zitronen-Dressing",
+      "amount": "50 ml"
+    },
+    {
+      "name": "Muskatnuss, gemahlen",
+      "amount": "½ g"
+    },
+    {
+      "name": "Esslöffel Butter",
+      "amount": "2"
+    },
+    {
+      "name": "Milch",
+      "amount": "150 ml"
+    },
+    {
+      "name": "Teelöffel Weißweinessig",
+      "amount": "1"
+    },
+    {
+      "name": "nach Geschmack Salz",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "nach Geschmack Pfeffer",
+      "amount": "Menge laut Originalrezept"
+    }
+  ],
+  "steps": [
+    "Erhitze reichlich Wasser im Wasserkocher. In einen großen Topf reichlich heißes Wasser geben, salzen* und aufkochen. Kartoffeln schälen und in 2 cm Würfel schneiden. Kartoffeln in den großen Topf geben und darin 12 – 14 Min weich garen.",
+    "Gurke schälen, längs halbieren und das Kerngehäuse entfernen. Kerngehäuse in ein hohes Rührgefäß geben. Restliche Gurke in feine Würfel schneiden. Dill und peter getrennt voneinander grob hacken. Frühlingszwiebel in feine Ringe schneiden. In einer großen Schüssel drei Viertel der Gurkenwürfel, Dill, Frühlingszwiebel, 0,5 TL [0,75 TL | 1 TL] Essig*, Salz* und Pfeffer* zu einer Salsa vermengen.",
+    "Buttermilch-Zitronen-Dressing, restliche Gurkenwürfel, 0,5 TL [0,75 TL | 1 TL] Essig*, Petersilie, Salz* und Pfeffer* in das hohe Rührgefäß geben und mithilfe eines Pürierstabs glatt pürieren. Tipp: Für eine noch feinere Soße kannst du die Flüssigkeit durch ein feines Sieb in eine große Schüssel abgießen.",
+    "Kartoffeln durch ein Sieb abgießen und beiseite stellen. Rote-Bete mit der Flüssigkeit in den Topf aus Schritt 1 geben und zusammen mit Hälfte [drei Viertel | gesamten] Muskat, 60 ml [90 ml | 120 ml] Milch*, Salz* und Pfeffer* mit einem Pürierstab glatt pürieren. Tipp: Sei vorsichtig, der Saft kann spritzen und verfärben. Kartoffeln zur der Roten Beete den Topf geben und mit Hilfe eines Kartoffelstampfers zu einem Stampf verarbeiten.",
+    "Knoblauch fein hacken. Seehecht rundum salzen* und in etwas Mehl* drücken. In einer großen Pfanne 2 EL [0,75 EL | 1 EL] Butter* erhitzen. Seehecht mit der Haut nach unten 2 – 3 Min. darin braten, bis die Haut knusprig ist. Garnelen und Knoblauch hinzugeben, wenden und weitere 3 – 4 Min. braten, bis die Filets durchgegart sind. Mit Salz* und Pfeffer* würzen.",
+    "Rote Bete-Kartoffelstampf auf Teller verteilen und Buttermilch-Soße daneben anrichten. Seehecht und Knoblauch Garnelen auf dem Stampf anrichten und mit der Gurken-Dill Salsa toppen. Guten Appetit!"
+  ]
+}

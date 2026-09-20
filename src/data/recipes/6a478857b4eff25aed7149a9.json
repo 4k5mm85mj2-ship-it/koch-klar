@@ -1,0 +1,103 @@
+{
+  "id": "6a478857b4eff25aed7149a9",
+  "title": "Bobotie-Quesadillas mit Bio-Hackfleisch Mais-Tomaten-Salsa, Eisbergsalat und Avocado-Dip",
+  "diet": "Mit Fleisch",
+  "dietGroup": "non-vegetarian",
+  "time": "25 Minuten",
+  "difficulty": "einfach",
+  "image": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/HF_Y26_R20_W41_DE_PM57525-12_main_high-e0534602.jpg",
+  "alt": "Foto des Gerichts Bobotie-Quesadillas mit Bio-Hackfleisch Mais-Tomaten-Salsa, Eisbergsalat und Avocado-Dip.",
+  "intro": "Hola, México! Ein Fusion-Gericht, das die Highlights aus Südafrika und Mexiko auf einem Teller vereint. Die Kombination aus herzhaft, fruchtig-süß und einer extra Portion schmelzendem Käse ist einfach unwiderstehlich.",
+  "sourceUrl": "https://www.hellofresh.de/recipes/bobotie-quesadillas-mit-bio-hackfleisch-6a478857b4eff25aed7149a9",
+  "features": [
+    "handhelds",
+    "latin-american-faves",
+    "Schnell",
+    "Viel Gemüse",
+    "nutri-score-c"
+  ],
+  "servings": "2 Portionen",
+  "ingredients": [
+    {
+      "name": "rote Zwiebel",
+      "amount": "1 Stück"
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": "2 Stück",
+      "packaging": "Kleine feste Zehe mit trockener, papierartiger Schale, lose im Zutatenbeutel."
+    },
+    {
+      "name": "Limette, gewachst",
+      "amount": "1 Stück"
+    },
+    {
+      "name": "Sultaninen",
+      "amount": "20 g"
+    },
+    {
+      "name": "Mango-Mojo-Paste",
+      "amount": "40 g"
+    },
+    {
+      "name": "Gewürzmischung „Hello Curry“",
+      "amount": "2 g"
+    },
+    {
+      "name": "geriebener Cheddar",
+      "amount": "75 g"
+    },
+    {
+      "name": "Weizentortillas",
+      "amount": "160 g"
+    },
+    {
+      "name": "Mais",
+      "amount": "140 g"
+    },
+    {
+      "name": "Koriander",
+      "amount": "10 g"
+    },
+    {
+      "name": "Avocado",
+      "amount": "1 Stück"
+    },
+    {
+      "name": "Tomate",
+      "amount": "2 Stück"
+    },
+    {
+      "name": "Eisbergsalat",
+      "amount": "187,5 g"
+    },
+    {
+      "name": "Bio Rinderhackfleischzubereitung",
+      "amount": "250 g"
+    },
+    {
+      "name": "nach Geschmack Salz",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "nach Geschmack Pfeffer",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "nach Geschmack Zucker",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "Esslöffel Olivenöl",
+      "amount": "2"
+    }
+  ],
+  "steps": [
+    "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Tomaten in 1 cm Würfel schneiden. Zwiebel fein würfeln. Knoblauch fein hacken.",
+    "In einer großen Pfanne ohne Fettzugabe Hackfleisch, drei Viertel der Zwiebel und Knoblauch 4 – 5 Min. unter Rühren braten, bis das Hackfleisch krümelig wird. Hälfte [drei Viertel | gesamte] Sultaninen, „Hello Curry“, Mango-Mojo-Paste und Hälfte der Tomaten unterrühren und 1 Min. mitschmoren. Mit Salz* und Pfeffer* würzen. Kurz beiseite stellen.",
+    "Mais mithilfe des Deckels abgießen. Korianderblätter fein hacken. Limette in 6 Spalten schneiden. In einer großen Schüssel Mais, Koriander, restliche Tomatenwürfel und restliche Zwiebel mit Saft aus 2 [3 | 4] Limettenspalten und 1 EL [1,5 EL | 2 EL] Olivenöl* verrühren. Mit Salz*, Pfeffer* und Zucker* abschmecken.",
+    "Hälfte der Tortillafladen auf ein mit Backpapier belegtes Backblech legen. Tortillas mit der Hälfte vom Käse bestreuen, Hackmasse darauf verteilen und restlichen Käse darauf streuen. Mit den übrigen Tortillafladen bedecken und im Ofen ca. 3 – 5 Min. knusprig backen.",
+    "Hälfte [drei Viertel | gesamten] Salat in feine Streifen schneiden. In einer zweiten großen Schüssel Saft von 1 [1,5 | 2] Limettenspalte, 1 EL [1,5 EL | 2 EL] Olivenöl*, Salz* und Pfeffer* zu einem Dressing verrühren. Salatstreifen mit dem Dressing vermengen. Avocado entkernen und in Streifen schneiden.",
+    "Quesadillas in Stücke schneiden und auf Teller verteilen. Mit Mais-Tomaten-Salsa toppen. Avocado und Salat daneben anrichten. Guten Appetit!"
+  ]
+}

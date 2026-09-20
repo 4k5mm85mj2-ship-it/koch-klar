@@ -24,5 +24,10 @@ When implementing from a selected generated mock, treat that image as the source
 - Clearly distinguish imported HelloFresh recipe data from the prototype's own example packaging descriptions, and link every recipe to its public original source.
 - Use native select controls for both week selection and the dietary recipe filter so VoiceOver users can change either value efficiently on iPhone.
 - Bundle every currently available public week as a complete snapshot. Never present the four-recipe emergency fallback as if it were the full weekly menu.
+- Do not show the redundant top navigation for Wochenmenü, Rezept, and Kochmodus. Use only contextual back links and actions.
+- Do not show the selected week as a separate heading before the week selector, and do not expose technical import or cache-status messages in the interface.
+- Serve recipe details for every displayed menu card from bundled public HelloFresh detail snapshots so opening recipes does not depend on a live third-party request.
+- Use HelloFresh's working media endpoint for dish images. Keep weekly-list image position and description as one screen-reader element; treat the repeated hero image in recipe details as decorative.
+- Only show a packaging description when a concrete curated description exists; do not synthesize a package type from the ingredient name.
 
 Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts/prepare-sites-build.mjs`, and `tests/sites-worker.test.mjs` intact so the same local prototype can be handed to Sites. Before a Sites handoff, run `npm run build` and `npm run test:sites`; the build must leave `dist/client/index.html`, `dist/server/index.js`, and `dist/.openai/hosting.json`.

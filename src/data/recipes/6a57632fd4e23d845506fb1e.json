@@ -1,0 +1,87 @@
+{
+  "id": "6a57632fd4e23d845506fb1e",
+  "title": "Thüringer Bratwurst mit Kohlrabi-Kartoffelpüree dazu Rahmporree",
+  "diet": "Mit Fleisch",
+  "dietGroup": "non-vegetarian",
+  "time": "30 Minuten",
+  "difficulty": "einfach",
+  "image": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/HF_Y26_R88_W35_DE_R55925-L-59019-2main_high-dc29df48.jpg",
+  "alt": "Foto des Gerichts Thüringer Bratwurst mit Kohlrabi-Kartoffelpüree dazu Rahmporree.",
+  "intro": "Mhmm, Essen wie bei Oma. Heute kommt traditionelles Komfort-Food auf den Tisch: Frische, saisonale Zutaten werden hier zu einem bodenständigen Gericht, das extra Gemütlichkeit verspricht. Lecker.",
+  "sourceUrl": "https://www.hellofresh.de/recipes/thuringer-bratwurst-mit-kohlrabi-kartoffelpuree-6a57632fd4e23d845506fb1e",
+  "features": [
+    "classic-euro-dishes",
+    "classic-plates",
+    "Family",
+    "nutri-score-c"
+  ],
+  "servings": "2 Portionen",
+  "ingredients": [
+    {
+      "name": "Kohlrabi",
+      "amount": "1 Stück"
+    },
+    {
+      "name": "Porree",
+      "amount": "1 Stück",
+      "packaging": "Lange feste Gemüsestange mit weißem Schaft und flachen grünen Blättern, lose im Zutatenbeutel."
+    },
+    {
+      "name": "Kochsahne leicht",
+      "amount": "150 g",
+      "packaging": "Kleiner standfester Getränkekarton mit Schraubverschluss; flüssiger Inhalt."
+    },
+    {
+      "name": "mittelscharfer Senf",
+      "amount": "10 ml"
+    },
+    {
+      "name": "Gemüsebrühpulver",
+      "amount": "4 g"
+    },
+    {
+      "name": "vorw. festk. Kartoffeln",
+      "amount": "400 g"
+    },
+    {
+      "name": "Dill/Petersilie",
+      "amount": "10 g"
+    },
+    {
+      "name": "Thüringer Rostbratwurst",
+      "amount": "200 g"
+    },
+    {
+      "name": "Esslöffel Butter",
+      "amount": "2"
+    },
+    {
+      "name": "Esslöffel Öl",
+      "amount": "1"
+    },
+    {
+      "name": "nach Geschmack Salz",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "nach Geschmack Pfeffer",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "Wasser",
+      "amount": "100 ml"
+    },
+    {
+      "name": "nach Geschmack Weißweinessig",
+      "amount": "Menge laut Originalrezept"
+    }
+  ],
+  "steps": [
+    "Erhitze reichlich Wasser im Wasserkocher. Kartoffeln und Kohlrabi schälen und jeweils in 2 cm Würfel schneiden. In einem großen Topf reichlich heißes Wasser erhitzen, salzen* und aufkochen. Kartoffeln und Kohlrabi darin 14 – 16 Min. weich garen. Inzwischen mit dem Rezept fortfahren.",
+    "Porree längs halbieren, auswaschen und in 1 cm Halbmonde schneiden. In einem kleinen Topf mit Deckel 1 EL [1,5 EL | 2 EL] Butter* erhitzen. Porree darin 2 Min. anbraten. Topfinhalt mit Brühepulver, drei Vierteln der Kochsahne und 100 ml [150 ml | 200 ml] Wasser* ablöschen. Aufkochen, Hitze reduzieren und 8 – 10 Min. abgedeckt köcheln lassen. Anschließend mit Salz*, Pfeffer* und einigen Tropfen Essig* abschmecken.",
+    "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Bratwürste 6 – 8 Min. rundherum knusprig braten.",
+    "Dill und Petersilienblätter zusammen fein hacken.",
+    "Kartoffeln und Kohlrabi nach der Garzeit durch ein Sieb abgießen. Dabei 50 ml [75 ml | 100 ml] Kochwasser auffangen. Gemüse zurück in den Topf geben, mit restlicher Kochsahne, 1 EL [1,5 EL | 2 EL] Butter* und eventuell dem abgemessenen Kochwasser mithilfe eines Kartoffelstampfers zu Püree stampfen. Hälfte der Kräuter unterrühren. Mit Salz* und Pfeffer* würzen.",
+    "Kartoffel-Kohlrabi-Stampf, Rahmporree und Bratwurst auf Teller verteilen. Mit restlichen Kräutern toppen und mit Senf genießen. Guten Appetit!"
+  ]
+}

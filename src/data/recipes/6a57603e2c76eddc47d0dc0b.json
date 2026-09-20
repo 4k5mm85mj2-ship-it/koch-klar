@@ -1,0 +1,78 @@
+{
+  "id": "6a57603e2c76eddc47d0dc0b",
+  "title": "Nürnberger und Nudelsalat mit eingelegten Gurken Das Beste aus Omas Küche",
+  "diet": "Mit Fleisch",
+  "dietGroup": "non-vegetarian",
+  "time": "25 Minuten",
+  "difficulty": "einfach",
+  "image": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/HF_Y26_R49_W33_DE_R55929-2main_high-6d088c1a.jpg",
+  "alt": "Foto des Gerichts Nürnberger und Nudelsalat mit eingelegten Gurken Das Beste aus Omas Küche.",
+  "intro": "Essen wie früher? Geht auch heute! Diesen Herbst bringen wir ikonische Retro-Gerichte mit absolutem Wohlfühlfaktor zurück auf deinen Teller. Unsere Rezeptentwickler haben in Omas Kochbüchern gestöbert und die besten Klassiker aus traditionellen Wirtshäusern gesammelt. Freu dich auf den echten Geschmack deiner Kindheit.",
+  "sourceUrl": "https://www.hellofresh.de/recipes/nurnberger-und-nudelsalat-mit-eingelegten-gurken-6a57603e2c76eddc47d0dc0b",
+  "features": [
+    "Family",
+    "Viel Gemüse",
+    "classic-euro-dishes",
+    "nutri-score-c",
+    "pasta-noodles",
+    "Omas Klassiker",
+    "Schnell",
+    "back-to-school"
+  ],
+  "servings": "2 Portionen",
+  "ingredients": [
+    {
+      "name": "Fusilli",
+      "amount": "270 g"
+    },
+    {
+      "name": "Mayonnaise",
+      "amount": "100 g"
+    },
+    {
+      "name": "Naturjoghurt",
+      "amount": "75 g"
+    },
+    {
+      "name": "Gurke",
+      "amount": "1 Stück"
+    },
+    {
+      "name": "Paprika multicolor",
+      "amount": "1 Stück",
+      "packaging": "Lose im Zutatenbeutel; glatte, feste und hohle Frucht mit deutlich tastbarem Stiel."
+    },
+    {
+      "name": "mittelscharfer Senf",
+      "amount": "10 ml"
+    },
+    {
+      "name": "Nürnberger Bratwürstchen",
+      "amount": "200 g"
+    },
+    {
+      "name": "Schalotte",
+      "amount": "1 Stück"
+    },
+    {
+      "name": "nach Geschmack Salz",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "nach Geschmack Pfeffer",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "nach Geschmack Zucker",
+      "amount": "Menge laut Originalrezept"
+    }
+  ],
+  "steps": [
+    "Erhitze reichlich Wasser im Wasserkocher. Gurke längs vierteln, mithilfe eines Löffels entkernen und in 0,5 cm Würfel schneiden. Schalotte in sehr feine Ringe schneiden. In einem kleinen Topf 50 ml [75 ml | 100 ml] Wasser*, 50 ml [75 ml | 100 ml] Essig*, 0,5 TL [0,75 TL | 1 TL] Salz* und 2 EL [3 EL | 4 EL] Zucker* aufkochen. In einer großen Schüssel Gurke und Schalotte mit der Essiglösung übergießen und bis zum Ende des Rezepts marinieren lassen.",
+    "Paprika halbieren, entkernen und in 0,5 cm Würfel schneiden. In einen großen Topf reichlich heißes Wasser* füllen, salzen* und aufkochen lassen. Pasta hinzufügen und 10 – 11 Min. bissfest garen. Danach durch ein Sieb abgießen und mit kaltem Wasser abschrecken.",
+    "In einer großen Schüssel Mayonnaise, Joghurt, 3 EL [4,5 EL | 6 EL] Essiglösung aus der Schüssel mit der Gurke und Schalotte, 0,5 TL [0,75 TL | 1 TL] Salz*, Pfeffer* und Zucker* vermengen.",
+    "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Nürnberger 4 – 5 Min. goldbraun anbraten.",
+    "Abgekühlte Nudeln, Paprikawürfel und eingelegtes Gemüse zur Salatsoße geben und vermengen. Mit Salz*, Pfeffer* und Essiglösung abschmecken.",
+    "Omas Nudelsalat auf tiefe Teller verteilen. Mit Würstchen und Senf servieren. Guten Appetit!"
+  ]
+}

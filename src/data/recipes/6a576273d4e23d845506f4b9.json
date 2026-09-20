@@ -1,0 +1,83 @@
+{
+  "id": "6a576273d4e23d845506f4b9",
+  "title": "Fettuccine Salmone! Pasta mit Lachsfilet in cremiger Brokkoli-Sahne-Soße",
+  "diet": "Mit Fisch",
+  "dietGroup": "non-vegetarian",
+  "time": "30 Minuten",
+  "difficulty": "einfach",
+  "image": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/fettuccine-mit-lachsfilet-thermomix-c90d3b43.jpg",
+  "alt": "Foto des Gerichts Fettuccine Salmone! Pasta mit Lachsfilet in cremiger Brokkoli-Sahne-Soße.",
+  "intro": "Pasta geht immer! In Kombination mit leckerem Gemüse und proteinreichem Fisch ist dieses Gericht ein wahrer Gaumenschmaus. Lass es Dir schmecken!",
+  "sourceUrl": "https://www.hellofresh.de/recipes/fettuccine-salmone-pasta-mit-lachsfilet-6a576273d4e23d845506f4b9",
+  "features": [
+    "Family",
+    "nutri-score-b",
+    "pasta-noodles",
+    "Mediterran",
+    "Schnell"
+  ],
+  "servings": "2 Portionen",
+  "ingredients": [
+    {
+      "name": "Fettuccine",
+      "amount": "270 g"
+    },
+    {
+      "name": "Lachsfilet",
+      "amount": "250 g"
+    },
+    {
+      "name": "Brokkoli",
+      "amount": "1 Stück"
+    },
+    {
+      "name": "Frühlingszwiebel",
+      "amount": "1 Stück"
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": "1 Stück",
+      "packaging": "Kleine feste Zehe mit trockener, papierartiger Schale, lose im Zutatenbeutel."
+    },
+    {
+      "name": "Kochsahne",
+      "amount": "200 g"
+    },
+    {
+      "name": "Gemüsebrühe",
+      "amount": "4 g"
+    },
+    {
+      "name": "Wasser",
+      "amount": "100 ml"
+    },
+    {
+      "name": "nach Geschmack Salz",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "nach Geschmack Pfeffer",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "Gewürzmischung „Hello Buon Appetito“",
+      "amount": "2 g"
+    },
+    {
+      "name": "Zitrone, gewachst",
+      "amount": "1 Stück"
+    },
+    {
+      "name": "Esslöffel Öl",
+      "amount": "2"
+    }
+  ],
+  "steps": [
+    "Einen großen Topf mit heißen Wasser\\* füllen, salzen\\* und aufkochen lassen. Brokkoli in kleine Röschen teilen, nach Belieben die Stiele in 0,5 cm dicke Scheiben schneiden und in den Varoma-Behälter geben. Varoma-Einlegeboden so mit Backpapier belegen, dass die seitlichen Garschlitze frei bleiben. Zitrone vierteln. Lachs mit etwas Zitronensaft beträufeln und auf den Einlegeboden geben. V-Einlegeboden in den Varoma-Behälter einsetzen und Varoma schließen.",
+    "Knoblauch abziehen, in den Mixtopf geben, 3 Sek./Stufe 8 zerkleinern und in eine große Pfanne umfüllen. 450 g Wasser\\* in den Mixtopf geben, Varoma aufsetzen und 13 Min./Varoma/Stufe 1 dampfgaren. Währenddessen mit der Zubereitung fortfahren.",
+    "Fettuccine ins kochende Wasser geben, ca. 12 Min. bissfest kochen, danach durch ein Sieb abgießen. Inzwischen mit dem Rezept fortfahren.",
+    "Weißen und grünen Teil der Frühlingszwiebel getrennt voneinander in dünne Ringe schneiden. 1 EL [1,5 EL | 2 EL] Öl\\* zum zerkleinerten Knoblauch in die Pfanne geben, weiße Frühlingszwiebelringe zugeben, erhitzen und 2 – 3 Min. unter Rühren dünsten. Mit 100 ml Wasser\\* und Gemüsebrühpulver ablöschen.",
+    "Nach der Varoma-Garzeit Kochsahne, Gewürzmischung „Hello Buon Appetito“ und Brokkoli in die Pfanne geben und einmal aufkochen. Mit Salz\\* und Pfeffer\\* abschmecken, Fettuccine untermischen und kurz erhitzen. Haut von den Lachsfilets abziehen. Lachsfilets nach Belieben würfeln oder ganz lassen. Wenn Du das Lachsfilet im Ganzen verwendest, jetzt auf die Pasta legen oder Lachsstücke unterheben.",
+    "Fettuccine auf Teller verteilen, mit Lachs und grünen Frühlingszwiebelringen toppen und mit der restlichen Zitrone genießen. Guten Appetit!"
+  ]
+}

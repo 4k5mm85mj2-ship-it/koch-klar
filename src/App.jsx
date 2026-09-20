@@ -3,16 +3,7 @@ import fallbackMenu from "./data/menu-snapshot.json";
 import menuWeeks from "./data/menu-weeks.json";
 
 const bundledDefaultMenu = menuWeeks.menus?.[menuWeeks.defaultWeek] ?? fallbackMenu;
-
-function Navigation({ view, recipe, onNavigate }) {
-  return (
-    <nav className="main-nav" aria-label="Hauptnavigation">
-      <button className={view === "menu" ? "nav-link nav-link--active" : "nav-link"} type="button" aria-current={view === "menu" ? "page" : undefined} onClick={() => onNavigate("menu")}>Wochenmenü</button>
-      <button className={view === "recipe" ? "nav-link nav-link--active" : "nav-link"} type="button" aria-current={view === "recipe" ? "page" : undefined} disabled={!recipe} onClick={() => onNavigate("recipe")}>Rezept</button>
-      <button className={view === "cook" ? "nav-link nav-link--active" : "nav-link"} type="button" aria-current={view === "cook" ? "page" : undefined} disabled={!recipe} onClick={() => onNavigate("cook")}>Kochmodus</button>
-    </nav>
-  );
-}
+const recipeDetails = import.meta.glob("./data/recipes/*.json");
 
 export function App() {
   const [menu, setMenu] = useState({ ...bundledDefaultMenu, dataStatus: "snapshot" });
@@ -98,9 +89,9 @@ export function App() {
     setLoadingRecipeId(recipe.id);
     setAnnouncement(`${recipe.title} wird geladen.`);
     try {
-      const response = await fetch(`/api/recipe?url=${encodeURIComponent(recipe.sourceUrl)}`, { headers: { accept: "application/json" } });
-      if (!response.ok) throw new Error("Rezept konnte nicht geladen werden.");
-      const detail = await response.json();
+      const loadDetail = recipeDetails[`./data/recipes/${recipe.id}.json`];
+      if (!loadDetail) throw new Error("Rezept konnte nicht geladen werden.");
+      const detail = (await loadDetail()).default;
       setSelectedRecipe({ ...recipe, ...detail, diet: recipe.diet, dietGroup: recipe.dietGroup, difficulty: recipe.difficulty });
       setView("recipe");
       setAnnouncement(`${recipe.title} geöffnet.`);
@@ -139,8 +130,7 @@ export function App() {
       <a className="skip-link" href="#main-content">Direkt zum Inhalt</a>
 
       <header className="site-header">
-        <button className="wordmark" type="button" onClick={() => navigate("menu")} aria-label="Einfach kochen – zum Wochenmenü">Einfach kochen</button>
-        <Navigation view={view} recipe={selectedRecipe} onNavigate={navigate} />
+        <span className="wordmark">Einfach kochen</span>
       </header>
 
       <div className="sr-only" aria-live="polite" aria-atomic="true">{announcement}</div>
@@ -151,10 +141,6 @@ export function App() {
             <div className="intro-block">
               <h1 id="menu-heading" ref={pageHeadingRef} tabIndex="-1">Wochenmenü</h1>
               <p>Wähle ein Gericht. Danach erhältst du Zutaten, Verpackungsbeschreibungen und Kochschritte.</p>
-            </div>
-
-            <div className="week-heading">
-              <h2 className="week-title">{menu.weekLabel}</h2>
             </div>
 
             <section className="menu-controls" aria-labelledby="menu-controls-heading">
@@ -180,17 +166,6 @@ export function App() {
               <p className="result-count" aria-live="polite" aria-atomic="true">{menuLoading ? "Wochenmenü wird geladen." : `${filteredRecipes.length} ${filteredRecipes.length === 1 ? "Gericht" : "Gerichte"} angezeigt.`}</p>
             </section>
 
-            <aside className="data-source-note" aria-label="Datenquelle">
-              <p>{menu.dataStatus === "live"
-                ? `Echte Rezeptdaten von ${menu.sourceName}. Automatisch aktualisiert am ${menu.importedAt}.`
-                : menu.dataStatus === "cached"
-                  ? `Echte Rezeptdaten von ${menu.sourceName}. Zuletzt erfolgreich aktualisiert am ${menu.importedAt}; eine neue Prüfung läuft im Hintergrund.`
-                  : menu.dataStatus === "snapshot"
-                    ? `Echte Rezeptdaten von ${menu.sourceName}, importiert am ${menu.importedAt}. Vollständiger gespeicherter Wochenstand geladen.`
-                    : `Echte Rezeptdaten von ${menu.sourceName}, importiert am ${menu.importedAt}. Gespeicherter Datenstand geladen.`}</p>
-              <a className="text-link" href={menu.sourceUrl} target="_blank" rel="noreferrer">Öffentliches HelloFresh-Wochenmenü öffnen</a>
-            </aside>
-
             <ol className="recipe-list">
               {filteredRecipes.map((recipe, index) => (
                 <li className="recipe-row" key={recipe.id}>
@@ -202,8 +177,8 @@ export function App() {
                     <h3>{recipe.title}</h3>
                     <p className="recipe-type">{recipe.diet}</p>
                     <div className="recipe-meta">
-                      <p>{`Gesamtzeit: ${recipe.time}`}</p>
-                      <p>{`Schwierigkeit: ${recipe.difficulty}`}</p>
+                      <p>{`Gesamtzeit, ${recipe.time}`}</p>
+                      <p>{`Schwierigkeit, ${recipe.difficulty}`}</p>
                     </div>
                   </div>
                   <button className="button button--primary recipe-action" type="button" disabled={loadingRecipeId === recipe.id} onClick={() => openRecipe(recipe)} aria-label={`Rezept öffnen: ${recipe.title}`}>{loadingRecipeId === recipe.id ? "Rezept wird geladen" : "Rezept öffnen"}</button>
@@ -224,9 +199,9 @@ export function App() {
                 <h1 id="recipe-heading" ref={pageHeadingRef} tabIndex="-1">{selectedRecipe.title}</h1>
                 <p className="lead">{selectedRecipe.intro}</p>
                 <ul className="facts" aria-label="Rezeptinformationen">
-                  <li>{`Portionen: ${selectedRecipe.servings}`}</li>
-                  <li>{`Zeit: ${selectedRecipe.time}`}</li>
-                  <li>{`Schwierigkeit: ${selectedRecipe.difficulty}`}</li>
+                  <li>{`Portionen, ${selectedRecipe.servings}`}</li>
+                  <li>{`Zeit, ${selectedRecipe.time}`}</li>
+                  <li>{`Schwierigkeit, ${selectedRecipe.difficulty}`}</li>
                 </ul>
                 <div className="recipe-quick-actions">
                   <button className="button button--primary button--large" type="button" onClick={startCooking}>Kochmodus starten</button>
@@ -234,18 +209,18 @@ export function App() {
                 </div>
                 <a className="text-link source-link" href={selectedRecipe.sourceUrl} target="_blank" rel="noreferrer">Originalrezept bei HelloFresh öffnen</a>
               </div>
-              <img className="recipe-hero-image" src={selectedRecipe.image} alt={selectedRecipe.alt} width="1200" height="800" />
+              <img className="recipe-hero-image" src={selectedRecipe.image} alt="" width="1200" height="800" />
             </div>
 
             <section id="ingredients" className="content-section" aria-labelledby="ingredients-heading">
               <p className="eyebrow">Mengen und Erkennungsmerkmale</p>
               <h2 id="ingredients-heading">Zutaten und Verpackungen</h2>
-              <p className="section-intro">Die Mengen stammen aus dem öffentlichen Originalrezept für zwei Portionen. Die Verpackungsbeschreibungen sind unsere beispielhafte Ergänzung und können je nach Lieferung abweichen.</p>
+              <p className="section-intro">Die Mengen stammen aus dem öffentlichen Originalrezept. Eine Verpackungsbeschreibung erscheint nur, wenn eine konkrete Beschreibung vorhanden ist; die Verpackung kann je nach Lieferung abweichen.</p>
               <ul className="ingredient-list">
                 {selectedRecipe.ingredients.map((ingredient) => (
                   <li key={ingredient.name}>
                     <p className="ingredient-title">{`${ingredient.name}, ${ingredient.amount}`}</p>
-                    <p>{`Verpackung erkennen: ${ingredient.packaging}`}</p>
+                    {ingredient.packaging && <p>{`Verpackung erkennen: ${ingredient.packaging}`}</p>}
                   </li>
                 ))}
               </ul>

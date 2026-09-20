@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { access } from "node:fs/promises";
+import { access, readFile } from "node:fs/promises";
 import test from "node:test";
 import worker from "../worker/index.js";
 import { extractRecipeUrls, parseMenuPage, parseRecipePage } from "../worker/hello-fresh-importer.js";
@@ -129,7 +129,15 @@ test("turns structured HelloFresh recipe data into the accessible menu shape", (
   assert.equal(recipe.servings, "2 Portionen");
   assert.equal(recipe.ingredients[0].amount, "400 g");
   assert.equal(recipe.steps[0], "Kartoffeln schneiden.");
-  assert.match(recipe.ingredients[0].packaging, /Gemüsebeutel/);
+  assert.equal(recipe.ingredients[0].packaging, undefined);
+});
+
+test("adds packaging only when a concrete curated description exists", () => {
+  const recipe = parseRecipePage(recipeHtml, recipeUrl, {
+    recipes: [{ ingredients: [{ name: "Kartoffeln", packaging: "Kleines Netz mit festen Knollen." }] }],
+  });
+  assert.equal(recipe.ingredients[0].packaging, "Kleines Netz mit festen Knollen.");
+  assert.equal(recipe.ingredients[1].packaging, undefined);
 });
 
 test("loads complete recipe details only when a recipe is opened", async () => {
@@ -141,6 +149,23 @@ test("loads complete recipe details only when a recipe is opened", async () => {
   assert.equal(response.status, 200);
   assert.equal(recipe.steps[0], "Kartoffeln schneiden.");
   assert.equal(recipe.ingredients[0].amount, "400 g");
+});
+
+test("serves bundled recipe details without a live HelloFresh request", async () => {
+  let liveCalls = 0;
+  const storedDetail = { id: "stored", ingredients: [{ name: "Kartoffeln", amount: "400 g" }], steps: ["Schneiden."] };
+  const response = await worker.fetch(new Request(`https://example.test/api/recipe?url=${encodeURIComponent(recipeUrl)}`), {
+    HELLOFRESH_FETCH: async () => { liveCalls += 1; return new Response(recipeHtml); },
+    ASSETS: {
+      fetch: async (request) => new URL(request.url).pathname.startsWith("/data/recipes/")
+        ? Response.json(storedDetail)
+        : Response.json({ recipes: [] }),
+    },
+  });
+  const recipe = await response.json();
+  assert.equal(response.status, 200);
+  assert.equal(recipe.steps[0], "Schneiden.");
+  assert.equal(liveCalls, 0);
 });
 
 test("rejects arbitrary recipe sources", async () => {
@@ -213,4 +238,19 @@ test("emits the files required by Sites packaging", async () => {
   await access(new URL("../dist/.openai/hosting.json", import.meta.url));
   await access(new URL("../dist/client/data/menu.json", import.meta.url));
   await access(new URL("../dist/client/data/menu-weeks.json", import.meta.url));
+  await access(new URL("../dist/client/data/recipe-details-index.json", import.meta.url));
+});
+
+test("every displayed weekly recipe has a working image URL and bundled details", async () => {
+  const bundle = JSON.parse(await readFile(new URL("../src/data/menu-weeks.json", import.meta.url), "utf8"));
+  const recipes = Object.values(bundle.menus).flatMap((menu) => menu.recipes);
+  assert.ok(bundle.availableWeeks.length > 1);
+  assert.ok(Object.values(bundle.menus).every((menu) => menu.recipes.length > 4));
+  assert.equal(recipes.length, new Set(recipes.map((recipe) => recipe.id)).size);
+  for (const recipe of recipes) {
+    assert.match(recipe.image, /^https:\/\/media\.hellofresh\.com\//);
+    const detail = JSON.parse(await readFile(new URL(`../src/data/recipes/${recipe.id}.json`, import.meta.url), "utf8"));
+    assert.ok(detail.ingredients.length > 0, `${recipe.title} has no ingredients`);
+    assert.ok(detail.steps.length > 0, `${recipe.title} has no steps`);
+  }
 });

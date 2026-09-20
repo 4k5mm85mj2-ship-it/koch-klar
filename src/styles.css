@@ -61,57 +61,19 @@ h1[tabindex="-1"]:focus { outline: none; }
   min-height: 76px;
   padding: 0 max(28px, calc((100vw - var(--content-width)) / 2));
   border-bottom: 1px solid var(--gray-300);
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  display: flex;
   align-items: stretch;
 }
 
 .wordmark {
   justify-self: start;
   align-self: center;
-  min-height: 48px;
-  padding: 0;
-  border: 0;
-  background: transparent;
   color: #111111;
-  cursor: pointer;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 30px;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
-
-.main-nav {
-  display: flex;
-  align-items: stretch;
-  gap: 18px;
-}
-
-.nav-link {
-  min-width: 108px;
-  min-height: 48px;
-  padding: 8px 12px;
-  border: 0;
-  border-bottom: 4px solid transparent;
-  background: transparent;
-  color: #202020;
-  cursor: pointer;
-  font-size: 18px;
-}
-
-.nav-link:hover:not(:disabled) {
-  color: var(--green-800);
-  text-decoration: underline;
-  text-underline-offset: 5px;
-}
-
-.nav-link--active {
-  border-bottom-color: var(--green-800);
-  color: var(--green-900);
-  font-weight: 700;
-}
-
-.nav-link:disabled { color: #777777; cursor: not-allowed; }
 
 .page-shell {
   width: min(calc(100% - 56px), var(--content-width));
@@ -137,24 +99,6 @@ h1[tabindex="-1"]:focus { outline: none; }
   color: #303030;
   font-size: 21px;
 }
-
-.week-heading { margin: 22px 0 10px; }
-
-.week-title {
-  margin: 0;
-  text-align: center;
-  font-size: clamp(24px, 3vw, 34px);
-  line-height: 1.2;
-}
-
-.data-source-note {
-  margin: 0 0 10px;
-  padding: 14px 18px;
-  border-left: 5px solid var(--green-800);
-  background: var(--cream-100);
-}
-
-.data-source-note p { margin: 0 0 4px; }
 
 .menu-controls {
   margin: 18px 0 10px;
@@ -380,9 +324,7 @@ h1[tabindex="-1"]:focus { outline: none; }
 }
 
 @media (max-width: 980px) {
-  .site-header { grid-template-columns: 1fr; padding-top: 14px; }
-  .wordmark { justify-self: center; }
-  .main-nav { justify-content: center; }
+  .wordmark { margin-inline: auto; }
   .recipe-row { grid-template-columns: 246px minmax(0, 1fr); }
   .recipe-visual { grid-template-columns: 44px 180px; }
   .recipe-thumbnail { width: 180px; height: 118px; }
@@ -394,10 +336,7 @@ h1[tabindex="-1"]:focus { outline: none; }
 @media (max-width: 700px) {
   body { font-size: 17px; }
   .site-header { padding-inline: 18px; }
-  .main-nav { width: 100%; gap: 0; overflow-x: auto; }
-  .nav-link { flex: 1; min-width: max-content; }
   .page-shell { width: min(calc(100% - 32px), var(--content-width)); padding-top: 28px; }
-  .week-title { text-align: left; }
   .menu-controls { padding: 16px; }
   .week-select-wrap,
   .diet-filter { grid-template-columns: 1fr; gap: 6px; }

@@ -1,0 +1,92 @@
+{
+  "id": "6a5762532c76eddc47d0ed2d",
+  "title": "One-Pot: Rigatoni mit Rinderhackfleisch getoppt mit frischen Kräutern und Hartkäse",
+  "diet": "Mit Fleisch",
+  "dietGroup": "non-vegetarian",
+  "time": "20 Minuten",
+  "difficulty": "einfach",
+  "image": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/HF210202_R26_W12_DE_EXP3175-1_MB_main_low-801d2339.jpg",
+  "alt": "Foto des Gerichts One-Pot: Rigatoni mit Rinderhackfleisch getoppt mit frischen Kräutern und Hartkäse.",
+  "intro": "One-Pot-Gerichte gehören in die Kategorie „einfacher geht's nicht“. Schmeiß alles in einen Topf, eine Pfanne oder auf ein Blech und schon erledigt sich Dein Essen fast von selbst. Mit Bonus: Du musst kaum etwas abwaschen und Deine Mahlzeit steht meist schnell auf dem Tisch.",
+  "sourceUrl": "https://www.hellofresh.de/recipes/one-pot-rigatoni-mit-hackfleisch-vom-weiderind-6a5762532c76eddc47d0ed2d",
+  "features": [
+    "nutri-score-c",
+    "One-Pot-Gericht",
+    "Family",
+    "Mediterran",
+    "pasta-noodles",
+    "Schnell",
+    "10 Min. Vorbereitung"
+  ],
+  "servings": "2 Portionen",
+  "ingredients": [
+    {
+      "name": "Hackfleischzubereitung vom Weiderind",
+      "amount": "200 g",
+      "packaging": "Flacher, rechteckiger Vakuumbeutel mit weichem, körnigem Fleischinhalt."
+    },
+    {
+      "name": "Rigatoni",
+      "amount": "270 g"
+    },
+    {
+      "name": "Zwiebel",
+      "amount": "1 Stück",
+      "packaging": "Lose im Zutatenbeutel; rund bis oval mit trockener, raschelnder Schale."
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": "1 Stück",
+      "packaging": "Kleine feste Zehe mit trockener, papierartiger Schale, lose im Zutatenbeutel."
+    },
+    {
+      "name": "Basilikum/Oregano",
+      "amount": "10 g"
+    },
+    {
+      "name": "Kochsahne",
+      "amount": "150 g"
+    },
+    {
+      "name": "Tomatenpesto",
+      "amount": "25 g"
+    },
+    {
+      "name": "Hartkäse ital. Art, geraspelt",
+      "amount": "40 g"
+    },
+    {
+      "name": "Gewürzmischung „Hello Harissa“",
+      "amount": "4 g"
+    },
+    {
+      "name": "Hühnerbrühe",
+      "amount": "6 g",
+      "packaging": "Sehr kleines flaches Sachet mit feinkörnigem Pulver."
+    },
+    {
+      "name": "Esslöffel Öl",
+      "amount": "1"
+    },
+    {
+      "name": "nach Geschmack Salz",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "nach Geschmack Pfeffer",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "Wasser",
+      "amount": "500 ml"
+    }
+  ],
+  "steps": [
+    "Erhitze 5 00 ml [750 ml | 1.000 ml] Wasser im Wasserkocher. Oreganoblätter fein hacken. Zwiebel fein hacken. Knoblauchzehe abziehen.",
+    "In einem großen Topf mit Deckel 1 EL [1,5 EL | 2 EL] Öl* bei mittlerer Temperatur erhitzen. Knoblauch hineinpressen, Rinderhackfleisch und gehackte Zwiebel dazugeben und alles 2 – 3 Min. anbraten. Dabei das Hackfleisch gut zerkleinern.",
+    "Topfinhalt mit Kochsahne und 500 ml [750 ml | 1.000 ml] heißem Wasser* ablöschen. Hühnerbrühe, „Hello Harissa “ und nach Geschmack etwas gehackten Oregano dazugeben. Rigatoni unterrühren, a ufkochen und abgedeckt ca. 11 – 13 Min. köcheln lassen, bis die Nudeln bissfest sind. Zwischendurch mehrmals umrühren. Besonders zum Schluss, wenn das Wasser fast verkocht ist, musst Du öfter umrühren, damit die Nudeln nicht ansetzen!",
+    "Tomatenpesto unter die fertig gegarten Rigatoni rühren.",
+    "Die Hälfte vom geraspelten Hartkäse hinzugeben und gut vermengen, bis der Käse geschmolzen ist. Mit Salz* und Pfeffer* abschmecken.",
+    "Pasta auf tiefen Tellern anrichten, mit Basilikum und restlichem Hartkäse toppen und genießen. Guten Appetit!"
+  ]
+}

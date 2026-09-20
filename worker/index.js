@@ -130,6 +130,16 @@ async function serveRecipe(request, env) {
 
   const cache = globalThis.caches?.default;
   const recipeId = parsedUrl.pathname.split("-").at(-1);
+  const detailUrl = new URL(request.url);
+  detailUrl.pathname = `/data/recipes/${recipeId}.json`;
+  detailUrl.search = "";
+  const bundledDetail = await env.ASSETS.fetch(new Request(detailUrl, request));
+  if (bundledDetail.ok) {
+    const detail = await bundledDetail.json();
+    if (detail.ingredients?.length && detail.steps?.length) {
+      return jsonResponse(detail, request.method);
+    }
+  }
   const cacheKey = `${CACHE_ROOT}/recipe-v1/${recipeId}`;
   try {
     const cached = cache ? await cache.match(cacheKey) : null;

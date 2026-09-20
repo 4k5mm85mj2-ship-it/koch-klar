@@ -1,0 +1,79 @@
+{
+  "id": "6a3bead3f396cfc62f2aa8b6",
+  "title": "Tacos mit doppelt Nürnberger Würstchen-Füllung Cheddar-Dip und eingelegten Gurken",
+  "diet": "Mit Fleisch",
+  "dietGroup": "non-vegetarian",
+  "time": "20 Minuten",
+  "difficulty": "einfach",
+  "image": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/HF_Y26_R36_W29_DE_R2810-3main_high-96723d99.jpg",
+  "alt": "Foto des Gerichts Tacos mit doppelt Nürnberger Würstchen-Füllung Cheddar-Dip und eingelegten Gurken.",
+  "intro": "Tacos sind pure Lebensfreude in der Hand. Bunt, vielseitig und herrlich unkompliziert bringen sie echtes Streetfood-Feeling in deine Küche. Vergiss Besteck und Etikette – hier wird gestapelt, gerollt und mit vollem Einsatz genossen.",
+  "sourceUrl": "https://www.hellofresh.de/recipes/tacos-mit-nurnberger-wurstchen-zwiebel-fullung-6a3bead3f396cfc62f2aa8b6",
+  "features": [
+    "handhelds",
+    "classic-euro-dishes",
+    "nutri-score-d",
+    "Family",
+    "Schnell"
+  ],
+  "servings": "2 Portionen",
+  "ingredients": [
+    {
+      "name": "Weizentortillas",
+      "amount": "200 g"
+    },
+    {
+      "name": "Nürnberger Bratwürstchen",
+      "amount": "400 g"
+    },
+    {
+      "name": "mittelscharfer Senf",
+      "amount": "20 ml"
+    },
+    {
+      "name": "Mayonnaise",
+      "amount": "50 g"
+    },
+    {
+      "name": "Naturjoghurt",
+      "amount": "75 g"
+    },
+    {
+      "name": "Gurke",
+      "amount": "1 Stück"
+    },
+    {
+      "name": "Frühlingszwiebel",
+      "amount": "1 Stück"
+    },
+    {
+      "name": "geriebener Cheddar",
+      "amount": "50 g"
+    },
+    {
+      "name": "Zwiebel",
+      "amount": "1 Stück",
+      "packaging": "Lose im Zutatenbeutel; rund bis oval mit trockener, raschelnder Schale."
+    },
+    {
+      "name": "nach Geschmack Salz",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "nach Geschmack Pfeffer",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "Esslöffel Öl",
+      "amount": "1"
+    }
+  ],
+  "steps": [
+    "Weißen und grünen Teil der Frühlingszwiebel getrennt voneinander in dünne Ringe schneiden.",
+    "Gurke längs vierteln und in 1 cm Würfel schneiden. In einem kleinen Topf 50 ml [75 ml | 100 ml] Wasser*, 50 ml [75 ml | 100 ml] Essig*, Salz* und Zucker* aufkochen. Gurke hinzugeben und 30 Sek. köcheln lassen. Von der Hitze nehmen und marinieren lassen.",
+    "In einer großen Schüssel Käse, Mayonnaise, Joghurt und weiße Frühlingszwiebelringe verrühren. Mit Salz* und Pfeffer* abschmecken.",
+    "Zwiebel halbieren und in feine Streifen schneiden. Bratwürstchen längs halbieren. In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Zwiebel und Bratwürste darin rundherum ca. 5 Min. goldbraun anbraten.",
+    "Eine zweite große Pfanne ohne Fettzugabe bei mittlerer Temperatur erhitzen. Tortillas darin ca. 1 Min. je Seite leicht toasten.",
+    "Tortillas mit Senf bestreichen, mit Nürnbergern und Zwiebeln belegen und mit Käse-Dip toppen. Gurken aus der Flüssigkeit nehmen und auf den Tortillas verteilen. Mit grünen Frühlingszwiebelringen garnieren. Guten Appetit!"
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "id": "6a576070d4e23d845506e4f2",
+  "title": "Käsespätzle mit Bacon und Wirsing getoppt mit frischen Kräutern",
+  "diet": "Mit Fleisch",
+  "dietGroup": "non-vegetarian",
+  "time": "20 Minuten",
+  "difficulty": "einfach",
+  "image": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/marshalls-flammendes-kasespatzle-abenteuer-620715a0-6e7d96c7.jpg",
+  "alt": "Foto des Gerichts Käsespätzle mit Bacon und Wirsing getoppt mit frischen Kräutern.",
+  "intro": "Bist Du ein Fan der traditionellen Wohlfühl-Küche? Dann kommst Du heute voll auf Deine Kosten. Unsere Spätzle haben sich schon in so manches Herz gekocht! Kein Wunder: Der Klassiker hat ja auch alles, was das Herz begehrt. Wir wünschen guten Appetit!",
+  "sourceUrl": "https://www.hellofresh.de/recipes/kasespatzlepfanne-mit-bacon-und-spitzkohl-6a576070d4e23d845506e4f2",
+  "features": [
+    "nutri-score-c",
+    "classic-plates",
+    "Family",
+    "regional-specialty",
+    "Extra schnell"
+  ],
+  "servings": "2 Portionen",
+  "ingredients": [
+    {
+      "name": "frische Eierspätzle",
+      "amount": "400 g"
+    },
+    {
+      "name": "Bacon (Streifen)",
+      "amount": "80 g"
+    },
+    {
+      "name": "Wirsing, geschnitten",
+      "amount": "200 g"
+    },
+    {
+      "name": "Petersilie glatt/Schnittlauch",
+      "amount": "10 g"
+    },
+    {
+      "name": "würziger Gouda, gerieben",
+      "amount": "75 g"
+    },
+    {
+      "name": "Kochsahne",
+      "amount": "150 g"
+    },
+    {
+      "name": "Rinderbrühe",
+      "amount": "4 g",
+      "packaging": "Kleines flaches Sachet mit feinkörnigem Pulver."
+    },
+    {
+      "name": "Gewürzmischung „Hello Muskat“",
+      "amount": "5 g"
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": "1 Stück",
+      "packaging": "Kleine feste Zehe mit trockener, papierartiger Schale, lose im Zutatenbeutel."
+    },
+    {
+      "name": "nach Geschmack Salz",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "nach Geschmack Pfeffer",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "Öl",
+      "amount": "10 g"
+    },
+    {
+      "name": "Wasser",
+      "amount": "50 g"
+    },
+    {
+      "name": "Esslöffel Öl",
+      "amount": "1"
+    }
+  ],
+  "steps": [
+    "Knoblauch abziehen. Petersilie in grobe Stücke schneiden, in den Mixtopf geben, 3 Sek./Stufe 8 zerkleinern und in eine kleine Schüssel umfüllen.",
+    "Knoblauch in den Mixtopf geben, 3 Sek./Stufe 8 zerkleinern und mit dem Spatel nach unten schieben. 10 g [15 g | 15 g] Öl* zugeben und 3 Min./120 °C/Stufe 1 dünsten. Währenddessen Schnittlauch in feine Röllchen schneiden.",
+    "Kochsahne, geschnittenen Wirsing, „Hello Muskat“, Rinderbrühe und 50 g [75 g | 75 g] ml] Wasser* in den Mixtopf zugeben, einmal mit dem Spatel unterheben und 10 Min./100 °C/Reverse/Stufe 1 garen. Währenddessen fortfahren.",
+    "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* bei mittlerer Hitze erwärmen, Spätzle und Bacon darin 4 – 6 Min. braten und gelegentlich umrühren, bis die Spätzle leicht gebräunt sind.",
+    "Wirsing mit Soße zu den Spätzlen in die Pfanne geben und vermischen. Geriebenen Käse unterrühren und mit Salz* und Pfeffer* abschmecken.",
+    "Spätzle mit Wirsing auf tiefe Teller verteilen, mit Kräutern bestreuen und genießen. Guten Appetit!"
+  ]
+}
