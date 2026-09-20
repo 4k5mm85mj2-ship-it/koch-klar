@@ -173,7 +173,7 @@ export function parseMenuPage(html, now = new Date()) {
       id: recipe.id,
       title,
       ...diet,
-      time: parseDuration(recipe.prepTime ?? recipe.totalTime),
+      time: parseDuration(recipe.totalTime ?? recipe.prepTime),
       difficulty: menuDifficulty(recipe.difficulty),
       image: menuImage(recipe),
       alt: `Foto des Gerichts ${title}.`,

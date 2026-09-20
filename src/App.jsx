@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import fallbackMenu from "./data/menu-snapshot.json";
 import menuWeeks from "./data/menu-weeks.json";
+import { segmentCookStep } from "./cook-step-segments.js";
+import { filterRecipes, TIME_FILTERS } from "./recipe-filters.js";
 
 const bundledDefaultMenu = menuWeeks.menus?.[menuWeeks.defaultWeek] ?? fallbackMenu;
 const recipeDetails = import.meta.glob("./data/recipes/*.json");
@@ -9,6 +11,8 @@ export function App() {
   const [menu, setMenu] = useState({ ...bundledDefaultMenu, dataStatus: "snapshot" });
   const [selectedWeek, setSelectedWeek] = useState("");
   const [dietFilter, setDietFilter] = useState("all");
+  const [difficultyFilter, setDifficultyFilter] = useState("all");
+  const [timeFilter, setTimeFilter] = useState("all");
   const [menuLoading, setMenuLoading] = useState(true);
   const [loadingRecipeId, setLoadingRecipeId] = useState(null);
   const [view, setView] = useState("menu");
@@ -16,7 +20,6 @@ export function App() {
   const [stepIndex, setStepIndex] = useState(0);
   const [announcement, setAnnouncement] = useState("");
   const pageHeadingRef = useRef(null);
-  const stepTextRef = useRef(null);
   const previousLocationRef = useRef("menu:");
 
   useEffect(() => {
@@ -65,11 +68,7 @@ export function App() {
     const nextLocation = `${view}:${selectedRecipe?.id ?? ""}`;
     if (previousLocationRef.current === nextLocation) return;
     previousLocationRef.current = nextLocation;
-    if (view === "cook") {
-      stepTextRef.current?.focus();
-    } else {
-      pageHeadingRef.current?.focus();
-    }
+    pageHeadingRef.current?.focus();
     window.scrollTo({ top: 0, behavior: "auto" });
   }, [view, selectedRecipe?.id]);
 
@@ -105,19 +104,21 @@ export function App() {
   const availableWeeks = menu.availableWeeks?.length
     ? menu.availableWeeks
     : [{ value: "fallback", label: menu.weekLabel }];
-  const filteredRecipes = menu.recipes.filter((recipe) => {
-    if (dietFilter === "all") return true;
-    const group = recipe.dietGroup ?? (["Vegetarisch", "Vegan"].includes(recipe.diet) ? "vegetarian" : "non-vegetarian");
-    return group === dietFilter;
+  const filteredRecipes = filterRecipes(menu.recipes, {
+    diet: dietFilter,
+    difficulty: difficultyFilter,
+    totalTime: timeFilter,
   });
   const vegetarianCount = menu.recipes.filter((recipe) => (recipe.dietGroup ?? (["Vegetarisch", "Vegan"].includes(recipe.diet) ? "vegetarian" : "non-vegetarian")) === "vegetarian").length;
+  const filtersActive = dietFilter !== "all" || difficultyFilter !== "all" || timeFilter !== "all";
+  const currentStepSegments = selectedRecipe ? segmentCookStep(selectedRecipe.steps[stepIndex]) : [];
 
   const changeStep = (direction) => {
     if (!selectedRecipe) return;
     const nextStep = Math.min(Math.max(stepIndex + direction, 0), selectedRecipe.steps.length - 1);
     setStepIndex(nextStep);
     setAnnouncement("");
-    requestAnimationFrame(() => stepTextRef.current?.focus());
+    requestAnimationFrame(() => pageHeadingRef.current?.focus());
   };
 
   const startCooking = () => {
@@ -140,22 +141,23 @@ export function App() {
           <section aria-labelledby="menu-heading">
             <div className="intro-block">
               <h1 id="menu-heading" ref={pageHeadingRef} tabIndex="-1">Wochenmenü</h1>
-              <p>Wähle ein Gericht. Danach erhältst du Zutaten, Verpackungsbeschreibungen und Kochschritte.</p>
             </div>
 
             <section className="menu-controls" aria-labelledby="menu-controls-heading">
-              <h2 id="menu-controls-heading">Woche und Ernährungsart</h2>
-              <div className="week-select-wrap">
+              <h2 id="menu-controls-heading">Woche und Filter</h2>
+              <div className="filter-field">
                 <label htmlFor="week-select">Woche auswählen</label>
                 <select id="week-select" value={selectedWeek || menu.week || "fallback"} disabled={menuLoading || availableWeeks.length < 2} onChange={(event) => {
                   setDietFilter("all");
+                  setDifficultyFilter("all");
+                  setTimeFilter("all");
                   setSelectedRecipe(null);
                   setSelectedWeek(event.target.value);
                 }}>
                   {availableWeeks.map((week) => <option key={week.value} value={week.value}>{week.label}</option>)}
                 </select>
               </div>
-              <div className="diet-filter">
+              <div className="filter-field">
                 <label htmlFor="diet-select">Gerichte auswählen</label>
                 <select id="diet-select" value={dietFilter} onChange={(event) => setDietFilter(event.target.value)}>
                   <option value="all">Alle ({menu.recipes.length})</option>
@@ -163,6 +165,28 @@ export function App() {
                   <option value="non-vegetarian">Nicht vegetarisch ({menu.recipes.length - vegetarianCount})</option>
                 </select>
               </div>
+              <div className="filter-field">
+                <label htmlFor="difficulty-select">Schwierigkeit filtern</label>
+                <select id="difficulty-select" value={difficultyFilter} onChange={(event) => setDifficultyFilter(event.target.value)}>
+                  <option value="all">Alle</option>
+                  <option value="einfach">Einfach</option>
+                  <option value="mittel">Mittel</option>
+                  <option value="schwierig">Schwierig</option>
+                </select>
+              </div>
+              <div className="filter-field">
+                <label htmlFor="time-select">Gesamtzeit filtern</label>
+                <select id="time-select" value={timeFilter} onChange={(event) => setTimeFilter(event.target.value)}>
+                  {TIME_FILTERS.map((filter) => <option key={filter.value} value={filter.value}>{filter.label}</option>)}
+                </select>
+              </div>
+              {filtersActive && (
+                <button className="button button--secondary filter-reset" type="button" onClick={() => {
+                  setDietFilter("all");
+                  setDifficultyFilter("all");
+                  setTimeFilter("all");
+                }}>Filter zurücksetzen</button>
+              )}
               <p className="result-count" aria-live="polite" aria-atomic="true">{menuLoading ? "Wochenmenü wird geladen." : `${filteredRecipes.length} ${filteredRecipes.length === 1 ? "Gericht" : "Gerichte"} angezeigt.`}</p>
             </section>
 
@@ -242,22 +266,21 @@ export function App() {
             <h1 id="cook-heading" ref={pageHeadingRef} tabIndex="-1">Schritt {stepIndex + 1} von {selectedRecipe.steps.length}</h1>
             <progress className="step-progress" value={stepIndex + 1} max={selectedRecipe.steps.length} aria-label={`Kochfortschritt: Schritt ${stepIndex + 1} von ${selectedRecipe.steps.length}`}>{stepIndex + 1} von {selectedRecipe.steps.length}</progress>
             <div className="step-panel">
-              <p ref={stepTextRef} tabIndex="-1">{`Schritt ${stepIndex + 1} von ${selectedRecipe.steps.length}. ${selectedRecipe.steps[stepIndex]}`}</p>
+              <div className="step-segments">
+                {currentStepSegments.map((segment, index) => <p className="step-segment" key={`${stepIndex}-${index}`}>{segment}</p>)}
+              </div>
             </div>
             <div className="step-controls">
-              <button className="button button--secondary" type="button" disabled={stepIndex === 0} onClick={() => changeStep(-1)}>Vorheriger Schritt</button>
               {stepIndex < selectedRecipe.steps.length - 1 ? (
                 <button className="button button--primary" type="button" onClick={() => changeStep(1)}>Nächster Schritt</button>
               ) : (
                 <button className="button button--primary" type="button" onClick={() => navigate("menu")}>Fertig – zurück zum Wochenmenü</button>
               )}
+              <button className="button button--secondary" type="button" disabled={stepIndex === 0} onClick={() => changeStep(-1)}>Vorheriger Schritt</button>
             </div>
-            <aside className="keyboard-hint" aria-label="Tastaturhinweis"><strong>Tastatur:</strong> Der vollständige Schritt ist fokussiert. Mit Tab gelangst du direkt zu den Schaltflächen.</aside>
           </article>
         )}
       </main>
-
-      <footer className="site-footer"><p>Funktionaler Prototyp ohne Anmeldung und Bestellung. Rezeptdaten: HelloFresh; Verpackungsbeschreibungen: eigene Ergänzung.</p></footer>
     </>
   );
 }

@@ -12,9 +12,8 @@ When implementing from a selected generated mock, treat that image as the source
 - Accessibility is the primary product requirement: keyboard operation, semantic landmarks and headings, visible focus, live announcements, responsive zoom behavior, and compatibility with VoiceOver, NVDA, and JAWS.
 - Core flow: German weekly menu → recipe details → ingredient quantities with concrete packaging descriptions → one-step-at-a-time cooking mode.
 - Out of scope: login, ordering, box management, and a “found” state for ingredients.
-- In cooking mode, focus the complete current step as one programmatic focus target; the next Tab moves directly to the step controls.
-- Put “Schritt X von Y” inside the focused step text itself so VoiceOver announces the position before the instruction; do not rely only on a container label.
-- Render the step position and instruction as one literal DOM text node. Separate JSX text and number nodes cause VoiceOver to stop on each word and number individually.
+- In cooking mode, keep steps up to 250 characters as one paragraph. Split longer steps only at verified sentence or source-paragraph boundaries, preserving the original text exactly; each resulting paragraph is a separate screen-reader reading unit.
+- Keep “Schritt X von Y” in the focused cooking-mode heading and do not repeat it in the instruction paragraphs. After the instruction paragraphs, place “Nächster Schritt” before “Vorheriger Schritt” in DOM and focus order.
 - Recipe details offer “Kochmodus starten” both near the top before the ingredient list and again in the preparation section, so returning users can start cooking quickly.
 - In the weekly menu, keep the visible recipe number hidden from assistive technology and include “Gericht X von Y” in the image alternative text, so VoiceOver reads the position and image as one element.
 - Render weekly-menu time and difficulty as separate complete text nodes, and recipe-detail portion, time, and difficulty as one complete text node each, so every label-value pair is a single VoiceOver stop.
@@ -23,6 +22,8 @@ When implementing from a selected generated mock, treat that image as the source
 - Load the menu through the Site's internal read-only `/api/menu` endpoint, backed by a versioned snapshot of public HelloFresh recipe data. Keep the same snapshot compiled into the client as an offline fallback.
 - Clearly distinguish imported HelloFresh recipe data from the prototype's own example packaging descriptions, and link every recipe to its public original source.
 - Use native select controls for both week selection and the dietary recipe filter so VoiceOver users can change either value efficiently on iPhone.
+- Use native select controls for the difficulty and total-time filters. Combine all active filters as an intersection and restore the complete week when filters are reset.
+- Base the total-time filter on HelloFresh's recipe `totalTime`; use preparation time only when no total time exists.
 - Bundle every currently available public week as a complete snapshot. Never present the four-recipe emergency fallback as if it were the full weekly menu.
 - Do not show the redundant top navigation for Wochenmenü, Rezept, and Kochmodus. Use only contextual back links and actions.
 - Do not show the selected week as a separate heading before the week selector, and do not expose technical import or cache-status messages in the interface.

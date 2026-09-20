@@ -53,7 +53,13 @@ await Promise.all(Array.from({ length: 10 }, () => worker()));
 const failedIds = new Set(failures.map((failure) => failure.id));
 const usableMenus = Object.fromEntries(Object.entries(bundle.menus).filter(([, menu]) => menu.recipes.every((recipe) => !failedIds.has(recipe.id))));
 const availableWeeks = bundle.availableWeeks.filter((week) => usableMenus[week.value]);
-for (const menu of Object.values(usableMenus)) menu.availableWeeks = availableWeeks;
+for (const menu of Object.values(usableMenus)) {
+  menu.availableWeeks = availableWeeks;
+  for (const recipe of menu.recipes) {
+    const detail = JSON.parse(await readFile(path.join(outputDir, `${recipe.id}.json`), "utf8"));
+    if (detail.time && detail.time !== "nicht angegeben") recipe.time = detail.time;
+  }
+}
 const usableBundle = {
   ...bundle,
   defaultWeek: usableMenus[bundle.defaultWeek] ? bundle.defaultWeek : availableWeeks[0]?.value,

@@ -3,6 +3,8 @@ import { access, readFile } from "node:fs/promises";
 import test from "node:test";
 import worker from "../worker/index.js";
 import { extractRecipeUrls, parseMenuPage, parseRecipePage } from "../worker/hello-fresh-importer.js";
+import { LONG_STEP_THRESHOLD, segmentCookStep } from "../src/cook-step-segments.js";
+import { filterRecipes, timeFilterFor, totalMinutes } from "../src/recipe-filters.js";
 
 const recipeUrl = "https://www.hellofresh.de/recipes/testgericht-mit-gemuse-1234567890abcdef1234";
 const recipeHtml = `<!doctype html><script type="application/ld+json">${JSON.stringify({
@@ -26,6 +28,7 @@ const menuHtml = `<!doctype html><script id="__NEXT_DATA__" type="application/js
         headline: "Ein Testgericht",
         imageLink: `https://media.hellofresh.com/${index}.jpg`,
         prepTime: "PT25M",
+        totalTime: "PT35M",
         difficulty: 1,
         websiteUrl: recipeUrl.replace("testgericht", `testgericht-${index}`),
         tags: index < 3 ? [{ name: "Vegetarisch", type: "veggie" }] : [],
@@ -101,7 +104,7 @@ test("serves the imported menu snapshot through the internal API", async () => {
   assert.equal(menu.week, "2026-W40");
   assert.equal(menu.availableWeeks.length, 6);
   assert.equal(menu.recipes.length, 7);
-  assert.equal(menu.recipes[0].time, "25 Minuten");
+  assert.equal(menu.recipes[0].time, "35 Minuten");
   assert.equal(menu.recipes[0].dietGroup, "vegetarian");
 });
 
@@ -109,6 +112,7 @@ test("parses every unique available course from a weekly menu", () => {
   const menu = parseMenuPage(menuHtml, new Date("2026-09-20T10:00:00Z"));
   assert.equal(menu.weekLabel, "26. September–2. Oktober 2026");
   assert.equal(menu.totalRecipes, 7);
+  assert.equal(menu.recipes[0].time, "35 Minuten");
   assert.equal(menu.recipes.filter((recipe) => recipe.dietGroup === "vegetarian").length, 3);
 });
 
@@ -252,5 +256,73 @@ test("every displayed weekly recipe has a working image URL and bundled details"
     const detail = JSON.parse(await readFile(new URL(`../src/data/recipes/${recipe.id}.json`, import.meta.url), "utf8"));
     assert.ok(detail.ingredients.length > 0, `${recipe.title} has no ingredients`);
     assert.ok(detail.steps.length > 0, `${recipe.title} has no steps`);
+    assert.equal(recipe.time, detail.time, `${recipe.title} does not use the recipe total time`);
+    assert.ok(timeFilterFor(recipe.time), `${recipe.title} has no total-time filter group`);
   }
+});
+
+test("segments every bundled cooking step without changing its text", async () => {
+  const bundle = JSON.parse(await readFile(new URL("../src/data/menu-weeks.json", import.meta.url), "utf8"));
+  const recipes = Object.values(bundle.menus).flatMap((menu) => menu.recipes);
+  const steps = [];
+  for (const recipe of recipes) {
+    const detail = JSON.parse(await readFile(new URL(`../src/data/recipes/${recipe.id}.json`, import.meta.url), "utf8"));
+    steps.push(...detail.steps);
+  }
+
+  assert.ok(steps.length >= 100);
+  let segmentedLongSteps = 0;
+  for (const step of steps) {
+    const segments = segmentCookStep(step);
+    assert.equal(segments.join(""), step);
+    if (step.length <= LONG_STEP_THRESHOLD && !/[\r\n]/.test(step)) assert.equal(segments.length, 1);
+    if (segments.length > 1) {
+      segmentedLongSteps += 1;
+      for (const segment of segments.slice(0, -1)) assert.match(segment.trimEnd(), /[.!?…]["'”’)]*$/);
+    }
+  }
+  assert.ok(segmentedLongSteps > 100);
+});
+
+test("prefers source paragraphs and safely keeps an indivisible long instruction", () => {
+  const paragraphs = "Erster kurzer Absatz.\nZweiter kurzer Absatz.";
+  assert.deepEqual(segmentCookStep(paragraphs), ["Erster kurzer Absatz.\n", "Zweiter kurzer Absatz."]);
+
+  const unusual = "Eine ungewöhnliche Anweisung ".repeat(14).trim();
+  assert.ok(unusual.length > LONG_STEP_THRESHOLD);
+  assert.deepEqual(segmentCookStep(unusual), [unusual]);
+});
+
+test("does not treat a continuing abbreviation as a sentence boundary", () => {
+  const instruction = "Wasser aufkochen und den Reis ca. 12 Min. abgedeckt garen. Anschließend abgießen und servieren.";
+  const longInstruction = `${instruction} ${instruction} ${instruction}`;
+  const segments = segmentCookStep(longInstruction);
+  assert.equal(segments.join(""), longInstruction);
+  assert.ok(segments.every((segment) => !/ca\.\s*$/.test(segment)));
+});
+
+test("maps every time boundary to exactly one total-time filter", () => {
+  assert.equal(totalMinutes("110 Minuten"), 110);
+  assert.deepEqual([20, 21, 30, 31, 45, 46, 60, 61].map((minutes) => timeFilterFor(`${minutes} Minuten`)), [
+    "up-to-20", "21-to-30", "21-to-30", "31-to-45", "31-to-45", "46-to-60", "46-to-60", "over-60",
+  ]);
+});
+
+test("combines dietary, difficulty, and total-time filters as an intersection", () => {
+  const recipes = [
+    { id: "match", dietGroup: "vegetarian", difficulty: "einfach", time: "25 Minuten" },
+    { id: "wrong-diet", dietGroup: "non-vegetarian", difficulty: "einfach", time: "25 Minuten" },
+    { id: "wrong-difficulty", dietGroup: "vegetarian", difficulty: "mittel", time: "25 Minuten" },
+    { id: "wrong-time", dietGroup: "vegetarian", difficulty: "einfach", time: "40 Minuten" },
+  ];
+  assert.deepEqual(filterRecipes(recipes, { diet: "vegetarian", difficulty: "einfach", totalTime: "21-to-30" }).map(({ id }) => id), ["match"]);
+  assert.equal(filterRecipes(recipes).length, recipes.length);
+});
+
+test("keeps only the requested reduced interface guidance", async () => {
+  const appSource = await readFile(new URL("../src/App.jsx", import.meta.url), "utf8");
+  assert.doesNotMatch(appSource, /Wähle ein Gericht\. Danach erhältst du Zutaten/);
+  assert.doesNotMatch(appSource, /Der vollständige Schritt ist fokussiert/);
+  assert.doesNotMatch(appSource, /Funktionaler Prototyp ohne Anmeldung/);
+  assert.ok(appSource.indexOf("Nächster Schritt") < appSource.indexOf("Vorheriger Schritt"));
 });
