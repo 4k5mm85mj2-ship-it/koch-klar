@@ -19,5 +19,6 @@ When implementing from a selected generated mock, treat that image as the source
 - In the weekly menu, keep the visible recipe number hidden from assistive technology and include “Gericht X von Y” in the image alternative text, so VoiceOver reads the position and image as one element.
 - Render weekly-menu time and difficulty as separate complete text nodes, and recipe-detail portion, time, and difficulty as one complete text node each, so every label-value pair is a single VoiceOver stop.
 - Keep a “Zurück zum Wochenmenü” link after the lower “Kochmodus starten” action in recipe details.
+- Render each ingredient as exactly two literal text nodes: one combines ingredient name and quantity, and the second combines “Verpackung erkennen” with the complete packaging description. This keeps each pair together as one VoiceOver stop.
 
 Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts/prepare-sites-build.mjs`, and `tests/sites-worker.test.mjs` intact so the same local prototype can be handed to Sites. Before a Sites handoff, run `npm run build` and `npm run test:sites`; the build must leave `dist/client/index.html`, `dist/server/index.js`, and `dist/.openai/hosting.json`.

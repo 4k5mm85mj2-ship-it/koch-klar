@@ -301,10 +301,8 @@ h1[tabindex="-1"]:focus { outline: none; }
 
 .ingredient-list { margin: 28px 0 0; padding: 0; border-top: 2px solid #222222; list-style: none; }
 .ingredient-list li { padding: 20px 0; border-bottom: 1px solid var(--gray-300); }
-.ingredient-title { display: flex; justify-content: space-between; gap: 22px; font-size: 20px; }
-.ingredient-title span { white-space: nowrap; font-weight: 700; }
+.ingredient-list .ingredient-title { max-width: none; margin: 0; font-size: 20px; font-weight: 700; }
 .ingredient-list p { max-width: 72ch; margin: 8px 0 0; }
-.label { font-weight: 700; }
 
 .cook-view { max-width: 980px; margin: 0 auto; }
 .cook-view h1 { font-size: clamp(42px, 6vw, 70px); }
@@ -381,7 +379,6 @@ h1[tabindex="-1"]:focus { outline: none; }
   .recipe-hero { gap: 26px; }
   .recipe-quick-actions { align-items: stretch; flex-direction: column; }
   .recipe-quick-actions .button { width: 100%; }
-  .ingredient-title { align-items: flex-start; flex-direction: column; gap: 2px; }
   .step-controls { flex-direction: column-reverse; }
   .step-controls .button { width: 100%; }
   .site-footer { padding-inline: 18px; }

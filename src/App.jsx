@@ -256,8 +256,8 @@ export function App() {
               <ul className="ingredient-list">
                 {selectedRecipe.ingredients.map((ingredient) => (
                   <li key={ingredient.name}>
-                    <div className="ingredient-title"><strong>{ingredient.name}</strong><span>{ingredient.amount}</span></div>
-                    <p><span className="label">Verpackung erkennen:</span> {ingredient.packaging}</p>
+                    <p className="ingredient-title">{`${ingredient.name}, ${ingredient.amount}`}</p>
+                    <p>{`Verpackung erkennen: ${ingredient.packaging}`}</p>
                   </li>
                 ))}
               </ul>
