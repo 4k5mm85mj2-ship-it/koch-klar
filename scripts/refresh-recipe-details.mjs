@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { importRecipe } from "../worker/hello-fresh-importer.js";
@@ -7,7 +7,16 @@ import { importRecipe } from "../worker/hello-fresh-importer.js";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const dataDir = path.join(root, "src", "data");
 const bundlePath = path.join(dataDir, "menu-weeks.json");
+const temporaryBundlePath = `${bundlePath}.tmp`;
+const indexPath = path.join(dataDir, "recipe-details-index.json");
+const temporaryIndexPath = `${indexPath}.tmp`;
 const bundle = JSON.parse(await readFile(bundlePath, "utf8"));
+let existingIndex = null;
+try {
+  existingIndex = JSON.parse(await readFile(indexPath, "utf8"));
+} catch {
+  // The index is created after the first successful import.
+}
 const fallbackMenu = JSON.parse(await readFile(path.join(dataDir, "menu-snapshot.json"), "utf8"));
 const outputDir = path.join(dataDir, "recipes");
 const recipes = [...new Map(Object.values(bundle.menus).flatMap((menu) => menu.recipes).map((recipe) => [recipe.id, recipe])).values()];
@@ -50,29 +59,32 @@ async function worker() {
 }
 
 await Promise.all(Array.from({ length: 10 }, () => worker()));
-const failedIds = new Set(failures.map((failure) => failure.id));
-const usableMenus = Object.fromEntries(Object.entries(bundle.menus).filter(([, menu]) => menu.recipes.every((recipe) => !failedIds.has(recipe.id))));
-const availableWeeks = bundle.availableWeeks.filter((week) => usableMenus[week.value]);
-for (const menu of Object.values(usableMenus)) {
-  menu.availableWeeks = availableWeeks;
+if (failures.length) {
+  throw new Error(`Rezeptdetails konnten nicht vollständig aktualisiert werden: ${failures.map(({ id }) => id).join(", ")}`);
+}
+
+for (const menu of Object.values(bundle.menus)) {
+  menu.availableWeeks = bundle.availableWeeks;
   for (const recipe of menu.recipes) {
     const detail = JSON.parse(await readFile(path.join(outputDir, `${recipe.id}.json`), "utf8"));
+    if (!detail.ingredients?.length || !detail.steps?.length) {
+      throw new Error(`Rezeptdetail ${recipe.id} ist unvollständig.`);
+    }
     if (detail.time && detail.time !== "nicht angegeben") recipe.time = detail.time;
   }
 }
-const usableBundle = {
-  ...bundle,
-  defaultWeek: usableMenus[bundle.defaultWeek] ? bundle.defaultWeek : availableWeeks[0]?.value,
-  availableWeeks,
-  menus: usableMenus,
-};
-await writeFile(bundlePath, `${JSON.stringify(usableBundle, null, 2)}\n`, "utf8");
-await writeFile(path.join(dataDir, "recipe-details-index.json"), `${JSON.stringify({
+
+await writeFile(temporaryBundlePath, `${JSON.stringify(bundle, null, 2)}\n`, "utf8");
+const nextIndex = {
   generatedAt: new Date().toISOString(),
   expected: recipes.length,
   saved: completed,
   failures,
-  availableWeeks: availableWeeks.map((week) => week.value),
-}, null, 2)}\n`, "utf8");
+  availableWeeks: bundle.availableWeeks.map((week) => week.value),
+};
+const indexDataChanged = !existingIndex || JSON.stringify({ ...existingIndex, generatedAt: undefined }) !== JSON.stringify({ ...nextIndex, generatedAt: undefined });
+await writeFile(temporaryIndexPath, `${JSON.stringify(indexDataChanged ? nextIndex : existingIndex, null, 2)}\n`, "utf8");
+await rename(temporaryBundlePath, bundlePath);
+await rename(temporaryIndexPath, indexPath);
 
-console.log(`Saved ${completed} of ${recipes.length} recipe details; ${failures.length} unpublished recipes were excluded with their unavailable week.`);
+console.log(`Validated ${completed} of ${recipes.length} recipe details; existing details outside the visible week window were retained.`);
