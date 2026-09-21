@@ -2,7 +2,7 @@
 import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { importRecipe } from "../worker/hello-fresh-importer.js";
+import { importRecipe, weekValuesAround } from "../worker/hello-fresh-importer.js";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const dataDir = path.join(root, "src", "data");
@@ -59,8 +59,19 @@ async function worker() {
 }
 
 await Promise.all(Array.from({ length: 10 }, () => worker()));
-if (failures.length) {
-  throw new Error(`Rezeptdetails konnten nicht vollständig aktualisiert werden: ${failures.map(({ id }) => id).join(", ")}`);
+const failedIds = new Set(failures.map(({ id }) => id));
+const incompleteWeeks = Object.entries(bundle.menus)
+  .filter(([, menu]) => menu.recipes.some(({ id }) => failedIds.has(id)))
+  .map(([week]) => week);
+const requiredWeeks = new Set(weekValuesAround(bundle.defaultWeek));
+const incompleteRequiredWeeks = incompleteWeeks.filter((week) => requiredWeeks.has(week));
+if (incompleteRequiredWeeks.length) {
+  throw new Error(`Rezeptdetails der Pflichtwochen sind unvollständig: ${incompleteRequiredWeeks.join(", ")}`);
+}
+if (incompleteWeeks.length) {
+  for (const week of incompleteWeeks) delete bundle.menus[week];
+  bundle.availableWeeks = bundle.availableWeeks.filter(({ value }) => !incompleteWeeks.includes(value));
+  console.log(`Excluded optional weeks with unavailable recipe details: ${incompleteWeeks.join(", ")}`);
 }
 
 for (const menu of Object.values(bundle.menus)) {
@@ -74,12 +85,14 @@ for (const menu of Object.values(bundle.menus)) {
   }
 }
 
+const visibleRecipes = [...new Map(Object.values(bundle.menus).flatMap((menu) => menu.recipes).map((recipe) => [recipe.id, recipe])).values()];
+
 await writeFile(temporaryBundlePath, `${JSON.stringify(bundle, null, 2)}\n`, "utf8");
 const nextIndex = {
   generatedAt: new Date().toISOString(),
-  expected: recipes.length,
-  saved: completed,
-  failures,
+  expected: visibleRecipes.length,
+  saved: visibleRecipes.length,
+  failures: [],
   availableWeeks: bundle.availableWeeks.map((week) => week.value),
 };
 const indexDataChanged = !existingIndex || JSON.stringify({ ...existingIndex, generatedAt: undefined }) !== JSON.stringify({ ...nextIndex, generatedAt: undefined });
@@ -87,4 +100,4 @@ await writeFile(temporaryIndexPath, `${JSON.stringify(indexDataChanged ? nextInd
 await rename(temporaryBundlePath, bundlePath);
 await rename(temporaryIndexPath, indexPath);
 
-console.log(`Validated ${completed} of ${recipes.length} recipe details; existing details outside the visible week window were retained.`);
+console.log(`Validated ${visibleRecipes.length} visible recipe details; existing details outside the visible week window were retained.`);
