@@ -28,9 +28,11 @@ When implementing from a selected generated mock, treat that image as the source
 - Load the menu through the Site's internal read-only `/api/menu` endpoint, backed by a versioned snapshot of public HelloFresh recipe data. Keep the same snapshot compiled into the client as an offline fallback.
 - Clearly distinguish imported HelloFresh recipe data from the prototype's own example packaging descriptions, and link every recipe to its public original source.
 - Use native select controls for both week selection and the dietary recipe filter so VoiceOver users can change either value efficiently on iPhone.
+- Keep each native week option's visible text and accessible name identical and fully spoken, for example “26. September 2026 bis 2. Oktober 2026”. Do not prefix the value with “Aktuelles Menü”, override option names with ARIA, or add a separate focus stop for the spoken range.
 - Use native select controls for the difficulty and total-time filters. Combine all active filters as an intersection and restore the complete week when filters are reset.
 - Base the total-time filter on HelloFresh's recipe `totalTime`; use preparation time only when no total time exists.
 - Bundle every currently available public week as a complete snapshot. Never present the four-recipe emergency fallback as if it were the full weekly menu.
+- Refresh public HelloFresh snapshots daily through the existing importer and GitHub Pages workflow. Keep two past weeks, the current week, at least three future weeks, and every additional future week found within the discovery window. Never delete stored recipe details merely because a week leaves the visible window, and never replace the deployed site when refresh or validation fails.
 - Do not show the redundant top navigation for Wochenmenü, Rezept, and Kochmodus. Use only contextual back links and actions.
 - Do not show the selected week as a separate heading before the week selector, and do not expose technical import or cache-status messages in the interface.
 - Serve recipe details for every displayed menu card from bundled public HelloFresh detail snapshots so opening recipes does not depend on a live third-party request.

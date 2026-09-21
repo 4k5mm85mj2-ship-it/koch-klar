@@ -3,10 +3,12 @@ name: Deploy GitHub Pages
 on:
   push:
     branches: [main]
+  schedule:
+    - cron: "17 3 * * *"
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -17,6 +19,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      should_deploy: ${{ steps.data_changes.outputs.should_deploy }}
     steps:
       - name: Repository auschecken
         uses: actions/checkout@v4
@@ -30,6 +34,12 @@ jobs:
       - name: Abhängigkeiten installieren
         run: npm ci
 
+      - name: Öffentliche Wochenmenüs aktualisieren
+        run: npm run refresh:menus
+
+      - name: Fehlende Rezeptdetails aktualisieren
+        run: npm run refresh:recipes
+
       - name: Bestehenden Produktions-Build erstellen
         run: npm run build
 
@@ -42,15 +52,44 @@ jobs:
       - name: GitHub-Pages-Build prüfen
         run: npm run test:pages
 
+      - name: Datenänderungen prüfen
+        id: data_changes
+        shell: bash
+        run: |
+          if git diff --quiet -- src/data; then
+            changed=false
+          else
+            changed=true
+          fi
+          if [[ "$GITHUB_EVENT_NAME" == "schedule" && "$changed" == "false" ]]; then
+            should_deploy=false
+          else
+            should_deploy=true
+          fi
+          echo "changed=$changed" >> "$GITHUB_OUTPUT"
+          echo "should_deploy=$should_deploy" >> "$GITHUB_OUTPUT"
+
+      - name: Validierte Datenänderungen speichern
+        if: steps.data_changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data
+          git commit -m "chore(data): refresh HelloFresh weekly snapshots"
+          git push
+
       - name: GitHub Pages konfigurieren
+        if: steps.data_changes.outputs.should_deploy == 'true'
         uses: actions/configure-pages@v5
 
       - name: Statisches Build-Artefakt hochladen
+        if: steps.data_changes.outputs.should_deploy == 'true'
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist/client
 
   deploy:
+    if: needs.build.outputs.should_deploy == 'true'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

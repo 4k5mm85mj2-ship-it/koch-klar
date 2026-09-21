@@ -52,4 +52,6 @@ Der statische Build liegt anschließend in `dist/client`. Seine Asset-Pfade sind
 
 Der Workflow `.github/workflows/deploy-pages.yml` baut und prüft die Anwendung bei Änderungen am Branch `main` und veröffentlicht ausschließlich `dist/client` über GitHub Pages. Im GitHub-Repository muss unter **Settings → Pages → Build and deployment** als Quelle **GitHub Actions** ausgewählt sein.
 
+Der gleiche Workflow prüft die öffentlichen HelloFresh-Menü- und Rezeptseiten einmal täglich. Er hält zwei vergangene Wochen, die aktuelle Woche und mindestens drei zukünftige Wochen im Wochenfilter vor. Weiter in der Zukunft verfügbare Wochen werden ebenfalls übernommen. Neue oder geänderte Snapshots werden erst nach vollständiger Validierung und den bestehenden Regressionstests gespeichert und veröffentlicht. Schlägt Import, Validierung oder Build fehl, bleibt die bisher veröffentlichte Version unverändert. Die öffentliche Datenquelle benötigt keine Zugangsdaten; im Browser und im Pages-Artefakt werden keine Secrets verwendet.
+
 Der bestehende Build für das bisherige Hosting bleibt über `npm run build` verfügbar.

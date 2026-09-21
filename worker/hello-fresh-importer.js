@@ -78,7 +78,7 @@ function parseDuration(value) {
   return minutes ? `${minutes} Minuten` : "nicht angegeben";
 }
 
-function addIsoWeeks(isoWeek, amount) {
+export function addIsoWeeks(isoWeek, amount) {
   const [yearText, weekText] = isoWeek.split("-W");
   const year = Number(yearText);
   const week = Number(weekText);
@@ -95,7 +95,7 @@ function addIsoWeeks(isoWeek, amount) {
   return `${isoYear}-W${String(isoWeekNumber).padStart(2, "0")}`;
 }
 
-function weekDates(isoWeek) {
+export function weekDates(isoWeek) {
   const [yearText, weekText] = isoWeek.split("-W");
   const januaryFourth = new Date(Date.UTC(Number(yearText), 0, 4));
   const monday = new Date(januaryFourth);
@@ -115,6 +115,25 @@ function weekLabel(isoWeek) {
     return `${start.getUTCDate()}.–${end.getUTCDate()}. ${endMonth} ${end.getUTCFullYear()}`;
   }
   return `${start.getUTCDate()}. ${startMonth}–${end.getUTCDate()}. ${endMonth} ${end.getUTCFullYear()}`;
+}
+
+export function spokenWeekLabel(isoWeek) {
+  const { start, end } = weekDates(isoWeek);
+  const format = (date) => date.toLocaleDateString("de-DE", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    timeZone: "UTC",
+  });
+  return `${format(start)} bis ${format(end)}`;
+}
+
+export function weekValuesAround(currentWeek, { past = 2, future = 3 } = {}) {
+  return Array.from({ length: past + future + 1 }, (_, index) => addIsoWeeks(currentWeek, index - past));
+}
+
+export function weekOption(value) {
+  return { value, label: spokenWeekLabel(value) };
 }
 
 function tagsFor(recipe) {
@@ -184,15 +203,12 @@ export function parseMenuPage(html, now = new Date()) {
   }
   if (!recipes.length) throw new Error("In dieser Woche wurden keine verfügbaren Gerichte gefunden.");
 
-  const firstAvailableWeek = isValidWeek(payload.currentWeek) ? payload.currentWeek : activeWeek;
+  const currentWeek = isValidWeek(payload.currentWeek) ? payload.currentWeek : activeWeek;
   return {
     week: activeWeek,
     weekLabel: weekLabel(activeWeek),
-    availableWeeks: Array.from({ length: 6 }, (_, index) => {
-      const value = addIsoWeeks(firstAvailableWeek, index);
-      const label = weekLabel(value);
-      return { value, label: index === 0 ? `Aktuelles Menü: ${label}` : label };
-    }),
+    weekSpokenLabel: spokenWeekLabel(activeWeek),
+    availableWeeks: weekValuesAround(currentWeek).map(weekOption),
     importedAt: germanDate(now),
     checkedAt: now.toISOString(),
     dataStatus: "live",

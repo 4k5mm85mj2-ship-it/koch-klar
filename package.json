@@ -9,7 +9,7 @@
     "build:pages": "vite build --mode pages",
     "preview": "vite preview",
     "test:pages": "node --test tests/github-pages.test.mjs",
-    "test:sites": "node --test tests/sites-worker.test.mjs",
+    "test:sites": "node --test tests/sites-worker.test.mjs tests/weekly-refresh.test.mjs",
     "refresh:menus": "node scripts/refresh-menu-snapshots.mjs",
     "refresh:recipes": "node scripts/refresh-recipe-details.mjs"
   },

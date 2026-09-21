@@ -42,7 +42,7 @@ export function App() {
         const bundledMenu = menuWeeks.menus?.[bundledWeek];
         if (bundledMenu) {
           setMenu({ ...bundledMenu, availableWeeks: menuWeeks.availableWeeks, dataStatus: "snapshot" });
-          setAnnouncement(`${bundledMenu.weekLabel} mit ${bundledMenu.recipes.length} Gerichten aus dem gespeicherten Wochenstand geladen.`);
+          setAnnouncement(`${bundledMenu.recipes.length} Gerichte aus dem gespeicherten Wochenstand geladen.`);
         }
         setMenuLoading(false);
         return;
@@ -61,14 +61,14 @@ export function App() {
           throw new Error("Menü enthält keine Rezepte.");
         }
         setMenu(importedMenu);
-        setAnnouncement(`${importedMenu.weekLabel} mit ${importedMenu.recipes.length} Gerichten geladen.`);
+        setAnnouncement(`${importedMenu.recipes.length} Gerichte geladen.`);
       } catch (error) {
         if (error.name !== "AbortError") {
           const bundledWeek = selectedWeek || menuWeeks.defaultWeek;
           const bundledMenu = menuWeeks.menus?.[bundledWeek];
           if (bundledMenu) {
             setMenu({ ...bundledMenu, availableWeeks: menuWeeks.availableWeeks, dataStatus: "snapshot" });
-            setAnnouncement(`${bundledMenu.weekLabel} mit ${bundledMenu.recipes.length} Gerichten aus dem gespeicherten Wochenstand geladen.`);
+            setAnnouncement(`${bundledMenu.recipes.length} Gerichte aus dem gespeicherten Wochenstand geladen.`);
           } else {
             setAnnouncement("Diese Woche konnte nicht geladen werden. Das bisherige Menü bleibt geöffnet.");
           }
@@ -140,7 +140,7 @@ export function App() {
 
   const availableWeeks = menu.availableWeeks?.length
     ? menu.availableWeeks
-    : [{ value: "fallback", label: menu.weekLabel }];
+    : [{ value: "fallback", label: menu.weekSpokenLabel ?? menu.weekLabel }];
   const filteredRecipes = filterRecipes(menu.recipes, {
     diet: dietFilter,
     difficulty: difficultyFilter,
