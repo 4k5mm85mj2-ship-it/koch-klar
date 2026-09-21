@@ -1,0 +1,80 @@
+{
+  "id": "6a3bea19f396cfc62f2aa4ed",
+  "title": "Paneer in Piri-Piri-Marinade mit Paprika-Mais-Gemüse, Süßkartoffeltalern und Joghurtdip",
+  "diet": "Vegetarisch",
+  "dietGroup": "vegetarian",
+  "time": "30 Minuten",
+  "difficulty": "einfach",
+  "image": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/HF_Y23_R29_W07_DE_EXP4510-1_KB_Main_high-ecac1249.jpg",
+  "alt": "Foto des Gerichts Paneer in Piri-Piri-Marinade mit Paprika-Mais-Gemüse, Süßkartoffeltalern und Joghurtdip.",
+  "intro": "Du möchtest bunt und mit vielen frischen Zutaten kochen und genießen? Dann ist dieses Rezept ganz bestimmt etwas für Dich! Lass es Dir schmecken.",
+  "sourceUrl": "https://www.hellofresh.de/recipes/paneer-in-piri-piri-marinade-6a3bea19f396cfc62f2aa4ed",
+  "features": [
+    "nutri-score-c",
+    "classic-euro-dishes",
+    "classic-plates",
+    "Viel Gemüse",
+    "10 Min. Vorbereitung",
+    "Vegetarisch"
+  ],
+  "servings": "2 Portionen",
+  "ingredients": [
+    {
+      "name": "Paneer",
+      "amount": "200 g"
+    },
+    {
+      "name": "Süßkartoffel",
+      "amount": "1 Stück"
+    },
+    {
+      "name": "Mais",
+      "amount": "140 g"
+    },
+    {
+      "name": "Paprika multicolor",
+      "amount": "1 Stück",
+      "packaging": "Lose im Zutatenbeutel; glatte, feste und hohle Frucht mit deutlich tastbarem Stiel."
+    },
+    {
+      "name": "Gewürzmischung „Hello Piri-Piri“",
+      "amount": "6 g"
+    },
+    {
+      "name": "Sahnejoghurt, Bio",
+      "amount": "100 g"
+    },
+    {
+      "name": "Limette, gewachst",
+      "amount": "1 Stück"
+    },
+    {
+      "name": "Salatherz (Romana)",
+      "amount": "150 g"
+    },
+    {
+      "name": "Esslöffel Öl",
+      "amount": "3"
+    },
+    {
+      "name": "nach Geschmack Pfeffer",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "nach Geschmack Zucker",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "nach Geschmack Salz",
+      "amount": "Menge laut Originalrezept"
+    }
+  ],
+  "steps": [
+    "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Süßkartoffel halbieren und in 0,5 cm Halbmonde schneiden. Süßkartoffelscheiben auf ein mit Backpapier belegtes Backblech geben, mit 1 EL [1,5 EL | 2 EL] Öl*, Salz* und Pfeffer* vermengen und 25 – 30 Min. im Ofen backen bis die Süßkartoffeln weich sind.",
+    "Mais mithilfe des Deckels abgießen. Paneer in 1 cm Scheiben schneiden. Paprika halbieren, entkernen und in 2 cm Stücke schneiden. Limette vierteln. Romanasalat in 1 cm Streifen schneiden.",
+    "In einer großen Schüssel Mais, Paprika und Paneerscheiben mit 2 EL [3 EL | 4 EL] Öl*, „Hello Piri Piri\", Salz* und Pfeffer* vermengen und auf den Süßkartoffeln verteilen. In den letzten 15 – 20 Min. der Backzeit mitgaren, bis der Grillkäse goldbraun ist.",
+    "In einer kleinen Schüssel Joghurt mit dem Saft von 1 [2 | 2] Limettenspalte verrühren. Mit Salz* und Pfeffer* abschmecken.",
+    "In der großen Schüssel aus Schritt 3 1 EL [1,5 EL | 2 EL] Joghurtdip und 1 EL [1,5 EL | 2 EL] Wasser* verrühren. Salatstreifen dazugeben und vermengen. Mit Salz* und Pfeffer* abschmecken.",
+    "Piri-Piri-Paneer-Mix auf Teller verteilen und Salat daneben anrichten. Mit restlichem Joghurtdip und restlichen Limettenspalten servieren. Guten Appetit!"
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "id": "6a3bee5ff396cfc62f2ac275",
+  "title": "Bayerisches Weißwurstfrühstück mit Laugenstange und Kartoffelsalat",
+  "diet": "Mit Fleisch",
+  "dietGroup": "non-vegetarian",
+  "time": "25 Minuten",
+  "difficulty": "einfach",
+  "image": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/HF_Y26_R72_W38_DE_R24862-17main_swap_Weißwurst_edit_edit2_high-4a31fa09.jpg",
+  "alt": "Foto des Gerichts Bayerisches Weißwurstfrühstück mit Laugenstange und Kartoffelsalat.",
+  "intro": "Guad Moang, Bayern! Starte mit unserem traditionellen Weißwurstfrühstück ganz bayrisch in den Tag. Dich erwarten klassische Weißwürste mit frisch gebackener Laugenstange und herzhafter Kartoffel-Buschbohnen-Salat.",
+  "sourceUrl": "https://www.hellofresh.de/recipes/bayerisches-weisswurstfruhstuck-6a3bee5ff396cfc62f2ac275",
+  "features": [
+    "nutri-score-d",
+    "classic-plates",
+    "Family",
+    "ineligible-reco",
+    "Schnell",
+    "regional-specialty",
+    "oktoberfest"
+  ],
+  "servings": "2 Portionen",
+  "ingredients": [
+    {
+      "name": "Weißwurst",
+      "amount": "240 g"
+    },
+    {
+      "name": "Laugenstangen",
+      "amount": "180 g"
+    },
+    {
+      "name": "Ofenkartoffel",
+      "amount": "350 g"
+    },
+    {
+      "name": "Buschbohnen",
+      "amount": "150 g"
+    },
+    {
+      "name": "Schnittlauch",
+      "amount": "10 g"
+    },
+    {
+      "name": "süßer Senf",
+      "amount": "51 g"
+    },
+    {
+      "name": "Gemüsebrühpulver",
+      "amount": "4 g"
+    },
+    {
+      "name": "Teelöffel Weißweinessig",
+      "amount": "2"
+    },
+    {
+      "name": "Esslöffel Öl",
+      "amount": "3"
+    },
+    {
+      "name": "Wasser",
+      "amount": "75 ml"
+    },
+    {
+      "name": "Esslöffel Butter",
+      "amount": "2"
+    },
+    {
+      "name": "nach Geschmack Salz",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "nach Geschmack Pfeffer",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "Teelöffel Zucker",
+      "amount": "1"
+    }
+  ],
+  "steps": [
+    "Erhitze reichlich Wasser im Wasserkocher. Kartoffeln schälen, halbieren und in 1 cm Scheiben schneiden. Enden der Buschbohnen abschneiden und Bohnen halbieren. Einen großen Topf mit heißem Wasser füllen, kräftig salzen* und aufkochen lassen. Kartoffelscheiben und Buschbohnen darin ca. 8 – 10 Min. köcheln lassen, bis sie gar sind.",
+    "In einer großen Schüssel die Hälfte vom süßen Senf, Brühepulver, 2 EL [3 EL | 4 EL] Essig*, 3 EL [4,5 EL | 6 EL] Öl*, 1 TL [1,5 TL | 2 TL] Zucker*, Salz* und Pfeffer* mit 75 ml [125 ml | 150 ml] vom Kochwasser* verrühren.",
+    "Kartoffelscheiben und Bohnen durch ein Sieb abgießen, kurz abtropfen lassen und mit dem Dressing vermengen. Bis zum Ende des Rezepts marinieren lassen. Vor dem Servieren eventuell nochmals mit Salz* und Pfeffer* abschmecken.",
+    "In einen kleinen Topf mit Deckel reichlich heißes Wasser* füllen und einmal aufkochen lassen. Topf vom Herd nehmen, Weißwurst hineingeben und ca. 5 Min. abgedeckt ziehen lassen.",
+    "Schnittlauch in feine Ringe schneiden. Laugenstangen in einer großen Pfanne oder auf dem Toaster 1 Min. je Seite rösten. Laugenstangen waagerecht aufschneiden, mit jeweils 1 EL Butter* bestreichen und mit der Hälfte vom Schnittlauch bestreuen. Restlichen Schnittlauch unter den Kartoffelsalat mischen.",
+    "Weißwürste mit Kartoffel-Bohnen-Salat und Laugenstangen anrichten. Mit restlichem süßen Senf genießen. Guten Appetit!"
+  ]
+}

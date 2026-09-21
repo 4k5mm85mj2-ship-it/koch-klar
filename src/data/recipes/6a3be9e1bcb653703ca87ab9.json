@@ -1,0 +1,100 @@
+{
+  "id": "6a3be9e1bcb653703ca87ab9",
+  "title": "Hummus-Bowl mit Sesamaubergine und Dukkah-Linsen, dazu Fladenbrot",
+  "diet": "Vegetarisch",
+  "dietGroup": "vegetarian",
+  "time": "30 Minuten",
+  "difficulty": "einfach",
+  "image": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/HF_Y25_R32_W32_DE_R3253-17_Main_low-3b58019a.jpg",
+  "alt": "Foto des Gerichts Hummus-Bowl mit Sesamaubergine und Dukkah-Linsen, dazu Fladenbrot.",
+  "intro": "Für alle, die es frisch und bunt lieben: Mit mehr als 240 g Gemüse pro Portion ist dieses Gericht ein leckerer, ausgewogener Genuss. Guten Appetit!",
+  "sourceUrl": "https://www.hellofresh.de/recipes/hummus-bowl-mit-sesamaubergine-6a3be9e1bcb653703ca87ab9",
+  "features": [
+    "dinner-bowls",
+    "Viel Gemüse",
+    "nutri-score-b",
+    "source-of-fibre",
+    "Taste of Middle East",
+    "Vegan"
+  ],
+  "servings": "2 Portionen",
+  "ingredients": [
+    {
+      "name": "Hummus",
+      "amount": "160 g"
+    },
+    {
+      "name": "braune Linsen",
+      "amount": "390 g"
+    },
+    {
+      "name": "Aubergine",
+      "amount": "1 Stück"
+    },
+    {
+      "name": "Libanesisches Fladenbrot",
+      "amount": "120 g"
+    },
+    {
+      "name": "Sesamsamen",
+      "amount": "10 g"
+    },
+    {
+      "name": "rote Zwiebel",
+      "amount": "1 Stück"
+    },
+    {
+      "name": "Gurke",
+      "amount": "1 Stück"
+    },
+    {
+      "name": "Tomate",
+      "amount": "1 Stück"
+    },
+    {
+      "name": "Kumin, gemahlen",
+      "amount": "½ g"
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": "1 Stück",
+      "packaging": "Kleine feste Zehe mit trockener, papierartiger Schale, lose im Zutatenbeutel."
+    },
+    {
+      "name": "Gewürzmischung „Hello Dukkah“",
+      "amount": "2 g"
+    },
+    {
+      "name": "nach Geschmack Pfeffer",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "nach Geschmack Salz",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "Esslöffel Öl",
+      "amount": "3"
+    },
+    {
+      "name": "Esslöffel Weißweinessig",
+      "amount": "1"
+    },
+    {
+      "name": "Esslöffel Zucker",
+      "amount": "1"
+    },
+    {
+      "name": "Esslöffel Olivenöl",
+      "amount": "1"
+    }
+  ],
+  "steps": [
+    "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Aubergine längs halbieren und in 1 cm Halbmonde schneiden. In einer großen Schüssel Auberginen-Halbmonde mit Sesam, 2 EL [3 EL | 4 EL] Öl*, Salz* und Pfeffer* vermengen, auf einem mit Backpapier belegten Backblech verteilen und im vorgeheizten Ofen 20 – 25 Min. goldbraun backen. Die Schüssel benötigst du in Schritt 3 wieder.",
+    "Zwiebel halbieren und in feine Streifen schneiden. In einem kleinen Topf 2 EL [3 EL | 4 EL] Wasser*, 1 EL [1,5 EL | 2 EL] Essig* und 1 EL [1,5 EL | 2 EL] Zucker* aufkochen lassen. Zwiebelstreifen hinzufügen und 1 Min. köcheln lassen. Dann vom Herd nehmen und ziehen lassen.",
+    "Gurke längs halbieren und quer in ca. 0,5 cm Halbmonde schneiden. Tomate in 1 cm Würfel schneiden. In der großen Schüssel aus Schritt 1 Gurkenhalbmonde, Tomatenwürfel und Zwiebeln mitsamt der Flüssigkeit vermengen. Mit etwas Kumin, 1 EL [1,5 EL | 2 EL] Olivenöl*, Salz* und Pfeffer* abschmecken.",
+    "Linsen durch ein Sieb abgießen. Knoblauch abziehen.",
+    "In einer großen Pfanne etwas Öl* erhitzen. Fladenbrote darin 1 – 2 Min. pro Seite erwärmen. Leicht salzen* und aus der Pfanne nehmen. In der Pfanne erneut 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Knoblauch dazu pressen und 1 Min. anschwitzen. Linsen und „Hello Dukkah“ hinzufügen und zusammen 2 - 3 Min. anbraten. Mit Salz* und Pfeffer* abschmecken und kurz beiseitestellen.",
+    "Linsen, Salat und Aubergine nebeneinander in tiefen Tellern anrichten. Brot und Hummus dazu anrichten und genießen. Guten Appetit!"
+  ]
+}

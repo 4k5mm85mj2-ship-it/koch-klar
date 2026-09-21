@@ -1,0 +1,96 @@
+{
+  "id": "6a3be9a1f396cfc62f2aa26a",
+  "title": "Spaghetti mit Pilzrahm-Soße Kräuterseitlingen und Walnüssen",
+  "diet": "Vegetarisch",
+  "dietGroup": "vegetarian",
+  "time": "15 Minuten",
+  "difficulty": "einfach",
+  "image": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/HF_Y25_R03_W09_DE_EXP18727-3_Main_low-a8d8da8a.jpg",
+  "alt": "Foto des Gerichts Spaghetti mit Pilzrahm-Soße Kräuterseitlingen und Walnüssen.",
+  "intro": "Pasta ist so einfach wie genial. Und schmeckt einfach immer irgendwie nach Italienurlaub. Frische, aromatische Zutaten, unkomplizierte Zubereitung – das alles kommt heute zusammen. Buon appetito!",
+  "sourceUrl": "https://www.hellofresh.de/recipes/spaghetti-mit-pilzrahm-sosse-6a3be9a1f396cfc62f2aa26a",
+  "features": [
+    "nutri-score-c",
+    "pasta-noodles",
+    "regional-specialty",
+    "Extra schnell",
+    "Vegetarisch"
+  ],
+  "servings": "2 Portionen",
+  "ingredients": [
+    {
+      "name": "Spaghetti",
+      "amount": "270 g",
+      "packaging": "Länglicher, durchsichtiger Kunststoffbeutel mit langen, harten Nudeln."
+    },
+    {
+      "name": "Kräuterseitling",
+      "amount": "150 g"
+    },
+    {
+      "name": "Walnüsse",
+      "amount": "20 g"
+    },
+    {
+      "name": "Champignons",
+      "amount": "200 g",
+      "packaging": "Kleine durchsichtige Kunststoffschale mit Folienverschluss; runde Pilzköpfe sind tastbar."
+    },
+    {
+      "name": "Petersilie, glatt",
+      "amount": "10 g",
+      "packaging": "Sehr leichter, flacher Klarsichtbeutel mit weichen Blättern und dünnen Stielen."
+    },
+    {
+      "name": "Worcester Sauce",
+      "amount": "8 g",
+      "packaging": "Sehr kleines flaches Kunststoffsachet mit flüssigem Inhalt und versiegelten Rändern."
+    },
+    {
+      "name": "Gewürzmischung „Hello Muskat“",
+      "amount": "5 g"
+    },
+    {
+      "name": "Zwiebel",
+      "amount": "1 Stück",
+      "packaging": "Lose im Zutatenbeutel; rund bis oval mit trockener, raschelnder Schale."
+    },
+    {
+      "name": "Kochsahne leicht",
+      "amount": "150 g",
+      "packaging": "Kleiner standfester Getränkekarton mit Schraubverschluss; flüssiger Inhalt."
+    },
+    {
+      "name": "Hartkäse ital. Art, gerieben",
+      "amount": "20 g"
+    },
+    {
+      "name": "Wasser",
+      "amount": "100 ml"
+    },
+    {
+      "name": "nach Geschmack Salz",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "nach Geschmack Pfeffer",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "Esslöffel Butter",
+      "amount": "1"
+    },
+    {
+      "name": "Esslöffel Öl",
+      "amount": "1"
+    }
+  ],
+  "steps": [
+    "In einen großen Topf ca. 2,5 L heißes Wasser* füllen, 1 EL [1,5 EL | 2 EL] Salz* hinzufügen und aufkochen. Pasta hinzugeben und 7 – 9 Min. bissfest garen.",
+    "In einer großen Pfanne ohne Fettzugabe Walnüsse 1 – 2 Min. rösten. Herausnehmen. Zwiebel halbieren und in Streifen schneiden. Champignons halbieren oder vierteln. Kräuterseitlinge halbieren und 1 cm Scheiben schneiden. Petersilie grob hacken.",
+    "In der großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* und 1 EL [1,5 EL | 2 EL] Butter* erhitzen. Zwiebelstreifen, Champignons und Kräuterseitlinge in die Pfanne geben und 4 – 6 Min. goldbraun anbraten.",
+    "Währenddessen mit einem Messbecher 100 ml [150 ml | 200 ml] Pastakochwasser* abnehmen. Sahne, „Hello Muskat“, Hälfte der Kräuter und Pfeffer* dazugeben und vermengen.",
+    "Pasta durch ein Sieb abgießen. Hitze reduzieren und Pfanneninhalt mit der vorbereiteten Soße ablöschen. Pasta dazugeben und gut vermengen. Mit Worcester-Sauce, Salz* und Pfeffer* abschmecken.",
+    "Pasta auf tiefe Teller verteilen. Mit Walnüssen, Käse und restlicher Petersilie garnieren. Guten Appetit!"
+  ]
+}
