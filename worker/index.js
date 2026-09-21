@@ -1,7 +1,7 @@
 import { importCurrentMenu, importRecipe } from "./hello-fresh-importer.js";
 
 const REFRESH_AFTER_MS = 12 * 60 * 60 * 1000;
-const CACHE_ROOT = "https://einfach-kochen.internal";
+const CACHE_ROOT = "https://koch-klar.internal";
 
 async function loadSnapshot(request, env) {
   const dataUrl = new URL(request.url);

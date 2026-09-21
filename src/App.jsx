@@ -30,13 +30,24 @@ export function App() {
   };
 
   useEffect(() => {
-    document.title = "Einfach kochen – barrierefreier Rezept-Prototyp";
+    document.title = "KochKlar – barrierearm kochen mit Rezepten von HelloFresh";
   }, []);
 
   useEffect(() => {
     const controller = new AbortController();
 
     async function loadMenu() {
+      if (import.meta.env.MODE === "pages") {
+        const bundledWeek = selectedWeek || menuWeeks.defaultWeek;
+        const bundledMenu = menuWeeks.menus?.[bundledWeek];
+        if (bundledMenu) {
+          setMenu({ ...bundledMenu, availableWeeks: menuWeeks.availableWeeks, dataStatus: "snapshot" });
+          setAnnouncement(`${bundledMenu.weekLabel} mit ${bundledMenu.recipes.length} Gerichten aus dem gespeicherten Wochenstand geladen.`);
+        }
+        setMenuLoading(false);
+        return;
+      }
+
       try {
         setMenuLoading(true);
         const query = selectedWeek && selectedWeek !== "fallback" ? `?week=${encodeURIComponent(selectedWeek)}` : "";
@@ -187,7 +198,7 @@ export function App() {
       <a className="skip-link" href="#main-content">Direkt zum Inhalt</a>
 
       <header className="site-header">
-        <span className="wordmark">Einfach kochen</span>
+        <span className="wordmark">KochKlar</span>
       </header>
 
       <div className="sr-only" aria-live="polite" aria-atomic="true">{announcement}</div>
@@ -359,6 +370,10 @@ export function App() {
           </article>
         )}
       </main>
+
+      <footer className="site-footer">
+        <p>KochKlar ist ein unabhängiger, nicht kommerzieller Prototyp zur Erprobung einer barrierearmen Nutzung von Kochrezepten. KochKlar steht in keiner Verbindung zu HelloFresh und wird von HelloFresh weder angeboten noch unterstützt. HelloFresh ist eine Marke der jeweiligen Rechteinhaber.</p>
+      </footer>
     </>
   );
 }

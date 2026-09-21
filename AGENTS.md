@@ -8,6 +8,7 @@ When implementing from a selected generated mock, treat that image as the source
 
 ## Durable prototype decisions
 
+- Public project name: “KochKlar”. Describe it as an independent, non-commercial prototype for accessible use of recipes from HelloFresh; never present it as an official or HelloFresh-authorized product. Keep the compact independence and trademark notice as one non-interactive footer paragraph without adding focus stops.
 - Selected visual direction: Option 1, the calm linear reading list.
 - Accessibility is the primary product requirement: keyboard operation, semantic landmarks and headings, visible focus, live announcements, responsive zoom behavior, and compatibility with VoiceOver, NVDA, and JAWS.
 - Core flow: German weekly menu → recipe details → ingredient quantities with concrete packaging descriptions → one-step-at-a-time cooking mode.

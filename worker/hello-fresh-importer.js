@@ -1,7 +1,7 @@
 const REQUEST_HEADERS = {
   accept: "text/html,application/xhtml+xml",
   "accept-language": "de-DE,de;q=0.9",
-  "user-agent": "EinfachKochenAccessibilityPrototype/1.0",
+  "user-agent": "KochKlarPrototype/1.0",
 };
 
 const HTML_ENTITIES = {

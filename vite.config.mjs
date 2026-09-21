@@ -1,8 +1,10 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
+  base: mode === "pages" ? "./" : "/",
   build: {
+    emptyOutDir: true,
     outDir: "dist/client",
   },
   optimizeDeps: {
@@ -16,4 +18,4 @@ export default defineConfig({
     },
   },
   plugins: [react()],
-});
+}));
