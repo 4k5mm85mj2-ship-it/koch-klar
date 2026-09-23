@@ -1,0 +1,82 @@
+{
+  "id": "6a5763743cd318353e2a54c0",
+  "title": "Burrata auf Spaghetti mit grünem Pesto dazu geschmorte Kirschtomaten",
+  "diet": "Vegetarisch",
+  "dietGroup": "vegetarian",
+  "time": "30 Minuten",
+  "difficulty": "einfach",
+  "image": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/HF_Y23_R17_W23_DE_R4333-1_Main_TM_high-cbaa6ff0.jpg",
+  "alt": "Foto des Gerichts Burrata auf Spaghetti mit grünem Pesto dazu geschmorte Kirschtomaten.",
+  "intro": "Ein Gericht, das zeigt, dass es nicht viel zum Glücklichsein braucht: frisches Pesto, fruchtige Tomaten und dazu milchig-cremige Burrata. Was will man mehr?",
+  "sourceUrl": "https://www.hellofresh.de/recipes/spaghetti-burrata-mit-frischem-grunem-pesto-6a5763743cd318353e2a54c0",
+  "features": [
+    "nutri-score-c",
+    "Family",
+    "Mediterran",
+    "pasta-noodles",
+    "Schnell",
+    "Vegetarisch",
+    "quick-pasta"
+  ],
+  "servings": "2 Portionen",
+  "ingredients": [
+    {
+      "name": "Burrata",
+      "amount": "125 g"
+    },
+    {
+      "name": "Spaghetti",
+      "amount": "270 g",
+      "packaging": "Länglicher, durchsichtiger Kunststoffbeutel mit langen, harten Nudeln."
+    },
+    {
+      "name": "rote Kirschtomaten",
+      "amount": "250 g"
+    },
+    {
+      "name": "Basilikum",
+      "amount": "20 g"
+    },
+    {
+      "name": "Sonnenblumenkerne",
+      "amount": "20 g"
+    },
+    {
+      "name": "Hartkäse ital. Art, gerieben",
+      "amount": "20 g"
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": "1 Stück",
+      "packaging": "Kleine feste Zehe mit trockener, papierartiger Schale, lose im Zutatenbeutel."
+    },
+    {
+      "name": "Gemüsebrühpulver",
+      "amount": "4 g"
+    },
+    {
+      "name": "nach Geschmack Salz",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "Olivenöl",
+      "amount": "50 ml"
+    },
+    {
+      "name": "nach Geschmack Pfeffer",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "nach Geschmack Zucker",
+      "amount": "Menge laut Originalrezept"
+    }
+  ],
+  "steps": [
+    "In einen großen Topf reichlich Wasser* füllen, kräftig salzen* und aufkochen lassen. Währenddessen Sonnenblumenkerne in einer kleinen Pfanne ohne Fettzugabe 1 – 2 Min. rösten, bis sie duften und bräunen. Dann in den Mixtopf geben.",
+    "Spaghetti in den Topf mit kochendem Wasser geben und 7 – 8 Min. bissfest kochen. Spaghetti nach der Garzeit durch den Varoma Behälter abgießen und zurück in den Topf geben. Währenddessen mit dem Rezept fortfahren.",
+    "Knoblauchzehe abziehen. Einige Blätter vom Basilikum abzupfen und beiseitelegen. Restliches Basilikum samt Stielen in ca. 2 cm Stücke schneiden. Kirschtomaten halbieren.",
+    "Basilikum, Knoblauch, Gemüsebrühe, Hartkäse, 40 g [60 g | 80 g] Olivenöl*, 200 g [300 g | 400 g] Pasta-Kochwasser* und 0,5 TL [0,75 TL | 1 TL] Salz* und Pfeffer* in den Mixtopf zugeben und 30 Sek./Stufe 10 pürieren. Pesto in den Topf zu den Spaghetti geben, gut unterrühren und mit Salz* und Pfeffer* abschmecken. Ggf. warmhalten.",
+    "10 g [15 g | 15 g] Öl*, Kirschtomaten, Salz*, Pfeffer* und eine Prise Zucker* in den Mixtopf geben und 4 Min. [5 Min. | 5 Min.]/100 °C/Reverse/Stufe 1 schmoren.",
+    "Spaghetti auf Teller verteilen. Geschmorte Kirschtomaten darüber geben. Burrata halbieren und auf die Spaghetti setzen. Mit einer Prise frischem Pfeffer* bestreuen und mit restlichen Basilikumblättern toppen. Guten Appetit!"
+  ]
+}
