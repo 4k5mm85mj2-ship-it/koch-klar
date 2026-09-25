@@ -26,7 +26,7 @@
       "label": "17. Oktober 2026 bis 23. Oktober 2026"
     }
   ],
-  "generatedAt": "2026-09-24T03:26:17.149Z",
+  "generatedAt": "2026-09-25T03:25:11.361Z",
   "menus": {
     "2026-W38": {
       "week": "2026-W38",
@@ -58,8 +58,8 @@
           "label": "17. Oktober 2026 bis 23. Oktober 2026"
         }
       ],
-      "importedAt": "24. September 2026",
-      "checkedAt": "2026-09-24T03:26:07.024Z",
+      "importedAt": "25. September 2026",
+      "checkedAt": "2026-09-25T03:25:02.842Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W38",
@@ -2051,8 +2051,8 @@
           "label": "17. Oktober 2026 bis 23. Oktober 2026"
         }
       ],
-      "importedAt": "24. September 2026",
-      "checkedAt": "2026-09-24T03:26:07.024Z",
+      "importedAt": "25. September 2026",
+      "checkedAt": "2026-09-25T03:25:02.843Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W39",
@@ -4158,8 +4158,8 @@
           "label": "17. Oktober 2026 bis 23. Oktober 2026"
         }
       ],
-      "importedAt": "24. September 2026",
-      "checkedAt": "2026-09-24T03:26:04.435Z",
+      "importedAt": "25. September 2026",
+      "checkedAt": "2026-09-25T03:25:02.008Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W40",
@@ -6260,8 +6260,8 @@
           "label": "17. Oktober 2026 bis 23. Oktober 2026"
         }
       ],
-      "importedAt": "24. September 2026",
-      "checkedAt": "2026-09-24T03:26:07.025Z",
+      "importedAt": "25. September 2026",
+      "checkedAt": "2026-09-25T03:25:02.845Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W41",
@@ -8286,8 +8286,8 @@
           "label": "17. Oktober 2026 bis 23. Oktober 2026"
         }
       ],
-      "importedAt": "24. September 2026",
-      "checkedAt": "2026-09-24T03:26:07.026Z",
+      "importedAt": "25. September 2026",
+      "checkedAt": "2026-09-25T03:25:02.847Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W42",
@@ -10370,8 +10370,8 @@
           "label": "17. Oktober 2026 bis 23. Oktober 2026"
         }
       ],
-      "importedAt": "24. September 2026",
-      "checkedAt": "2026-09-24T03:26:09.555Z",
+      "importedAt": "25. September 2026",
+      "checkedAt": "2026-09-25T03:25:04.935Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W43",
@@ -12354,15 +12354,15 @@
         },
         {
           "id": "6a576357d4e23d845506fca9",
-          "title": "One Pan: Reispfanne mit indonesischem Hähnchen",
+          "title": "One Pan: Reispfanne mit Hoisin Hähnchen",
           "diet": "Nicht vegetarisch",
           "dietGroup": "non-vegetarian",
           "time": "30 Minuten",
           "difficulty": "einfach",
           "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y23_R29_W17_DE_EXP4317-1_Main_high-8652dcd3.jpg",
-          "alt": "Foto des Gerichts One Pan: Reispfanne mit indonesischem Hähnchen.",
+          "alt": "Foto des Gerichts One Pan: Reispfanne mit Hoisin Hähnchen.",
           "intro": "Brokkoli, Karottenstreifen und Sesam",
-          "sourceUrl": "https://www.hellofresh.de/recipes/one-pan-reispfanne-mit-indonesischem-hahnchen-6a576357d4e23d845506fca9",
+          "sourceUrl": "https://www.hellofresh.de/recipes/one-pan-reispfanne-mit-hoisin-hahnchen-6a576357d4e23d845506fca9",
           "features": [
             "nutri-score-b",
             "Gesund genießen",
