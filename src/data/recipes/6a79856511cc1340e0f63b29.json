@@ -1,0 +1,99 @@
+{
+  "id": "6a79856511cc1340e0f63b29",
+  "title": "Pizza-Suppe mit Hackfleisch und Champignons, Basilikum und Käse",
+  "diet": "Mit Fleisch",
+  "dietGroup": "non-vegetarian",
+  "time": "25 Minuten",
+  "difficulty": "einfach",
+  "image": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/HF_Y26_R7261_W05_DE_EXP3340-SP-1-10_Main_high-12faadb9.jpg",
+  "alt": "Foto des Gerichts Pizza-Suppe mit Hackfleisch und Champignons, Basilikum und Käse.",
+  "intro": "Ob Shimeji, Austernpilz oder Kräuterseitling – wer Pilze ganz neu kennenlernen will, ist diese Saison bei uns goldrichtig. Von seltenen Sorten bis hin zu unserem innovativen Shiitake-Beef zeigen wir, wie Pilze wirklich schmecken sollen: erdig, aromatisch und voller Umami. Genau das Richtige also, wenn draußen langsam der Winter an die Tür klopft.",
+  "sourceUrl": "https://www.hellofresh.de/recipes/one-pot-suppe-mit-champignons-und-hackfleisch-6a79856511cc1340e0f63b29",
+  "features": [
+    "nutri-score-c",
+    "One-Pot-Gericht",
+    "Viel Gemüse",
+    "Family",
+    "High Protein",
+    "Low Carb",
+    "Mediterran",
+    "soup-stew",
+    "Kalorien im Blick",
+    "mushrooms"
+  ],
+  "servings": "2 Portionen",
+  "ingredients": [
+    {
+      "name": "Frühlingszwiebel",
+      "amount": "1 Stück"
+    },
+    {
+      "name": "stückige Tomaten",
+      "amount": "390 g"
+    },
+    {
+      "name": "gemischte Hackfleischzubereitung",
+      "amount": "250 g",
+      "packaging": "Flacher, rechteckiger Vakuumbeutel mit weichem, körnigem Fleischinhalt."
+    },
+    {
+      "name": "Basilikum/Oregano",
+      "amount": "10 g"
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": "1 Stück",
+      "packaging": "Kleine feste Zehe mit trockener, papierartiger Schale, lose im Zutatenbeutel."
+    },
+    {
+      "name": "Gewürzmischung „Hello Buon Appetito“",
+      "amount": "2 g"
+    },
+    {
+      "name": "Champignons",
+      "amount": "125 g",
+      "packaging": "Kleine durchsichtige Kunststoffschale mit Folienverschluss; runde Pilzköpfe sind tastbar."
+    },
+    {
+      "name": "Hartkäse ital. Art, gerieben",
+      "amount": "20 g"
+    },
+    {
+      "name": "saure Sahne, Bio",
+      "amount": "50 g",
+      "packaging": "Kleiner runder Kunststoffbecher mit abziehbarem Folienverschluss."
+    },
+    {
+      "name": "Gemüsebrühpulver",
+      "amount": "8 g"
+    },
+    {
+      "name": "nach Geschmack Salz",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "nach Geschmack Zucker",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "Öl",
+      "amount": "10 g"
+    },
+    {
+      "name": "Wasser",
+      "amount": "200 g"
+    },
+    {
+      "name": "nach Geschmack Pfeffer",
+      "amount": "Menge laut Originalrezept"
+    }
+  ],
+  "steps": [
+    "Frühlingszwiebel in dünne Ringe schneiden. Oreganoblätter abzupfen. Knoblauch abziehen. Basilikum in grobe Stücke schneiden, in den Mixtopf geben und 3 Sek./Stufe 8 zerkleinern und in eine kleine Schüssel umfüllen.",
+    "Knoblauch und nach Geschmack Oregano in den Mixtopf geben, 3 Sek./Stufe 8 zerkleinern und mit dem Spatel nach unten schieben. 10 g [15 g | 20 g] Öl* und Frühlingszwiebelringe zugeben und 3 Min./120 °C/Reverse/Stufe 1 dünsten.",
+    "Hackfleisch in den Mixtopf zugeben und mit dem Spatel vorsichtig unterheben. Anstelle des Messbechers Gareinsatz als Spritzschutz auf den Mixtopfdeckel stellen und 4 Min./100 °C/Reverse/Stufe 1 dünsten. Währenddessen Champignons in Scheiben schneiden.",
+    "Stückige Tomaten, Champignons, 200 g [250 g | 300 g] Wasser*, Brühepulver, „Hello Buon Appetito“, Salz*, Pfeffer* und 1 Prise Zucker* zugeben, mit dem Spatel noch einmal durchrühren und ggf. größere Hackfleischstückchen mit dem Spatel zerkleinern. Anstelle des Messbechers Gareinsatz als Spritzschutz auf den Mixtopfdeckel stellen und 14 Min. [15 Min. | 16 Min.]/100 °C/Reverse/Stufe 1 garen.",
+    "Einen Schluck saure Sahne in den Mixtopf zugeben und mit dem Spatel untermischen. Suppe mit evtl. restlichen Oregano, Salz* und Pfeffer* kräftig abschmecken.",
+    "Pizza-Suppe auf Teller verteilen, mit Basilikum und geriebenem Käse toppen. Restliche saure Sahne dazureichen. Guten Appetit!"
+  ]
+}

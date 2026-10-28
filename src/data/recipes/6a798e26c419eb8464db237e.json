@@ -1,0 +1,74 @@
+{
+  "id": "6a798e26c419eb8464db237e",
+  "title": "Der HelloFresh Weihnachtsbaum mit Rinderhackbolognese und goldenen Gnocchisternen",
+  "diet": "Mit Fleisch",
+  "dietGroup": "non-vegetarian",
+  "time": "20 Minuten",
+  "difficulty": "einfach",
+  "image": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/b0c37d9f-3902-4623-ad37-9f4856d2dee8-a54c4eb5.jpg",
+  "alt": "Foto des Gerichts Der HelloFresh Weihnachtsbaum mit Rinderhackbolognese und goldenen Gnocchisternen.",
+  "intro": "Hier kommt etwas ganz Besonderes für kleine und große Weihnachtselfen: ein Tannenbaum aus deftiger Rinderhackbolognese, üppig behangen mit goldglänzenden Gnocchisternen. In nur 15 Minuten landet dieses leckere Weihnachtswunder auf deinem Teller – Baumschmücken in Rekordzeit! Da strahlen die Augen gleich mit!",
+  "sourceUrl": "https://www.hellofresh.de/recipes/weihnachtsbaum-mit-herzhafter-bolognese-6a798e26c419eb8464db237e",
+  "features": [
+    "nutri-score-c",
+    "Family",
+    "Mediterran",
+    "pasta-noodles",
+    "Extra schnell",
+    "festive-flavours"
+  ],
+  "servings": "2 Portionen",
+  "ingredients": [
+    {
+      "name": "Gnocchi in Sternform",
+      "amount": "400 g"
+    },
+    {
+      "name": "Karotte",
+      "amount": "1 Stück"
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": "1 Stück",
+      "packaging": "Kleine feste Zehe mit trockener, papierartiger Schale, lose im Zutatenbeutel."
+    },
+    {
+      "name": "Tomatensugo",
+      "amount": "300 g"
+    },
+    {
+      "name": "Hackfleischzubereitung vom Weiderind",
+      "amount": "200 g",
+      "packaging": "Flacher, rechteckiger Vakuumbeutel mit weichem, körnigem Fleischinhalt."
+    },
+    {
+      "name": "Hartkäse ital. Art, gerieben",
+      "amount": "20 g"
+    },
+    {
+      "name": "nach Geschmack Salz",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "nach Geschmack Pfeffer",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "nach Geschmack Zucker",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "Esslöffel Olivenöl",
+      "amount": "2"
+    },
+    {
+      "name": "Wasser",
+      "amount": "100 g"
+    }
+  ],
+  "steps": [
+    "Knoblauch abziehen. Karotte nach Belieben schälen und in grobe Stücke schneiden. Beides in den Mixtopf geben, 5 Sek./Stufe 5 zerkleinern und mit dem Spatel nach unten schieben. 10 g [15 g | 20 g] Öl* und Hackfleisch zugeben, mit dem Spatel unterheben und 4 Min./100 °C/Reverse/Stufe 1 dünsten.",
+    "Tomatensugo und 100 g [150 g| 200 g] Wasser*, 1 Prise Zucker*, Salz* und Pfeffer* in den Mixtopf zugeben, mit dem Spatel noch einmal durchrühren, ggf. größere Hackfleischstückchen mit dem Spatel zerkleinern und 12 Min./100 °C/Reverse/Stufe 1 kochen. Währenddessen in einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Gnocchi darin 6 – 8 Min. goldbraun anbraten. Soße mit Salz* und Pfeffer* abschmecken.",
+    "Einen Gnocchistern zur Seite legen. Soße und Gnocchi auf tiefen Tellern anrichten. Mit Hartkäse toppen. Den beiseite gelegten Gnocchistern auf der Spitze des Gerichts platzieren. Guten Appetit!"
+  ]
+}

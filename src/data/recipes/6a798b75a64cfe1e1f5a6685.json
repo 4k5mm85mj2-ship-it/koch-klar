@@ -1,0 +1,95 @@
+{
+  "id": "6a798b75a64cfe1e1f5a6685",
+  "title": "One-Pot: Spaghetti al Pomodoro getoppt mit Frischecreme-Nocken und Pinienkernen",
+  "diet": "Vegetarisch",
+  "dietGroup": "vegetarian",
+  "time": "25 Minuten",
+  "difficulty": "einfach",
+  "image": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/HF_Y25_R28_W19_DE_EXP3659-22_Main_5_low-3804d560.jpg",
+  "alt": "Foto des Gerichts One-Pot: Spaghetti al Pomodoro getoppt mit Frischecreme-Nocken und Pinienkernen.",
+  "intro": "Pasta geht immer! In Kombination mit leckerem Gemüse und cremiger Soße ist dieses Gericht ein wahrer Gaumenschmaus. Lass es Dir schmecken!",
+  "sourceUrl": "https://www.hellofresh.de/recipes/one-pot-spaghetti-al-pomodoro-6a798b75a64cfe1e1f5a6685",
+  "features": [
+    "nutri-score-c",
+    "One-Pot-Gericht",
+    "Family",
+    "Mediterran",
+    "pasta-noodles",
+    "Schnell",
+    "Vegetarisch"
+  ],
+  "servings": "2 Portionen",
+  "ingredients": [
+    {
+      "name": "Spaghetti",
+      "amount": "270 g",
+      "packaging": "Länglicher, durchsichtiger Kunststoffbeutel mit langen, harten Nudeln."
+    },
+    {
+      "name": "Tomatensugo",
+      "amount": "300 g"
+    },
+    {
+      "name": "Tomate (Roma)",
+      "amount": "2 Stück"
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": "2 Stück",
+      "packaging": "Kleine feste Zehe mit trockener, papierartiger Schale, lose im Zutatenbeutel."
+    },
+    {
+      "name": "Pinienkerne",
+      "amount": "20 g"
+    },
+    {
+      "name": "Basilikum/Oregano",
+      "amount": "10 g"
+    },
+    {
+      "name": "Hartkäse ital. Art, geraspelt",
+      "amount": "40 g"
+    },
+    {
+      "name": "Frischecreme",
+      "amount": "100 g"
+    },
+    {
+      "name": "Gemüsebrühpulver",
+      "amount": "4 g"
+    },
+    {
+      "name": "schwarze Oliven ohne Stein",
+      "amount": "50 g"
+    },
+    {
+      "name": "Zwiebel",
+      "amount": "1 Stück",
+      "packaging": "Lose im Zutatenbeutel; rund bis oval mit trockener, raschelnder Schale."
+    },
+    {
+      "name": "nach Geschmack Salz",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "Esslöffel Öl",
+      "amount": "1"
+    },
+    {
+      "name": "Wasser",
+      "amount": "400 ml"
+    },
+    {
+      "name": "nach Geschmack Pfeffer",
+      "amount": "Menge laut Originalrezept"
+    }
+  ],
+  "steps": [
+    "Erhitze reichlich Wasser in einem Wasserkocher. Zwiebel und Knoblauch jeweils fein würfeln. Tomaten in 2 cm Würfel schneiden. Oreganoblätter fein hacken. Basilikumblätter abzupfen und die Hälfte in feine Streifen schneiden.",
+    "In einem großen Topf Pinienkerne ohne Fettzugabe 1 – 2 Min. rösten, bis sie duften. Herausnehmen und beiseite stellen.",
+    "In denselben großen Topf 1 EL [1,5 EL | 2 EL] Öl*, Zwiebel- und Knoblauchwürfel, Tomatenwürfel, Tomatensugo, 400 ml [600 ml | 800 ml] heißes Wasser*, Gemüsebrühpulver und Oregano geben und aufkochen lassen.",
+    "Spaghetti in der Mitte einmal durchbrechen, in den Topf geben und bei mittlerer Hitze abgedeckt 8 – 10 Min. kochen, bis die Spaghetti bissfest sind. Wichtig: Dabei mind. alle 2 Min. umrühren, sonst kleben die Spaghetti am Topfboden fest! Tipp: Wenn der Topfinhalt am Ende der Kochzeit zu flüssig ist, 1 Min. bei hoher Hitze aufkochen.",
+    "Inzwischen in einer kleinen Schüssel Frischecreme mit Basilikumstreifen verrühren und mit Salz* und Pfeffer* abschmecken. Oliven halbieren.",
+    "Wenn die Spaghetti gar sind, mit Salz* und Pfeffer* abschmecken und auf Teller verteilen. Mit einem Löffel kleine Nocken von der Basilikumcreme abnehmen und auf den Spaghetti verteilen. Mit Hartkäse-Flakes, gerösteten Pinienkernen, Oliven und restlichem Basilikum toppen und genießen. Guten Appetit!"
+  ]
+}

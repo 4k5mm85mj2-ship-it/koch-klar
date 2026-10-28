@@ -1,0 +1,93 @@
+{
+  "id": "6a798a8611cc1340e0f65393",
+  "title": "Chimichurri Burger mit käsigem Bio-Rinderhack Kartoffelspalten, Zitronen-Aioli und frischem Salat",
+  "diet": "Mit Fleisch",
+  "dietGroup": "non-vegetarian",
+  "time": "35 Minuten",
+  "difficulty": "einfach",
+  "image": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/HF_Y24_R16_W41_DE_PM27537-1_Main_low-5fb2d458.jpg",
+  "alt": "Foto des Gerichts Chimichurri Burger mit käsigem Bio-Rinderhack Kartoffelspalten, Zitronen-Aioli und frischem Salat.",
+  "intro": "Du liebst Burger? Wir auch. Fluffige Buns, saftige Patties, würzige Saucen und knusprige Beilagen machen unsere Burger-Variationen zu einer puren Geschmacksexplosion. Kleckern erlaubt.",
+  "sourceUrl": "https://www.hellofresh.de/recipes/chimichurri-burger-mit-kasigem-bio-rinderhack-6a798a8611cc1340e0f65393",
+  "features": [
+    "nutri-score-c",
+    "handhelds",
+    "latin-american-faves",
+    "Viel Gemüse",
+    "Merchan-surcharge",
+    "premium-protein"
+  ],
+  "servings": "2 Portionen",
+  "ingredients": [
+    {
+      "name": "Bio Rinderhackfleischzubereitung",
+      "amount": "200 g"
+    },
+    {
+      "name": "Brioche Bun, natur",
+      "amount": "160 g"
+    },
+    {
+      "name": "vorw. festk. Kartoffeln",
+      "amount": "600 g"
+    },
+    {
+      "name": "rote Kirschtomaten",
+      "amount": "250 g"
+    },
+    {
+      "name": "Rucola",
+      "amount": "100 g"
+    },
+    {
+      "name": "Oregano/Petersilie",
+      "amount": "20 g"
+    },
+    {
+      "name": "Zitrone, gewachst",
+      "amount": "1 Stück"
+    },
+    {
+      "name": "Aioli",
+      "amount": "120 g"
+    },
+    {
+      "name": "junger Gouda, gerieben",
+      "amount": "50 g",
+      "packaging": "Kleiner flacher Klarsichtbeutel; der geriebene Käse fühlt sich locker und weich an."
+    },
+    {
+      "name": "Pankomehl",
+      "amount": "25 g"
+    },
+    {
+      "name": "Gewürzmischung „Hello Patatas“",
+      "amount": "4 g"
+    },
+    {
+      "name": "milder Chili-Mix",
+      "amount": "2 g",
+      "packaging": "Sehr kleines flaches Gewürzsachet mit feinem Pulver."
+    },
+    {
+      "name": "nach Geschmack Salz",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "nach Geschmack Pfeffer",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "Esslöffel Öl",
+      "amount": "Menge laut Originalrezept"
+    }
+  ],
+  "steps": [
+    "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Kartoffeln halbieren und in 1 cm Spalten schneiden. Kartoffeln auf einem mit Backpapier belegten Backblech verteilen, mit 1 EL [1,5 EL | 2 EL] Öl*, „Hello Patatas“, Salz* und Pfeffer* vermengen und im Backofen 25 – 30 Min. garen, bis sie goldbraun sind.",
+    "Petersilien- und Oreganoblätter zusammen fein hacken. Zitrone heiß abwaschen und 1 TL [1,5 TL | 2 TL] der Schale fein abreiben. Zitrone vierteln. In einer kleinen Schüssel gehackte Kräuter, Chili-Mix, Saft von 1 [1,5 | 2] Zitronenspalte, Zitronenabrieb und 4 EL [6 EL | 8 EL] Öl* vermengen und mit Salz* und Pfeffer* abschmecken. Chimichurri beiseitestellen.",
+    "In einer großen Schüssel Hackfleisch, Käse, Pankomehl, Salz* und Pfeffer* gut vermengen. Hackfleischmasse zu 2 [3 | 4] gleich großen, ca. 1 cm flachen Patties formen.",
+    "Kirschtomaten halbieren oder vierteln. In einer großen Schüssel 1 EL [1,5 EL | 2 EL] Chimichurri, 1 EL [1,5 EL | 2 EL] Wasser*, Saft von 1 [2 | 2] Zitronenviertel, Salz* und Pfeffer* zu einem Dressing verrühren. Kirschtomaten und Rucola dazugeben und unterheben.",
+    "Brioche Buns waagerecht aufschneiden. In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Butter* erhitzen. Brioche Buns darin 2 – 3 Min. toasten, bis sie goldbraun sind. Herausnehmen. Dieselbe Pfanne erneut erhitzen und Patties darin 3 – 4 Min. braten pro Seite anbraten und dabei etwas flachdrücken.",
+    "Brioche Buns mit etwas Aioli bestreichen, ein wenig Salat darüber verteilen, die Patties darauf legen, mit Chimichurri toppen und schließen. Kartoffelspalten und Rucola-Tomaten-Salat neben dem Burger anrichten. Mit Aioli servieren. Guten Appetit!"
+  ]
+}

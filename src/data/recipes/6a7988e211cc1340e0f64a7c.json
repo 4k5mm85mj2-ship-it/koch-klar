@@ -1,0 +1,89 @@
+{
+  "id": "6a7988e211cc1340e0f64a7c",
+  "title": "Pizza Diavolo mit spicy Nduja und Paprika dazu frischer Salat mit Senfdressing",
+  "diet": "Vegetarisch",
+  "dietGroup": "non-vegetarian",
+  "time": "30 Minuten",
+  "difficulty": "einfach",
+  "image": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/HF_Y26_R51_W46_DE_EXP4404-13_main_high-5eb346ed.jpg",
+  "alt": "Foto des Gerichts Pizza Diavolo mit spicy Nduja und Paprika dazu frischer Salat mit Senfdressing.",
+  "intro": "Pizza gehört zu den beliebtesten Speisen weltweit. Über Jahrhunderte hat sich die Pizza von einem „Arme-Leute-Essen“ zu einem kulinarischen Aushängeschild entwickelt und kommt fast überall regelmäßig auf die Teller, Kartons und Hände.",
+  "sourceUrl": "https://www.hellofresh.de/recipes/pizza-diavolo-mit-spicy-nduja-und-paprika-6a7988e211cc1340e0f64a7c",
+  "features": [
+    "nutri-score-d",
+    "classic-plates",
+    "Family",
+    "Mediterran",
+    "10 Min. Vorbereitung"
+  ],
+  "servings": "2 Portionen",
+  "ingredients": [
+    {
+      "name": "frischer Pizzateig",
+      "amount": "400 g"
+    },
+    {
+      "name": "Paprika multicolor",
+      "amount": "1 Stück",
+      "packaging": "Lose im Zutatenbeutel; glatte, feste und hohle Frucht mit deutlich tastbarem Stiel."
+    },
+    {
+      "name": "rote Zwiebel",
+      "amount": "1 Stück"
+    },
+    {
+      "name": "junger Gouda, gerieben",
+      "amount": "50 g",
+      "packaging": "Kleiner flacher Klarsichtbeutel; der geriebene Käse fühlt sich locker und weich an."
+    },
+    {
+      "name": "Tomatensugo",
+      "amount": "200 g"
+    },
+    {
+      "name": "milder Chili-Mix",
+      "amount": "2 g",
+      "packaging": "Sehr kleines flaches Gewürzsachet mit feinem Pulver."
+    },
+    {
+      "name": "Salatherz (Romana)",
+      "amount": "150 g"
+    },
+    {
+      "name": "mittelscharfer Senf",
+      "amount": "5 ml"
+    },
+    {
+      "name": "Nduja",
+      "amount": "80 g"
+    },
+    {
+      "name": "nach Geschmack Pfeffer",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "nach Geschmack Salz",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "Esslöffel Olivenöl",
+      "amount": "1"
+    },
+    {
+      "name": "nach Geschmack Zucker",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "Teelöffel Weißweinessig",
+      "amount": "1"
+    }
+  ],
+  "steps": [
+    "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Zwiebel halbieren und in feine Streifen schneiden. Paprika halbieren, entkernen und in 1 cm Streifen schneiden.",
+    "Pizzateig mit dem Backpapier auf einem Backblech ausrollen. Pizzateig mit Tomatensugo bestreichen, Chiliflocken und geriebenen Gouda darüber verteilen. Zwiebeln, Paprika und Nduja gleichmäßig darauf verteilen.",
+    "Pizza im Ofen 18 – 22 Min. backen.",
+    "In einer großen Schüssel Hälfte [drei Viertel | gesamten] Senf, 1 EL [1,5 EL | 2 EL] Olivenöl*, 1 TL [1,5 TL | 2 TL] Essig*, Salz*, Pfeffer* und eine Prise Zucker zu einem Dressing vermengen. Salatherz in 2 cm breite Streifen schneiden, zu dem Dressing geben und vermengen.",
+    "Pizza nach Belieben in Stücke schneiden.",
+    "Pizza auf Teller verteilen und mit dem Salat servieren. Guten Appetit!"
+  ]
+}

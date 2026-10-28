@@ -1,0 +1,96 @@
+{
+  "id": "6a79886511cc1340e0f647b5",
+  "title": "Jambalaya! Pikante Reispfanne mit Maiskolben und Joghurtdip",
+  "diet": "Vegetarisch",
+  "dietGroup": "vegetarian",
+  "time": "30 Minuten",
+  "difficulty": "einfach",
+  "image": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/HF_Y25_R26_W52_DE_EXP3740-9_Main_low-2c696923.jpg",
+  "alt": "Foto des Gerichts Jambalaya! Pikante Reispfanne mit Maiskolben und Joghurtdip.",
+  "intro": "One-Pot-Gerichte gehören in die Kategorie „einfacher geht's nicht“. Schmeiß alles in einen Topf, eine Pfanne oder auf ein Blech und schon erledigt sich Dein Essen fast von selbst. Mit Bonus: Du musst kaum etwas abwaschen und Deine Mahlzeit steht meist schnell auf dem Tisch.",
+  "sourceUrl": "https://www.hellofresh.de/recipes/one-pan-pikante-reispfanne-nach-jambalaya-art-6a79886511cc1340e0f647b5",
+  "features": [
+    "One-Pot-Gericht",
+    "Viel Gemüse",
+    "North American",
+    "nutri-score-c",
+    "source-of-fibre",
+    "Vegetarisch",
+    "noodle-stir-fry"
+  ],
+  "servings": "2 Portionen",
+  "ingredients": [
+    {
+      "name": "Basmatireis",
+      "amount": "150 g",
+      "packaging": "Kleiner durchsichtiger Kunststoffbeutel; die trockenen Körner rieseln hörbar."
+    },
+    {
+      "name": "Maiskolben (vorgekocht)",
+      "amount": "400 g"
+    },
+    {
+      "name": "Buschbohnen",
+      "amount": "100 g"
+    },
+    {
+      "name": "pikante Paprikasoße",
+      "amount": "160 g"
+    },
+    {
+      "name": "Naturjoghurt",
+      "amount": "75 g"
+    },
+    {
+      "name": "Zwiebel",
+      "amount": "1 Stück",
+      "packaging": "Lose im Zutatenbeutel; rund bis oval mit trockener, raschelnder Schale."
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": "1 Stück",
+      "packaging": "Kleine feste Zehe mit trockener, papierartiger Schale, lose im Zutatenbeutel."
+    },
+    {
+      "name": "Gemüsebrühpulver",
+      "amount": "8 g"
+    },
+    {
+      "name": "Gewürzmischung „Hello Cajun“",
+      "amount": "6 g"
+    },
+    {
+      "name": "Tomatenmark",
+      "amount": "17,5 g",
+      "packaging": "Kleines flaches Portionssachet mit weichem, dickflüssigem Inhalt."
+    },
+    {
+      "name": "nach Geschmack Salz",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "Esslöffel Öl",
+      "amount": "2"
+    },
+    {
+      "name": "Wasser",
+      "amount": "300 ml"
+    },
+    {
+      "name": "Esslöffel Butter",
+      "amount": "1"
+    },
+    {
+      "name": "nach Geschmack Pfeffer",
+      "amount": "Menge laut Originalrezept"
+    }
+  ],
+  "steps": [
+    "Erhitze reichlich Wasser im Wasserkocher. Enden der Buschbohnen abschneiden und die Bohnen quer dritteln. Knoblauch und Zwiebel fein hacken. Aus 350 ml [525 ml | 700 ml] heißem Wasser* und Brühepulver eine Brühe herstellen.",
+    "Maiskolben quer in 3 Stücke schneiden. Tipp: Wenn es Dir zu schwer ist, die Maiskolben zu zerschneiden, kannst Du sie auch im Ganzen braten. In einer großen Pfanne mit Deckel 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Maiskolben darin rundherum 3 – 4 Min. anbraten, bis sie leicht gebräunt sind. Maiskolben aus der Pfanne nehmen, rundherum mit 1 EL [1,5 EL | 2 EL] Butter* und einer Prise „Hello Cajun“ einreiben und beiseitelegen.",
+    "In derselben Pfanne erneut 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Knoblauch, Zwiebel, Bohnen und die Hälfte [drei Viertel | alles] vom Tomatenmark darin 1 – 2 Min. anschwitzen. Restliches „Hello Cajun“ hinzufügen und eine weitere Minute mit anschwitzen. Reis und vorbereitete Brühe hinzufügen, einmal aufkochen lassen und dann zugedeckt auf mittlerer Hitze 12 Min. köcheln lassen.",
+    "In einer kleinen Schüssel Joghurt mit Salz* und Pfeffer* verrühren.",
+    "Nachdem der Reis 10 Min. gekocht hat, Pfanne vom Herd nehmen. Pikante Paprikasoße unter den Reis heben, Mais zum Aufwärmen auf den Reis legen und abgedeckt weitere 10 Min. ziehen lassen.",
+    "Jambalaya mit Salz* und Pfeffer* abschmecken, auf Teller verteilen und mit Maiskolben toppen. Mit dem Dip genießen. Guten Appetit!"
+  ]
+}

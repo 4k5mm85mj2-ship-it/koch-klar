@@ -1,0 +1,93 @@
+{
+  "id": "6a798a5a11cc1340e0f652f3",
+  "title": "Spaghetti mit Avocado-Basilikum-Pesto und Pinienkern-Panko-Crunch",
+  "diet": "Vegetarisch",
+  "dietGroup": "vegetarian",
+  "time": "20 Minuten",
+  "difficulty": "einfach",
+  "image": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/HF_Y25_R08_W03_DE_R31675-1_Main_F1_low-78b47e81.jpg",
+  "alt": "Foto des Gerichts Spaghetti mit Avocado-Basilikum-Pesto und Pinienkern-Panko-Crunch.",
+  "intro": "Der italienische Klassiker! Ob auf die Gabel gedreht, gezwirbelt oder einfach in den Mund gezogen, Spaghetti sind bei jedermann beliebt. Dazu die passende Sauce und alles ist fertig für ein lautes \"buon appetito\"!",
+  "sourceUrl": "https://www.hellofresh.de/recipes/spaghetti-mit-avocado-basilikum-pesto-6a798a5a11cc1340e0f652f3",
+  "features": [
+    "nutri-score-a",
+    "Mediterran",
+    "pasta-noodles",
+    "Schnell",
+    "Vegan"
+  ],
+  "servings": "2 Portionen",
+  "ingredients": [
+    {
+      "name": "Spaghetti",
+      "amount": "270 g",
+      "packaging": "Länglicher, durchsichtiger Kunststoffbeutel mit langen, harten Nudeln."
+    },
+    {
+      "name": "Oatly Bio Cuisine",
+      "amount": "200 ml"
+    },
+    {
+      "name": "Avocado",
+      "amount": "1 Stück"
+    },
+    {
+      "name": "Tomate",
+      "amount": "2 Stück"
+    },
+    {
+      "name": "Babyspinat",
+      "amount": "50 g"
+    },
+    {
+      "name": "Basilikum",
+      "amount": "20 g"
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": "2 Stück",
+      "packaging": "Kleine feste Zehe mit trockener, papierartiger Schale, lose im Zutatenbeutel."
+    },
+    {
+      "name": "Hefeflocken",
+      "amount": "5 g"
+    },
+    {
+      "name": "Balsamico Creme",
+      "amount": "12 g"
+    },
+    {
+      "name": "Pinienkerne",
+      "amount": "10 g"
+    },
+    {
+      "name": "Pankomehl",
+      "amount": "25 g"
+    },
+    {
+      "name": "milder Chili-Mix",
+      "amount": "2 g",
+      "packaging": "Sehr kleines flaches Gewürzsachet mit feinem Pulver."
+    },
+    {
+      "name": "Esslöffel Olivenöl",
+      "amount": "1"
+    },
+    {
+      "name": "nach Geschmack Salz",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "nach Geschmack Pfeffer",
+      "amount": "Menge laut Originalrezept"
+    }
+  ],
+  "steps": [
+    "Knoblauch fein hacken. Avocado halbieren, entkernen und in 1 cm Würfel schneiden. Tomate in 1 cm Würfel schneiden. In einer kleinen Schüssel Tomatenwürfel mit Balsamicocreme und Salz* marinieren lassen.",
+    "In einem hohen Rührgefäß Hälfte Knoblauch, Hälfte Spinat, Avocadowürfel, Basilikumblätter, Hafer-Cuisine, Hefeflocken, 0,5 TL [0,75 TL | 1 TL] Salz* und Pfeffer* mithilfe eines Pürierstabs zu einem glatten Pesto verarbeiten.",
+    "In einen großen Topf reichlich heißes Wasser* füllen, kräftig salzen* und aufkochen lassen. Pasta hinzugeben und 7 – 8 Min. bissfest garen. Währenddessen mit dem Rezept fortfahren.",
+    "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Olivenöl* erhitzen. Pankomehl, Pinienkerne, restlichen Knoblauch, Chili-Mix nach Belieben (Achtung: scharf!), Salz* und Pfeffer* 2 – 3 Min. anbraten, bis das Pankomehl goldbraun ist. Herausnehmen.",
+    "Pasta durch ein Sieb abgießen und zurück in den Topf geben. Pesto, restlichen Spinat und Tomatenwürfel unter die Pasta heben. Mit Salz* und Pfeffer* abschmecken.",
+    "Cremige Pesto-Pasta auf tiefe Teller anrichten. Mit Pinienkern-Topping toppen. Guten Appetit!"
+  ]
+}
