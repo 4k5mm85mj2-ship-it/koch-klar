@@ -390,10 +390,23 @@ test("selects exactly one HelloFresh step amount for 2, 3, or 4 portions", () =>
   assert.equal(stepForPortions(step, 4, 2), "Mit 2 EL Öl und 4 Patties fortfahren.");
 });
 
+test("resolves portion alternatives when an ingredient label follows the base amount", () => {
+  const labeled = "Mit 1 TL Butter*, Zitronenschale, 0,5 TL Salz* [0,75 TL | 1 TL] und Pfeffer* vermengen.";
+  assert.equal(stepForPortions(labeled, 2), "Mit 1 TL Butter*, Zitronenschale, 0,5 TL Salz* und Pfeffer* vermengen.");
+  assert.equal(stepForPortions(labeled, 3), "Mit 1 TL Butter*, Zitronenschale, 0,75 TL Salz* und Pfeffer* vermengen.");
+  assert.equal(stepForPortions(labeled, 4), "Mit 1 TL Butter*, Zitronenschale, 1 TL Salz* und Pfeffer* vermengen.");
+
+  const alternateSeparator = "2 EL [3 EL I 4 EL] Butter verwenden.";
+  assert.equal(stepForPortions(alternateSeparator, 2), "2 EL Butter verwenden.");
+  assert.equal(stepForPortions(alternateSeparator, 3), "3 EL Butter verwenden.");
+  assert.equal(stepForPortions(alternateSeparator, 4), "4 EL Butter verwenden.");
+});
+
 test("supports 2, 3, and 4 portions across every bundled recipe without unresolved alternatives", async () => {
   const bundle = JSON.parse(await readFile(new URL("../src/data/menu-weeks.json", import.meta.url), "utf8"));
   const recipes = Object.values(bundle.menus).flatMap((menu) => menu.recipes);
   let resolvedAlternatives = 0;
+  const unresolvedAlternative = /\[[^\]]*(?:\||\bI\b)[^\]]*\]/;
 
   for (const recipe of recipes) {
     const detail = JSON.parse(await readFile(new URL(`../src/data/recipes/${recipe.id}.json`, import.meta.url), "utf8"));
@@ -412,9 +425,9 @@ test("supports 2, 3, and 4 portions across every bundled recipe without unresolv
         const resolved = stepForPortions(step, portions, basePortions);
         assert.ok(resolved.length > 0, `${detail.title}: empty cooking step`);
         assert.equal(segmentCookStep(resolved).join(""), resolved, `${detail.title}: segmentation changed the resolved step`);
-        if (/\[[^\]]*\|[^\]]*\]/.test(step)) {
+        if (unresolvedAlternative.test(step)) {
           resolvedAlternatives += 1;
-          assert.doesNotMatch(resolved, /\[[^\]]*\|[^\]]*\]/, `${detail.title}: unresolved ${portions}-portion alternative`);
+          assert.doesNotMatch(resolved, unresolvedAlternative, `${detail.title}: unresolved ${portions}-portion alternative`);
         }
       }
     }

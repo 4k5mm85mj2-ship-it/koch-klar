@@ -78,6 +78,29 @@ function parseDuration(value) {
   return minutes ? `${minutes} Minuten` : "nicht angegeben";
 }
 
+function isoWeekForDate(date) {
+  const thursday = new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate()));
+  thursday.setUTCDate(thursday.getUTCDate() - ((thursday.getUTCDay() + 6) % 7) + 3);
+  const isoYear = thursday.getUTCFullYear();
+  const firstThursday = new Date(Date.UTC(isoYear, 0, 4));
+  firstThursday.setUTCDate(firstThursday.getUTCDate() - ((firstThursday.getUTCDay() + 6) % 7) + 3);
+  const isoWeek = Math.round((thursday - firstThursday) / 604800000) + 1;
+  return `${isoYear}-W${String(isoWeek).padStart(2, "0")}`;
+}
+
+export function helloFreshWeekForDate(date = new Date()) {
+  if (!(date instanceof Date) || Number.isNaN(date.getTime())) throw new Error("Ungültiges Datum.");
+
+  const parts = Object.fromEntries(new Intl.DateTimeFormat("en-GB", {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    timeZone: "Europe/Berlin",
+  }).formatToParts(date).filter(({ type }) => type !== "literal").map(({ type, value }) => [type, value]));
+  const shifted = new Date(Date.UTC(Number(parts.year), Number(parts.month) - 1, Number(parts.day) + 2));
+  return isoWeekForDate(shifted);
+}
+
 export function addIsoWeeks(isoWeek, amount) {
   const [yearText, weekText] = isoWeek.split("-W");
   const year = Number(yearText);

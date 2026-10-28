@@ -3,6 +3,7 @@ import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
+  helloFreshWeekForDate,
   importCurrentMenu,
   weekOption,
   weekValuesAround,
@@ -29,8 +30,8 @@ async function readExistingBundle() {
   }
 }
 
-async function importWeeks(values, current) {
-  const results = new Map([[current.week, current]]);
+async function importWeeks(values, sourceCurrent, now) {
+  const results = new Map([[sourceCurrent.week, sourceCurrent]]);
   let cursor = 0;
 
   async function worker() {
@@ -38,7 +39,7 @@ async function importWeeks(values, current) {
       const requestedWeek = values[cursor++];
       if (results.has(requestedWeek)) continue;
       try {
-        const menu = await importCurrentMenu({ week: requestedWeek });
+        const menu = await importCurrentMenu({ week: requestedWeek, now });
         if (menu.week === requestedWeek) results.set(requestedWeek, menu);
       } catch {
         // Missing optional weeks are ignored and required weeks are validated below.
@@ -51,10 +52,12 @@ async function importWeeks(values, current) {
 }
 
 const existing = await readExistingBundle();
-const current = await importCurrentMenu({});
-const requiredValues = weekValuesAround(current.week);
-const candidateValues = weekValuesAround(current.week, { past: 2, future: 16 });
-const imported = await importWeeks(candidateValues, current);
+const now = new Date();
+const sourceCurrent = await importCurrentMenu({ now });
+const currentWeek = helloFreshWeekForDate(now);
+const requiredValues = weekValuesAround(currentWeek);
+const candidateValues = weekValuesAround(currentWeek, { past: 2, future: 16 });
+const imported = await importWeeks(candidateValues, sourceCurrent, now);
 
 for (const value of requiredValues) {
   if (!imported.has(value) && existing.menus?.[value]) imported.set(value, existing.menus[value]);
@@ -76,7 +79,7 @@ const menus = Object.fromEntries(visibleValues.map((value) => {
 }));
 
 const bundle = {
-  defaultWeek: current.week,
+  defaultWeek: currentWeek,
   availableWeeks,
   generatedAt: new Date().toISOString(),
   menus,

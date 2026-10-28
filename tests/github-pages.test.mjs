@@ -22,6 +22,17 @@ test("does not ship the unavailable internal menu API in the Pages bundle", asyn
   assert.doesNotMatch(source, /\/api\/menu/);
 });
 
+test("reports failed scheduled refreshes and closes the alert after recovery", async () => {
+  const workflow = await readFile(path.join(root, ".github", "workflows", "deploy-pages.yml"), "utf8");
+  assert.match(workflow, /refresh-health:/);
+  assert.match(workflow, /always\(\) && github\.event_name == 'schedule'/);
+  assert.match(workflow, /needs: \[build, deploy\]/);
+  assert.match(workflow, /issues\.create\(/);
+  assert.match(workflow, /issues\.createComment\(/);
+  assert.match(workflow, /issues\.update\(/);
+  assert.match(workflow, /state: "closed"/);
+});
+
 test("has local details for every recipe shown in every bundled week", async () => {
   const weeks = JSON.parse(await readFile(path.join(root, "src", "data", "menu-weeks.json"), "utf8"));
   const recipes = Object.values(weeks.menus).flatMap((menu) => menu.recipes);

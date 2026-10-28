@@ -16,7 +16,8 @@ const CONTAINER_PLURALS = new Map([
 const NUMERIC_AMOUNT = /^(\d+(?:[.,]\d+)?|[¼½¾⅓⅔])(?:\s+(.+))?$/;
 const PORTION_NUMBER_BASE = /((?:(?:\d{1,3}(?:\.\d{3})+)|\d+)(?:[.,]\d+)?|[¼½¾⅓⅔])(?:\s*(?:kg|g|ml|l|EL|TL|Min\.?|Sek\.?|Stück(?:e)?|Prise(?:n)?))?\s*$/i;
 const PORTION_WORD_BASE = /((?:[Ee]in(?:e[nmrs]?)?\s+)?(?:Hälfte|Viertel|Drittel|Sechstel)|[Hh]älfte|[Zz]wei Drittel)\s*$/;
-const PORTION_OPTIONS = /\[([^\[\]|]+)\|([^\[\]]+)\]/g;
+const PORTION_NUMBER_ANY = /((?:(?:\d{1,3}(?:\.\d{3})+)|\d+)(?:[.,]\d+)?|[¼½¾⅓⅔])(?:\s*(?:kg|g|ml|l|EL|TL|Min\.?|Sek\.?|Stück(?:e)?|Prise(?:n)?))?/gi;
+const PORTION_OPTIONS = /\[([^\[\]|]+?)\s*(?:\||\bI\b)\s*([^\[\]]+?)\]/g;
 
 function numberValue(value) {
   if (FRACTIONS.has(value)) return FRACTIONS.get(value);
@@ -66,7 +67,16 @@ export function ingredientsForPortions(recipe, targetPortions) {
 }
 
 function portionBaseAtEnd(value) {
-  return value.match(PORTION_NUMBER_BASE) ?? value.match(PORTION_WORD_BASE);
+  const direct = value.match(PORTION_NUMBER_BASE) ?? value.match(PORTION_WORD_BASE);
+  if (direct) return direct;
+
+  const candidates = [...value.matchAll(PORTION_NUMBER_ANY)];
+  for (let index = candidates.length - 1; index >= 0; index -= 1) {
+    const candidate = candidates[index];
+    const suffix = value.slice(candidate.index + candidate[0].length);
+    if (suffix.length <= 40 && !/\d/.test(suffix)) return candidate;
+  }
+  return null;
 }
 
 export function stepForPortions(value, targetPortions) {
@@ -88,7 +98,10 @@ export function stepForPortions(value, targetPortions) {
     const selectedValue = Number(targetPortions) === 2
       ? baseValue
       : match[Number(targetPortions) === 3 ? 1 : 2].trim();
-    result += before.slice(0, before.length - baseMatch[0].length) + selectedValue;
+    const baseStart = baseMatch.index ?? before.length - baseMatch[0].length;
+    const baseEnd = baseStart + baseMatch[0].length;
+    const suffix = before.slice(baseEnd).replace(/\s+$/, "");
+    result += before.slice(0, baseStart) + selectedValue + suffix;
     cursor = match.index + match[0].length;
   }
   return result + text.slice(cursor);

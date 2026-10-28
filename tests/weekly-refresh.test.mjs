@@ -3,6 +3,7 @@ import { readFile } from "node:fs/promises";
 import test from "node:test";
 import {
   addIsoWeeks,
+  helloFreshWeekForDate,
   parseMenuPage,
   spokenWeekLabel,
   weekValuesAround,
@@ -42,6 +43,26 @@ test("uses natural option text for two past, current, and three future weeks", (
   assert.equal(spokenWeekLabel("2026-W40"), "26. September 2026 bis 2. Oktober 2026");
   assert.equal(addIsoWeeks("2026-W01", -2), "2025-W51");
   assert.equal(weekValuesAround("2026-W01", { past: 2, future: 3 }).length, 6);
+});
+
+test("derives the current HelloFresh delivery week from the Berlin calendar date", () => {
+  assert.equal(helloFreshWeekForDate(new Date("2026-10-23T21:59:59Z")), "2026-W43");
+  assert.equal(helloFreshWeekForDate(new Date("2026-10-23T22:00:00Z")), "2026-W44");
+  assert.equal(helloFreshWeekForDate(new Date("2027-01-01T22:59:59Z")), "2026-W53");
+  assert.equal(helloFreshWeekForDate(new Date("2027-01-01T23:00:00Z")), "2027-W01");
+  assert.equal(addIsoWeeks("2026-W53", 1), "2027-W01");
+  assert.deepEqual(weekValuesAround("2027-W01"), [
+    "2026-W52", "2026-W53", "2027-W01", "2027-W02", "2027-W03", "2027-W04",
+  ]);
+});
+
+test("anchors the rolling snapshot window to the delivery week instead of the orderable menu", async () => {
+  const refreshSource = await readFile(new URL("../scripts/refresh-menu-snapshots.mjs", import.meta.url), "utf8");
+  assert.match(refreshSource, /const currentWeek = helloFreshWeekForDate\(now\)/);
+  assert.match(refreshSource, /weekValuesAround\(currentWeek\)/);
+  assert.match(refreshSource, /weekValuesAround\(currentWeek, \{ past: 2, future: 16 \}\)/);
+  assert.match(refreshSource, /defaultWeek: currentWeek/);
+  assert.doesNotMatch(refreshSource, /weekValuesAround\(sourceCurrent\.week/);
 });
 
 test("keeps the weekly selector native without ARIA overrides on its options", async () => {
