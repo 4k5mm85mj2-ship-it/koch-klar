@@ -405,6 +405,11 @@ test("resolves portion alternatives when an ingredient label follows the base am
   assert.equal(stepForPortions(writtenNumbers, 2), "Zwei dünne Scheiben abschneiden.");
   assert.equal(stepForPortions(writtenNumbers, 3), "drei dünne Scheiben abschneiden.");
   assert.equal(stepForPortions(writtenNumbers, 4), "vier dünne Scheiben abschneiden.");
+
+  const standalone = "Hackfleischmasse zu einem [1 I 2] länglichen Hackbraten rollen.";
+  assert.equal(stepForPortions(standalone, 2), "Hackfleischmasse zu einem 1 länglichen Hackbraten rollen.");
+  assert.equal(stepForPortions(standalone, 3), "Hackfleischmasse zu einem 1 länglichen Hackbraten rollen.");
+  assert.equal(stepForPortions(standalone, 4), "Hackfleischmasse zu einem 2 länglichen Hackbraten rollen.");
 });
 
 test("supports 2, 3, and 4 portions across every bundled recipe without unresolved alternatives", async () => {

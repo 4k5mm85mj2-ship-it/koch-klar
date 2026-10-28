@@ -18,6 +18,7 @@ const PORTION_NUMBER_BASE = /((?:(?:\d{1,3}(?:\.\d{3})+)|\d+)(?:[.,]\d+)?|[¼½�
 const PORTION_WORD_BASE = /((?:[Ee]in(?:e[nmrs]?)?\s+)?(?:Hälfte|Viertel|Drittel|Sechstel)|[Hh]älfte|[Zz]wei Drittel|[Zz]wei)\s*$/;
 const PORTION_NUMBER_ANY = /((?:(?:\d{1,3}(?:\.\d{3})+)|\d+)(?:[.,]\d+)?|[¼½¾⅓⅔])(?:\s*(?:kg|g|ml|l|EL|TL|Min\.?|Sek\.?|Stück(?:e)?|Prise(?:n)?))?/gi;
 const PORTION_OPTIONS = /\[([^\[\]|]+?)\s*(?:\||\bI\b)\s*([^\[\]]+?)\]/g;
+const STANDALONE_PORTION_OPTION = /^(?:\d+(?:[.,]\d+)?|[¼½¾⅓⅔]|[Ee]in(?:e[nmrs]?)?|[Zz]wei|[Dd]rei|[Vv]ier)(?:\s+(?:kg|g|ml|l|EL|TL|Stück(?:e)?))?$/;
 
 function numberValue(value) {
   if (FRACTIONS.has(value)) return FRACTIONS.get(value);
@@ -89,6 +90,13 @@ export function stepForPortions(value, targetPortions) {
     const before = text.slice(cursor, match.index);
     const baseMatch = portionBaseAtEnd(before);
     if (!baseMatch) {
+      const firstOption = match[1].trim();
+      const secondOption = match[2].trim();
+      if (STANDALONE_PORTION_OPTION.test(firstOption) && STANDALONE_PORTION_OPTION.test(secondOption)) {
+        result += before + (Number(targetPortions) === 4 ? secondOption : firstOption);
+        cursor = match.index + match[0].length;
+        continue;
+      }
       result += before + match[0];
       cursor = match.index + match[0].length;
       continue;
