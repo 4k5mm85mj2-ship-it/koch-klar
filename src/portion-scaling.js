@@ -15,7 +15,7 @@ const CONTAINER_PLURALS = new Map([
 ]);
 const NUMERIC_AMOUNT = /^(\d+(?:[.,]\d+)?|[¼½¾⅓⅔])(?:\s+(.+))?$/;
 const PORTION_NUMBER_BASE = /((?:(?:\d{1,3}(?:\.\d{3})+)|\d+)(?:[.,]\d+)?|[¼½¾⅓⅔])(?:\s*(?:kg|g|ml|l|EL|TL|Min\.?|Sek\.?|Stück(?:e)?|Prise(?:n)?))?\s*$/i;
-const PORTION_WORD_BASE = /((?:[Ee]in(?:e[nmrs]?)?\s+)?(?:Hälfte|Viertel|Drittel|Sechstel)|[Hh]älfte|[Zz]wei Drittel)\s*$/;
+const PORTION_WORD_BASE = /((?:[Ee]in(?:e[nmrs]?)?\s+)?(?:Hälfte|Viertel|Drittel|Sechstel)|[Hh]älfte|[Zz]wei Drittel|[Zz]wei)\s*$/;
 const PORTION_NUMBER_ANY = /((?:(?:\d{1,3}(?:\.\d{3})+)|\d+)(?:[.,]\d+)?|[¼½¾⅓⅔])(?:\s*(?:kg|g|ml|l|EL|TL|Min\.?|Sek\.?|Stück(?:e)?|Prise(?:n)?))?/gi;
 const PORTION_OPTIONS = /\[([^\[\]|]+?)\s*(?:\||\bI\b)\s*([^\[\]]+?)\]/g;
 

@@ -400,6 +400,11 @@ test("resolves portion alternatives when an ingredient label follows the base am
   assert.equal(stepForPortions(alternateSeparator, 2), "2 EL Butter verwenden.");
   assert.equal(stepForPortions(alternateSeparator, 3), "3 EL Butter verwenden.");
   assert.equal(stepForPortions(alternateSeparator, 4), "4 EL Butter verwenden.");
+
+  const writtenNumbers = "Zwei [drei | vier] dünne Scheiben abschneiden.";
+  assert.equal(stepForPortions(writtenNumbers, 2), "Zwei dünne Scheiben abschneiden.");
+  assert.equal(stepForPortions(writtenNumbers, 3), "drei dünne Scheiben abschneiden.");
+  assert.equal(stepForPortions(writtenNumbers, 4), "vier dünne Scheiben abschneiden.");
 });
 
 test("supports 2, 3, and 4 portions across every bundled recipe without unresolved alternatives", async () => {
