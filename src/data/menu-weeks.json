@@ -30,7 +30,7 @@
       "label": "21. November 2026 bis 27. November 2026"
     }
   ],
-  "generatedAt": "2026-10-28T19:13:58.305Z",
+  "generatedAt": "2026-10-29T09:56:27.791Z",
   "menus": {
     "2026-W42": {
       "week": "2026-W42",
@@ -66,8 +66,8 @@
           "label": "21. November 2026 bis 27. November 2026"
         }
       ],
-      "importedAt": "28. Oktober 2026",
-      "checkedAt": "2026-10-28T19:13:55.088Z",
+      "importedAt": "29. Oktober 2026",
+      "checkedAt": "2026-10-29T09:56:18.944Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W42",
@@ -2134,8 +2134,8 @@
           "label": "21. November 2026 bis 27. November 2026"
         }
       ],
-      "importedAt": "28. Oktober 2026",
-      "checkedAt": "2026-10-28T19:13:55.088Z",
+      "importedAt": "29. Oktober 2026",
+      "checkedAt": "2026-10-29T09:56:18.944Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W43",
@@ -4209,8 +4209,8 @@
           "label": "21. November 2026 bis 27. November 2026"
         }
       ],
-      "importedAt": "28. Oktober 2026",
-      "checkedAt": "2026-10-28T19:13:55.088Z",
+      "importedAt": "29. Oktober 2026",
+      "checkedAt": "2026-10-29T09:56:18.944Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W44",
@@ -6189,12 +6189,12 @@
           "label": "21. November 2026 bis 27. November 2026"
         }
       ],
-      "importedAt": "28. Oktober 2026",
-      "checkedAt": "2026-10-28T19:13:55.088Z",
+      "importedAt": "29. Oktober 2026",
+      "checkedAt": "2026-10-29T09:56:18.944Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W45",
-      "totalRecipes": 98,
+      "totalRecipes": 92,
       "recipes": [
         {
           "id": "6a7983f811cc1340e0f63703",
@@ -6252,28 +6252,6 @@
             "classic-plates",
             "Family",
             "regional-specialty"
-          ]
-        },
-        {
-          "id": "6a79842311cc1340e0f6378d",
-          "title": "Rinderhüftsteak mit Bouillonkartoffeln",
-          "diet": "Nicht vegetarisch",
-          "dietGroup": "non-vegetarian",
-          "time": "30 Minuten",
-          "difficulty": "mittel",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF211110_R02_W02_DE_R3732-1_KB_Main_high-bb57736b.jpg",
-          "alt": "Foto des Gerichts Rinderhüftsteak mit Bouillonkartoffeln.",
-          "intro": "und Kräuterbutter, dazu Bohnengemüse mit Spinat",
-          "sourceUrl": "https://www.hellofresh.de/recipes/rinderhuftsteak-mit-bouillonkartoffeln-6a79842311cc1340e0f6378d",
-          "features": [
-            "Family",
-            "ballaststoffreich",
-            "source-of-fibre",
-            "High Protein",
-            "nutri-score-b",
-            "classic-plates",
-            "classic-euro-dishes",
-            "Neu"
           ]
         },
         {
@@ -6514,7 +6492,7 @@
           "dietGroup": "non-vegetarian",
           "time": "25 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R34_W04_DE_R32345-3_Main_high-e63220cd.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R34_W04_DE_R32345-3_Main_high-89843fcd.jpg",
           "alt": "Foto des Gerichts Schweinelachssteak mit Knollenselleriestampf.",
           "intro": "dazu Spinat und Demi-Glace-Soße",
           "sourceUrl": "https://www.hellofresh.de/recipes/schweinelachssteak-mit-knollenselleriestampf-6a798509a64cfe1e1f5a481b",
@@ -6781,28 +6759,6 @@
           ]
         },
         {
-          "id": "6a798570c419eb8464dafdad",
-          "title": "Surf & Turf: Weiderindsteak und Garnelen",
-          "diet": "Mit Fisch",
-          "dietGroup": "non-vegetarian",
-          "time": "40 Minuten",
-          "difficulty": "mittel",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R11_W31_DE_PM2966-11_Main_high-26bada94.jpg",
-          "alt": "Foto des Gerichts Surf & Turf: Weiderindsteak und Garnelen.",
-          "intro": "mit Knoblauch-Drillingen und Soße „Café de Paris“",
-          "sourceUrl": "https://www.hellofresh.de/recipes/surf-and-turf-weiderindsteak-und-garnelen-6a798570c419eb8464dafdad",
-          "features": [
-            "nutri-score-b",
-            "classic-plates",
-            "Gesund genießen",
-            "Viel Gemüse",
-            "High Protein",
-            "North American",
-            "Merchan-surcharge",
-            "premium-protein"
-          ]
-        },
-        {
           "id": "6a798578c419eb8464dafde3",
           "title": "Veganer Flammkuchen mit Kräuterseitlingen",
           "diet": "Vegan",
@@ -6821,25 +6777,6 @@
             "Kalorien im Blick",
             "Vegan",
             "mushrooms"
-          ]
-        },
-        {
-          "id": "6a79857f11cc1340e0f63b9b",
-          "title": "Veganes Filet nach Lachs-Art & Mango-Erdnusssoße",
-          "diet": "Vegan",
-          "dietGroup": "vegetarian",
-          "time": "25 Minuten",
-          "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R33_W45_DE_R32371-3_main_high-cf85d8d3.jpg",
-          "alt": "Foto des Gerichts Veganes Filet nach Lachs-Art & Mango-Erdnusssoße.",
-          "intro": "mit Buschbohnen und Reis",
-          "sourceUrl": "https://www.hellofresh.de/recipes/veganes-filet-nach-lachs-art-and-mango-erdnusssosse-6a79857f11cc1340e0f63b9b",
-          "features": [
-            "nutri-score-c",
-            "dinner-bowls",
-            "South/SoutheastAsian",
-            "Vegan",
-            "Neu"
           ]
         },
         {
@@ -6971,29 +6908,6 @@
             "pasta-noodles",
             "Schnell",
             "Kids Favorite"
-          ]
-        },
-        {
-          "id": "6a7985b6c419eb8464daffa8",
-          "title": "Rindersteak mit Granatapfel-Gremolata",
-          "diet": "Nicht vegetarisch",
-          "dietGroup": "non-vegetarian",
-          "time": "35 Minuten",
-          "difficulty": "mittel",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R40_W02_DE_PM4843-26_Main_F1_high-f55f9e71.jpg",
-          "alt": "Foto des Gerichts Rindersteak mit Granatapfel-Gremolata.",
-          "intro": "Fächerkartoffel und frischem Salat",
-          "sourceUrl": "https://www.hellofresh.de/recipes/rindersteak-mit-granatapfel-gremolata-6a7985b6c419eb8464daffa8",
-          "features": [
-            "classic-euro-dishes",
-            "classic-plates",
-            "Gesund genießen",
-            "Viel Gemüse",
-            "High Protein",
-            "nutri-score-a",
-            "source-of-fibre",
-            "Merchan-surcharge",
-            "premium-protein"
           ]
         },
         {
@@ -7397,24 +7311,6 @@
           ]
         },
         {
-          "id": "6a798649a64cfe1e1f5a4e09",
-          "title": "Rindersteak auf Rigatoni in Kampot-Pfefferrahm",
-          "diet": "Nicht vegetarisch",
-          "dietGroup": "non-vegetarian",
-          "time": "45 Minuten",
-          "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF211012_R04_W49_DE_R3662-2_KB_Main_high-0b550ec7.jpg",
-          "alt": "Foto des Gerichts Rindersteak auf Rigatoni in Kampot-Pfefferrahm.",
-          "intro": "mit Rosenkohl",
-          "sourceUrl": "https://www.hellofresh.de/recipes/rindersteak-auf-rigatoni-in-kampot-pfefferrahm-6a798649a64cfe1e1f5a4e09",
-          "features": [
-            "Schnell",
-            "pasta-noodles",
-            "nutri-score-c",
-            "classic-euro-dishes"
-          ]
-        },
-        {
           "id": "6a79864fa64cfe1e1f5a4e27",
           "title": "Marokkanische Pil Pil Garnelen mit Knoblauch",
           "diet": "Mit Fisch",
@@ -7628,6 +7524,28 @@
             "pan-asian-plates",
             "handhelds",
             "mushrooms"
+          ]
+        },
+        {
+          "id": "6a798693c419eb8464db0380",
+          "title": "Gyros Deluxe mit würzigem Bio-Schwein & Hähnchen",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "35 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R40_W23_DE_PM40933-21_main_high-4bf65436.jpg",
+          "alt": "Foto des Gerichts Gyros Deluxe mit würzigem Bio-Schwein & Hähnchen.",
+          "intro": "dazu Knoblauch-Kartoffeln und griechischer Salat",
+          "sourceUrl": "https://www.hellofresh.de/recipes/gyros-deluxe-mit-wurzigem-bio-schwein-and-hahnchen-6a798693c419eb8464db0380",
+          "features": [
+            "nutri-score-a",
+            "classic-plates",
+            "Gesund genießen",
+            "Viel Gemüse",
+            "High Protein",
+            "Low Carb",
+            "Mediterran",
+            "Merchan-surcharge"
           ]
         },
         {
@@ -8015,25 +7933,6 @@
           ]
         },
         {
-          "id": "6a798730a64cfe1e1f5a5175",
-          "title": "Weiderindersteak nach Tafelspitz-Art",
-          "diet": "Nicht vegetarisch",
-          "dietGroup": "non-vegetarian",
-          "time": "30 Minuten",
-          "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R93_W45_DE_R61252-4_main_high-1d23517b.jpg",
-          "alt": "Foto des Gerichts Weiderindersteak nach Tafelspitz-Art.",
-          "intro": "mit Meerrettichsoße und Bouillon-Gemüse",
-          "sourceUrl": "https://www.hellofresh.de/recipes/weiderindersteak-nach-tafelspitz-art-6a798730a64cfe1e1f5a5175",
-          "features": [
-            "nutri-score-c",
-            "classic-euro-dishes",
-            "classic-plates",
-            "regional-specialty",
-            "Neu"
-          ]
-        },
-        {
           "id": "6a798740c419eb8464db0687",
           "title": "Münchner Schnitzel mit Kartoffelsalat",
           "diet": "Nicht vegetarisch",
@@ -8184,27 +8083,6 @@
           ]
         },
         {
-          "id": "6a798b86c419eb8464db17f3",
-          "title": "Holzfällersteak vom Weiderind und würzige Pommes",
-          "diet": "Nicht vegetarisch",
-          "dietGroup": "non-vegetarian",
-          "time": "30 Minuten",
-          "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R03_W37_GL_PM59208-4_main_high-1646a95f.jpg",
-          "alt": "Foto des Gerichts Holzfällersteak vom Weiderind und würzige Pommes.",
-          "intro": "dazu frischer Gurkensalat",
-          "sourceUrl": "https://www.hellofresh.de/recipes/holzfallersteak-vom-weiderind-und-wurzige-pommes-6a798b86c419eb8464db17f3",
-          "features": [
-            "classic-euro-dishes",
-            "classic-plates",
-            "regional-specialty",
-            "nutri-score-c",
-            "Viel Gemüse",
-            "High Protein",
-            "Merchan-surcharge"
-          ]
-        },
-        {
           "id": "6a96d3509b32319c691848ec",
           "title": "Heißgeräucherter Lachs auf Kartoffelrösti",
           "diet": "Mit Fisch",
@@ -8281,8 +8159,8 @@
           "label": "21. November 2026 bis 27. November 2026"
         }
       ],
-      "importedAt": "28. Oktober 2026",
-      "checkedAt": "2026-10-28T19:13:55.088Z",
+      "importedAt": "29. Oktober 2026",
+      "checkedAt": "2026-10-29T09:56:18.944Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W46",
@@ -9402,7 +9280,7 @@
           "dietGroup": "non-vegetarian",
           "time": "30 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R02_W36_GL_PM59204-2_main_high-18725e73.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R02_W36_GL_PM59204-2_main_high-7d41159b.jpg",
           "alt": "Foto des Gerichts Schlemmerschnitzel mit Schinken & Hollandaise.",
           "intro": "dazu Pommes und bunter Salat",
           "sourceUrl": "https://www.hellofresh.de/recipes/schlemmerschnitzel-mit-schinken-and-hollandaise-6a7988fea64cfe1e1f5a59a5",
@@ -9670,7 +9548,7 @@
           "dietGroup": "vegetarian",
           "time": "40 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R30_W32_DE_EXP3214-14_Main_6_high-2fbe112c.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R30_W32_DE_EXP3214-14_Main_6_high-08631776.jpg",
           "alt": "Foto des Gerichts Veggie Moussaka mit Linsen & Aubergine.",
           "intro": "dazu frischer Salat",
           "sourceUrl": "https://www.hellofresh.de/recipes/veggie-moussaka-mit-linsen-and-aubergine-6a79894ba64cfe1e1f5a5b2c",
@@ -9693,7 +9571,7 @@
           "dietGroup": "non-vegetarian",
           "time": "35 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R68_W37_DE_R59524-6main_high-3854f64d.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R68_W37_DE_R59524-6main_high-0e7ca1d5.jpg",
           "alt": "Foto des Gerichts Japanisches Miso-Lachsfilet auf Sushi-Sesam-Reis.",
           "intro": "mit crunchy Salat und frischer Ingwer-Vinaigrette",
           "sourceUrl": "https://www.hellofresh.de/recipes/japanisches-miso-lachsfilet-auf-sushi-sesam-reis-6a798954a64cfe1e1f5a5b98",
@@ -10418,8 +10296,8 @@
           "label": "21. November 2026 bis 27. November 2026"
         }
       ],
-      "importedAt": "28. Oktober 2026",
-      "checkedAt": "2026-10-28T19:13:55.088Z",
+      "importedAt": "29. Oktober 2026",
+      "checkedAt": "2026-10-29T09:56:18.944Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W47",
@@ -12556,8 +12434,8 @@
           "label": "21. November 2026 bis 27. November 2026"
         }
       ],
-      "importedAt": "28. Oktober 2026",
-      "checkedAt": "2026-10-28T19:13:55.088Z",
+      "importedAt": "29. Oktober 2026",
+      "checkedAt": "2026-10-29T09:56:18.944Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W48",
