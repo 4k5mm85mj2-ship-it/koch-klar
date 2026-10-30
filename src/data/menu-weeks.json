@@ -30,7 +30,7 @@
       "label": "21. November 2026 bis 27. November 2026"
     }
   ],
-  "generatedAt": "2026-10-29T09:56:27.791Z",
+  "generatedAt": "2026-10-30T09:59:09.438Z",
   "menus": {
     "2026-W42": {
       "week": "2026-W42",
@@ -66,8 +66,8 @@
           "label": "21. November 2026 bis 27. November 2026"
         }
       ],
-      "importedAt": "29. Oktober 2026",
-      "checkedAt": "2026-10-29T09:56:18.944Z",
+      "importedAt": "30. Oktober 2026",
+      "checkedAt": "2026-10-30T09:58:59.510Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W42",
@@ -2134,8 +2134,8 @@
           "label": "21. November 2026 bis 27. November 2026"
         }
       ],
-      "importedAt": "29. Oktober 2026",
-      "checkedAt": "2026-10-29T09:56:18.944Z",
+      "importedAt": "30. Oktober 2026",
+      "checkedAt": "2026-10-30T09:58:59.510Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W43",
@@ -4209,8 +4209,8 @@
           "label": "21. November 2026 bis 27. November 2026"
         }
       ],
-      "importedAt": "29. Oktober 2026",
-      "checkedAt": "2026-10-29T09:56:18.944Z",
+      "importedAt": "30. Oktober 2026",
+      "checkedAt": "2026-10-30T09:58:59.510Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W44",
@@ -6189,12 +6189,12 @@
           "label": "21. November 2026 bis 27. November 2026"
         }
       ],
-      "importedAt": "29. Oktober 2026",
-      "checkedAt": "2026-10-29T09:56:18.944Z",
+      "importedAt": "30. Oktober 2026",
+      "checkedAt": "2026-10-30T09:58:59.510Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W45",
-      "totalRecipes": 92,
+      "totalRecipes": 91,
       "recipes": [
         {
           "id": "6a7983f811cc1340e0f63703",
@@ -7527,28 +7527,6 @@
           ]
         },
         {
-          "id": "6a798693c419eb8464db0380",
-          "title": "Gyros Deluxe mit würzigem Bio-Schwein & Hähnchen",
-          "diet": "Nicht vegetarisch",
-          "dietGroup": "non-vegetarian",
-          "time": "35 Minuten",
-          "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R40_W23_DE_PM40933-21_main_high-4bf65436.jpg",
-          "alt": "Foto des Gerichts Gyros Deluxe mit würzigem Bio-Schwein & Hähnchen.",
-          "intro": "dazu Knoblauch-Kartoffeln und griechischer Salat",
-          "sourceUrl": "https://www.hellofresh.de/recipes/gyros-deluxe-mit-wurzigem-bio-schwein-and-hahnchen-6a798693c419eb8464db0380",
-          "features": [
-            "nutri-score-a",
-            "classic-plates",
-            "Gesund genießen",
-            "Viel Gemüse",
-            "High Protein",
-            "Low Carb",
-            "Mediterran",
-            "Merchan-surcharge"
-          ]
-        },
-        {
           "id": "6a79869ac419eb8464db039b",
           "title": "Schnitzel Wiener Art mit Ofenkartoffeln",
           "diet": "Nicht vegetarisch",
@@ -8159,8 +8137,8 @@
           "label": "21. November 2026 bis 27. November 2026"
         }
       ],
-      "importedAt": "29. Oktober 2026",
-      "checkedAt": "2026-10-29T09:56:18.944Z",
+      "importedAt": "30. Oktober 2026",
+      "checkedAt": "2026-10-30T09:58:59.510Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W46",
@@ -9710,7 +9688,7 @@
           "dietGroup": "non-vegetarian",
           "time": "40 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R41_W34_DE_PM20609-20main_high-261e6989.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R41_W34_DE_PM20609-20main_high-862dd8ab.jpg",
           "alt": "Foto des Gerichts Schnitzel Cordon bleu an Ofengemüse.",
           "intro": "Tomaten-Aioli und Knusperkartoffeln",
           "sourceUrl": "https://www.hellofresh.de/recipes/schnitzel-cordon-bleu-an-ofengemuse-6a798984c419eb8464db0fd3",
@@ -9730,7 +9708,7 @@
           "dietGroup": "non-vegetarian",
           "time": "15 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R28_W35_DE_EXP2340-54_Main_2_high-1669fa08.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R28_W35_DE_EXP2340-54_Main_2_high-e21d8251.jpg",
           "alt": "Foto des Gerichts One Pan: Gnocchi-Pfanne mit Bacon.",
           "intro": "und Champignons in Chili-Sahne-Soße",
           "sourceUrl": "https://www.hellofresh.de/recipes/one-pan-gnocchi-pfanne-mit-bacon-6a79898c11cc1340e0f64e12",
@@ -9811,7 +9789,7 @@
           "dietGroup": "non-vegetarian",
           "time": "15 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R81_W46_DE_R58812-3_main_high-17a6f2b0.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R81_W46_DE_R58812-3_main_high-bad562a5.jpg",
           "alt": "Foto des Gerichts Rotwein Ragout vom Lamm.",
           "intro": "mit Rigatoni, Zucchini und Petersilie",
           "sourceUrl": "https://www.hellofresh.de/recipes/rotwein-ragout-vom-lamm-6a7989a3c419eb8464db1066",
@@ -9867,7 +9845,7 @@
           "dietGroup": "non-vegetarian",
           "time": "40 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R84_W46_DE_R60309-3_main_high-4a485716.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R84_W46_DE_R60309-3_main_high-4ed9dd7f.jpg",
           "alt": "Foto des Gerichts Jamaican Jerk Hähnchenkeule.",
           "intro": "mit Bohnen-Reis und Limetten-Coleslaw",
           "sourceUrl": "https://www.hellofresh.de/recipes/jamaican-jerk-hahnchenkeule-6a7989b511cc1340e0f64ef3",
@@ -9887,7 +9865,7 @@
           "dietGroup": "non-vegetarian",
           "time": "30 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R85_W46_DE_R60301-3_main_high-69fa2e6d.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R85_W46_DE_R60301-3_main_high-65de40ff.jpg",
           "alt": "Foto des Gerichts Cevapcici mit Djuvec-Reis.",
           "intro": "dazu Krautsalat und saure Sahne",
           "sourceUrl": "https://www.hellofresh.de/recipes/cevapcici-mit-djuvec-reis-6a7989bca64cfe1e1f5a5d45",
@@ -9906,7 +9884,7 @@
           "dietGroup": "non-vegetarian",
           "time": "45 Minuten",
           "difficulty": "mittel",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R42_W09_DE_FAM1895-61_MT_MAIN_high-979c13d2.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R42_W09_DE_FAM1895-61_MT_MAIN_high-eea68036.jpg",
           "alt": "Foto des Gerichts Käsige Hackbällchen mit Rahmchampignons.",
           "intro": "dazu Konfetti-Stampf",
           "sourceUrl": "https://www.hellofresh.de/recipes/kasige-hackballchen-mit-rahmchampignons-6a7989c211cc1340e0f64f0e",
@@ -9968,7 +9946,7 @@
           "dietGroup": "non-vegetarian",
           "time": "35 Minuten",
           "difficulty": "mittel",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y24_R34_W05_DE_R3742-2_Main_high-c3b4c2f1.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y24_R34_W05_DE_R3742-2_Main_high-5a33a9dd.jpg",
           "alt": "Foto des Gerichts Hähnchenbrust mit Basilikum-Frischecreme.",
           "intro": "in Tomatenrahm-Bett, dazu Ofenkartoffeln",
           "sourceUrl": "https://www.hellofresh.de/recipes/hahnchenbrust-mit-basilikum-frischecreme-6a7989d911cc1340e0f64fa7",
@@ -10055,7 +10033,7 @@
           "dietGroup": "non-vegetarian",
           "time": "40 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R93_W46_DE_R61253-4_main_high-7c7528a8.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R93_W46_DE_R61253-4_main_high-ae1a772a.jpg",
           "alt": "Foto des Gerichts Nürnberger Bratwürstchen mit Bayrisch Kraut.",
           "intro": "Kartoffelbrei und Senf",
           "sourceUrl": "https://www.hellofresh.de/recipes/nurnberger-bratwurstchen-mit-bayrisch-kraut-6a7989f511cc1340e0f6506d",
@@ -10245,7 +10223,7 @@
           "dietGroup": "non-vegetarian",
           "time": "15 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R15_W32_DE_EXP2468-8main_high-81e3a3cc.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R15_W32_DE_EXP2468-8main_high-1e17016c.jpg",
           "alt": "Foto des Gerichts Rahmgeschnetzeltes mit Pilzen und Bio-Schwein.",
           "intro": "und feinem Porree",
           "sourceUrl": "https://www.hellofresh.de/recipes/rahmgeschnetzeltes-mit-pilzen-und-bio-schwein-6aabf8d3885da1fe049fa1a6",
@@ -10296,8 +10274,8 @@
           "label": "21. November 2026 bis 27. November 2026"
         }
       ],
-      "importedAt": "29. Oktober 2026",
-      "checkedAt": "2026-10-29T09:56:18.944Z",
+      "importedAt": "30. Oktober 2026",
+      "checkedAt": "2026-10-30T09:58:59.510Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W47",
@@ -12434,8 +12412,8 @@
           "label": "21. November 2026 bis 27. November 2026"
         }
       ],
-      "importedAt": "29. Oktober 2026",
-      "checkedAt": "2026-10-29T09:56:18.944Z",
+      "importedAt": "30. Oktober 2026",
+      "checkedAt": "2026-10-30T09:58:59.510Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W48",
@@ -12478,7 +12456,8 @@
             "Extra schnell",
             "pasta-noodles",
             "world-flavors",
-            "mushrooms"
+            "mushrooms",
+            "board-bia"
           ]
         },
         {
@@ -14184,7 +14163,7 @@
           "dietGroup": "non-vegetarian",
           "time": "30 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R55_W14_DE_R54455-3_Main_R_high-c8ecd977.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R55_W14_DE_R54455-3_Main_R_high-efe92ec6.jpg",
           "alt": "Foto des Gerichts Döner-Teller mit knusprigem Hack vom Weiderind.",
           "intro": "dazu Pommes und Knoblauchsoße",
           "sourceUrl": "https://www.hellofresh.de/recipes/doner-teller-mit-knusprigem-hack-vom-weiderind-6a798fb3a64cfe1e1f5a7a4e",
