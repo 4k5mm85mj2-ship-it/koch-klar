@@ -1,10 +1,9 @@
 {
-  "generatedAt": "2026-10-30T09:59:19.405Z",
-  "expected": 683,
-  "saved": 683,
+  "generatedAt": "2026-10-31T09:37:11.580Z",
+  "expected": 589,
+  "saved": 589,
   "failures": [],
   "availableWeeks": [
-    "2026-W42",
     "2026-W43",
     "2026-W44",
     "2026-W45",
