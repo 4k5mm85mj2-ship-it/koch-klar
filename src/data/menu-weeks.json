@@ -26,7 +26,7 @@
       "label": "21. November 2026 bis 27. November 2026"
     }
   ],
-  "generatedAt": "2026-11-01T10:26:03.429Z",
+  "generatedAt": "2026-11-02T11:01:36.221Z",
   "menus": {
     "2026-W43": {
       "week": "2026-W43",
@@ -58,8 +58,8 @@
           "label": "21. November 2026 bis 27. November 2026"
         }
       ],
-      "importedAt": "1. November 2026",
-      "checkedAt": "2026-11-01T10:25:53.572Z",
+      "importedAt": "2. November 2026",
+      "checkedAt": "2026-11-02T11:01:26.451Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W43",
@@ -2129,8 +2129,8 @@
           "label": "21. November 2026 bis 27. November 2026"
         }
       ],
-      "importedAt": "1. November 2026",
-      "checkedAt": "2026-11-01T10:25:53.572Z",
+      "importedAt": "2. November 2026",
+      "checkedAt": "2026-11-02T11:01:26.451Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W44",
@@ -4105,8 +4105,8 @@
           "label": "21. November 2026 bis 27. November 2026"
         }
       ],
-      "importedAt": "1. November 2026",
-      "checkedAt": "2026-11-01T10:25:53.572Z",
+      "importedAt": "2. November 2026",
+      "checkedAt": "2026-11-02T11:01:26.451Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W45",
@@ -6011,12 +6011,12 @@
           "label": "21. November 2026 bis 27. November 2026"
         }
       ],
-      "importedAt": "1. November 2026",
-      "checkedAt": "2026-11-01T10:25:53.572Z",
+      "importedAt": "2. November 2026",
+      "checkedAt": "2026-11-02T11:01:26.451Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W46",
-      "totalRecipes": 100,
+      "totalRecipes": 99,
       "recipes": [
         {
           "id": "6a7987a8a64cfe1e1f5a5227",
@@ -6045,7 +6045,7 @@
           "dietGroup": "non-vegetarian",
           "time": "15 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R02_W42_DE_EXP57941-3_main_high-9ebc74eb.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R02_W42_DE_EXP57941-3_main_high-0ed2ad93.jpg",
           "alt": "Foto des Gerichts Schnelle Souflaki Beef Bowl.",
           "intro": "mit Couscous und Feta",
           "sourceUrl": "https://www.hellofresh.de/recipes/schnelle-souflaki-beef-bowl-6a7987aec419eb8464db0711",
@@ -8089,28 +8089,6 @@
             "Merchan-surcharge",
             "premium-protein"
           ]
-        },
-        {
-          "id": "6aabf8d3885da1fe049fa1a6",
-          "title": "Rahmgeschnetzeltes mit Pilzen und Bio-Schwein",
-          "diet": "Nicht vegetarisch",
-          "dietGroup": "non-vegetarian",
-          "time": "15 Minuten",
-          "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R15_W32_DE_EXP2468-8main_high-1e17016c.jpg",
-          "alt": "Foto des Gerichts Rahmgeschnetzeltes mit Pilzen und Bio-Schwein.",
-          "intro": "und feinem Porree",
-          "sourceUrl": "https://www.hellofresh.de/recipes/rahmgeschnetzeltes-mit-pilzen-und-bio-schwein-6aabf8d3885da1fe049fa1a6",
-          "features": [
-            "nutri-score-b",
-            "Gesund genießen",
-            "Family",
-            "High Protein",
-            "noodle-stir-fry",
-            "regional-specialty",
-            "Schnell",
-            "Merchan-surcharge"
-          ]
         }
       ]
     },
@@ -8144,8 +8122,8 @@
           "label": "21. November 2026 bis 27. November 2026"
         }
       ],
-      "importedAt": "1. November 2026",
-      "checkedAt": "2026-11-01T10:25:53.572Z",
+      "importedAt": "2. November 2026",
+      "checkedAt": "2026-11-02T11:01:26.451Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W47",
@@ -10278,8 +10256,8 @@
           "label": "21. November 2026 bis 27. November 2026"
         }
       ],
-      "importedAt": "1. November 2026",
-      "checkedAt": "2026-11-01T10:25:53.572Z",
+      "importedAt": "2. November 2026",
+      "checkedAt": "2026-11-02T11:01:26.451Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W48",
