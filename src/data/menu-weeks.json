@@ -26,7 +26,7 @@
       "label": "21. November 2026 bis 27. November 2026"
     }
   ],
-  "generatedAt": "2026-11-02T11:01:36.221Z",
+  "generatedAt": "2026-11-03T10:49:58.157Z",
   "menus": {
     "2026-W43": {
       "week": "2026-W43",
@@ -58,8 +58,8 @@
           "label": "21. November 2026 bis 27. November 2026"
         }
       ],
-      "importedAt": "2. November 2026",
-      "checkedAt": "2026-11-02T11:01:26.451Z",
+      "importedAt": "3. November 2026",
+      "checkedAt": "2026-11-03T10:49:50.580Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W43",
@@ -2129,8 +2129,8 @@
           "label": "21. November 2026 bis 27. November 2026"
         }
       ],
-      "importedAt": "2. November 2026",
-      "checkedAt": "2026-11-02T11:01:26.451Z",
+      "importedAt": "3. November 2026",
+      "checkedAt": "2026-11-03T10:49:50.580Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W44",
@@ -4105,8 +4105,8 @@
           "label": "21. November 2026 bis 27. November 2026"
         }
       ],
-      "importedAt": "2. November 2026",
-      "checkedAt": "2026-11-02T11:01:26.451Z",
+      "importedAt": "3. November 2026",
+      "checkedAt": "2026-11-03T10:49:50.580Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W45",
@@ -6011,8 +6011,8 @@
           "label": "21. November 2026 bis 27. November 2026"
         }
       ],
-      "importedAt": "2. November 2026",
-      "checkedAt": "2026-11-02T11:01:26.451Z",
+      "importedAt": "3. November 2026",
+      "checkedAt": "2026-11-03T10:49:50.580Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W46",
@@ -6025,7 +6025,7 @@
           "dietGroup": "non-vegetarian",
           "time": "25 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R01_W46_DE_R24236-17_main_high-e17563bf.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R01_W46_DE_R24236-17_main_high-756a6e21.jpg",
           "alt": "Foto des Gerichts Caesar Salad mit Bacon, dazu eine Limo.",
           "intro": "selbstgemacht aus frischer Zitrone",
           "sourceUrl": "https://www.hellofresh.de/recipes/caesar-salad-mit-bacon-dazu-eine-limo-6a7987a8a64cfe1e1f5a5227",
@@ -6084,7 +6084,7 @@
           "dietGroup": "non-vegetarian",
           "time": "35 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R04_W37_DE_R59742-3main_high-c463fae6.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R04_W37_DE_R59742-3main_high-32b07a72.jpg",
           "alt": "Foto des Gerichts Steak vom Weiderind mit Wurzelgemüse.",
           "intro": "dazu Chimichurri",
           "sourceUrl": "https://www.hellofresh.de/recipes/steak-vom-weiderind-mit-wurzelgemuse-6a7987bd11cc1340e0f64414",
@@ -6103,7 +6103,7 @@
           "dietGroup": "non-vegetarian",
           "time": "15 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y24_R24_W33_DE_R26934-1_MAIN_high-2aae564a.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y24_R24_W33_DE_R26934-1_MAIN_high-742ae8e8.jpg",
           "alt": "Foto des Gerichts Yaki Udon: Noodle-Bowl mit Weiderinderhack.",
           "intro": "in süßer Soja-Chili-Soße mit Pak Choi und Sesam",
           "sourceUrl": "https://www.hellofresh.de/recipes/yaki-udon-noodle-bowl-mit-weiderinderhack-6a7987c4c419eb8464db0765",
@@ -6122,7 +6122,7 @@
           "dietGroup": "vegetarian",
           "time": "35 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R70_W34_DE_R52489-2main_high-b2b3ab4d.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R70_W34_DE_R52489-2main_high-f0eae746.jpg",
           "alt": "Foto des Gerichts Rauchige Süßkartoffel-Blumenkohl-Tajine.",
           "intro": "mit Bulgur und Joghurt",
           "sourceUrl": "https://www.hellofresh.de/recipes/rauchige-susskartoffel-blumenkohl-tajine-6a7987cba64cfe1e1f5a531d",
@@ -6464,7 +6464,7 @@
           "dietGroup": "non-vegetarian",
           "time": "15 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R36_W13_DE_EXP52481-3_Main_5_high-df2b5b33.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R36_W13_DE_EXP52481-3_Main_5_high-378f1acd.jpg",
           "alt": "Foto des Gerichts Fischfilet in Kapern-Sahne-Soße.",
           "intro": "dazu Coleslaw und Butterreis",
           "sourceUrl": "https://www.hellofresh.de/recipes/fischfilet-in-kapern-sahne-sosse-6a798836c419eb8464db095d",
@@ -7564,7 +7564,7 @@
           "difficulty": "einfach",
           "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R41_W34_DE_PM20609-20main_high-862dd8ab.jpg",
           "alt": "Foto des Gerichts Schnitzel Cordon bleu an Ofengemüse.",
-          "intro": "Tomaten-Aioli und Knusperkartoffeln",
+          "intro": "Tomaten-Dip und Knusperkartoffeln",
           "sourceUrl": "https://www.hellofresh.de/recipes/schnitzel-cordon-bleu-an-ofengemuse-6a798984c419eb8464db0fd3",
           "features": [
             "nutri-score-c",
@@ -7643,7 +7643,7 @@
           "dietGroup": "non-vegetarian",
           "time": "30 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R80_W23_DE_R56222-3_main_high-c9abe4b9.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R80_W23_DE_R56222-3_main_high-ae466aa6.jpg",
           "alt": "Foto des Gerichts BBQ Bowl mit Schweinelachssteak Tonkatsu Art.",
           "intro": "Zubereitung in Airfryer oder Pfanne",
           "sourceUrl": "https://www.hellofresh.de/recipes/bbq-bowl-mit-schweinelachssteak-tonkatsu-art-6a79899ba64cfe1e1f5a5cbe",
@@ -7891,7 +7891,7 @@
           "difficulty": "einfach",
           "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R71_W39_DE_R48092-15main_high-56d34906.jpg",
           "alt": "Foto des Gerichts Bacon-Poutine aus Kanada.",
-          "intro": "mit Burrata und Aioli-Coleslaw",
+          "intro": "mit Burrata und Cremiger-Coleslaw",
           "sourceUrl": "https://www.hellofresh.de/recipes/bacon-poutine-aus-kanada-6a7989ef11cc1340e0f65052",
           "features": [
             "nutri-score-c",
@@ -8122,8 +8122,8 @@
           "label": "21. November 2026 bis 27. November 2026"
         }
       ],
-      "importedAt": "2. November 2026",
-      "checkedAt": "2026-11-02T11:01:26.451Z",
+      "importedAt": "3. November 2026",
+      "checkedAt": "2026-11-03T10:49:50.580Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W47",
@@ -10078,7 +10078,7 @@
           "dietGroup": "non-vegetarian",
           "time": "35 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R31_W13_DE_PM50125-6_Main_1_high-7a501127.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R31_W13_DE_PM50125-6_Main_1_high-c0124a17.jpg",
           "alt": "Foto des Gerichts Entenbrust in Zitrus-Salbei-Soße.",
           "intro": "dazu grüne Bohnen & Püree aus Knollensellerie",
           "sourceUrl": "https://www.hellofresh.de/recipes/entenbrust-in-zitrus-salbei-sosse-6a798caec419eb8464db1dc9",
@@ -10256,8 +10256,8 @@
           "label": "21. November 2026 bis 27. November 2026"
         }
       ],
-      "importedAt": "2. November 2026",
-      "checkedAt": "2026-11-02T11:01:26.451Z",
+      "importedAt": "3. November 2026",
+      "checkedAt": "2026-11-03T10:49:50.580Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W48",
