@@ -1,0 +1,81 @@
+{
+  "id": "6a9fdbf550d85bbd02ecb463",
+  "title": "Veganer Spätzle-Auflauf mit Champignons Spinat und Kürbiskernen",
+  "diet": "Mit Fleisch",
+  "dietGroup": "vegetarian",
+  "time": "30 Minuten",
+  "difficulty": "einfach",
+  "image": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/HF_Y25_R29_W26_DE_EXP4346-4_Main_low-c72efb63.jpg",
+  "alt": "Foto des Gerichts Veganer Spätzle-Auflauf mit Champignons Spinat und Kürbiskernen.",
+  "intro": "Bist Du ein Fan der traditionellen Wohlfühl-Küche? Dann kommst Du heute voll auf Deine Kosten. Unsere Spätzle haben sich schon in so manches Herz gekocht! Kein Wunder: Der Klassiker hat ja auch alles, was das Herz begehrt. Wir wünschen guten Appetit!",
+  "sourceUrl": "https://www.hellofresh.de/recipes/spatzle-auflauf-mit-champignons-6a9fdbf550d85bbd02ecb463",
+  "features": [
+    "nutri-score-c",
+    "classic-plates",
+    "10 Min. Vorbereitung",
+    "regional-specialty",
+    "Vegetarisch",
+    "Neu"
+  ],
+  "servings": "2 Portionen",
+  "ingredients": [
+    {
+      "name": "vegane Spätzle",
+      "amount": "400 g"
+    },
+    {
+      "name": "Champignons",
+      "amount": "200 g",
+      "packaging": "Kleine durchsichtige Kunststoffschale mit Folienverschluss; runde Pilzköpfe sind tastbar."
+    },
+    {
+      "name": "Babyspinat",
+      "amount": "50 g"
+    },
+    {
+      "name": "Worcester Sauce",
+      "amount": "16 ml",
+      "packaging": "Sehr kleines flaches Kunststoffsachet mit flüssigem Inhalt und versiegelten Rändern."
+    },
+    {
+      "name": "mittelscharfer Senf",
+      "amount": "10 ml"
+    },
+    {
+      "name": "gehackter Knoblauch & Zwiebel in Rapsöl",
+      "amount": "35 g"
+    },
+    {
+      "name": "Hello Umami",
+      "amount": "8 g"
+    },
+    {
+      "name": "Oatly Bio Cuisine",
+      "amount": "200 ml"
+    },
+    {
+      "name": "Kürbiskerne, geröstet",
+      "amount": "20 g"
+    },
+    {
+      "name": "Wasser",
+      "amount": "50 ml"
+    },
+    {
+      "name": "nach Geschmack Salz",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "nach Geschmack Pfeffer",
+      "amount": "Menge laut Originalrezept"
+    }
+  ],
+  "steps": [
+    "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Champignons vierteln.",
+    "In einem Messbecher 50 ml [75 ml | 100 ml] Wasser*, Oatly Bio Cuisine, „Hello Umami“, Knoblauch & Zwiebel gehackt in Rapsöl, Senf und Worcester Sauce verrühren. Mit Salz* und Pfeffer* würzen.",
+    "Vegane Spätzle, Champignons und vorbereitete Soße in eine Auflaufform geben und gut vermengen. Auflaufform auf ein Backblech stellen und 18 – 22 Min. backen. In den letzten 5 Min. Kürbiskerne auf das Backblech geben und mitbacken.",
+    "Spinat grob hacken.",
+    "Nach der Garzeit Spinat unter die Spätzle heben. Kräftig mit Pfeffer* würzen.",
+    "Auflauf auf Teller verteilen, mit gerösteten Kürbiskernen toppen. Guten Appetit!"
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "id": "6a9fde30d83fec55e3cce1bd",
+  "title": "Nduja-Ravioli mit rotem Pfeffer in Käse-Spinat-Soße und Champignons",
+  "diet": "Vegetarisch",
+  "dietGroup": "non-vegetarian",
+  "time": "30 Minuten",
+  "difficulty": "einfach",
+  "image": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/HF_Y26_R71_W24_DE_R56272-3_main_high-cc8f4f57.jpg",
+  "alt": "Foto des Gerichts Nduja-Ravioli mit rotem Pfeffer in Käse-Spinat-Soße und Champignons.",
+  "intro": "Pasta geht immer, oder? In Kombination mit frischem Gemüse und cremiger Soße ist dieses Gericht ein wahrer Gaumenschmaus. Unser Rezept wird mit Nduja aus Mailand extra würzig. Perfetto!",
+  "sourceUrl": "https://www.hellofresh.de/recipes/scharfe-nduja-ravioli-mit-rotem-pfeffer-6a9fde30d83fec55e3cce1bd",
+  "features": [
+    "nutri-score-c",
+    "Family",
+    "Mediterran",
+    "pasta-noodles"
+  ],
+  "servings": "2 Portionen",
+  "ingredients": [
+    {
+      "name": "Champignons",
+      "amount": "200 g",
+      "packaging": "Kleine durchsichtige Kunststoffschale mit Folienverschluss; runde Pilzköpfe sind tastbar."
+    },
+    {
+      "name": "Babyspinat",
+      "amount": "100 g"
+    },
+    {
+      "name": "Kochsahne leicht",
+      "amount": "150 g",
+      "packaging": "Kleiner standfester Getränkekarton mit Schraubverschluss; flüssiger Inhalt."
+    },
+    {
+      "name": "Hartkäse ital. Art, gerieben",
+      "amount": "20 g"
+    },
+    {
+      "name": "Gemüsebrühpulver",
+      "amount": "4 g"
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": "1 Stück",
+      "packaging": "Kleine feste Zehe mit trockener, papierartiger Schale, lose im Zutatenbeutel."
+    },
+    {
+      "name": "Ravioli mit Nduja und rotem Pfeffer",
+      "amount": "300 g"
+    },
+    {
+      "name": "rote Zwiebel",
+      "amount": "1 Stück"
+    },
+    {
+      "name": "nach Geschmack Salz",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "nach Geschmack Pfeffer",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "Esslöffel Öl",
+      "amount": "1"
+    },
+    {
+      "name": "Wasser",
+      "amount": "50 ml"
+    }
+  ],
+  "steps": [
+    "Erhitze reichlich Wasser im Wasserkocher. Einen großen Topf mit ausreichend Wasser füllen, salzen* und aufkochen lassen. In einem hohen Rührgefäß Kochsahne, 50 ml [75 ml | 100 ml] Wasser* und Gemüsebrühe miteinander vermengen.",
+    "Zwiebel und Knoblauch abziehen und fein hacken. Champignons vierteln. 1 EL [1,5 EL | 2 EL] Öl* in einer großen Pfanne erhitzen und Pilze, Knoblauch und Schalotte darin 4 – 5 Min. anschwitzen.",
+    "Ravioli im vorbereiteten Topf mit kochendem Wasser für 5 – 8 Min. bissfest ziehen lassen. Nicht sprudelnd kochen, sonst platzt die Pasta auf. Danach durch ein Sieb abgießen.",
+    "Pilze mit dem Sahnemix ablöschen, Hitze reduzieren und 1 – 2 Min. köcheln lassen, bis die Soße etwas eingedickt ist. Pfanne kurz beiseitestellen.",
+    "Gekochte Ravioli, Babyspinat, geriebenen Hartkäse und die Sahnesoße zurück in den Topf aus Schritt 3 geben und alles noch einmal für 1 – 2 Min. kochen, bis der Spinat zusammengefallen und die Soße etwas eingedickt ist. Mit Salz* abschmecken.",
+    "Pasta auf Teller verteilen, mit Pfeffer* würzen und genießen. Guten Appetit!"
+  ]
+}

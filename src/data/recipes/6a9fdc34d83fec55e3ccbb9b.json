@@ -1,0 +1,79 @@
+{
+  "id": "6a9fdc34d83fec55e3ccbb9b",
+  "title": "Tacos mit Hackfleisch und Avocado Bohnen und Sriracha-Dip",
+  "diet": "Mit Fleisch",
+  "dietGroup": "non-vegetarian",
+  "time": "15 Minuten",
+  "difficulty": "einfach",
+  "image": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/tacos-mit-hackfleisch-und-hummus-10ac2ff6-03653a6b.jpg",
+  "alt": "Foto des Gerichts Tacos mit Hackfleisch und Avocado Bohnen und Sriracha-Dip.",
+  "intro": "Schnell, schneller, Express! Mit unseren Express-Rezepten zauberst Du innerhalb kürzester Zeit ein ausgewogenes und vor allem leckeres Gericht auf den Tisch!",
+  "sourceUrl": "https://www.hellofresh.de/recipes/tacos-mit-hackfleisch-und-avocado-6a9fdc34d83fec55e3ccbb9b",
+  "features": [
+    "Viel Gemüse",
+    "handhelds",
+    "latin-american-faves",
+    "nutri-score-c",
+    "source-of-fibre",
+    "Extra schnell"
+  ],
+  "servings": "2 Portionen",
+  "ingredients": [
+    {
+      "name": "Weizentortillas",
+      "amount": "200 g"
+    },
+    {
+      "name": "Sriracha Sauce",
+      "amount": "16 ml"
+    },
+    {
+      "name": "saure Sahne, Bio",
+      "amount": "200 g",
+      "packaging": "Kleiner runder Kunststoffbecher mit abziehbarem Folienverschluss."
+    },
+    {
+      "name": "schwarze Bohnen",
+      "amount": "390 g"
+    },
+    {
+      "name": "Avocado",
+      "amount": "1 Stück"
+    },
+    {
+      "name": "Limette, gewachst",
+      "amount": "1 Stück"
+    },
+    {
+      "name": "gemischte Hackfleischzubereitung",
+      "amount": "250 g",
+      "packaging": "Flacher, rechteckiger Vakuumbeutel mit weichem, körnigem Fleischinhalt."
+    },
+    {
+      "name": "Gewürzmischung „Hello Fiesta“",
+      "amount": "2 g",
+      "packaging": "Kleines flaches Sachet mit feinem Gewürzpulver und versiegelten Rändern."
+    },
+    {
+      "name": "Pflücksalat",
+      "amount": "75 g"
+    },
+    {
+      "name": "Esslöffel Öl",
+      "amount": "2"
+    },
+    {
+      "name": "nach Geschmack Salz",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "nach Geschmack Pfeffer",
+      "amount": "Menge laut Originalrezept"
+    }
+  ],
+  "steps": [
+    "Tortillas auf Zimmertemperatur bringen. Schwarze Bohnen im Sieb mit kaltem Wasser abspülen. Limette in 6 [6 | 12] Spalten schneiden. In einer großen Schüssel Saft von 2 [3 | 4] Limettenspalten mit 1 EL [1,5 EL | 2 EL] Öl*, Salz* und Pfeffer* verrühren.",
+    "Avocado halbieren, Stein entfernen, Fruchtfleisch herauslösen und in Streifen schneiden. Salat und Avocado zum Dressing in die Schüssel geben und vorsichtig vermengen. Mit Salz* und Pfeffer* abschmecken. In einer großen Pfanne Tortillas von beiden Seiten kurz erhitzen, danach beiseite stellen. 1 EL [1,5 EL | 2 EL] Öl* in der Pfanne erhitzen. Hackfleisch für 3 – 4 Min. krümelig anbraten. Bohnen und „Hello Fiesta\" zugeben, vermengen und weitere 1 – 2 Min. anbraten, bis das Fleisch durchgegart ist. Mit Salz* und Pfeffer* abschmecken.",
+    "Währenddessen in einer kleinen Schüssel saure Sahne mit Sriracha (Achtung: scharf!) nach Belieben verrühren und mit Salz* und Pfeffer* abschmecken. Tortillas mit Sriracha-Dip bestreichen und mit Avocado-Salat und Bohnen-Hackfleisch-Mischung belegen. Mit restlichem Sriracha-Dip toppen und mit restlichen Limettenspalten servieren. Guten Appetit!"
+  ]
+}

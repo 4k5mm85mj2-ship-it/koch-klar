@@ -24,9 +24,13 @@
     {
       "value": "2026-W48",
       "label": "21. November 2026 bis 27. November 2026"
+    },
+    {
+      "value": "2026-W50",
+      "label": "5. Dezember 2026 bis 11. Dezember 2026"
     }
   ],
-  "generatedAt": "2026-11-04T10:53:25.447Z",
+  "generatedAt": "2026-11-05T10:52:52.305Z",
   "menus": {
     "2026-W43": {
       "week": "2026-W43",
@@ -56,10 +60,14 @@
         {
           "value": "2026-W48",
           "label": "21. November 2026 bis 27. November 2026"
+        },
+        {
+          "value": "2026-W50",
+          "label": "5. Dezember 2026 bis 11. Dezember 2026"
         }
       ],
-      "importedAt": "4. November 2026",
-      "checkedAt": "2026-11-04T10:53:16.474Z",
+      "importedAt": "5. November 2026",
+      "checkedAt": "2026-11-05T10:52:44.301Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W43",
@@ -2127,10 +2135,14 @@
         {
           "value": "2026-W48",
           "label": "21. November 2026 bis 27. November 2026"
+        },
+        {
+          "value": "2026-W50",
+          "label": "5. Dezember 2026 bis 11. Dezember 2026"
         }
       ],
-      "importedAt": "4. November 2026",
-      "checkedAt": "2026-11-04T10:53:16.474Z",
+      "importedAt": "5. November 2026",
+      "checkedAt": "2026-11-05T10:52:44.301Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W44",
@@ -4103,10 +4115,14 @@
         {
           "value": "2026-W48",
           "label": "21. November 2026 bis 27. November 2026"
+        },
+        {
+          "value": "2026-W50",
+          "label": "5. Dezember 2026 bis 11. Dezember 2026"
         }
       ],
-      "importedAt": "4. November 2026",
-      "checkedAt": "2026-11-04T10:53:16.474Z",
+      "importedAt": "5. November 2026",
+      "checkedAt": "2026-11-05T10:52:44.301Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W45",
@@ -4415,7 +4431,7 @@
           "dietGroup": "non-vegetarian",
           "time": "35 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R20_W33_DE_PM58373-2main_high-f59fdc5e.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R20_W33_DE_PM58373-2main_high-e9f47714.jpg",
           "alt": "Foto des Gerichts Sticky Hoisin Pulled Pork Bao Buns.",
           "intro": "mit Erdnuss-Pak Choi und Kartoffelspalten",
           "sourceUrl": "https://www.hellofresh.de/recipes/sticky-hoisin-pulled-pork-bao-buns-6a798519c419eb8464dafc75",
@@ -6009,14 +6025,18 @@
         {
           "value": "2026-W48",
           "label": "21. November 2026 bis 27. November 2026"
+        },
+        {
+          "value": "2026-W50",
+          "label": "5. Dezember 2026 bis 11. Dezember 2026"
         }
       ],
-      "importedAt": "4. November 2026",
-      "checkedAt": "2026-11-04T10:53:16.474Z",
+      "importedAt": "5. November 2026",
+      "checkedAt": "2026-11-05T10:52:44.301Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W46",
-      "totalRecipes": 99,
+      "totalRecipes": 98,
       "recipes": [
         {
           "id": "6a7987a8a64cfe1e1f5a5227",
@@ -6484,7 +6504,7 @@
           "dietGroup": "non-vegetarian",
           "time": "20 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R38_W25_DE_R30315-6_Main_high-fffcad83.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R38_W25_DE_R30315-6_Main_high-2362a3f7.jpg",
           "alt": "Foto des Gerichts Cajun-Großgarnelen auf Cannellinibohnen.",
           "intro": "mit Mais und Buttermilch-Zitronen-Dressing",
           "sourceUrl": "https://www.hellofresh.de/recipes/cajun-grossgarnelen-auf-cannellinibohnen-6a79883cc419eb8464db0990",
@@ -6818,15 +6838,15 @@
         },
         {
           "id": "6a79889ea64cfe1e1f5a57e2",
-          "title": "Hähnchen-Shrimp Gumbo Bowl",
-          "diet": "Nicht vegetarisch",
+          "title": "Gumbo Bowl mit Garnelen und Hähnchen",
+          "diet": "Mit Fisch",
           "dietGroup": "non-vegetarian",
           "time": "30 Minuten",
           "difficulty": "einfach",
           "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R40_W32_DE_PM40937-2_Main_high-35b56e67.jpg",
-          "alt": "Foto des Gerichts Hähnchen-Shrimp Gumbo Bowl.",
-          "intro": "mit Süßkartoffeln und Tomatenvinaigrette",
-          "sourceUrl": "https://www.hellofresh.de/recipes/hahnchen-shrimp-gumbo-bowl-6a79889ea64cfe1e1f5a57e2",
+          "alt": "Foto des Gerichts Gumbo Bowl mit Garnelen und Hähnchen.",
+          "intro": "dazu Süßkartoffeln und Tomatenvinaigrette",
+          "sourceUrl": "https://www.hellofresh.de/recipes/gumbo-bowl-mit-garnelen-und-hahnchen-6a79889ea64cfe1e1f5a57e2",
           "features": [
             "dinner-bowls",
             "Gesund genießen",
@@ -7535,27 +7555,6 @@
           ]
         },
         {
-          "id": "6a79898111cc1340e0f64dc0",
-          "title": "Bio-Rumpsteak zu Kräuterseitling auf Jägersoße",
-          "diet": "Nicht vegetarisch",
-          "dietGroup": "non-vegetarian",
-          "time": "30 Minuten",
-          "difficulty": "mittel",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R10_W46_DE_VP4184-45_Main_high-95676e5e.jpg",
-          "alt": "Foto des Gerichts Bio-Rumpsteak zu Kräuterseitling auf Jägersoße.",
-          "intro": "dazu Fettuccine und knusprige Salbeiblättchen",
-          "sourceUrl": "https://www.hellofresh.de/recipes/bio-rumpsteak-zu-krauterseitling-auf-jagersosse-6a79898111cc1340e0f64dc0",
-          "features": [
-            "nutri-score-c",
-            "High Protein",
-            "Mediterran",
-            "pasta-noodles",
-            "Merchan-surcharge",
-            "premium-protein",
-            "mushrooms"
-          ]
-        },
-        {
           "id": "6a798984c419eb8464db0fd3",
           "title": "Schnitzel Cordon bleu an Ofengemüse",
           "diet": "Nicht vegetarisch",
@@ -7684,7 +7683,7 @@
           "dietGroup": "non-vegetarian",
           "time": "30 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R72_W37_DE_R59907-5main_high-913f223a.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R72_W37_DE_R59907-5main_high-d30d96d2.jpg",
           "alt": "Foto des Gerichts Klassisches Schweinegulasch.",
           "intro": "mit Petersilienkartoffeln",
           "sourceUrl": "https://www.hellofresh.de/recipes/klassisches-schweinegulasch-6a7989a8a64cfe1e1f5a5cfd",
@@ -8120,10 +8119,14 @@
         {
           "value": "2026-W48",
           "label": "21. November 2026 bis 27. November 2026"
+        },
+        {
+          "value": "2026-W50",
+          "label": "5. Dezember 2026 bis 11. Dezember 2026"
         }
       ],
-      "importedAt": "4. November 2026",
-      "checkedAt": "2026-11-04T10:53:16.474Z",
+      "importedAt": "5. November 2026",
+      "checkedAt": "2026-11-05T10:52:44.301Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W47",
@@ -8239,7 +8242,7 @@
           "dietGroup": "non-vegetarian",
           "time": "25 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y24_R34_W31_DE_R4851-1_Main_high-ddebcd43.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y24_R34_W31_DE_R4851-1_Main_high-b7144a25.jpg",
           "alt": "Foto des Gerichts Rigatoni al Ragù mit Weiderindhack & Aubergine.",
           "intro": "in würziger Tomatensoße mit Hartkäse",
           "sourceUrl": "https://www.hellofresh.de/recipes/rigatoni-al-ragu-mit-weiderindhack-and-aubergine-6a798a47a64cfe1e1f5a60b5",
@@ -8279,7 +8282,7 @@
           "dietGroup": "vegetarian",
           "time": "20 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF210317_R29_W19_DE_EXP3357-1_MB_Main_edit_high-27f862ce.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF210317_R29_W19_DE_EXP3357-1_MB_Main_edit_high-9b86973f.jpg",
           "alt": "Foto des Gerichts One Pot: Pastasalat mit Kräuter-Dressing.",
           "intro": "Rucola, Tomaten und gezupftem Mozzarella",
           "sourceUrl": "https://www.hellofresh.de/recipes/one-pot-pastasalat-mit-krauter-dressing-6a798a5411cc1340e0f652bd",
@@ -8343,7 +8346,7 @@
           "dietGroup": "vegetarian",
           "time": "15 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R10_W32_DE_EXP4011-34main_high-b577de75.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R10_W32_DE_EXP4011-34main_high-880f7008.jpg",
           "alt": "Foto des Gerichts Pasta Bufala mit Pistazien und Kirschtomaten.",
           "intro": "getoppt mit Büffelmozzarella",
           "sourceUrl": "https://www.hellofresh.de/recipes/pasta-bufala-mit-pistazien-und-kirschtomaten-6a798a66c419eb8464db121d",
@@ -8451,7 +8454,7 @@
           "dietGroup": "non-vegetarian",
           "time": "15 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R15_W42_DE_EXP2559-17_main_high-5447748f.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R15_W42_DE_EXP2559-17_main_high-1d353924.jpg",
           "alt": "Foto des Gerichts Mini-Maultaschen mit Bacon und Kresse.",
           "intro": "dazu Rahmkohl und Pekannuss-Topping",
           "sourceUrl": "https://www.hellofresh.de/recipes/mini-maultaschen-mit-bacon-und-kresse-6a798a8311cc1340e0f6537b",
@@ -8601,7 +8604,7 @@
           "dietGroup": "vegetarian",
           "time": "20 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y23_R04_W35_DE_L4559-5_Main_high-211137bd.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y23_R04_W35_DE_L4559-5_Main_high-69965a83.jpg",
           "alt": "Foto des Gerichts Green Goddess Salad mit Avocado.",
           "intro": "dazu Cajun-Croûtons und Zucchini",
           "sourceUrl": "https://www.hellofresh.de/recipes/green-goddess-salad-mit-avocado-6a798aaba64cfe1e1f5a62d7",
@@ -10254,10 +10257,14 @@
         {
           "value": "2026-W48",
           "label": "21. November 2026 bis 27. November 2026"
+        },
+        {
+          "value": "2026-W50",
+          "label": "5. Dezember 2026 bis 11. Dezember 2026"
         }
       ],
-      "importedAt": "4. November 2026",
-      "checkedAt": "2026-11-04T10:53:16.474Z",
+      "importedAt": "5. November 2026",
+      "checkedAt": "2026-11-05T10:52:44.301Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W48",
@@ -12327,6 +12334,2064 @@
             "noodle-stir-fry",
             "pan-asian-plates",
             "Extra schnell"
+          ]
+        }
+      ]
+    },
+    "2026-W50": {
+      "week": "2026-W50",
+      "weekLabel": "5.–11. Dezember 2026",
+      "weekSpokenLabel": "5. Dezember 2026 bis 11. Dezember 2026",
+      "availableWeeks": [
+        {
+          "value": "2026-W43",
+          "label": "17. Oktober 2026 bis 23. Oktober 2026"
+        },
+        {
+          "value": "2026-W44",
+          "label": "24. Oktober 2026 bis 30. Oktober 2026"
+        },
+        {
+          "value": "2026-W45",
+          "label": "31. Oktober 2026 bis 6. November 2026"
+        },
+        {
+          "value": "2026-W46",
+          "label": "7. November 2026 bis 13. November 2026"
+        },
+        {
+          "value": "2026-W47",
+          "label": "14. November 2026 bis 20. November 2026"
+        },
+        {
+          "value": "2026-W48",
+          "label": "21. November 2026 bis 27. November 2026"
+        },
+        {
+          "value": "2026-W50",
+          "label": "5. Dezember 2026 bis 11. Dezember 2026"
+        }
+      ],
+      "importedAt": "5. November 2026",
+      "checkedAt": "2026-11-05T10:52:44.301Z",
+      "dataStatus": "live",
+      "sourceName": "HelloFresh Deutschland",
+      "sourceUrl": "https://www.hellofresh.de/menus/2026-W50",
+      "totalRecipes": 100,
+      "recipes": [
+        {
+          "id": "6a9fdc1fd83fec55e3ccba2a",
+          "title": "Strozzapretti Arrabiata mit Hähnchen",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "15 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R23_W50_DE_EXP2343-3_main_high-7307ff37.jpg",
+          "alt": "Foto des Gerichts Strozzapretti Arrabiata mit Hähnchen.",
+          "intro": "Oliven und Zitrone",
+          "sourceUrl": "https://www.hellofresh.de/recipes/strozzapretti-arrabiata-mit-hahnchen-6a9fdc1fd83fec55e3ccba2a",
+          "features": [
+            "Extra schnell",
+            "High Protein",
+            "nutri-score-b",
+            "pasta-noodles",
+            "Mediterran",
+            "Healthy",
+            "Neu"
+          ]
+        },
+        {
+          "id": "6a9fdc3ed83fec55e3ccbc36",
+          "title": "Für die ganze Familie: Nachos & Weiderindersteak",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "35 Minuten",
+          "difficulty": "mittel",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y24_R31_W24_DE_PM23220-2_Main_V2_high-8c55a6f9.jpg",
+          "alt": "Foto des Gerichts Für die ganze Familie: Nachos & Weiderindersteak.",
+          "intro": "Salsa, Chorizo-Käse Dip und Jalapeno-Kräutercreme",
+          "sourceUrl": "https://www.hellofresh.de/recipes/fur-die-ganze-familie-nachos-and-weiderindersteak-6a9fdc3ed83fec55e3ccbc36",
+          "features": [
+            "nutri-score-d",
+            "latin-american-faves",
+            "Family",
+            "Low Carb",
+            "classic-plates",
+            "Merchan-surcharge"
+          ]
+        },
+        {
+          "id": "6a9fdc41548a82de3e1aa5d2",
+          "title": "Oklahoma Onion Burger mit Bio-Rinderhack",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "45 Minuten",
+          "difficulty": "mittel",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R16_W31_DE_PM4658-25main_high-4c2701a8.jpg",
+          "alt": "Foto des Gerichts Oklahoma Onion Burger mit Bio-Rinderhack.",
+          "intro": "dazu knuspriger Maiskolben und BBQ Sour Cream",
+          "sourceUrl": "https://www.hellofresh.de/recipes/oklahoma-onion-burger-mit-bio-rinderhack-6a9fdc41548a82de3e1aa5d2",
+          "features": [
+            "nutri-score-c",
+            "handhelds",
+            "North American",
+            "Merchan-surcharge"
+          ]
+        },
+        {
+          "id": "6a9fdc43548a82de3e1aa623",
+          "title": "Heißgeräucherter Lachs auf Kartoffelrösti",
+          "diet": "Mit Fisch",
+          "dietGroup": "non-vegetarian",
+          "time": "45 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y24_R01_BW07_SE_C22421-1_Main_remove_potato_cucumber_add-carrot-radish_edit_swap_pulled-salmon_edit_high-4b2a9c3f.jpg",
+          "alt": "Foto des Gerichts Heißgeräucherter Lachs auf Kartoffelrösti.",
+          "intro": "mit Apfel-Dill-Salat und saurer Sahne",
+          "sourceUrl": "https://www.hellofresh.de/recipes/heissgeraucherter-lachs-auf-kartoffelrosti-6a9fdc43548a82de3e1aa623",
+          "features": [
+            "nutri-score-b",
+            "classic-euro-dishes",
+            "classic-plates",
+            "Neu"
+          ]
+        },
+        {
+          "id": "6a9fdc44d83fec55e3ccbc9f",
+          "title": "Rindfleisch-Köfte auf goldenem Sultaninen-Reis",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "35 Minuten",
+          "difficulty": "mittel",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R05_W07_DE_R4158-27_Main_high-c22b8f9e.jpg",
+          "alt": "Foto des Gerichts Rindfleisch-Köfte auf goldenem Sultaninen-Reis.",
+          "intro": "dazu Tomatensalat und Petersilienjoghurt",
+          "sourceUrl": "https://www.hellofresh.de/recipes/rindfleisch-kofte-auf-goldenem-sultaninen-reis-6a9fdc44d83fec55e3ccbc9f",
+          "features": [
+            "nutri-score-c",
+            "classic-plates",
+            "Family",
+            "Taste of Middle East"
+          ]
+        },
+        {
+          "id": "6a9fdc5450d85bbd02ecbbb8",
+          "title": "Garnelen Poké Bowl mit Sriracha-Mayo",
+          "diet": "Mit Fisch",
+          "dietGroup": "non-vegetarian",
+          "time": "20 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R23_W32_DE_EXP57722-3main_high-ed31193f.jpg",
+          "alt": "Foto des Gerichts Garnelen Poké Bowl mit Sriracha-Mayo.",
+          "intro": "dazu Mais, Sesam-Slaw und Gurke",
+          "sourceUrl": "https://www.hellofresh.de/recipes/garnelen-poke-bowl-mit-sriracha-mayo-6a9fdc5450d85bbd02ecbbb8",
+          "features": [
+            "nutri-score-b",
+            "High Protein",
+            "Kalorien im Blick",
+            "dinner-bowls",
+            "world-flavors",
+            "Schnell"
+          ]
+        },
+        {
+          "id": "6a9fdc57548a82de3e1aa7c7",
+          "title": "Maronen-Pilz-Ragout mit Knoblauch-Bohnen",
+          "diet": "Vegan",
+          "dietGroup": "vegetarian",
+          "time": "30 Minuten",
+          "difficulty": "mittel",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF220808_R25_W40_DE_R4131-1_MB_Main_15_high-4d53f370.jpg",
+          "alt": "Foto des Gerichts Maronen-Pilz-Ragout mit Knoblauch-Bohnen.",
+          "intro": "dazu Kartoffelpüree, getoppt mit Petersilie",
+          "sourceUrl": "https://www.hellofresh.de/recipes/maronen-pilz-ragout-mit-knoblauch-bohnen-6a9fdc57548a82de3e1aa7c7",
+          "features": [
+            "classic-euro-dishes",
+            "classic-plates",
+            "Gesund genießen",
+            "nutri-score-b",
+            "Kalorien im Blick",
+            "Vegan",
+            "Healthy"
+          ]
+        },
+        {
+          "id": "6a9fdc5e548a82de3e1aa850",
+          "title": "Ratatouille-Auflauf mit Mozzarellahaube",
+          "diet": "Vegetarisch",
+          "dietGroup": "vegetarian",
+          "time": "45 Minuten",
+          "difficulty": "mittel",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R88_W50_DE_R3211-7_main_high-7f017580.jpg",
+          "alt": "Foto des Gerichts Ratatouille-Auflauf mit Mozzarellahaube.",
+          "intro": "an Rucola-Walnuss-Salat",
+          "sourceUrl": "https://www.hellofresh.de/recipes/ratatouille-auflauf-mit-mozzarellahaube-6a9fdc5e548a82de3e1aa850",
+          "features": [
+            "nutri-score-b",
+            "classic-euro-dishes",
+            "Low Carb",
+            "Vegetarisch",
+            "one-pan",
+            "Neu"
+          ]
+        },
+        {
+          "id": "6a9fdc5ed83fec55e3ccbe2e",
+          "title": "Schupfnudelpfanne mit Bacon und Sauerkraut",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "15 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF210713_R28_W36_DE_EXP2554-6_MB_Main_small_bacon_pieces_high-b6f07c0a.jpg",
+          "alt": "Foto des Gerichts Schupfnudelpfanne mit Bacon und Sauerkraut.",
+          "intro": "dazu Kräuterschmand",
+          "sourceUrl": "https://www.hellofresh.de/recipes/schupfnudelpfanne-mit-bacon-und-sauerkraut-6a9fdc5ed83fec55e3ccbe2e",
+          "features": [
+            "Family",
+            "nutri-score-c",
+            "regional-specialty",
+            "Extra schnell",
+            "pasta-noodles"
+          ]
+        },
+        {
+          "id": "6a9fdc6350d85bbd02ecbcf8",
+          "title": "One-Pot: Spaghetti al Pomodoro",
+          "diet": "Vegetarisch",
+          "dietGroup": "vegetarian",
+          "time": "25 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R28_W19_DE_EXP3659-22_Main_5_EXP3659-33_var_high-5ecd1068.jpg",
+          "alt": "Foto des Gerichts One-Pot: Spaghetti al Pomodoro.",
+          "intro": "getoppt mit Frischecreme-Nocken und Pinienkernen",
+          "sourceUrl": "https://www.hellofresh.de/recipes/one-pot-spaghetti-al-pomodoro-6a9fdc6350d85bbd02ecbcf8",
+          "features": [
+            "nutri-score-c",
+            "One-Pot-Gericht",
+            "Family",
+            "Mediterran",
+            "pasta-noodles",
+            "Vegetarisch"
+          ]
+        },
+        {
+          "id": "6a9fdc66d83fec55e3ccbe96",
+          "title": "Bio-Rinderhüftsteak auf Thai-Salat",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "25 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R71_W22_NL_R37890-1_Main_-26high-0c9bcbc4.jpg",
+          "alt": "Foto des Gerichts Bio-Rinderhüftsteak auf Thai-Salat.",
+          "intro": "mit Vollkornreis und selbstgemachtem Dressing",
+          "sourceUrl": "https://www.hellofresh.de/recipes/bio-rinderhuftsteak-auf-thai-salat-6a9fdc66d83fec55e3ccbe96",
+          "features": [
+            "High Protein",
+            "nutri-score-a",
+            "dinner-bowls",
+            "Healthy",
+            "South/SoutheastAsian",
+            "Merchan-surcharge"
+          ]
+        },
+        {
+          "id": "6a9fdc6750d85bbd02ecbd4b",
+          "title": "Cremiges Hähnchencurry mit Kichererbsen",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "15 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y24_R03_W23_DE_EXP2838-26_Main_edit_high-61e73741.jpg",
+          "alt": "Foto des Gerichts Cremiges Hähnchencurry mit Kichererbsen.",
+          "intro": "Babyspinat und Jasminreis",
+          "sourceUrl": "https://www.hellofresh.de/recipes/cremiges-hahnchencurry-mit-kichererbsen-6a9fdc6750d85bbd02ecbd4b",
+          "features": [
+            "nutri-score-c",
+            "Curries",
+            "High Protein",
+            "South/SoutheastAsian",
+            "Extra schnell",
+            "dinner-bowls"
+          ]
+        },
+        {
+          "id": "6a9fdc6850d85bbd02ecbd78",
+          "title": "Steak vom Weiderind mit Wurzelgemüse",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "35 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R04_W37_DE_R59742-3main_high-ee9d77c4.jpg",
+          "alt": "Foto des Gerichts Steak vom Weiderind mit Wurzelgemüse.",
+          "intro": "dazu Chimichurri",
+          "sourceUrl": "https://www.hellofresh.de/recipes/steak-vom-weiderind-mit-wurzelgemuse-6a9fdc6850d85bbd02ecbd78",
+          "features": [
+            "High Protein",
+            "classic-plates",
+            "nutri-score-b",
+            "latin-american-faves",
+            "10 Min. Vorbereitung",
+            "Healthy"
+          ]
+        },
+        {
+          "id": "6a9fdc6fd83fec55e3ccbf38",
+          "title": "Yaki Udon: Noodle-Bowl mit Weiderinderhack",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "15 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y24_R24_W33_DE_R26934-1_MAIN_high-7ac3f3bf.jpg",
+          "alt": "Foto des Gerichts Yaki Udon: Noodle-Bowl mit Weiderinderhack.",
+          "intro": "in süßer Soja-Chili-Soße mit Pak Choi und Sesam",
+          "sourceUrl": "https://www.hellofresh.de/recipes/yaki-udon-noodle-bowl-mit-weiderinderhack-6a9fdc6fd83fec55e3ccbf38",
+          "features": [
+            "nutri-score-c",
+            "High Protein",
+            "noodle-stir-fry",
+            "pan-asian-plates",
+            "Extra schnell",
+            "board-bia"
+          ]
+        },
+        {
+          "id": "6a9fdc70548a82de3e1aa94c",
+          "title": "Tilapia auf Cannellini-Bohnen-Eintopf",
+          "diet": "Mit Fisch",
+          "dietGroup": "non-vegetarian",
+          "time": "20 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R56_W07_DE_R51560-4_Main_high-dcb952e2.jpg",
+          "alt": "Foto des Gerichts Tilapia auf Cannellini-Bohnen-Eintopf.",
+          "intro": "mit Babyspinat und Chimichurri",
+          "sourceUrl": "https://www.hellofresh.de/recipes/tilapia-auf-cannellini-bohnen-eintopf-6a9fdc70548a82de3e1aa94c",
+          "features": [
+            "Gesund genießen",
+            "ballaststoffreich",
+            "High Protein",
+            "Low Carb",
+            "Schnell",
+            "Kalorien im Blick",
+            "nutri-score-a",
+            "soup-stew",
+            "Healthy",
+            "Mediterran"
+          ]
+        },
+        {
+          "id": "6a9fdc7650d85bbd02ecbe35",
+          "title": "Entenbrust mit Hoisin-Glasur",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "40 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R96_W41_DE_PM50099-4_main_edit_high-d7a560b0.jpg",
+          "alt": "Foto des Gerichts Entenbrust mit Hoisin-Glasur.",
+          "intro": "dazu Bimi Brokkoli und eingelegte Radieschen",
+          "sourceUrl": "https://www.hellofresh.de/recipes/entenbrust-mit-hoisin-glasur-6a9fdc7650d85bbd02ecbe35",
+          "features": [
+            "nutri-score-b",
+            "classic-plates",
+            "Gesund genießen",
+            "High Protein",
+            "pan-asian-plates",
+            "Merchan-surcharge"
+          ]
+        },
+        {
+          "id": "6a9fdc7950d85bbd02ecbebf",
+          "title": "Souflaki-Teller mit Schweinelachssteak & Zaziki",
+          "diet": "Mit Fisch",
+          "dietGroup": "non-vegetarian",
+          "time": "25 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R37_W41_DE_R21308-4_Main_high-fee4d1f0.jpg",
+          "alt": "Foto des Gerichts Souflaki-Teller mit Schweinelachssteak & Zaziki.",
+          "intro": "dazu Tomatensalat und Zaziki",
+          "sourceUrl": "https://www.hellofresh.de/recipes/souflaki-teller-mit-schweinelachssteak-and-zaziki-6a9fdc7950d85bbd02ecbebf",
+          "features": [
+            "nutri-score-a",
+            "dinner-bowls",
+            "Gesund genießen",
+            "High Protein",
+            "Kids Favorite",
+            "Mediterran",
+            "Healthy"
+          ]
+        },
+        {
+          "id": "6a9fdc79548a82de3e1aa9b2",
+          "title": "Spicy Garlic-Chicken-Bowl mit Limettenreis",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "25 Minuten",
+          "difficulty": "mittel",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y23_R23_W39_DE_R4072-6_Main_high-4021a791.jpg",
+          "alt": "Foto des Gerichts Spicy Garlic-Chicken-Bowl mit Limettenreis.",
+          "intro": "dazu Gurken-Radieschen-Salat und Teriyaki-Erdnuss-Dip",
+          "sourceUrl": "https://www.hellofresh.de/recipes/spicy-garlic-chicken-bowl-mit-limettenreis-6a9fdc79548a82de3e1aa9b2",
+          "features": [
+            "nutri-score-b",
+            "dinner-bowls",
+            "Gesund genießen",
+            "High Protein",
+            "pan-asian-plates",
+            "Kalorien im Blick",
+            "Healthy",
+            "cuisine-spotlight"
+          ]
+        },
+        {
+          "id": "6a9fdc7ad83fec55e3ccc060",
+          "title": "Vegetarisches Maronen-Pilz-Ragout",
+          "diet": "Vegetarisch",
+          "dietGroup": "vegetarian",
+          "time": "50 Minuten",
+          "difficulty": "schwierig",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R7101_W52_DE_PM4251-AP-2-42_main_high-d30d3d33.jpg",
+          "alt": "Foto des Gerichts Vegetarisches Maronen-Pilz-Ragout.",
+          "intro": "mit Kartoffelklößen und Rotkohl",
+          "sourceUrl": "https://www.hellofresh.de/recipes/vegetarisches-maronen-pilz-ragout-6a9fdc7ad83fec55e3ccc060",
+          "features": [
+            "classic-plates",
+            "nutri-score-c",
+            "regional-specialty",
+            "Vegetarisch",
+            "Merchan-surcharge",
+            "festive-flavours"
+          ]
+        },
+        {
+          "id": "6a9fdc8050d85bbd02ecbf8e",
+          "title": "Chili mit Hähnchenhackfleisch",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "25 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R58_W50_DE_R61450-3_main_high-3c5468d4.jpg",
+          "alt": "Foto des Gerichts Chili mit Hähnchenhackfleisch.",
+          "intro": "dazu Jalapenos, Koriander und Cheddar",
+          "sourceUrl": "https://www.hellofresh.de/recipes/chili-mit-hahnchenhackfleisch-6a9fdc8050d85bbd02ecbf8e",
+          "features": [
+            "nutri-score-b",
+            "latin-american-faves",
+            "High Protein",
+            "Low Carb",
+            "10 Min. Vorbereitung",
+            "Healthy",
+            "soup-stew",
+            "Neu"
+          ]
+        },
+        {
+          "id": "6a9fdc88548a82de3e1aaa66",
+          "title": "Cajun-Chicken mit Salat in Buttermilch-Dressing",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "35 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y24_R27_W20_DE_EXP3338-14_MAIN_high-61a77c26.jpg",
+          "alt": "Foto des Gerichts Cajun-Chicken mit Salat in Buttermilch-Dressing.",
+          "intro": "dazu Kartoffelwedges und Piri-Piri-Dip",
+          "sourceUrl": "https://www.hellofresh.de/recipes/cajun-chicken-mit-salat-in-buttermilch-dressing-6a9fdc88548a82de3e1aaa66",
+          "features": [
+            "nutri-score-b",
+            "classic-plates",
+            "Gesund genießen",
+            "High Protein",
+            "North American",
+            "10 Min. Vorbereitung",
+            "Healthy"
+          ]
+        },
+        {
+          "id": "6a9fdc8c50d85bbd02ecc09a",
+          "title": "Gnocchi in Balsamico-Kräuterbutter-Soße",
+          "diet": "Vegetarisch",
+          "dietGroup": "vegetarian",
+          "time": "25 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y23_R29_W04_EXP4453-1_KB_Main_high-7b349287.jpg",
+          "alt": "Foto des Gerichts Gnocchi in Balsamico-Kräuterbutter-Soße.",
+          "intro": "mit Champignons & Rucola-Mozzarella-Topping",
+          "sourceUrl": "https://www.hellofresh.de/recipes/gnocchi-in-balsamico-krauterbutter-sosse-6a9fdc8c50d85bbd02ecc09a",
+          "features": [
+            "nutri-score-c",
+            "Mediterran",
+            "pasta-noodles",
+            "Schnell",
+            "Vegetarisch"
+          ]
+        },
+        {
+          "id": "6a9fdc8d548a82de3e1aab07",
+          "title": "Mediterranes Lachsfilet auf cremigem Orzotto",
+          "diet": "Mit Fisch",
+          "dietGroup": "non-vegetarian",
+          "time": "25 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R35_W13_DE_R38239-2_Main_high-1b06ac02.jpg",
+          "alt": "Foto des Gerichts Mediterranes Lachsfilet auf cremigem Orzotto.",
+          "intro": "mit Gurkensalat und eingelegten Zwiebeln",
+          "sourceUrl": "https://www.hellofresh.de/recipes/mediterranes-lachsfilet-auf-cremigem-orzotto-6a9fdc8d548a82de3e1aab07",
+          "features": [
+            "nutri-score-c",
+            "classic-plates",
+            "Mediterran"
+          ]
+        },
+        {
+          "id": "6a9fdc91d83fec55e3ccc23e",
+          "title": "Omas Klassiker: Kartoffelpuffer mit Apfelmus",
+          "diet": "Vegetarisch",
+          "dietGroup": "vegetarian",
+          "time": "40 Minuten",
+          "difficulty": "schwierig",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF220105_R12_W07_DE_R3843-1_edit_Main_high-7a9f6039.jpg",
+          "alt": "Foto des Gerichts Omas Klassiker: Kartoffelpuffer mit Apfelmus.",
+          "intro": "dazu knackiger Salat mit Radieschen",
+          "sourceUrl": "https://www.hellofresh.de/recipes/omas-klassiker-kartoffelpuffer-mit-apfelmus-6a9fdc91d83fec55e3ccc23e",
+          "features": [
+            "nutri-score-c",
+            "classic-plates",
+            "Family",
+            "regional-specialty",
+            "Vegetarisch",
+            "Omas Klassiker"
+          ]
+        },
+        {
+          "id": "6a9fdc92548a82de3e1aab90",
+          "title": "Traditionelles Schweinelachssteak mit Pilzrahm",
+          "diet": "Mit Fisch",
+          "dietGroup": "non-vegetarian",
+          "time": "15 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y24_R03_W24_DE_EXP3216-12_Main_high-bc4ea437.jpg",
+          "alt": "Foto des Gerichts Traditionelles Schweinelachssteak mit Pilzrahm.",
+          "intro": "dazu Mini-Klöße",
+          "sourceUrl": "https://www.hellofresh.de/recipes/traditionelles-schweinelachssteak-mit-pilzrahm-6a9fdc92548a82de3e1aab90",
+          "features": [
+            "nutri-score-c",
+            "classic-plates",
+            "Family",
+            "High Protein",
+            "regional-specialty",
+            "Omas Klassiker",
+            "Extra schnell"
+          ]
+        },
+        {
+          "id": "6a9fdc9350d85bbd02ecc10b",
+          "title": "„Weihnachtsbaum“ mit herzhafter Bolognese",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "20 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y24_R05_W01_DE_EXP28482-1_Main_xmas2026__high-97ff34f2.jpg",
+          "alt": "Foto des Gerichts „Weihnachtsbaum“ mit herzhafter Bolognese.",
+          "intro": "aus Rinderhack mit goldenen Gnocchisternen",
+          "sourceUrl": "https://www.hellofresh.de/recipes/weihnachtsbaum-mit-herzhafter-bolognese-6a9fdc9350d85bbd02ecc10b",
+          "features": [
+            "nutri-score-c",
+            "Family",
+            "Mediterran",
+            "pasta-noodles",
+            "Extra schnell",
+            "High Protein",
+            "festive-flavours"
+          ]
+        },
+        {
+          "id": "6a9fdc96d83fec55e3ccc271",
+          "title": "Bulgogi-Hähnchenbrust mit Pak Choi",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "35 Minuten",
+          "difficulty": "mittel",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF200810_R23_W40_DE_R2944-1_KB_Main_high-fac69a03.jpg",
+          "alt": "Foto des Gerichts Bulgogi-Hähnchenbrust mit Pak Choi.",
+          "intro": "dazu Jasminreis mit Kokosflocken",
+          "sourceUrl": "https://www.hellofresh.de/recipes/bulgogi-hahnchenbrust-mit-pak-choi-6a9fdc96d83fec55e3ccc271",
+          "features": [
+            "nutri-score-c",
+            "classic-plates",
+            "High Protein",
+            "pan-asian-plates",
+            "Neu",
+            "cuisine-spotlight"
+          ]
+        },
+        {
+          "id": "6a9fdc9a50d85bbd02ecc199",
+          "title": "Gochujang-Schweinesteaks mit Süßkartoffelsalat",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "25 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R38_W21_DE_R30288-4_Main_high-fd7f5f6d.jpg",
+          "alt": "Foto des Gerichts Gochujang-Schweinesteaks mit Süßkartoffelsalat.",
+          "intro": "und Miso-Ingwer-Mayo Dressing",
+          "sourceUrl": "https://www.hellofresh.de/recipes/gochujang-schweinesteaks-mit-susskartoffelsalat-6a9fdc9a50d85bbd02ecc199",
+          "features": [
+            "nutri-score-b",
+            "dinner-bowls",
+            "Gesund genießen",
+            "High Protein",
+            "pan-asian-plates",
+            "cuisine-spotlight"
+          ]
+        },
+        {
+          "id": "6a9fdc9a548a82de3e1aabbd",
+          "title": "BBQ Bowl mit Schweinelachssteak Tonkatsu Art",
+          "diet": "Mit Fisch",
+          "dietGroup": "non-vegetarian",
+          "time": "30 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R80_W23_DE_R56222-3_main_high-a8f7b543.jpg",
+          "alt": "Foto des Gerichts BBQ Bowl mit Schweinelachssteak Tonkatsu Art.",
+          "intro": "Zubereitung in Airfryer oder Pfanne",
+          "sourceUrl": "https://www.hellofresh.de/recipes/bbq-bowl-mit-schweinelachssteak-tonkatsu-art-6a9fdc9a548a82de3e1aabbd",
+          "features": [
+            "Air Fryer Friendly",
+            "High Protein",
+            "pan-asian-plates",
+            "dinner-bowls",
+            "nutri-score-b",
+            "Healthy"
+          ]
+        },
+        {
+          "id": "6a9fdca1d83fec55e3ccc2e9",
+          "title": "Speckknödel auf warmem Krautsalat",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "30 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R93_W37_DE_R59901-5soft_high-b4a5d4ee.jpg",
+          "alt": "Foto des Gerichts Speckknödel auf warmem Krautsalat.",
+          "intro": "mit frischen Kräutern",
+          "sourceUrl": "https://www.hellofresh.de/recipes/speckknodel-auf-warmem-krautsalat-6a9fdca1d83fec55e3ccc2e9",
+          "features": [
+            "Family",
+            "classic-plates",
+            "classic-euro-dishes",
+            "nutri-score-c"
+          ]
+        },
+        {
+          "id": "6a9fdca2548a82de3e1aac71",
+          "title": "Bowl mit würzigen Garnelen & Quinoa",
+          "diet": "Mit Fisch",
+          "dietGroup": "non-vegetarian",
+          "time": "15 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R56_W14_DE_EXP51249-3_RAN_TD_Main_Balanced__Main_high-4e9596e5.jpg",
+          "alt": "Foto des Gerichts Bowl mit würzigen Garnelen & Quinoa.",
+          "intro": "dazu Kirschtomaten, Gurke und Aioli",
+          "sourceUrl": "https://www.hellofresh.de/recipes/bowl-mit-wurzigen-garnelen-and-quinoa-6a9fdca2548a82de3e1aac71",
+          "features": [
+            "dinner-bowls",
+            "Gesund genießen",
+            "Mediterran",
+            "nutri-score-b",
+            "Extra schnell",
+            "Kalorien im Blick",
+            "Healthy"
+          ]
+        },
+        {
+          "id": "6a9fdca550d85bbd02ecc2e3",
+          "title": "Wiener Würstchen mit Kartoffelpüree",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "15 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y24_R03_W28_DE_EXP22725-1_Main_high-1a0f8abe.jpg",
+          "alt": "Foto des Gerichts Wiener Würstchen mit Kartoffelpüree.",
+          "intro": "dazu frischer Salat, Ketchup und Senf",
+          "sourceUrl": "https://www.hellofresh.de/recipes/wiener-wurstchen-mit-kartoffelpuree-6a9fdca550d85bbd02ecc2e3",
+          "features": [
+            "nutri-score-c",
+            "classic-plates",
+            "regional-specialty",
+            "Kalorien im Blick",
+            "Extra schnell",
+            "Family",
+            "Neu"
+          ]
+        },
+        {
+          "id": "6a9fdcae50d85bbd02ecc3b0",
+          "title": "Spätzle-Pfanne mit Mozzarella und Knoblauchsoße",
+          "diet": "Vegetarisch",
+          "dietGroup": "vegetarian",
+          "time": "15 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_R29_W13_DE_EXP4455-1_Main_high-285e3a57.jpg",
+          "alt": "Foto des Gerichts Spätzle-Pfanne mit Mozzarella und Knoblauchsoße.",
+          "intro": "dazu frischer Salat",
+          "sourceUrl": "https://www.hellofresh.de/recipes/spatzle-pfanne-mit-mozzarella-und-knoblauchsosse-6a9fdcae50d85bbd02ecc3b0",
+          "features": [
+            "nutri-score-c",
+            "Family",
+            "pasta-noodles",
+            "regional-specialty",
+            "Extra schnell",
+            "Vegetarisch"
+          ]
+        },
+        {
+          "id": "6a9fdcaf50d85bbd02ecc3e9",
+          "title": "Japanische Udon-Suppe mit Huhn",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "25 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R55_W10_DE_R48104-4_Main_high-1352bcec.jpg",
+          "alt": "Foto des Gerichts Japanische Udon-Suppe mit Huhn.",
+          "intro": "dazu würziges Sesam-Chili-Öl und Pak Choi",
+          "sourceUrl": "https://www.hellofresh.de/recipes/japanische-udon-suppe-mit-huhn-6a9fdcaf50d85bbd02ecc3e9",
+          "features": [
+            "nutri-score-b",
+            "Gesund genießen",
+            "Ei nicht enthalten",
+            "High Protein",
+            "noodle-stir-fry",
+            "pan-asian-plates",
+            "Healthy"
+          ]
+        },
+        {
+          "id": "6a9fdcaf50d85bbd02ecc404",
+          "title": "Hähnchen mit Quinoa-Bohnen Pfanne",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "30 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF191220_R18_W08_DE_R2604-1_Main_OH_high-f792caa3.jpg",
+          "alt": "Foto des Gerichts Hähnchen mit Quinoa-Bohnen Pfanne.",
+          "intro": "dazu Tomaten-Salat und Joghurtdip",
+          "sourceUrl": "https://www.hellofresh.de/recipes/hahnchen-mit-quinoa-bohnen-pfanne-6a9fdcaf50d85bbd02ecc404",
+          "features": [
+            "ballaststoffreich",
+            "High Protein",
+            "latin-american-faves",
+            "nutri-score-a",
+            "Kalorien im Blick",
+            "Healthy",
+            "dinner-bowls"
+          ]
+        },
+        {
+          "id": "6a9fdcafd83fec55e3ccc3fc",
+          "title": "Miso-Butternut mit würziger Shiitake-Beef-Soße",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "35 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R71_W43_DE_R60456-3_main_high-ab4b576d.jpg",
+          "alt": "Foto des Gerichts Miso-Butternut mit würziger Shiitake-Beef-Soße.",
+          "intro": "auf Sesamreis",
+          "sourceUrl": "https://www.hellofresh.de/recipes/miso-butternut-mit-wurziger-shiitake-beef-sosse-6a9fdcafd83fec55e3ccc3fc",
+          "features": [
+            "dinner-bowls",
+            "pan-asian-plates",
+            "nutri-score-c",
+            "cuisine-spotlight",
+            "board-bia"
+          ]
+        },
+        {
+          "id": "6a9fdcb150d85bbd02ecc443",
+          "title": "Offener Spitzkohlstrudel mit Bacon und Apfel",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "40 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF220307_R02_W18_DE_R3114-4_MB_Main_high-fd4c2f64.jpg",
+          "alt": "Foto des Gerichts Offener Spitzkohlstrudel mit Bacon und Apfel.",
+          "intro": "dazu Blattsalat und Schnittlauch-Dip",
+          "sourceUrl": "https://www.hellofresh.de/recipes/offener-spitzkohlstrudel-mit-bacon-und-apfel-6a9fdcb150d85bbd02ecc443",
+          "features": [
+            "nutri-score-c",
+            "classic-plates",
+            "Family",
+            "regional-specialty"
+          ]
+        },
+        {
+          "id": "6a9fdcbed83fec55e3ccc50b",
+          "title": "Zitronen-Salbei-Hähnchen aus dem Ofen",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "30 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R99_W50_DE_R61836-3_main_high-bf7f0568.jpg",
+          "alt": "Foto des Gerichts Zitronen-Salbei-Hähnchen aus dem Ofen.",
+          "intro": "mit Kichererbsen und Spinat",
+          "sourceUrl": "https://www.hellofresh.de/recipes/zitronen-salbei-hahnchen-aus-dem-ofen-6a9fdcbed83fec55e3ccc50b",
+          "features": [
+            "Low Carb",
+            "High Protein",
+            "Kalorien im Blick",
+            "nutri-score-a",
+            "10 Min. Vorbereitung",
+            "Mediterran",
+            "ballaststoffreich",
+            "Healthy",
+            "Sheet Pan",
+            "Neu"
+          ]
+        },
+        {
+          "id": "6a9fdcc250d85bbd02ecc60e",
+          "title": "Bacon-Poutine aus Kanada",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "25 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R71_W39_DE_R48092-15main_high-cc08134d.jpg",
+          "alt": "Foto des Gerichts Bacon-Poutine aus Kanada.",
+          "intro": "mit Käse und Aioli-Coleslaw",
+          "sourceUrl": "https://www.hellofresh.de/recipes/bacon-poutine-aus-kanada-6a9fdcc250d85bbd02ecc60e",
+          "features": [
+            "nutri-score-c",
+            "classic-plates",
+            "North American"
+          ]
+        },
+        {
+          "id": "6a9fdcc450d85bbd02ecc644",
+          "title": "Vegane Linsen-Bolognese auf frischen Linguine",
+          "diet": "Vegan",
+          "dietGroup": "vegetarian",
+          "time": "15 Minuten",
+          "difficulty": "mittel",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R50_W36_DE_R42603-3_Main_1_high-536dbdc9.jpg",
+          "alt": "Foto des Gerichts Vegane Linsen-Bolognese auf frischen Linguine.",
+          "intro": "in würziger Tomatensoße mit Basilikum-Pinien-Topping",
+          "sourceUrl": "https://www.hellofresh.de/recipes/vegane-linsen-bolognese-auf-frischen-linguine-6a9fdcc450d85bbd02ecc644",
+          "features": [
+            "Family",
+            "Mediterran",
+            "nutri-score-b",
+            "pasta-noodles",
+            "Extra schnell",
+            "Vegan",
+            "Ruckzuck"
+          ]
+        },
+        {
+          "id": "6a9fdcc450d85bbd02ecc65f",
+          "title": "Bio-Schweinefleisch mit Pistazien-Gremolata",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "25 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R40_W21_DE_PM46721-4_main_high-81bdb1d2.jpg",
+          "alt": "Foto des Gerichts Bio-Schweinefleisch mit Pistazien-Gremolata.",
+          "intro": "dazu fruchtiger Apfel-Linsen-Salat",
+          "sourceUrl": "https://www.hellofresh.de/recipes/bio-schweinefleisch-mit-pistazien-gremolata-6a9fdcc450d85bbd02ecc65f",
+          "features": [
+            "classic-euro-dishes",
+            "classic-plates",
+            "Gesund genießen",
+            "High Protein",
+            "nutri-score-a",
+            "organic",
+            "Healthy",
+            "Merchan-surcharge"
+          ]
+        },
+        {
+          "id": "6a9fdccfd83fec55e3ccc624",
+          "title": "Tacos mit Hähnchen in Buffalosauce",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "20 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R1004_W08_AU_R16515-8_Main_high-bd52e182.jpg",
+          "alt": "Foto des Gerichts Tacos mit Hähnchen in Buffalosauce.",
+          "intro": "Zubereitung in Airfryer oder Pfanne",
+          "sourceUrl": "https://www.hellofresh.de/recipes/tacos-mit-hahnchen-in-buffalosauce-6a9fdccfd83fec55e3ccc624",
+          "features": [
+            "Air Fryer Friendly",
+            "handhelds",
+            "Schnell",
+            "nutri-score-b",
+            "High Protein",
+            "Healthy",
+            "North American"
+          ]
+        },
+        {
+          "id": "6a9fdcd6d83fec55e3ccc6da",
+          "title": "Knusprige Lahmacun mit Lammhackfleisch",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "25 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R68_W36_DE_R59523-2main_high-e9d5c9be.jpg",
+          "alt": "Foto des Gerichts Knusprige Lahmacun mit Lammhackfleisch.",
+          "intro": "dazu Gurken-Kräuter Salat und eingelegte Zwiebeln",
+          "sourceUrl": "https://www.hellofresh.de/recipes/knusprige-lahmacun-mit-lammhackfleisch-6a9fdcd6d83fec55e3ccc6da",
+          "features": [
+            "Taste of Middle East",
+            "handhelds",
+            "nutri-score-b"
+          ]
+        },
+        {
+          "id": "6a9fdcddd83fec55e3ccc73a",
+          "title": "Schnitzel mit Zwiebel-Kampot-Pfeffer-Soße",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "35 Minuten",
+          "difficulty": "schwierig",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF200324_R01_W22_DE_R2679-1_Main_OH_high_1-83671d96.jpg",
+          "alt": "Foto des Gerichts Schnitzel mit Zwiebel-Kampot-Pfeffer-Soße.",
+          "intro": "Brokkoli und Kartoffelwedges",
+          "sourceUrl": "https://www.hellofresh.de/recipes/schnitzel-mit-zwiebel-kampot-pfeffer-sosse-6a9fdcddd83fec55e3ccc73a",
+          "features": [
+            "nutri-score-c",
+            "classic-plates",
+            "Family",
+            "High Protein",
+            "regional-specialty"
+          ]
+        },
+        {
+          "id": "6a9fdcef50d85bbd02ecc9b3",
+          "title": "Quinoa-Bowl mit Karotten-Hummus",
+          "diet": "Vegan",
+          "dietGroup": "vegetarian",
+          "time": "30 Minuten",
+          "difficulty": "mittel",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R25_W09_DE_R4541-2_Main_high-16cb68a3.jpg",
+          "alt": "Foto des Gerichts Quinoa-Bowl mit Karotten-Hummus.",
+          "intro": "Kirschtomaten, Gurke und Oliven",
+          "sourceUrl": "https://www.hellofresh.de/recipes/quinoa-bowl-mit-karotten-hummus-6a9fdcef50d85bbd02ecc9b3",
+          "features": [
+            "dinner-bowls",
+            "nutri-score-a",
+            "Taste of Middle East",
+            "Vegan"
+          ]
+        },
+        {
+          "id": "6a9fdd3d548a82de3e1ab89c",
+          "title": "Pilz Stroganoff auf Kartoffelpüree",
+          "diet": "Vegetarisch",
+          "dietGroup": "vegetarian",
+          "time": "30 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R100_W46_DE_R59964-3-_main_high-60df440a.jpg",
+          "alt": "Foto des Gerichts Pilz Stroganoff auf Kartoffelpüree.",
+          "intro": "mit Shimeji Pilzen, Champignons und Brokkoli",
+          "sourceUrl": "https://www.hellofresh.de/recipes/pilz-stroganoff-auf-kartoffelpuree-6a9fdd3d548a82de3e1ab89c",
+          "features": [
+            "nutri-score-b",
+            "classic-plates",
+            "classic-euro-dishes",
+            "Vegetarisch"
+          ]
+        },
+        {
+          "id": "6a9fdd40548a82de3e1ab906",
+          "title": "Gnocchi in Bio-Rind-Bolognese",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "15 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R15_W40_DE_EXP18498-SW-R48752-3_main_high-1b116fad.jpg",
+          "alt": "Foto des Gerichts Gnocchi in Bio-Rind-Bolognese.",
+          "intro": "mit feinem Wurzelgemüse & Basilikum",
+          "sourceUrl": "https://www.hellofresh.de/recipes/gnocchi-in-bio-rind-bolognese-6a9fdd40548a82de3e1ab906",
+          "features": [
+            "nutri-score-c",
+            "Family",
+            "Mediterran",
+            "organic",
+            "pasta-noodles",
+            "Extra schnell",
+            "Merchan-surcharge"
+          ]
+        },
+        {
+          "id": "6a9fdd41d83fec55e3ccceff",
+          "title": "Krautfleckerl mit Spitzkohl & braunen Zwiebeln",
+          "diet": "Vegetarisch",
+          "dietGroup": "vegetarian",
+          "time": "30 Minuten",
+          "difficulty": "schwierig",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R07_W42_DE_R3640-5_Main_4_remove_cress_edit_high-cc08c6e1.jpg",
+          "alt": "Foto des Gerichts Krautfleckerl mit Spitzkohl & braunen Zwiebeln.",
+          "intro": "dazu Schnittlauch-Schmand-Dip",
+          "sourceUrl": "https://www.hellofresh.de/recipes/krautfleckerl-mit-spitzkohl-and-braunen-zwiebeln-6a9fdd41d83fec55e3ccceff",
+          "features": [
+            "nutri-score-c",
+            "pasta-noodles",
+            "regional-specialty",
+            "Vegetarisch"
+          ]
+        },
+        {
+          "id": "6a9fdd44d83fec55e3cccf6e",
+          "title": "Cremige Paccheri Pasta mit Krustenschinken",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "20 Minuten",
+          "difficulty": "mittel",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y23_R34_W45_DE_R4101-1_Main_-2high-36847b62.jpg",
+          "alt": "Foto des Gerichts Cremige Paccheri Pasta mit Krustenschinken.",
+          "intro": "und Rosenkohl, getoppt mit Schnittlauch und Hartkäse",
+          "sourceUrl": "https://www.hellofresh.de/recipes/cremige-paccheri-pasta-mit-krustenschinken-6a9fdd44d83fec55e3cccf6e",
+          "features": [
+            "nutri-score-c",
+            "Family",
+            "pasta-noodles",
+            "Schnell",
+            "regional-specialty"
+          ]
+        },
+        {
+          "id": "6a9fdd45548a82de3e1ab97c",
+          "title": "Spicy Tagine-Granatapfel-Hähnchen",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "15 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R03_W26_GL_EXP57370-1_main_high-303fe186.jpg",
+          "alt": "Foto des Gerichts Spicy Tagine-Granatapfel-Hähnchen.",
+          "intro": "mit würzigem Pfannengemüse und cremiger Joghurtsoße",
+          "sourceUrl": "https://www.hellofresh.de/recipes/spicy-tagine-granatapfel-hahnchen-6a9fdd45548a82de3e1ab97c",
+          "features": [
+            "classic-plates",
+            "High Protein",
+            "Low Carb",
+            "nutri-score-b",
+            "Extra schnell",
+            "Taste of Middle East",
+            "Kalorien im Blick",
+            "Healthy"
+          ]
+        },
+        {
+          "id": "6a9fdd47d83fec55e3cccfbf",
+          "title": "Reis-Bowl mit scharfem Brokkoli",
+          "diet": "Vegan",
+          "dietGroup": "vegetarian",
+          "time": "35 Minuten",
+          "difficulty": "mittel",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R33_W41_DE_R2830-42_main_high-78a41389.jpg",
+          "alt": "Foto des Gerichts Reis-Bowl mit scharfem Brokkoli.",
+          "intro": "dazu Sriracha-Mayo und Sweet-Chili-Gurkensalat",
+          "sourceUrl": "https://www.hellofresh.de/recipes/reis-bowl-mit-scharfem-brokkoli-6a9fdd47d83fec55e3cccfbf",
+          "features": [
+            "dinner-bowls",
+            "nutri-score-b",
+            "pan-asian-plates",
+            "Vegan"
+          ]
+        },
+        {
+          "id": "6a9fdda0d83fec55e3ccd735",
+          "title": "Miso Burger mit Shiitake-Beef und Sesam-Gurken",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "40 Minuten",
+          "difficulty": "mittel",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y23_R05_W51_DE_R4401-1_Main_high-e021e150.jpg",
+          "alt": "Foto des Gerichts Miso Burger mit Shiitake-Beef und Sesam-Gurken.",
+          "intro": "dazu knusprige Kartoffelspalten",
+          "sourceUrl": "https://www.hellofresh.de/recipes/miso-burger-mit-shiitake-beef-und-sesam-gurken-6a9fdda0d83fec55e3ccd735",
+          "features": [
+            "nutri-score-c",
+            "pan-asian-plates",
+            "handhelds"
+          ]
+        },
+        {
+          "id": "6a9fdda6d83fec55e3ccd7da",
+          "title": "One-Pot: Thai-Curry-Risotto",
+          "diet": "Vegan",
+          "dietGroup": "vegetarian",
+          "time": "35 Minuten",
+          "difficulty": "mittel",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF221101_R27_W52_DE_EXP3427-4_MB_Main_green_remove_peanuts_lime_edit_high-d2be020d.jpg",
+          "alt": "Foto des Gerichts One-Pot: Thai-Curry-Risotto.",
+          "intro": "mit Kaiserschoten und Champignons",
+          "sourceUrl": "https://www.hellofresh.de/recipes/one-pot-thai-curry-risotto-6a9fdda6d83fec55e3ccd7da",
+          "features": [
+            "nutri-score-c",
+            "One-Pot-Gericht",
+            "pasta-noodles",
+            "South/SoutheastAsian",
+            "Vegan"
+          ]
+        },
+        {
+          "id": "6a9fdda7d83fec55e3ccd7f5",
+          "title": "One-Pot: Rigatoni mit Hackfleisch vom Weiderind",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "20 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R7273_W50_DE_EXP3175-SP-2-57_main_high-7ea4e5ac.jpg",
+          "alt": "Foto des Gerichts One-Pot: Rigatoni mit Hackfleisch vom Weiderind.",
+          "intro": "getoppt mit frischen Kräutern und Hartkäse",
+          "sourceUrl": "https://www.hellofresh.de/recipes/one-pot-rigatoni-mit-hackfleisch-vom-weiderind-6a9fdda7d83fec55e3ccd7f5",
+          "features": [
+            "nutri-score-c",
+            "One-Pot-Gericht",
+            "Family",
+            "Mediterran",
+            "pasta-noodles",
+            "Schnell",
+            "board-bia"
+          ]
+        },
+        {
+          "id": "6a9fddc250d85bbd02ecd918",
+          "title": "Spanischer Flammkuchen mit Chorizo",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "35 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF201001_R27_W47_DE_EXP3026-1_MB_Main_clasic_aioli_high-bfa42c28.jpg",
+          "alt": "Foto des Gerichts Spanischer Flammkuchen mit Chorizo.",
+          "intro": "dazu Pimientos de Padrón",
+          "sourceUrl": "https://www.hellofresh.de/recipes/spanischer-flammkuchen-mit-chorizo-6a9fddc250d85bbd02ecd918",
+          "features": [
+            "nutri-score-d",
+            "classic-plates",
+            "Mediterran",
+            "10 Min. Vorbereitung"
+          ]
+        },
+        {
+          "id": "6a9fddc5548a82de3e1ac254",
+          "title": "Skandi-Seehecht in Sahne-Senf-Soße",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "25 Minuten",
+          "difficulty": "mittel",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y24_R21_W22_DE_R4504-66_Main_high-1c658598.jpg",
+          "alt": "Foto des Gerichts Skandi-Seehecht in Sahne-Senf-Soße.",
+          "intro": "mit Zitronen-Reis und Gurkensalat",
+          "sourceUrl": "https://www.hellofresh.de/recipes/skandi-seehecht-in-sahne-senf-sosse-6a9fddc5548a82de3e1ac254",
+          "features": [
+            "nutri-score-b",
+            "classic-euro-dishes",
+            "classic-plates",
+            "Gesund genießen",
+            "Family",
+            "High Protein",
+            "Schnell"
+          ]
+        },
+        {
+          "id": "6a9fddf650d85bbd02ecddda",
+          "title": "Enchiladas mit Weiderinderhack & Kidneybohnen",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "15 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y24_R03_W37_DE_EXP25280-1_Main_high-2a085245.jpg",
+          "alt": "Foto des Gerichts Enchiladas mit Weiderinderhack & Kidneybohnen.",
+          "intro": "gratiniert mit Käse",
+          "sourceUrl": "https://www.hellofresh.de/recipes/enchiladas-mit-weiderinderhack-and-kidneybohnen-6a9fddf650d85bbd02ecddda",
+          "features": [
+            "nutri-score-c",
+            "Family",
+            "handhelds",
+            "High Protein",
+            "latin-american-faves",
+            "Extra schnell"
+          ]
+        },
+        {
+          "id": "6a9fde01d83fec55e3ccde42",
+          "title": "Hähnchenkeule mit Honig-Balsamico-Soße",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "45 Minuten",
+          "difficulty": "mittel",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/IDM2232-6_Main-ce45449b.jpg",
+          "alt": "Foto des Gerichts Hähnchenkeule mit Honig-Balsamico-Soße.",
+          "intro": "dazu Knoblauchbohnen und Süßkartoffelwürfel",
+          "sourceUrl": "https://www.hellofresh.de/recipes/hahnchenkeule-mit-honig-balsamico-sosse-6a9fde01d83fec55e3ccde42",
+          "features": [
+            "nutri-score-b",
+            "classic-plates",
+            "Gesund genießen",
+            "Family",
+            "High Protein",
+            "Mediterran"
+          ]
+        },
+        {
+          "id": "6a9fde1850d85bbd02ece057",
+          "title": "Frischer Tortellini-Salat getoppt mit Mozzarella",
+          "diet": "Vegetarisch",
+          "dietGroup": "vegetarian",
+          "time": "25 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF210525_R08_W29_DE_R3435-1_Main_high-f8525253.jpg",
+          "alt": "Foto des Gerichts Frischer Tortellini-Salat getoppt mit Mozzarella.",
+          "intro": "in Oliven-Pinienkern-Crunch und Kirschtomaten",
+          "sourceUrl": "https://www.hellofresh.de/recipes/frischer-tortellini-salat-getoppt-mit-mozzarella-6a9fde1850d85bbd02ece057",
+          "features": [
+            "nutri-score-c",
+            "Mediterran",
+            "pasta-noodles",
+            "Vegetarisch",
+            "Schnell",
+            "Family"
+          ]
+        },
+        {
+          "id": "6a9fde22548a82de3e1aca23",
+          "title": "Zitronen-Hähnchenkeule mit Tabbouleh",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "45 Minuten",
+          "difficulty": "mittel",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF210119_R01_W10_DE_R2714-4_MB_Main_OH_high-615ca5fb.jpg",
+          "alt": "Foto des Gerichts Zitronen-Hähnchenkeule mit Tabbouleh.",
+          "intro": "dazu erfrischender Minzjoghurt",
+          "sourceUrl": "https://www.hellofresh.de/recipes/zitronen-hahnchenkeule-mit-tabbouleh-6a9fde22548a82de3e1aca23",
+          "features": [
+            "nutri-score-c",
+            "classic-plates",
+            "Family",
+            "High Protein",
+            "Taste of Middle East"
+          ]
+        },
+        {
+          "id": "6a9fde2850d85bbd02ece21a",
+          "title": "Hähnchen-Döner mit gebackener Aubergine",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "35 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R34_W50_DE_R2801-6_main_high-df57c92e.jpg",
+          "alt": "Foto des Gerichts Hähnchen-Döner mit gebackener Aubergine.",
+          "intro": "dazu Knoblauch-Joghurt und Tomaten-Feta-Dip",
+          "sourceUrl": "https://www.hellofresh.de/recipes/hahnchen-doner-mit-gebackener-aubergine-6a9fde2850d85bbd02ece21a",
+          "features": [
+            "nutri-score-b",
+            "handhelds",
+            "High Protein",
+            "Taste of Middle East",
+            "Healthy",
+            "Neu"
+          ]
+        },
+        {
+          "id": "6a9fde2b50d85bbd02ece27a",
+          "title": "Schnitzel Cordon bleu an Ofengemüse",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "40 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R41_W34_DE_PM20609-20main_high-e3409900.jpg",
+          "alt": "Foto des Gerichts Schnitzel Cordon bleu an Ofengemüse.",
+          "intro": "Tomaten-Aioli und Knusperkartoffeln",
+          "sourceUrl": "https://www.hellofresh.de/recipes/schnitzel-cordon-bleu-an-ofengemuse-6a9fde2b50d85bbd02ece27a",
+          "features": [
+            "nutri-score-c",
+            "Family",
+            "High Protein",
+            "regional-specialty",
+            "one-pan",
+            "Merchan-surcharge"
+          ]
+        },
+        {
+          "id": "6a9fde3650d85bbd02ece2e2",
+          "title": "Fischfilet in Mango-Sahne-Soße",
+          "diet": "Mit Fisch",
+          "dietGroup": "non-vegetarian",
+          "time": "20 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R74_W37_DE_R59397-5main_high-17895ed8.jpg",
+          "alt": "Foto des Gerichts Fischfilet in Mango-Sahne-Soße.",
+          "intro": "mit Butter-Reis und Romanesco",
+          "sourceUrl": "https://www.hellofresh.de/recipes/fischfilet-in-mango-sahne-sosse-6a9fde3650d85bbd02ece2e2",
+          "features": [
+            "Family",
+            "nutri-score-c",
+            "classic-plates",
+            "Schnell",
+            "High Protein",
+            "regional-specialty"
+          ]
+        },
+        {
+          "id": "6a9fde38d83fec55e3cce27a",
+          "title": "Putengeschnetzeltes Zürcher Art",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "45 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R02_W35_GL_R59400-1_MT_main_high-44c7f535.jpg",
+          "alt": "Foto des Gerichts Putengeschnetzeltes Zürcher Art.",
+          "intro": "mit selbstgemachten Röstis",
+          "sourceUrl": "https://www.hellofresh.de/recipes/putengeschnetzeltes-zurcher-art-6a9fde38d83fec55e3cce27a",
+          "features": [
+            "classic-plates",
+            "nutri-score-d",
+            "Family",
+            "regional-specialty"
+          ]
+        },
+        {
+          "id": "6a9fde39548a82de3e1acbb3",
+          "title": "Knusprige Hähnchenstreifen mit Zaatar-Kartoffeln",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "30 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R24_W50_DE_R56312-3_main_high-12dd0b34.jpg",
+          "alt": "Foto des Gerichts Knusprige Hähnchenstreifen mit Zaatar-Kartoffeln.",
+          "intro": "Zubereitung in Airfryer oder Pfanne",
+          "sourceUrl": "https://www.hellofresh.de/recipes/knusprige-hahnchenstreifen-mit-zaatar-kartoffeln-6a9fde39548a82de3e1acbb3",
+          "features": [
+            "Air Fryer Friendly",
+            "classic-plates",
+            "Family",
+            "nutri-score-b",
+            "High Protein",
+            "Healthy",
+            "regional-specialty",
+            "Neu"
+          ]
+        },
+        {
+          "id": "6a9fde39548a82de3e1acbbc",
+          "title": "Advents-Entenbrust in grünem Pfefferrahm",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "35 Minuten",
+          "difficulty": "mittel",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF220113_R31_W09_DE_PM3018-7_edit_Main_bg_edit_xmas2026__high-d1ae60a6.jpg",
+          "alt": "Foto des Gerichts Advents-Entenbrust in grünem Pfefferrahm.",
+          "intro": "dazu grüne Bohnen und rote Kartoffeln",
+          "sourceUrl": "https://www.hellofresh.de/recipes/advents-entenbrust-in-grunem-pfefferrahm-6a9fde39548a82de3e1acbbc",
+          "features": [
+            "classic-plates",
+            "High Protein",
+            "Low Carb",
+            "nutri-score-c",
+            "regional-specialty",
+            "Merchan-surcharge",
+            "festive-flavours"
+          ]
+        },
+        {
+          "id": "6a9fde3d548a82de3e1acc1b",
+          "title": "Glasierter Grillkäse mit Brokkoli",
+          "diet": "Vegetarisch",
+          "dietGroup": "vegetarian",
+          "time": "30 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R42_W41_DE_R42696-4_Main_6_high-57727086.jpg",
+          "alt": "Foto des Gerichts Glasierter Grillkäse mit Brokkoli.",
+          "intro": "dazu würziger Reis und Joghurt-Dip",
+          "sourceUrl": "https://www.hellofresh.de/recipes/glasierter-grillkase-mit-brokkoli-6a9fde3d548a82de3e1acc1b",
+          "features": [
+            "nutri-score-b",
+            "dinner-bowls",
+            "Gesund genießen",
+            "High Protein",
+            "Mediterran",
+            "Vegetarisch",
+            "Healthy"
+          ]
+        },
+        {
+          "id": "6a9fde40548a82de3e1acc88",
+          "title": "Schweinesteak mit Honig-Fenchel-Gemüse",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "35 Minuten",
+          "difficulty": "mittel",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF200803_R19_W39_DE_R2905-1_KB_Main_OH_high-be0aa2d8.jpg",
+          "alt": "Foto des Gerichts Schweinesteak mit Honig-Fenchel-Gemüse.",
+          "intro": "dazu Balsamico-Soße und grüner Salat",
+          "sourceUrl": "https://www.hellofresh.de/recipes/schweinesteak-mit-honig-fenchel-gemuse-6a9fde40548a82de3e1acc88",
+          "features": [
+            "ballaststoffreich",
+            "High Protein",
+            "classic-plates",
+            "Kalorien im Blick",
+            "nutri-score-b",
+            "Healthy",
+            "regional-specialty"
+          ]
+        },
+        {
+          "id": "6a9fde4350d85bbd02ece3c7",
+          "title": "Festliches Schweinefilet auf Rotkohl",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "35 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R42_W48_DE_EXP28346-23_Main__xmas2026__high-85d6e483.jpg",
+          "alt": "Foto des Gerichts Festliches Schweinefilet auf Rotkohl.",
+          "intro": "dazu Rosmarin-Kartoffeln und Kürbiskerne",
+          "sourceUrl": "https://www.hellofresh.de/recipes/festliches-schweinefilet-auf-rotkohl-6a9fde4350d85bbd02ece3c7",
+          "features": [
+            "classic-plates",
+            "Gesund genießen",
+            "High Protein",
+            "10 Min. Vorbereitung",
+            "regional-specialty",
+            "Kalorien im Blick",
+            "nutri-score-a",
+            "Healthy",
+            "festive-flavours"
+          ]
+        },
+        {
+          "id": "6a9fde46d83fec55e3cce3e3",
+          "title": "Chili-Nudeln mit Büffelmozzarella",
+          "diet": "Vegetarisch",
+          "dietGroup": "vegetarian",
+          "time": "30 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y23_R30_W10_DE_EXP4305-1_Main_high-98431169.jpg",
+          "alt": "Foto des Gerichts Chili-Nudeln mit Büffelmozzarella.",
+          "intro": "dazu selbst gemachtes Knoblauch-Chili-Öl",
+          "sourceUrl": "https://www.hellofresh.de/recipes/chili-nudeln-mit-buffelmozzarella-6a9fde46d83fec55e3cce3e3",
+          "features": [
+            "nutri-score-b",
+            "One-Pot-Gericht",
+            "Mediterran",
+            "pasta-noodles",
+            "Vegetarisch"
+          ]
+        },
+        {
+          "id": "6a9fde49548a82de3e1acd3a",
+          "title": "Sticky Sriracha-Hähnchen auf Asia-Salat",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "15 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R77_W29_DE_EXP57269-3main_EXP57269-4_var_high-b485ee02.jpg",
+          "alt": "Foto des Gerichts Sticky Sriracha-Hähnchen auf Asia-Salat.",
+          "intro": "dazu knusprige Brötchen",
+          "sourceUrl": "https://www.hellofresh.de/recipes/sticky-sriracha-hahnchen-auf-asia-salat-6a9fde49548a82de3e1acd3a",
+          "features": [
+            "Extra schnell",
+            "Kalorien im Blick",
+            "South/SoutheastAsian",
+            "High Protein",
+            "nutri-score-b",
+            "dinner-bowls",
+            "Healthy"
+          ]
+        },
+        {
+          "id": "6a9fde4a50d85bbd02ece45d",
+          "title": "Hüftsteak vom Weiderind mit Beurre Rouge",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "40 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R20_W50_DE_PM60113-4_main_high-11cd56aa.jpg",
+          "alt": "Foto des Gerichts Hüftsteak vom Weiderind mit Beurre Rouge.",
+          "intro": "dazu Raclette-Kartoffelgratin und Birnen-Feldsalat",
+          "sourceUrl": "https://www.hellofresh.de/recipes/huftsteak-vom-weiderind-mit-beurre-rouge-6a9fde4a50d85bbd02ece45d",
+          "features": [
+            "nutri-score-c",
+            "classic-plates",
+            "regional-specialty",
+            "Merchan-surcharge",
+            "Neu",
+            "festive-flavours"
+          ]
+        },
+        {
+          "id": "6a9fde4dd83fec55e3cce478",
+          "title": "Marry-Me-Chicken in sahniger Soße",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "30 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R05_W01_DE_R48462-2_Main_high-04feb315.jpg",
+          "alt": "Foto des Gerichts Marry-Me-Chicken in sahniger Soße.",
+          "intro": "mit Brokkoli und Kartoffelspalten",
+          "sourceUrl": "https://www.hellofresh.de/recipes/marry-me-chicken-in-sahniger-sosse-6a9fde4dd83fec55e3cce478",
+          "features": [
+            "classic-plates",
+            "Gesund genießen",
+            "Family",
+            "High Protein",
+            "North American",
+            "nutri-score-b",
+            "Kalorien im Blick",
+            "Healthy"
+          ]
+        },
+        {
+          "id": "6a9fde5050d85bbd02ece4b1",
+          "title": "Butterbohnensalat mit veganen Filetstücken",
+          "diet": "Vegan",
+          "dietGroup": "vegetarian",
+          "time": "25 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R09_W43_DE_R60109-3_main_high-c421110f.jpg",
+          "alt": "Foto des Gerichts Butterbohnensalat mit veganen Filetstücken.",
+          "intro": "cremigem Dressing und Kräutern",
+          "sourceUrl": "https://www.hellofresh.de/recipes/butterbohnensalat-mit-veganen-filetstucken-6a9fde5050d85bbd02ece4b1",
+          "features": [
+            "High Protein",
+            "nutri-score-a",
+            "Vegan",
+            "Mediterran",
+            "dinner-bowls",
+            "ballaststoffreich",
+            "Healthy"
+          ]
+        },
+        {
+          "id": "6a9fde5150d85bbd02ece4d4",
+          "title": "Spätzle in Raclette-Käse-Soße",
+          "diet": "Vegetarisch",
+          "dietGroup": "vegetarian",
+          "time": "20 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_W48_7431_R28357-AP-1-41_Main_xmas-2026__high-dbe4a17d.jpg",
+          "alt": "Foto des Gerichts Spätzle in Raclette-Käse-Soße.",
+          "intro": "dazu Apfel-Balsamico-Topping",
+          "sourceUrl": "https://www.hellofresh.de/recipes/spatzle-in-raclette-kase-sosse-6a9fde5150d85bbd02ece4d4",
+          "features": [
+            "nutri-score-c",
+            "Family",
+            "Schnell",
+            "regional-specialty",
+            "Vegetarisch",
+            "pasta-noodles",
+            "festive-flavours"
+          ]
+        },
+        {
+          "id": "6a9fde56d83fec55e3cce562",
+          "title": "Schupfnudel-Salat mit Knoblauch-Zucchini",
+          "diet": "Vegan",
+          "dietGroup": "vegetarian",
+          "time": "20 Minuten",
+          "difficulty": "mittel",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y23_R12_W23_DE_R4592-1_Main_2_high-cfa99d65.jpg",
+          "alt": "Foto des Gerichts Schupfnudel-Salat mit Knoblauch-Zucchini.",
+          "intro": "dazu Balsamico-Aprikosen-Dressing & Pinienkerne",
+          "sourceUrl": "https://www.hellofresh.de/recipes/schupfnudel-salat-mit-knoblauch-zucchini-6a9fde56d83fec55e3cce562",
+          "features": [
+            "nutri-score-b",
+            "dinner-bowls",
+            "Family",
+            "Mediterran",
+            "Schnell",
+            "Vegan"
+          ]
+        },
+        {
+          "id": "6a9fde58d83fec55e3cce5a0",
+          "title": "Vegane Portobello Tacos mit Chimichurri",
+          "diet": "Vegan",
+          "dietGroup": "vegetarian",
+          "time": "25 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/GC_Y25_R5001_W39_UK_GCPP22712297-39_Main_high-281a023f.jpg",
+          "alt": "Foto des Gerichts Vegane Portobello Tacos mit Chimichurri.",
+          "intro": "eingelegten Zwiebeln und Avocado",
+          "sourceUrl": "https://www.hellofresh.de/recipes/vegane-portobello-tacos-mit-chimichurri-6a9fde58d83fec55e3cce5a0",
+          "features": [
+            "handhelds",
+            "latin-american-faves",
+            "nutri-score-a",
+            "Vegan"
+          ]
+        },
+        {
+          "id": "6a9fde5950d85bbd02ece5a6",
+          "title": "Putenschnitzel in Pfefferrahm",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "30 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R03_W35_GL_R59449-1_MT_main_high-41ef1a18.jpg",
+          "alt": "Foto des Gerichts Putenschnitzel in Pfefferrahm.",
+          "intro": "dazu Kartoffelstampf und Gurkensalat",
+          "sourceUrl": "https://www.hellofresh.de/recipes/putenschnitzel-in-pfefferrahm-6a9fde5950d85bbd02ece5a6",
+          "features": [
+            "nutri-score-c",
+            "classic-plates",
+            "regional-specialty"
+          ]
+        },
+        {
+          "id": "6a9fde5cd83fec55e3cce5f1",
+          "title": "Rosmarin-Hirschsteak mit Zwiebel-Demi-Glace",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "40 Minuten",
+          "difficulty": "schwierig",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y24_R22_W01_DE_PM3019-TM-15_Main_xmas2026__high-9551c2a3.jpg",
+          "alt": "Foto des Gerichts Rosmarin-Hirschsteak mit Zwiebel-Demi-Glace.",
+          "intro": "dazu Spitzkohl und in Butter geschwenkte Drillinge",
+          "sourceUrl": "https://www.hellofresh.de/recipes/rosmarin-hirschsteak-mit-zwiebel-demi-glace-6a9fde5cd83fec55e3cce5f1",
+          "features": [
+            "classic-plates",
+            "Gesund genießen",
+            "High Protein",
+            "nutri-score-b",
+            "regional-specialty",
+            "Healthy",
+            "Merchan-surcharge",
+            "festive-flavours"
+          ]
+        },
+        {
+          "id": "6a9fde5ed83fec55e3cce64d",
+          "title": "Souflaki-Hähnchen auf Couscous",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "30 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y24_R18_W52_DE_R26264-1_Main_high-10189684.jpg",
+          "alt": "Foto des Gerichts Souflaki-Hähnchen auf Couscous.",
+          "intro": "dazu Zaziki und Tomaten-Gurken-Salat",
+          "sourceUrl": "https://www.hellofresh.de/recipes/souflaki-hahnchen-auf-couscous-6a9fde5ed83fec55e3cce64d",
+          "features": [
+            "nutri-score-b",
+            "classic-plates",
+            "Gesund genießen",
+            "High Protein",
+            "Mediterran",
+            "Kalorien im Blick",
+            "Healthy"
+          ]
+        },
+        {
+          "id": "6a9fde64548a82de3e1ace89",
+          "title": "Pikanter Blumenkohl in Dalsoße",
+          "diet": "Vegetarisch",
+          "dietGroup": "vegetarian",
+          "time": "40 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R27_W05_DE_EXP3729-8_Main_high-10bac549.jpg",
+          "alt": "Foto des Gerichts Pikanter Blumenkohl in Dalsoße.",
+          "intro": "mit Kumin-Kartoffeln und Babyspinat",
+          "sourceUrl": "https://www.hellofresh.de/recipes/pikanter-blumenkohl-in-dalsosse-6a9fde64548a82de3e1ace89",
+          "features": [
+            "Curries",
+            "Gesund genießen",
+            "nutri-score-b",
+            "10 Min. Vorbereitung",
+            "South/SoutheastAsian",
+            "Kalorien im Blick",
+            "Vegetarisch",
+            "Healthy",
+            "dinner-bowls"
+          ]
+        },
+        {
+          "id": "6a9fde69d83fec55e3cce793",
+          "title": "Fischfilet in Teriyakisoße mit scharfem Brokkoli",
+          "diet": "Mit Fisch",
+          "dietGroup": "non-vegetarian",
+          "time": "25 Minuten",
+          "difficulty": "mittel",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R05_W14_DE_R2902-24_Main_1_high-42ef60b0.jpg",
+          "alt": "Foto des Gerichts Fischfilet in Teriyakisoße mit scharfem Brokkoli.",
+          "intro": "dazu Limettenreis, getoppt mit Cashewkernen",
+          "sourceUrl": "https://www.hellofresh.de/recipes/fischfilet-in-teriyakisosse-mit-scharfem-brokkoli-6a9fde69d83fec55e3cce793",
+          "features": [
+            "classic-plates",
+            "Gesund genießen",
+            "High Protein",
+            "nutri-score-b",
+            "pan-asian-plates",
+            "Kalorien im Blick",
+            "Healthy"
+          ]
+        },
+        {
+          "id": "6a9fde6ad83fec55e3cce7ae",
+          "title": "Blumenkohl Fajitas vom Blech",
+          "diet": "Vegetarisch",
+          "dietGroup": "vegetarian",
+          "time": "35 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R27_W42_DE_EXP4194-15_Main_3_high-cf4ff7cb.jpg",
+          "alt": "Foto des Gerichts Blumenkohl Fajitas vom Blech.",
+          "intro": "mit Koriander und Avocadocreme",
+          "sourceUrl": "https://www.hellofresh.de/recipes/blumenkohl-fajitas-vom-blech-6a9fde6ad83fec55e3cce7ae",
+          "features": [
+            "Gesund genießen",
+            "handhelds",
+            "latin-american-faves",
+            "nutri-score-a",
+            "10 Min. Vorbereitung",
+            "Kalorien im Blick",
+            "Vegetarisch",
+            "Healthy"
+          ]
+        },
+        {
+          "id": "6a9fde6dd83fec55e3cce7e1",
+          "title": "Rustikale Schweinshaxe mit Rahmsauerkraut",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "40 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R31_W50_DE_PM61254-5_main_high-10502300.jpg",
+          "alt": "Foto des Gerichts Rustikale Schweinshaxe mit Rahmsauerkraut.",
+          "intro": "dazu Petersilienkartoffeln und Senf",
+          "sourceUrl": "https://www.hellofresh.de/recipes/rustikale-schweinshaxe-mit-rahmsauerkraut-6a9fde6dd83fec55e3cce7e1",
+          "features": [
+            "classic-plates",
+            "regional-specialty",
+            "nutri-score-c",
+            "High Protein",
+            "Low Carb",
+            "Merchan-surcharge"
+          ]
+        },
+        {
+          "id": "6a9fde71548a82de3e1acf09",
+          "title": "Cajun-Style Pasta mit karamellisiertem Bacon",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "40 Minuten",
+          "difficulty": "mittel",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R05_W16_DE_R3923-3_Main_-8high-afc87e2e.jpg",
+          "alt": "Foto des Gerichts Cajun-Style Pasta mit karamellisiertem Bacon.",
+          "intro": "und gebackenen Kirschtomaten",
+          "sourceUrl": "https://www.hellofresh.de/recipes/cajun-style-pasta-mit-karamellisiertem-bacon-6a9fde71548a82de3e1acf09",
+          "features": [
+            "ballaststoffreich",
+            "North American",
+            "nutri-score-c",
+            "pasta-noodles"
+          ]
+        },
+        {
+          "id": "6a9fde7350d85bbd02ece7c4",
+          "title": "Seelachs aus der Pfanne in frischem Zitronenöl",
+          "diet": "Mit Fisch",
+          "dietGroup": "non-vegetarian",
+          "time": "30 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R59_W10_DE_R1440-14_Main_high-7f36f869.jpg",
+          "alt": "Foto des Gerichts Seelachs aus der Pfanne in frischem Zitronenöl.",
+          "intro": "dazu Kartoffelsalat mit Gurke und Radieschen",
+          "sourceUrl": "https://www.hellofresh.de/recipes/seelachs-aus-der-pfanne-in-frischem-zitronenol-6a9fde7350d85bbd02ece7c4",
+          "features": [
+            "classic-plates",
+            "Gesund genießen",
+            "Family",
+            "High Protein",
+            "Low Carb",
+            "nutri-score-a",
+            "regional-specialty",
+            "Kalorien im Blick",
+            "Healthy"
+          ]
+        },
+        {
+          "id": "6a9fde73548a82de3e1acf2f",
+          "title": "Rinderhüftsteak mit Bouillonkartoffeln",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "30 Minuten",
+          "difficulty": "mittel",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF211110_R02_W02_DE_R3732-1_KB_Main_high-9781d662.jpg",
+          "alt": "Foto des Gerichts Rinderhüftsteak mit Bouillonkartoffeln.",
+          "intro": "und Kräuterbutter, dazu Bohnengemüse mit Spinat",
+          "sourceUrl": "https://www.hellofresh.de/recipes/rinderhuftsteak-mit-bouillonkartoffeln-6a9fde73548a82de3e1acf2f",
+          "features": [
+            "Family",
+            "ballaststoffreich",
+            "High Protein",
+            "nutri-score-b",
+            "classic-plates",
+            "classic-euro-dishes",
+            "Healthy"
+          ]
+        },
+        {
+          "id": "6a9fde75548a82de3e1acf83",
+          "title": "Würziges Madras Hähnchenbrustfilet",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "30 Minuten",
+          "difficulty": "mittel",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y24_R22_W22_DE_R4628-1_Main_-2high-538e84cf.jpg",
+          "alt": "Foto des Gerichts Würziges Madras Hähnchenbrustfilet.",
+          "intro": "mit Minz-Chutney auf Kichererbsen-Salat",
+          "sourceUrl": "https://www.hellofresh.de/recipes/wurziges-madras-hahnchenbrustfilet-6a9fde75548a82de3e1acf83",
+          "features": [
+            "dinner-bowls",
+            "Gesund genießen",
+            "High Protein",
+            "Low Carb",
+            "nutri-score-a",
+            "South/SoutheastAsian",
+            "Kalorien im Blick",
+            "Healthy"
+          ]
+        },
+        {
+          "id": "6a9fde79d83fec55e3cce8a0",
+          "title": "Pangasius in Dill-Zitronen-Sud",
+          "diet": "Mit Fisch",
+          "dietGroup": "non-vegetarian",
+          "time": "30 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R57_W50_DE_R51538-3_main_high-c197cc42.jpg",
+          "alt": "Foto des Gerichts Pangasius in Dill-Zitronen-Sud.",
+          "intro": "mit Radieschen und Ofenkartoffeln",
+          "sourceUrl": "https://www.hellofresh.de/recipes/pangasius-in-dill-zitronen-sud-6a9fde79d83fec55e3cce8a0",
+          "features": [
+            "Gesund genießen",
+            "High Protein",
+            "Low Carb",
+            "nutri-score-b",
+            "Kalorien im Blick",
+            "classic-plates",
+            "classic-euro-dishes",
+            "Neu"
+          ]
+        },
+        {
+          "id": "6a9fde7ed83fec55e3cce8f2",
+          "title": "Gelbes Thai-Ananas Curry",
+          "diet": "Vegan",
+          "dietGroup": "vegetarian",
+          "time": "15 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R78_W50_DE_EXP62011-3_main_high-ac10c3ea.jpg",
+          "alt": "Foto des Gerichts Gelbes Thai-Ananas Curry.",
+          "intro": "mit Sweet-Chili-Tofu und Reis",
+          "sourceUrl": "https://www.hellofresh.de/recipes/gelbes-thai-ananas-curry-6a9fde7ed83fec55e3cce8f2",
+          "features": [
+            "nutri-score-c",
+            "Vegan",
+            "Family",
+            "Curries",
+            "dinner-bowls",
+            "South/SoutheastAsian",
+            "Neu"
+          ]
+        },
+        {
+          "id": "6a9fde80548a82de3e1ad08d",
+          "title": "Flammkuchen mit Bacon und Honig",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "30 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R27_W42_DE_IDM2231-21_main_high-af62c602.jpg",
+          "alt": "Foto des Gerichts Flammkuchen mit Bacon und Honig.",
+          "intro": "dazu frischer grüner Salat mit Kürbiskernen",
+          "sourceUrl": "https://www.hellofresh.de/recipes/flammkuchen-mit-bacon-und-honig-6a9fde80548a82de3e1ad08d",
+          "features": [
+            "nutri-score-c",
+            "classic-plates",
+            "Family",
+            "regional-specialty",
+            "10 Min. Vorbereitung"
+          ]
+        },
+        {
+          "id": "6a9fde82d83fec55e3cce902",
+          "title": "Miso-Butter-Spaghetti mit Portobello",
+          "diet": "Vegetarisch",
+          "dietGroup": "vegetarian",
+          "time": "15 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y24_R26_W15_DE_EXP18750-1_Main_high-043788d0.jpg",
+          "alt": "Foto des Gerichts Miso-Butter-Spaghetti mit Portobello.",
+          "intro": "und Kaiserschoten",
+          "sourceUrl": "https://www.hellofresh.de/recipes/miso-butter-spaghetti-mit-portobello-6a9fde82d83fec55e3cce902",
+          "features": [
+            "nutri-score-c",
+            "North American",
+            "pasta-noodles",
+            "Extra schnell",
+            "Vegetarisch"
+          ]
+        },
+        {
+          "id": "6a9fde86548a82de3e1ad12f",
+          "title": "Teriyaki-Garnelen mit Brokkoli",
+          "diet": "Mit Fisch",
+          "dietGroup": "non-vegetarian",
+          "time": "35 Minuten",
+          "difficulty": "mittel",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF200507_R23_W28_DE_R2781-1_MB_Main_high-81b1bc99.jpg",
+          "alt": "Foto des Gerichts Teriyaki-Garnelen mit Brokkoli.",
+          "intro": "Limettenreis und Sriracha",
+          "sourceUrl": "https://www.hellofresh.de/recipes/teriyaki-garnelen-mit-brokkoli-6a9fde86548a82de3e1ad12f",
+          "features": [
+            "High Protein",
+            "noodle-stir-fry",
+            "nutri-score-c",
+            "pan-asian-plates",
+            "Kalorien im Blick",
+            "Neu",
+            "cuisine-spotlight"
+          ]
+        },
+        {
+          "id": "6a9fde9850d85bbd02ece9d2",
+          "title": "Raclette-Burger mit Bio-Rinderhack",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "35 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R31_W01_DE_PM34334-7_Main_xmas2026__high-70c9785e.jpg",
+          "alt": "Foto des Gerichts Raclette-Burger mit Bio-Rinderhack.",
+          "intro": "dazu Blechkartoffeln & Preiselbeer-Zwiebel-Chutney",
+          "sourceUrl": "https://www.hellofresh.de/recipes/raclette-burger-mit-bio-rinderhack-6a9fde9850d85bbd02ece9d2",
+          "features": [
+            "nutri-score-c",
+            "organic",
+            "handhelds",
+            "regional-specialty",
+            "Merchan-surcharge",
+            "festive-flavours"
+          ]
+        },
+        {
+          "id": "6a9fdea3548a82de3e1ad3a5",
+          "title": "Ziegenkäse-Tabbouleh mit Cranberries",
+          "diet": "Vegetarisch",
+          "dietGroup": "vegetarian",
+          "time": "15 Minuten",
+          "difficulty": "mittel",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/Q3_MOD_HF_Y25_R13_W39_DE_L4526-37_Main_-3high-9e727a2f.jpg",
+          "alt": "Foto des Gerichts Ziegenkäse-Tabbouleh mit Cranberries.",
+          "intro": "und Minz-Dressing",
+          "sourceUrl": "https://www.hellofresh.de/recipes/ziegenkase-tabbouleh-mit-cranberries-6a9fdea3548a82de3e1ad3a5",
+          "features": [
+            "nutri-score-c",
+            "dinner-bowls",
+            "Extra schnell",
+            "Taste of Middle East",
+            "Kalorien im Blick",
+            "Vegetarisch"
+          ]
+        },
+        {
+          "id": "6a9fdea9d83fec55e3ccec87",
+          "title": "Omas Klassiker: Käse-Lauch-Suppe mit Hackfleisch",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "30 Minuten",
+          "difficulty": "mittel",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R7491_W14_DE_EXP3136-SP-1-8_RAN_HA_Main__Main_high-136ad2e6.jpg",
+          "alt": "Foto des Gerichts Omas Klassiker: Käse-Lauch-Suppe mit Hackfleisch.",
+          "intro": "und Kräuter-Panko Crunch",
+          "sourceUrl": "https://www.hellofresh.de/recipes/omas-klassiker-kase-lauch-suppe-mit-hackfleisch-6a9fdea9d83fec55e3ccec87",
+          "features": [
+            "nutri-score-c",
+            "Family",
+            "High Protein",
+            "Low Carb",
+            "regional-specialty",
+            "soup-stew",
+            "Omas Klassiker"
+          ]
+        },
+        {
+          "id": "6abbc3297e36ff3ca7c18a86",
+          "title": "Schweineschnitzel mit Djuvec-Reis",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "15 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R03_W30_DE_EXP29639-5_Main_non-breaded-meat_edit_high-2f9085ed.jpg",
+          "alt": "Foto des Gerichts Schweineschnitzel mit Djuvec-Reis.",
+          "intro": "dazu Joghurt-Dip und Gurkensalat",
+          "sourceUrl": "https://www.hellofresh.de/recipes/schweineschnitzel-mit-djuvec-reis-6abbc3297e36ff3ca7c18a86",
+          "features": [
+            "nutri-score-a",
+            "classic-euro-dishes",
+            "classic-plates",
+            "Gesund genießen",
+            "Family",
+            "High Protein",
+            "Extra schnell",
+            "Kalorien im Blick",
+            "Healthy"
+          ]
+        },
+        {
+          "id": "6abbc3b87e36ff3ca7c18ad4",
+          "title": "Gebratener Pangasius auf Avocado-Bohnen-Salat",
+          "diet": "Mit Fisch",
+          "dietGroup": "non-vegetarian",
+          "time": "25 Minuten",
+          "difficulty": "mittel",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R38_W27_DE_R4724-7_Main_high-a8330a55.jpg",
+          "alt": "Foto des Gerichts Gebratener Pangasius auf Avocado-Bohnen-Salat.",
+          "intro": "mit Jalapeño-Limetten-Dip",
+          "sourceUrl": "https://www.hellofresh.de/recipes/gebratener-pangasius-auf-avocado-bohnen-salat-6abbc3b87e36ff3ca7c18ad4",
+          "features": [
+            "classic-plates",
+            "Gesund genießen",
+            "ballaststoffreich",
+            "High Protein",
+            "latin-american-faves",
+            "Low Carb",
+            "nutri-score-a",
+            "Healthy"
+          ]
+        },
+        {
+          "id": "6abf7d60f35837d1c6c2c7cf",
+          "title": "One-Pan: Hähnchen-Reispfanne",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "35 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF220727_R26_W38_DE_EXP3785-2_MB_Main_4_high-aa4a79ec.jpg",
+          "alt": "Foto des Gerichts One-Pan: Hähnchen-Reispfanne.",
+          "intro": "mit Aprikosen-Minz-Joghurt und karamellisierte Zwiebeln",
+          "sourceUrl": "https://www.hellofresh.de/recipes/one-pan-hahnchen-reispfanne-6abf7d60f35837d1c6c2c7cf",
+          "features": [
+            "nutri-score-c",
+            "One-Pot-Gericht",
+            "High Protein",
+            "noodle-stir-fry",
+            "South/SoutheastAsian"
+          ]
+        },
+        {
+          "id": "6ac8ba01888c9a44291b709c",
+          "title": "Rauchiges Ofen-Ratatouille",
+          "diet": "Vegetarisch",
+          "dietGroup": "vegetarian",
+          "time": "25 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF210608_R03_W31_DE_R1151-5_MB_Main_high-a60c9a4c.jpg",
+          "alt": "Foto des Gerichts Rauchiges Ofen-Ratatouille.",
+          "intro": "mit Feta-Topping und Knoblauch-Bruschetta",
+          "sourceUrl": "https://www.hellofresh.de/recipes/rauchiges-ofen-ratatouille-6ac8ba01888c9a44291b709c",
+          "features": [
+            "classic-euro-dishes",
+            "nutri-score-b",
+            "Vegetarisch",
+            "one-pan"
           ]
         }
       ]

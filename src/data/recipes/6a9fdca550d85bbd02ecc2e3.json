@@ -1,0 +1,82 @@
+{
+  "id": "6a9fdca550d85bbd02ecc2e3",
+  "title": "Wiener Würstchen mit Kartoffelpüree dazu frischer Salat, Ketchup und Senf",
+  "diet": "Mit Fleisch",
+  "dietGroup": "non-vegetarian",
+  "time": "15 Minuten",
+  "difficulty": "einfach",
+  "image": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/HF_Y24_R03_W28_DE_EXP22725-1_Main_high-1a0f8abe.jpg",
+  "alt": "Foto des Gerichts Wiener Würstchen mit Kartoffelpüree dazu frischer Salat, Ketchup und Senf.",
+  "intro": "Mhmm, Essen wie bei Oma. Heute kommt traditionelles Komfort-Food auf den Tisch: Frische, saisonale Zutaten werden hier zu einem bodenständigem Gericht, das extra Gemütlichkeit verspricht. Lecker.",
+  "sourceUrl": "https://www.hellofresh.de/recipes/wiener-wurstchen-mit-kartoffelpuree-6a9fdca550d85bbd02ecc2e3",
+  "features": [
+    "nutri-score-c",
+    "classic-plates",
+    "regional-specialty",
+    "Kalorien im Blick",
+    "Extra schnell",
+    "Family",
+    "Neu"
+  ],
+  "servings": "2 Portionen",
+  "ingredients": [
+    {
+      "name": "Wiener Würstchen",
+      "amount": "200 g"
+    },
+    {
+      "name": "vorgegarte Kartoffelwürfel",
+      "amount": "400 g"
+    },
+    {
+      "name": "Milch",
+      "amount": "200 ml"
+    },
+    {
+      "name": "Gewürzmischung „Hello Muskat“",
+      "amount": "5 g"
+    },
+    {
+      "name": "kleine Salatgurke",
+      "amount": "1 Stück"
+    },
+    {
+      "name": "rote Kirschtomaten",
+      "amount": "125 g"
+    },
+    {
+      "name": "Buttermilch-Zitronen-Dressing",
+      "amount": "50 ml"
+    },
+    {
+      "name": "mittelscharfer Senf",
+      "amount": "10 ml"
+    },
+    {
+      "name": "Ketchup",
+      "amount": "25 g",
+      "packaging": "Kleines flaches Portionssachet mit weichem, dickflüssigem Inhalt."
+    },
+    {
+      "name": "Blattsalatmischung",
+      "amount": "75 g"
+    },
+    {
+      "name": "nach Geschmack Salz",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "nach Geschmack Pfeffer",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "nach Geschmack Butter",
+      "amount": "Menge laut Originalrezept"
+    }
+  ],
+  "steps": [
+    "Erhitze reichlich Wasser im Wasserkocher. In einen großen Topf reichlich heißes Wasser* füllen. Einmal aufkochen lassen und Hitze ausstellen. Wiener Würstchen in den Topf geben und ca. 10 Min. ziehen lassen. In einem großen Topf mit Deckel Kartoffelwürfel, Milch und „Hello Muskat“ mit etwas Salz* aufkochen und ca. 8 Min. abgedeckt köcheln lassen, bis die Kartoffelwürfel weich sind.",
+    "Gurke längs halbieren und in 0,5 cm Halbmonde schneiden. Kirschtomaten halbieren. In einer großen Schüssel Gurkenscheiben, Kirschtomaten und Salat mit Buttermilch-Zitronen-Dressing vermengen. Mit Salz* und Pfeffer* abschmecken.",
+    "Nach Ende der Garzeit Kartoffelwürfel und etwas Butter* mit einem Kartoffelstampfer zu einem cremigen Püree verarbeiten. Mit Salz* und Pfeffer* abschmecken. Wiener Würstchen, Kartoffelpüree und Salat auf Teller verteilen. Mit Senf und Ketchup genießen. Guten Appetit!"
+  ]
+}
