@@ -30,7 +30,7 @@
       "label": "5. Dezember 2026 bis 11. Dezember 2026"
     }
   ],
-  "generatedAt": "2026-11-09T11:28:35.660Z",
+  "generatedAt": "2026-11-10T11:08:47.173Z",
   "menus": {
     "2026-W44": {
       "week": "2026-W44",
@@ -66,8 +66,8 @@
           "label": "5. Dezember 2026 bis 11. Dezember 2026"
         }
       ],
-      "importedAt": "9. November 2026",
-      "checkedAt": "2026-11-09T11:28:26.554Z",
+      "importedAt": "10. November 2026",
+      "checkedAt": "2026-11-10T11:08:39.693Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W44",
@@ -2046,8 +2046,8 @@
           "label": "5. Dezember 2026 bis 11. Dezember 2026"
         }
       ],
-      "importedAt": "9. November 2026",
-      "checkedAt": "2026-11-09T11:28:26.554Z",
+      "importedAt": "10. November 2026",
+      "checkedAt": "2026-11-10T11:08:39.693Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W45",
@@ -3956,8 +3956,8 @@
           "label": "5. Dezember 2026 bis 11. Dezember 2026"
         }
       ],
-      "importedAt": "9. November 2026",
-      "checkedAt": "2026-11-09T11:28:26.554Z",
+      "importedAt": "10. November 2026",
+      "checkedAt": "2026-11-10T11:08:39.693Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W46",
@@ -6093,8 +6093,8 @@
           "label": "5. Dezember 2026 bis 11. Dezember 2026"
         }
       ],
-      "importedAt": "9. November 2026",
-      "checkedAt": "2026-11-09T11:28:26.554Z",
+      "importedAt": "10. November 2026",
+      "checkedAt": "2026-11-10T11:08:39.693Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W47",
@@ -6192,7 +6192,7 @@
           "dietGroup": "non-vegetarian",
           "time": "25 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y24_R24_W31_NL_R22690-1_Main_high-02434ae0.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y24_R24_W31_NL_R22690-1_Main_high-89b819d5.jpg",
           "alt": "Foto des Gerichts Steak vom Weiderind mit Kohlrabi-Apfel-Salat.",
           "intro": "dazu Zwiebelchutney und Ofenkartoffeln",
           "sourceUrl": "https://www.hellofresh.de/recipes/steak-vom-weiderind-mit-kohlrabi-apfel-salat-6a798a3fa64cfe1e1f5a607f",
@@ -6336,7 +6336,7 @@
           "dietGroup": "non-vegetarian",
           "time": "40 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R11_W41_DE_VP38672-27_main_high-fd67db2b.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R11_W41_DE_VP38672-27_main_high-a3be3eb6.jpg",
           "alt": "Foto des Gerichts Hüftsteak vom Weiderind mit Kartoffelgratin.",
           "intro": "dazu Knoblauch-Brokkoli und Demi-glace",
           "sourceUrl": "https://www.hellofresh.de/recipes/huftsteak-vom-weiderind-mit-kartoffelgratin-6a798a6ac419eb8464db1241",
@@ -6444,7 +6444,7 @@
           "difficulty": "einfach",
           "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y24_R16_W41_DE_PM27537-1_Main_high-766a626e.jpg",
           "alt": "Foto des Gerichts Chimichurri Burger mit käsigem Bio-Rinderhack.",
-          "intro": "Kartoffelspalten, Zitronen-Aioli und frischem Salat",
+          "intro": "Kartoffelspalten, Zitronen-Mayo und frischem Salat",
           "sourceUrl": "https://www.hellofresh.de/recipes/chimichurri-burger-mit-kasigem-bio-rinderhack-6a798a8611cc1340e0f65393",
           "features": [
             "nutri-score-c",
@@ -6462,7 +6462,7 @@
           "dietGroup": "vegetarian",
           "time": "30 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R17_W23_DE_R47766-3_main_high-ddd7f1a7.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R17_W23_DE_R47766-3_main_high-42c11c3d.jpg",
           "alt": "Foto des Gerichts Chilaquiles-Style-Bowl mit zerbröseltem Tofu.",
           "intro": "dazu Avocado und Tortilla-Chips",
           "sourceUrl": "https://www.hellofresh.de/recipes/chilaquiles-style-bowl-mit-zerbroseltem-tofu-6a798a8e11cc1340e0f653e4",
@@ -7702,7 +7702,7 @@
           "dietGroup": "non-vegetarian",
           "time": "25 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R58_W21_DE_R56273-2_main_high-61d26b87.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R58_W21_DE_R56273-2_main_high-0de2780e.jpg",
           "alt": "Foto des Gerichts Knuspriger Pangasius mit Ofenkartoffeln.",
           "intro": "Zubereitung in Air-Fryer oder Pfanne",
           "sourceUrl": "https://www.hellofresh.de/recipes/knuspriger-pangasius-mit-ofenkartoffeln-6a798c29c419eb8464db1aed",
@@ -7787,7 +7787,7 @@
           "dietGroup": "non-vegetarian",
           "time": "25 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R74_W35_DE_R59408-2main_high-13ac04fe.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R74_W35_DE_R59408-2main_high-7ff5e6c6.jpg",
           "alt": "Foto des Gerichts Fischfilet Müllerin Art.",
           "intro": "mit Petersilienkartoffeln und Apfel-Kohlrabi-Salat",
           "sourceUrl": "https://www.hellofresh.de/recipes/fischfilet-mullerin-art-6a798c4711cc1340e0f65bde",
@@ -8009,7 +8009,7 @@
           "dietGroup": "vegetarian",
           "time": "30 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R02_W37_GL_R59906-1_MT_main_high-97b7917f.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R02_W37_GL_R59906-1_MT_main_high-b63d690f.jpg",
           "alt": "Foto des Gerichts Käsespätzle mit selbstgemachten Röstzwiebeln.",
           "intro": "dazu Gurkensalat und frische Kräuter",
           "sourceUrl": "https://www.hellofresh.de/recipes/kasespatzle-mit-selbstgemachten-rostzwiebeln-6a798c95c419eb8464db1d90",
@@ -8231,8 +8231,8 @@
           "label": "5. Dezember 2026 bis 11. Dezember 2026"
         }
       ],
-      "importedAt": "9. November 2026",
-      "checkedAt": "2026-11-09T11:28:26.554Z",
+      "importedAt": "10. November 2026",
+      "checkedAt": "2026-11-10T11:08:39.693Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W48",
@@ -10340,8 +10340,8 @@
           "label": "5. Dezember 2026 bis 11. Dezember 2026"
         }
       ],
-      "importedAt": "9. November 2026",
-      "checkedAt": "2026-11-09T11:28:26.554Z",
+      "importedAt": "10. November 2026",
+      "checkedAt": "2026-11-10T11:08:39.693Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W49",
@@ -12472,8 +12472,8 @@
           "label": "5. Dezember 2026 bis 11. Dezember 2026"
         }
       ],
-      "importedAt": "9. November 2026",
-      "checkedAt": "2026-11-09T11:28:26.554Z",
+      "importedAt": "10. November 2026",
+      "checkedAt": "2026-11-10T11:08:39.693Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W50",
