@@ -1,0 +1,100 @@
+{
+  "id": "6a9fde7c548a82de3e1ad018",
+  "title": "Chipotle-Burger mit Bio-Rinderhack & Käsefüllung dazu Coleslaw und Ofenkartoffeln",
+  "diet": "Mit Fleisch",
+  "dietGroup": "non-vegetarian",
+  "time": "30 Minuten",
+  "difficulty": "einfach",
+  "image": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/HF_Y25_R16_W49_DE_PM46655-3_Main_high-3d1a62ea.jpg",
+  "alt": "Foto des Gerichts Chipotle-Burger mit Bio-Rinderhack & Käsefüllung dazu Coleslaw und Ofenkartoffeln.",
+  "intro": "Wir lieben Burger! Dieses Gericht hat in unserer Ideenküche für leuchtende Augen gesorgt. Mit saftigem Fleisch und luftigen Brötchen steht Deinem Burgerglück nichts mehr im Weg. Lass es Dir schmecken!",
+  "sourceUrl": "https://www.hellofresh.de/recipes/chipotle-burger-mit-bio-rinderhack-and-kasefullung-6a9fde7c548a82de3e1ad018",
+  "features": [
+    "nutri-score-c",
+    "latin-american-faves",
+    "handhelds",
+    "Merchan-surcharge"
+  ],
+  "servings": "2 Portionen",
+  "ingredients": [
+    {
+      "name": "Coleslaw-Mix",
+      "amount": "200 g",
+      "packaging": "Mittelgroßer transparenter Kunststoffbeutel mit fein geschnittenem Kohl und Karotten."
+    },
+    {
+      "name": "Tomate",
+      "amount": "1 Stück"
+    },
+    {
+      "name": "rote Zwiebel",
+      "amount": "1 Stück"
+    },
+    {
+      "name": "Aioli",
+      "amount": "40 g"
+    },
+    {
+      "name": "Mayonnaise",
+      "amount": "50 g"
+    },
+    {
+      "name": "Ketchup",
+      "amount": "50 g",
+      "packaging": "Kleines flaches Portionssachet mit weichem, dickflüssigem Inhalt."
+    },
+    {
+      "name": "vorw. festk. Kartoffeln",
+      "amount": "400 g"
+    },
+    {
+      "name": "Chipotle Paste",
+      "amount": "10 g"
+    },
+    {
+      "name": "Gewürzmischung „Hello Paprika“",
+      "amount": "4 g"
+    },
+    {
+      "name": "vegane Brioche Burger Buns",
+      "amount": "160 g"
+    },
+    {
+      "name": "junger Gouda, gerieben",
+      "amount": "50 g",
+      "packaging": "Kleiner flacher Klarsichtbeutel; der geriebene Käse fühlt sich locker und weich an."
+    },
+    {
+      "name": "Bio Rinderhackfleischzubereitung",
+      "amount": "250 g"
+    },
+    {
+      "name": "Esslöffel Öl",
+      "amount": "2"
+    },
+    {
+      "name": "Esslöffel Weißweinessig",
+      "amount": "1"
+    },
+    {
+      "name": "Teelöffel Balsamicoessig",
+      "amount": "1"
+    },
+    {
+      "name": "nach Geschmack Salz",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "nach Geschmack Pfeffer",
+      "amount": "Menge laut Originalrezept"
+    }
+  ],
+  "steps": [
+    "Erhitze reichlich Wasser im Wasserkocher. Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Kartoffeln je nach Größe vierteln oder achteln. In einer großen Schüssel Kartoffeln mit Hälfte „Hello Paprika“, 1 EL [1,5 EL | 2 EL] Öl*, Salz* und Pfeffer* vermengen. Kartoffeln auf einem mit Backpapier belegten Backblech verteilen und 25 – 30 Min. goldbraun backen.",
+    "Coleslaw-Mix in eine große Schüssel geben. Mit kochendem Wasser* übergießen und 4 Min. quellen lassen. In einer kleinen Schüssel Aioli und Mayo verrühren. Coleslaw-Mix durch ein Sieb abgießen und zurück in die Schüssel geben. Hälfte Knoblauch-Mayo, 1 EL [1,5 EL | 2 EL] Essig, Salz* und Pfeffer* dazugeben und vermengen.",
+    "Zwiebel in feine Streifen schneiden. Tomate in Scheiben schneiden. In einer großen Pfanne mit Deckel 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Zwiebeln mit Salz* und Zucker* würzen und 3 – 4 Min. anbraten, bis sie goldbraun sind. Mit 1 TL [1,5 TL | 2 TL] Balsamicoessig* ablöschen. Aus der Pfanne nehmen und beiseitestellen.",
+    "Hackfleisch, Hälfte [drei Viertel | gesamte] Chipotle Paste und restlichen „Hello Paprika“ zu 2 [3 | 4] Bällchen formen, flach drücken, mit Käse füllen, zusammenfalten und zu gleichmäßigen Burgerpatties pressen.",
+    "Brioche Buns waagerecht halbieren. In den letzten 5 Min. der Kartoffelbackzeit Brötchen mit auf das Backblech geben. Die große Pfanne aus Schritt 3 ohne weitere Fettzugabe bei mittlerer Temperatur erhitzen. Burger je Seite 3 – 5 Min. abgedeckt anbraten, bis das Fleisch innen nicht mehr rosa ist.",
+    "Knoblauch-Mayo auf die Brioche-Brötchen verteilen, etwas Coleslaw, Tomate und Zwiebel darauf verteilen und mit den Burgerpatties toppen. Burger schließen und auf Teller geben, Kartoffeln daneben anrichten. Mit restlichem Coleslaw, Tomaten, Zwiebeln und Ketchup servieren. Guten Appetit!"
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "id": "6a9fdcae50d85bbd02ecc3cb",
+  "title": "Pizza-Suppe mit Hackfleisch und Champignons, Basilikum und Käse",
+  "diet": "Mit Fleisch",
+  "dietGroup": "non-vegetarian",
+  "time": "30 Minuten",
+  "difficulty": "einfach",
+  "image": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/pizza-suppe-mit-hackfleisch-und-champignons-3037695b-3de46883.jpg",
+  "alt": "Foto des Gerichts Pizza-Suppe mit Hackfleisch und Champignons, Basilikum und Käse.",
+  "intro": "Für alle, die es frisch und bunt lieben: Mit mehr als 240 g Gemüse pro Portion ist dieses Gericht ein leckerer, ausgewogener Genuss. Guten Appetit!",
+  "sourceUrl": "https://www.hellofresh.de/recipes/pizza-suppe-mit-hackfleisch-und-champignons-6a9fdcae50d85bbd02ecc3cb",
+  "features": [
+    "nutri-score-c",
+    "One-Pot-Gericht",
+    "Family",
+    "High Protein",
+    "Low Carb",
+    "Mediterran",
+    "soup-stew",
+    "Kalorien im Blick"
+  ],
+  "servings": "2 Portionen",
+  "ingredients": [
+    {
+      "name": "Frühlingszwiebel",
+      "amount": "25 g"
+    },
+    {
+      "name": "Gemüsebrühpulver",
+      "amount": "6 g"
+    },
+    {
+      "name": "stückige Tomaten",
+      "amount": "390 g"
+    },
+    {
+      "name": "gemischte Hackfleischzubereitung",
+      "amount": "250 g",
+      "packaging": "Flacher, rechteckiger Vakuumbeutel mit weichem, körnigem Fleischinhalt."
+    },
+    {
+      "name": "Basilikum/Oregano",
+      "amount": "10 g"
+    },
+    {
+      "name": "Kochsahne leicht",
+      "amount": "100,5 g",
+      "packaging": "Kleiner standfester Getränkekarton mit Schraubverschluss; flüssiger Inhalt."
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": "1 Stück",
+      "packaging": "Kleine feste Zehe mit trockener, papierartiger Schale, lose im Zutatenbeutel."
+    },
+    {
+      "name": "Gewürzmischung „Hello Buon Appetito“",
+      "amount": "2 g"
+    },
+    {
+      "name": "Champignons",
+      "amount": "125 g",
+      "packaging": "Kleine durchsichtige Kunststoffschale mit Folienverschluss; runde Pilzköpfe sind tastbar."
+    },
+    {
+      "name": "Hartkäse ital. Art, gerieben",
+      "amount": "20 g"
+    },
+    {
+      "name": "nach Geschmack Salz",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "nach Geschmack Zucker",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "Esslöffel Olivenöl",
+      "amount": "1"
+    },
+    {
+      "name": "Wasser",
+      "amount": "200 ml"
+    },
+    {
+      "name": "nach Geschmack Pfeffer",
+      "amount": "Menge laut Originalrezept"
+    }
+  ],
+  "steps": [
+    "Erhitze 2 00 ml [300 ml | 400 ml] Wasser* im Wasserkocher. Champignons in Scheiben schneiden. Knoblauchzehe fein hacken.",
+    "In einem großen Topf 1 EL [1,5 EL | 2 EL] Olivenöl* erhitzen. Hackfleisch, Champignons und Knoblauch darin 5 – 6 Min. unter Rühren anbraten, bis das Hackfleisch krümelig ist und das ausgetretene Wasser verkocht ist. Inzwischen mit dem Rezept fortfahren.",
+    "Frühlingszwiebel in dünne Ringe schneiden. Frühlingszwiebelringe zum Hackfleisch geben und 1 Min. mitbraten.",
+    "Topfinhalt mit stückigen Tomaten und 200 ml [300 ml | 400 ml] heißem Wasser* ablöschen. Brühepulver, „Hello Buon Appetito“ und 1 Prise Zucker* dazugeben und alles 5 Min. köcheln lassen. Inzwischen mit dem Rezept fortfahren.",
+    "Oreganoblätter fein hacken. Basilikumblätter in Streifen schneiden. Etwas Oregano nach Geschmack und 100 ml [150 ml | 200 ml] Kochsahne in die Suppe rühren. Mit Salz* und Pfeffer* kräftig abschmecken.",
+    "Pizza-Suppe auf Teller verteilen, mit Basilikum und geriebenem Käse toppen. Guten Appetit!"
+  ]
+}
