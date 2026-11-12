@@ -34,7 +34,7 @@
       "label": "12. Dezember 2026 bis 18. Dezember 2026"
     }
   ],
-  "generatedAt": "2026-11-11T10:54:58.840Z",
+  "generatedAt": "2026-11-12T11:03:56.389Z",
   "menus": {
     "2026-W44": {
       "week": "2026-W44",
@@ -74,8 +74,8 @@
           "label": "12. Dezember 2026 bis 18. Dezember 2026"
         }
       ],
-      "importedAt": "11. November 2026",
-      "checkedAt": "2026-11-11T10:54:49.472Z",
+      "importedAt": "12. November 2026",
+      "checkedAt": "2026-11-12T11:03:46.009Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W44",
@@ -2058,8 +2058,8 @@
           "label": "12. Dezember 2026 bis 18. Dezember 2026"
         }
       ],
-      "importedAt": "11. November 2026",
-      "checkedAt": "2026-11-11T10:54:49.472Z",
+      "importedAt": "12. November 2026",
+      "checkedAt": "2026-11-12T11:03:46.009Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W45",
@@ -3972,8 +3972,8 @@
           "label": "12. Dezember 2026 bis 18. Dezember 2026"
         }
       ],
-      "importedAt": "11. November 2026",
-      "checkedAt": "2026-11-11T10:54:49.472Z",
+      "importedAt": "12. November 2026",
+      "checkedAt": "2026-11-12T11:03:46.009Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W46",
@@ -6113,8 +6113,8 @@
           "label": "12. Dezember 2026 bis 18. Dezember 2026"
         }
       ],
-      "importedAt": "11. November 2026",
-      "checkedAt": "2026-11-11T10:54:49.472Z",
+      "importedAt": "12. November 2026",
+      "checkedAt": "2026-11-12T11:03:46.009Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W47",
@@ -7743,7 +7743,7 @@
           "dietGroup": "non-vegetarian",
           "time": "25 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R19_W05_DE_R51780-4_Main_high-53c9f118.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R19_W05_DE_R51780-4_Main_high-231f736c.jpg",
           "alt": "Foto des Gerichts Suppe mit Hähnchen & Tortilla-Chips.",
           "intro": "Zubereitung in Air-Fryer oder Ofen",
           "sourceUrl": "https://www.hellofresh.de/recipes/suppe-mit-hahnchen-and-tortilla-chips-6a798c32a64cfe1e1f5a6b1f",
@@ -8172,15 +8172,15 @@
         },
         {
           "id": "6a980a2c56a4cfbb96381577",
-          "title": "Cremiges Tikka Masala Curry mit Kräuterseitlinge",
+          "title": "Cremiges Tikka Masala Curry mit Kräuterseitling",
           "diet": "Vegan",
           "dietGroup": "vegetarian",
           "time": "25 Minuten",
           "difficulty": "einfach",
           "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y24_R32_W02_DE_R19517-1_Mainhigh-86b3b807.jpg",
-          "alt": "Foto des Gerichts Cremiges Tikka Masala Curry mit Kräuterseitlinge.",
+          "alt": "Foto des Gerichts Cremiges Tikka Masala Curry mit Kräuterseitling.",
           "intro": "dazu Kichererbsen und Basmatireis",
-          "sourceUrl": "https://www.hellofresh.de/recipes/cremiges-tikka-masala-curry-mit-krauterseitlinge-6a980a2c56a4cfbb96381577",
+          "sourceUrl": "https://www.hellofresh.de/recipes/cremiges-tikka-masala-curry-mit-krauterseitling-6a980a2c56a4cfbb96381577",
           "features": [
             "Curries",
             "Viel Gemüse",
@@ -8255,8 +8255,8 @@
           "label": "12. Dezember 2026 bis 18. Dezember 2026"
         }
       ],
-      "importedAt": "11. November 2026",
-      "checkedAt": "2026-11-11T10:54:49.472Z",
+      "importedAt": "12. November 2026",
+      "checkedAt": "2026-11-12T11:03:46.009Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W48",
@@ -8288,7 +8288,7 @@
           "dietGroup": "non-vegetarian",
           "time": "15 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R84_W33_DE_R52119-L-59059-2main_high-863bd4ee.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R84_W33_DE_R52119-L-59059-2main_high-99875011.jpg",
           "alt": "Foto des Gerichts Shiitake-Beef mit Linsen auf frischen Linguine.",
           "intro": "dazu Pistazien-Koriander-Gremolata",
           "sourceUrl": "https://www.hellofresh.de/recipes/shiitake-beef-mit-linsen-auf-frischen-linguine-6a798cfe11cc1340e0f65e8f",
@@ -8331,7 +8331,7 @@
           "dietGroup": "non-vegetarian",
           "time": "40 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R04_W43_DE_R59816-3_main_high-e471fb61.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R04_W43_DE_R59816-3_main_high-12405e0b.jpg",
           "alt": "Foto des Gerichts Hüftsteak mit Kartoffel-Kohlrabi-Salat.",
           "intro": "mit karamellisierten Zwiebeln und Kresse",
           "sourceUrl": "https://www.hellofresh.de/recipes/huftsteak-mit-kartoffel-kohlrabi-salat-6a798d1bc419eb8464db1ee7",
@@ -8472,7 +8472,7 @@
           "dietGroup": "vegetarian",
           "time": "25 Minuten",
           "difficulty": "mittel",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y23_R36_W39_DE_R2034-19_Main_high-b6e4afd5.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y23_R36_W39_DE_R2034-19_Main_high-57c3d7d5.jpg",
           "alt": "Foto des Gerichts Cremige Tortellini mit Spinat-Ricotta-Füllung.",
           "intro": "dazu Zucchini, Kirschomaten und Kräutercreme",
           "sourceUrl": "https://www.hellofresh.de/recipes/cremige-tortellini-mit-spinat-ricotta-fullung-6a798d59a64cfe1e1f5a6f24",
@@ -8536,7 +8536,7 @@
           "dietGroup": "non-vegetarian",
           "time": "15 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R15_W42_DE_EXP18498-9_Main_GC_high-de5f3d01.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R15_W42_DE_EXP18498-9_Main_GC_high-364574b0.jpg",
           "alt": "Foto des Gerichts Gnocchi in Bio-Rindfleisch-Bolognese.",
           "intro": "mit vorgeschnittenem Karotten-Lauch-Mix & Basilikum",
           "sourceUrl": "https://www.hellofresh.de/recipes/gnocchi-in-bio-rindfleisch-bolognese-6a798d6911cc1340e0f66093",
@@ -8557,7 +8557,7 @@
           "dietGroup": "non-vegetarian",
           "time": "30 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R16_W19_DE_PM55707-3_Main_high-79d7590e.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R16_W19_DE_PM55707-3_Main_high-ec72cdba.jpg",
           "alt": "Foto des Gerichts Spicy Gochujang Cheese Burger vom Weiderind.",
           "intro": "mit Sesam-Süßkartoffeln",
           "sourceUrl": "https://www.hellofresh.de/recipes/spicy-gochujang-cheese-burger-vom-weiderind-6a798d6fa64cfe1e1f5a6fa2",
@@ -8640,7 +8640,7 @@
           "dietGroup": "non-vegetarian",
           "time": "35 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R20_W39_DE_PM25664-37main_high-ade964fc.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R20_W39_DE_PM25664-37main_high-590996a7.jpg",
           "alt": "Foto des Gerichts Spicy Korean Chicken mit Pommes.",
           "intro": "Gochujang-Marinade, Mais und Gurkensalat",
           "sourceUrl": "https://www.hellofresh.de/recipes/spicy-korean-chicken-mit-pommes-6a798d86c419eb8464db205a",
@@ -10368,8 +10368,8 @@
           "label": "12. Dezember 2026 bis 18. Dezember 2026"
         }
       ],
-      "importedAt": "11. November 2026",
-      "checkedAt": "2026-11-11T10:54:49.472Z",
+      "importedAt": "12. November 2026",
+      "checkedAt": "2026-11-12T11:03:46.009Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W49",
@@ -10672,7 +10672,7 @@
           "dietGroup": "non-vegetarian",
           "time": "35 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF220112_R04_W09_DE_R2786-7_MB_Main_high-7d2d9aac.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF220112_R04_W09_DE_R2786-7_MB_Main_high-bbf62c34.jpg",
           "alt": "Foto des Gerichts Tom Kha Gai: Thailändische Kokossuppe.",
           "intro": "mit Hähnchen und Jasminreis",
           "sourceUrl": "https://www.hellofresh.de/recipes/tom-kha-gai-thailandische-kokossuppe-6a9fdc0c50d85bbd02ecb60c",
@@ -12504,8 +12504,8 @@
           "label": "12. Dezember 2026 bis 18. Dezember 2026"
         }
       ],
-      "importedAt": "11. November 2026",
-      "checkedAt": "2026-11-11T10:54:49.472Z",
+      "importedAt": "12. November 2026",
+      "checkedAt": "2026-11-12T11:03:46.009Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W50",
@@ -14566,8 +14566,8 @@
           "label": "12. Dezember 2026 bis 18. Dezember 2026"
         }
       ],
-      "importedAt": "11. November 2026",
-      "checkedAt": "2026-11-11T10:54:49.472Z",
+      "importedAt": "12. November 2026",
+      "checkedAt": "2026-11-12T11:03:46.009Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W51",
@@ -15111,15 +15111,15 @@
         },
         {
           "id": "6a9fdcda548a82de3e1ab097",
-          "title": "Taco Salat mit Weiderinderhackfleisch",
+          "title": "Tex Mex Salat mit Weiderinderhackfleisch",
           "diet": "Nicht vegetarisch",
           "dietGroup": "non-vegetarian",
           "time": "20 Minuten",
           "difficulty": "einfach",
           "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R21_W51_DE_R61445-3_main_high-280191d6.jpg",
-          "alt": "Foto des Gerichts Taco Salat mit Weiderinderhackfleisch.",
+          "alt": "Foto des Gerichts Tex Mex Salat mit Weiderinderhackfleisch.",
           "intro": "dazu cremiges Avocado Dressing und Cheddar",
-          "sourceUrl": "https://www.hellofresh.de/recipes/taco-salat-mit-weiderinderhackfleisch-6a9fdcda548a82de3e1ab097",
+          "sourceUrl": "https://www.hellofresh.de/recipes/tex-mex-salat-mit-weiderinderhackfleisch-6a9fdcda548a82de3e1ab097",
           "features": [
             "nutri-score-b",
             "dinner-bowls",
@@ -15128,8 +15128,7 @@
             "Kalorien im Blick",
             "High Protein",
             "Schnell",
-            "Healthy",
-            "Neu"
+            "Healthy"
           ]
         },
         {
@@ -16503,15 +16502,15 @@
         },
         {
           "id": "6abf87c5a887bbccc21c54db",
-          "title": "Chinesische Nudeln mit knusprigen Hähnchen",
+          "title": "Udon-Nudeln mit knusprigen Hähnchen",
           "diet": "Nicht vegetarisch",
           "dietGroup": "non-vegetarian",
           "time": "25 Minuten",
           "difficulty": "einfach",
           "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R92_W51_DE_R53785-2_main_high-375f23de.jpg",
-          "alt": "Foto des Gerichts Chinesische Nudeln mit knusprigen Hähnchen.",
+          "alt": "Foto des Gerichts Udon-Nudeln mit knusprigen Hähnchen.",
           "intro": "Wokgemüse und Sriracha-Hoisin-Soße für die Eltern",
-          "sourceUrl": "https://www.hellofresh.de/recipes/chinesische-nudeln-mit-knusprigen-hahnchen-6abf87c5a887bbccc21c54db",
+          "sourceUrl": "https://www.hellofresh.de/recipes/udon-nudeln-mit-knusprigen-hahnchen-6abf87c5a887bbccc21c54db",
           "features": [
             "Family",
             "High Protein",
