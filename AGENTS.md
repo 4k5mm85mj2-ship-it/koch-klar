@@ -40,3 +40,7 @@ When implementing from a selected generated mock, treat that image as the source
 - Only show a packaging description when a concrete curated description exists; do not synthesize a package type from the ingredient name.
 
 Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts/prepare-sites-build.mjs`, and `tests/sites-worker.test.mjs` intact so the same local prototype can be handed to Sites. Before a Sites handoff, run `npm run build` and `npm run test:sites`; the build must leave `dist/client/index.html`, `dist/server/index.js`, and `dist/.openai/hosting.json`.
+
+## Sicherheitsstandard
+
+Vor Änderungen an Abhängigkeiten, CI/CD, Signierung oder Zugängen [SECURITY.md](SECURITY.md) lesen und beachten. Der Standard ergänzt bestehende Aufträge und Freigaben; er erlaubt keine eigenständigen Änderungen an Oberfläche oder Fachfunktionen und keinen zusätzlichen kostenpflichtigen Build.
