@@ -30,7 +30,7 @@
       "label": "12. Dezember 2026 bis 18. Dezember 2026"
     }
   ],
-  "generatedAt": "2026-11-15T10:50:29.367Z",
+  "generatedAt": "2026-11-16T11:13:50.649Z",
   "menus": {
     "2026-W45": {
       "week": "2026-W45",
@@ -66,8 +66,8 @@
           "label": "12. Dezember 2026 bis 18. Dezember 2026"
         }
       ],
-      "importedAt": "15. November 2026",
-      "checkedAt": "2026-11-15T10:50:21.123Z",
+      "importedAt": "16. November 2026",
+      "checkedAt": "2026-11-16T11:13:40.812Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W45",
@@ -1976,8 +1976,8 @@
           "label": "12. Dezember 2026 bis 18. Dezember 2026"
         }
       ],
-      "importedAt": "15. November 2026",
-      "checkedAt": "2026-11-15T10:50:21.123Z",
+      "importedAt": "16. November 2026",
+      "checkedAt": "2026-11-16T11:13:40.812Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W46",
@@ -4113,8 +4113,8 @@
           "label": "12. Dezember 2026 bis 18. Dezember 2026"
         }
       ],
-      "importedAt": "15. November 2026",
-      "checkedAt": "2026-11-15T10:50:21.123Z",
+      "importedAt": "16. November 2026",
+      "checkedAt": "2026-11-16T11:13:40.812Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W47",
@@ -6251,12 +6251,12 @@
           "label": "12. Dezember 2026 bis 18. Dezember 2026"
         }
       ],
-      "importedAt": "15. November 2026",
-      "checkedAt": "2026-11-15T10:50:21.123Z",
+      "importedAt": "16. November 2026",
+      "checkedAt": "2026-11-16T11:13:40.812Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W48",
-      "totalRecipes": 99,
+      "totalRecipes": 100,
       "recipes": [
         {
           "id": "6a798cf311cc1340e0f65e58",
@@ -6428,7 +6428,7 @@
           "dietGroup": "vegetarian",
           "time": "40 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/38ad54ec-864f-48a2-9374-2994fd5fef74-0980b86f.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R76_W25_DE_PM55683-4_main_high-1096c3e0.jpg",
           "alt": "Foto des Gerichts Veggie-Lasagne für die ganze Familie.",
           "intro": "mit Kirschtomaten-Pinienkerne-Salat",
           "sourceUrl": "https://www.hellofresh.de/recipes/veggie-lasagne-fur-die-ganze-familie-6a798d4b11cc1340e0f65ff7",
@@ -6526,6 +6526,27 @@
           ]
         },
         {
+          "id": "6a798d6911cc1340e0f66093",
+          "title": "Gnocchi in Bio-Rindfleisch-Bolognese",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "15 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R15_W42_DE_EXP18498-9_Main_GC_high-364574b0.jpg",
+          "alt": "Foto des Gerichts Gnocchi in Bio-Rindfleisch-Bolognese.",
+          "intro": "mit vorgeschnittenem Karotten-Lauch-Mix & Basilikum",
+          "sourceUrl": "https://www.hellofresh.de/recipes/gnocchi-in-bio-rindfleisch-bolognese-6a798d6911cc1340e0f66093",
+          "features": [
+            "nutri-score-c",
+            "Family",
+            "Mediterran",
+            "organic",
+            "pasta-noodles",
+            "Extra schnell",
+            "Merchan-surcharge"
+          ]
+        },
+        {
           "id": "6a798d6fa64cfe1e1f5a6fa2",
           "title": "Spicy Gochujang Cheese Burger vom Weiderind",
           "diet": "Nicht vegetarisch",
@@ -6595,7 +6616,7 @@
           "dietGroup": "non-vegetarian",
           "time": "15 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R36_W33_DE_EXP51126-4main_high-249bcd59.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R36_W33_DE_EXP51126-4main_high-b60a21af.jpg",
           "alt": "Foto des Gerichts Oyakodon: Japanische Hähnchen Bowl.",
           "intro": "auf Reis in würziger Soße",
           "sourceUrl": "https://www.hellofresh.de/recipes/oyakodon-japanische-hahnchen-bowl-6a798d8111cc1340e0f660ed",
@@ -8339,8 +8360,8 @@
           "label": "12. Dezember 2026 bis 18. Dezember 2026"
         }
       ],
-      "importedAt": "15. November 2026",
-      "checkedAt": "2026-11-15T10:50:21.123Z",
+      "importedAt": "16. November 2026",
+      "checkedAt": "2026-11-16T11:13:40.812Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W49",
@@ -8498,7 +8519,7 @@
           "dietGroup": "non-vegetarian",
           "time": "45 Minuten",
           "difficulty": "mittel",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF201130_R04_W04_DE_R3154-1_MB_Main_high-9933759a.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF201130_R04_W04_DE_R3154-1_MB_Main_high-f194aca8.jpg",
           "alt": "Foto des Gerichts Hähnchenbrust in Panko-Mandel-Panade.",
           "intro": "dazu glasierte Rote Beete, Drillinge und Bohnen",
           "sourceUrl": "https://www.hellofresh.de/recipes/hahnchenbrust-in-panko-mandel-panade-6a9fdbf850d85bbd02ecb47e",
@@ -10471,8 +10492,8 @@
           "label": "12. Dezember 2026 bis 18. Dezember 2026"
         }
       ],
-      "importedAt": "15. November 2026",
-      "checkedAt": "2026-11-15T10:50:21.123Z",
+      "importedAt": "16. November 2026",
+      "checkedAt": "2026-11-16T11:13:40.812Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W50",
@@ -12529,8 +12550,8 @@
           "label": "12. Dezember 2026 bis 18. Dezember 2026"
         }
       ],
-      "importedAt": "15. November 2026",
-      "checkedAt": "2026-11-15T10:50:21.123Z",
+      "importedAt": "16. November 2026",
+      "checkedAt": "2026-11-16T11:13:40.812Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W51",
