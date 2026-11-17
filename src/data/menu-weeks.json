@@ -30,7 +30,7 @@
       "label": "12. Dezember 2026 bis 18. Dezember 2026"
     }
   ],
-  "generatedAt": "2026-11-16T11:13:50.649Z",
+  "generatedAt": "2026-11-17T11:49:37.502Z",
   "menus": {
     "2026-W45": {
       "week": "2026-W45",
@@ -66,8 +66,8 @@
           "label": "12. Dezember 2026 bis 18. Dezember 2026"
         }
       ],
-      "importedAt": "16. November 2026",
-      "checkedAt": "2026-11-16T11:13:40.812Z",
+      "importedAt": "17. November 2026",
+      "checkedAt": "2026-11-17T11:49:28.759Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W45",
@@ -1976,8 +1976,8 @@
           "label": "12. Dezember 2026 bis 18. Dezember 2026"
         }
       ],
-      "importedAt": "16. November 2026",
-      "checkedAt": "2026-11-16T11:13:40.812Z",
+      "importedAt": "17. November 2026",
+      "checkedAt": "2026-11-17T11:49:28.759Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W46",
@@ -4113,12 +4113,12 @@
           "label": "12. Dezember 2026 bis 18. Dezember 2026"
         }
       ],
-      "importedAt": "16. November 2026",
-      "checkedAt": "2026-11-16T11:13:40.812Z",
+      "importedAt": "17. November 2026",
+      "checkedAt": "2026-11-17T11:49:28.759Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W47",
-      "totalRecipes": 100,
+      "totalRecipes": 99,
       "recipes": [
         {
           "id": "6a798618a64cfe1e1f5a4d25",
@@ -4788,27 +4788,6 @@
             "classic-plates",
             "Merchan-surcharge",
             "mushrooms"
-          ]
-        },
-        {
-          "id": "6a798aeda64cfe1e1f5a6400",
-          "title": "Veganer Schawarma-Teller mit Tahini-Dressing",
-          "diet": "Vegan",
-          "dietGroup": "vegetarian",
-          "time": "35 Minuten",
-          "difficulty": "mittel",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF220307_R32_W18_DE_R3899-1_MB_Main_high-1f8afada.jpg",
-          "alt": "Foto des Gerichts Veganer Schawarma-Teller mit Tahini-Dressing.",
-          "intro": "grünem Salat und würzigen Mezze-Kartoffelwürfeln",
-          "sourceUrl": "https://www.hellofresh.de/recipes/veganer-schawarma-teller-mit-tahini-dressing-6a798aeda64cfe1e1f5a6400",
-          "features": [
-            "dinner-bowls",
-            "Viel Gemüse",
-            "Low Carb",
-            "nutri-score-a",
-            "source-of-fibre",
-            "Taste of Middle East",
-            "Vegan"
           ]
         },
         {
@@ -6251,8 +6230,8 @@
           "label": "12. Dezember 2026 bis 18. Dezember 2026"
         }
       ],
-      "importedAt": "16. November 2026",
-      "checkedAt": "2026-11-16T11:13:40.812Z",
+      "importedAt": "17. November 2026",
+      "checkedAt": "2026-11-17T11:49:28.759Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W48",
@@ -6301,15 +6280,15 @@
         },
         {
           "id": "6a798d0e11cc1340e0f65ea1",
-          "title": "Schweinesteak mit Mini-Knödeln und Demi-glace",
+          "title": "Schweinesteak mit Mini-Knödeln und Zwiebelsoße",
           "diet": "Nicht vegetarisch",
           "dietGroup": "non-vegetarian",
           "time": "15 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R03_W08_DE_EXP49704-4_Main_high-a07f64e5.jpg",
-          "alt": "Foto des Gerichts Schweinesteak mit Mini-Knödeln und Demi-glace.",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R03_W08_DE_EXP49704-4_Main_high-07f7c758.jpg",
+          "alt": "Foto des Gerichts Schweinesteak mit Mini-Knödeln und Zwiebelsoße.",
           "intro": "dazu warmer Apfel-Rotkohl-Salat",
-          "sourceUrl": "https://www.hellofresh.de/recipes/schweinesteak-mit-mini-knodeln-und-demi-glace-6a798d0e11cc1340e0f65ea1",
+          "sourceUrl": "https://www.hellofresh.de/recipes/schweinesteak-mit-mini-knodeln-und-zwiebelsosse-6a798d0e11cc1340e0f65ea1",
           "features": [
             "nutri-score-c",
             "classic-plates",
@@ -6798,7 +6777,7 @@
           "dietGroup": "vegetarian",
           "time": "25 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R28_W37_DE_EXP3595-11_main_high-697e9f3b.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y23_R26_W23_DE_EXP3595-5_Main_newhigh-f23c9b33.jpg",
           "alt": "Foto des Gerichts One Pot: Conchiglie Bruschetta Art.",
           "intro": "mit Kirschtomaten, Balsamico und Käse",
           "sourceUrl": "https://www.hellofresh.de/recipes/one-pot-conchiglie-bruschetta-art-6a798dcfc419eb8464db2153",
@@ -6969,7 +6948,7 @@
           "dietGroup": "non-vegetarian",
           "time": "20 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R40_W48_DE_PM40978-3_Main_high-a6048f61.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R40_W48_DE_PM40978-3_Main_high-6d1f8d8a.jpg",
           "alt": "Foto des Gerichts Hoisin-Hüftsteak vom Weiderind mit Bimi.",
           "intro": "auf Udon-Salat mit Avocado, Gurke und Ingwer-Dressing",
           "sourceUrl": "https://www.hellofresh.de/recipes/hoisin-huftsteak-vom-weiderind-mit-bimi-6a798e0fc419eb8464db2310",
@@ -7636,7 +7615,7 @@
           "dietGroup": "non-vegetarian",
           "time": "35 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R40_W23_DE_PM40933-21_main_high-17d2b838.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R40_W23_DE_PM40933-21_main_high-0685d2fd.jpg",
           "alt": "Foto des Gerichts Gyros-Duo vom Bio-Schwein und Hähnchen.",
           "intro": "mit Knoblauch-Kartoffeln",
           "sourceUrl": "https://www.hellofresh.de/recipes/gyros-duo-vom-bio-schwein-und-hahnchen-6a798ee3c419eb8464db2773",
@@ -8360,8 +8339,8 @@
           "label": "12. Dezember 2026 bis 18. Dezember 2026"
         }
       ],
-      "importedAt": "16. November 2026",
-      "checkedAt": "2026-11-16T11:13:40.812Z",
+      "importedAt": "17. November 2026",
+      "checkedAt": "2026-11-17T11:49:28.759Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W49",
@@ -10492,8 +10471,8 @@
           "label": "12. Dezember 2026 bis 18. Dezember 2026"
         }
       ],
-      "importedAt": "16. November 2026",
-      "checkedAt": "2026-11-16T11:13:40.812Z",
+      "importedAt": "17. November 2026",
+      "checkedAt": "2026-11-17T11:49:28.759Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W50",
@@ -12550,8 +12529,8 @@
           "label": "12. Dezember 2026 bis 18. Dezember 2026"
         }
       ],
-      "importedAt": "16. November 2026",
-      "checkedAt": "2026-11-16T11:13:40.812Z",
+      "importedAt": "17. November 2026",
+      "checkedAt": "2026-11-17T11:49:28.759Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W51",
