@@ -1,0 +1,86 @@
+{
+  "id": "6a9fdd79548a82de3e1abc90",
+  "title": "Paccheri-Pasta mit tomatiger Cremesoße Chorizo und Porree",
+  "diet": "Mit Fleisch",
+  "dietGroup": "non-vegetarian",
+  "time": "15 Minuten",
+  "difficulty": "einfach",
+  "image": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/paccheri-pasta-mit-tomatiger-cremesosze-3344e9c6.jpg",
+  "alt": "Foto des Gerichts Paccheri-Pasta mit tomatiger Cremesoße Chorizo und Porree.",
+  "intro": "Pasta geht immer! Und das Beste, Du hast sie im Nu zubereitet. In Kombination mit leckerem Gemüse und cremiger Soße ist dieses Gericht ein wahrer Gaumenschmaus. Lass es Dir schmecken!",
+  "sourceUrl": "https://www.hellofresh.de/recipes/paccheri-pasta-mit-tomatiger-cremesosse-6a9fdd79548a82de3e1abc90",
+  "features": [
+    "nutri-score-d",
+    "Family",
+    "Mediterran",
+    "pasta-noodles",
+    "Extra schnell",
+    "season-winter"
+  ],
+  "servings": "2 Portionen",
+  "ingredients": [
+    {
+      "name": "frische Paccheri",
+      "amount": "250 g"
+    },
+    {
+      "name": "Chorizo",
+      "amount": "80 g"
+    },
+    {
+      "name": "Porree",
+      "amount": "1 Stück",
+      "packaging": "Lange feste Gemüsestange mit weißem Schaft und flachen grünen Blättern, lose im Zutatenbeutel."
+    },
+    {
+      "name": "Frischecreme",
+      "amount": "200 g"
+    },
+    {
+      "name": "geriebener Hartkäse",
+      "amount": "20 g"
+    },
+    {
+      "name": "Tomatenpesto",
+      "amount": "25 g"
+    },
+    {
+      "name": "Knoblauchzehe",
+      "amount": "1 Stück",
+      "packaging": "Kleine feste Zehe mit trockener, papierartiger Schale, lose im Zutatenbeutel."
+    },
+    {
+      "name": "Hühnerbrühe",
+      "amount": "6 g",
+      "packaging": "Sehr kleines flaches Sachet mit feinkörnigem Pulver."
+    },
+    {
+      "name": "nach Geschmack Salz",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "nach Geschmack Pfeffer",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "nach Geschmack Zucker",
+      "amount": "Menge laut Originalrezept"
+    },
+    {
+      "name": "Gewürzmischung „Hello Smoky Paprika“",
+      "amount": "3 g"
+    },
+    {
+      "name": "Wasser",
+      "amount": "150 ml"
+    }
+  ],
+  "steps": [
+    "Erhitze reichlich Wasser im Wasserkocher. Reichlich heißes Wasser\\* in einen großen Topf geben, salzen\\* und aufkochen lassen. Knoblauch abziehen. Chorizo in 1 cm Würfel schneiden.",
+    "Eine große Pfanne auf hoher Stufe erhitzen und Chorizo darin ohne Fettzugabe für 3 – 4 Min. knusprig braten. Währenddessen Porree längs halbieren, gründlich auswaschen und in 1 cm Halbmonde schneiden. Chorizo herausnehmen, Pfanne so auswischen, dass noch 2 EL [3 EL | 4 EL] Öl in der Pfanne zurückbleiben.",
+    "Pasta ins kochende Wasser geben und ca. 3 – 5 Min. bissfest garen. Pasta danach durch ein Sieb abgießen und dabei 150 ml [225 ml | 300 ml] Kochwasser auffangen.",
+    "Die Pfanne aus Schritt 4 erneut auf mittelhoher Temperatur erhitzen. Porree darin 2 Min. anschwitzen. Knoblauch hineinpressen, Tomatenpesto dazugeben und 1 – 2 Min. weiterbraten. Pfanneninhalt mit dem aufgefangenem Kochwasser\\* ablöschen. Frischecreme, Hühnerbrühpulver, „Hello Smoky Paprika“ und geriebenen Hartkäse dazugeben. Aufkochen lassen, glatt rühren und 1 – 2 Min. einköcheln lassen.",
+    "Soße mit Salz\\*, Pfeffer\\* und 1 Prise Zucker\\* abschmecken. Pasta zur Soße geben und gut untermischen.",
+    "Pasta auf Teller verteilen und mit Chorizo toppen. Guten Appetit!"
+  ]
+}

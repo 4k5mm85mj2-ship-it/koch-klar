@@ -30,7 +30,7 @@
       "label": "12. Dezember 2026 bis 18. Dezember 2026"
     }
   ],
-  "generatedAt": "2026-11-17T11:49:37.502Z",
+  "generatedAt": "2026-11-18T11:39:24.271Z",
   "menus": {
     "2026-W45": {
       "week": "2026-W45",
@@ -66,8 +66,8 @@
           "label": "12. Dezember 2026 bis 18. Dezember 2026"
         }
       ],
-      "importedAt": "17. November 2026",
-      "checkedAt": "2026-11-17T11:49:28.759Z",
+      "importedAt": "18. November 2026",
+      "checkedAt": "2026-11-18T11:39:16.068Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W45",
@@ -1976,8 +1976,8 @@
           "label": "12. Dezember 2026 bis 18. Dezember 2026"
         }
       ],
-      "importedAt": "17. November 2026",
-      "checkedAt": "2026-11-17T11:49:28.759Z",
+      "importedAt": "18. November 2026",
+      "checkedAt": "2026-11-18T11:39:16.068Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W46",
@@ -4113,8 +4113,8 @@
           "label": "12. Dezember 2026 bis 18. Dezember 2026"
         }
       ],
-      "importedAt": "17. November 2026",
-      "checkedAt": "2026-11-17T11:49:28.759Z",
+      "importedAt": "18. November 2026",
+      "checkedAt": "2026-11-18T11:39:16.068Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W47",
@@ -6230,8 +6230,8 @@
           "label": "12. Dezember 2026 bis 18. Dezember 2026"
         }
       ],
-      "importedAt": "17. November 2026",
-      "checkedAt": "2026-11-17T11:49:28.759Z",
+      "importedAt": "18. November 2026",
+      "checkedAt": "2026-11-18T11:39:16.068Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W48",
@@ -7832,15 +7832,15 @@
         },
         {
           "id": "6a798f62c419eb8464db28db",
-          "title": "Japanisches Hähnchen Katsu mit cremigem Coleslaw",
+          "title": "Japanisches Chicken Katsu mit Coleslaw",
           "diet": "Nicht vegetarisch",
           "dietGroup": "non-vegetarian",
           "time": "35 Minuten",
           "difficulty": "einfach",
           "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R203_W40_FR_QFR21159-59_Main_high-688339de.jpg",
-          "alt": "Foto des Gerichts Japanisches Hähnchen Katsu mit cremigem Coleslaw.",
+          "alt": "Foto des Gerichts Japanisches Chicken Katsu mit Coleslaw.",
           "intro": "dazu Sesam-Jasminreis und Mayo-Dip",
-          "sourceUrl": "https://www.hellofresh.de/recipes/japanisches-hahnchen-katsu-mit-cremigem-coleslaw-6a798f62c419eb8464db28db",
+          "sourceUrl": "https://www.hellofresh.de/recipes/japanisches-chicken-katsu-mit-coleslaw-6a798f62c419eb8464db28db",
           "features": [
             "High Protein",
             "dinner-bowls",
@@ -8018,7 +8018,7 @@
           "dietGroup": "non-vegetarian",
           "time": "30 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R93_W45_DE_R61252-4_main_high-04b828f1.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R93_W45_DE_R61252-4_main_high-a9850333.jpg",
           "alt": "Foto des Gerichts Weiderindersteak nach Tafelspitz-Art.",
           "intro": "mit Meerrettichsoße und Bouillon-Gemüse",
           "sourceUrl": "https://www.hellofresh.de/recipes/weiderindersteak-nach-tafelspitz-art-6a798fc4c419eb8464db2a70",
@@ -8339,8 +8339,8 @@
           "label": "12. Dezember 2026 bis 18. Dezember 2026"
         }
       ],
-      "importedAt": "17. November 2026",
-      "checkedAt": "2026-11-17T11:49:28.759Z",
+      "importedAt": "18. November 2026",
+      "checkedAt": "2026-11-18T11:39:16.068Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W49",
@@ -8730,7 +8730,7 @@
           "dietGroup": "non-vegetarian",
           "time": "40 Minuten",
           "difficulty": "mittel",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y23_R05_W51_DE_R4401-1_Main_high-379b429a.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y23_R05_W51_DE_R4401-1_Main_high-00aac806.jpg",
           "alt": "Foto des Gerichts Miso Burger mit Shiitake-Beef und Sesam-Gurken.",
           "intro": "dazu knusprige Kartoffelspalten",
           "sourceUrl": "https://www.hellofresh.de/recipes/miso-burger-mit-shiitake-beef-und-sesam-gurken-6a9fdc12548a82de3e1aa201",
@@ -9207,7 +9207,7 @@
           "dietGroup": "non-vegetarian",
           "time": "35 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R26_W22_DE_EXP3787-7_Main_high-e86fde3f.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R26_W22_DE_EXP3787-7_Main_high-9e9b38c9.jpg",
           "alt": "Foto des Gerichts Mexican Bake mit würzigem Hähnchen.",
           "intro": "Burrito-Gemüse und Tortilla Chips",
           "sourceUrl": "https://www.hellofresh.de/recipes/mexican-bake-mit-wurzigem-hahnchen-6a9fdc34d83fec55e3ccbb80",
@@ -9680,7 +9680,7 @@
           "dietGroup": "non-vegetarian",
           "time": "20 Minuten",
           "difficulty": "mittel",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y24_R28_W23_DE_EXP4402-8_Main_high-3f0832b7.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y24_R28_W23_DE_EXP4402-8_Main_high-c77ca882.jpg",
           "alt": "Foto des Gerichts Cheesy Quesadillas mit Weiderinderhackfleisch.",
           "intro": "dazu Bohnensalat und Limettendressing",
           "sourceUrl": "https://www.hellofresh.de/recipes/cheesy-quesadillas-mit-weiderinderhackfleisch-6a9fdddbd83fec55e3ccdb71",
@@ -10471,8 +10471,8 @@
           "label": "12. Dezember 2026 bis 18. Dezember 2026"
         }
       ],
-      "importedAt": "17. November 2026",
-      "checkedAt": "2026-11-17T11:49:28.759Z",
+      "importedAt": "18. November 2026",
+      "checkedAt": "2026-11-18T11:39:16.068Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W50",
@@ -12189,7 +12189,7 @@
           "dietGroup": "non-vegetarian",
           "time": "30 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R59_W10_DE_R1440-14_Main_high-7f36f869.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R59_W10_DE_R1440-14_Main_high-11e7e62a.jpg",
           "alt": "Foto des Gerichts Seelachs aus der Pfanne in frischem Zitronenöl.",
           "intro": "dazu Kartoffelsalat mit Gurke und Radieschen",
           "sourceUrl": "https://www.hellofresh.de/recipes/seelachs-aus-der-pfanne-in-frischem-zitronenol-6a9fde7350d85bbd02ece7c4",
@@ -12529,8 +12529,8 @@
           "label": "12. Dezember 2026 bis 18. Dezember 2026"
         }
       ],
-      "importedAt": "17. November 2026",
-      "checkedAt": "2026-11-17T11:49:28.759Z",
+      "importedAt": "18. November 2026",
+      "checkedAt": "2026-11-18T11:39:16.068Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W51",
