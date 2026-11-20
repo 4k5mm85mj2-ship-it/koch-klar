@@ -34,7 +34,7 @@
       "label": "19. Dezember 2026 bis 25. Dezember 2026"
     }
   ],
-  "generatedAt": "2026-11-19T11:37:04.225Z",
+  "generatedAt": "2026-11-20T11:36:07.098Z",
   "menus": {
     "2026-W45": {
       "week": "2026-W45",
@@ -74,8 +74,8 @@
           "label": "19. Dezember 2026 bis 25. Dezember 2026"
         }
       ],
-      "importedAt": "19. November 2026",
-      "checkedAt": "2026-11-19T11:36:56.902Z",
+      "importedAt": "20. November 2026",
+      "checkedAt": "2026-11-20T11:35:57.358Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W45",
@@ -1988,8 +1988,8 @@
           "label": "19. Dezember 2026 bis 25. Dezember 2026"
         }
       ],
-      "importedAt": "19. November 2026",
-      "checkedAt": "2026-11-19T11:36:56.902Z",
+      "importedAt": "20. November 2026",
+      "checkedAt": "2026-11-20T11:35:57.358Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W46",
@@ -4129,8 +4129,8 @@
           "label": "19. Dezember 2026 bis 25. Dezember 2026"
         }
       ],
-      "importedAt": "19. November 2026",
-      "checkedAt": "2026-11-19T11:36:56.902Z",
+      "importedAt": "20. November 2026",
+      "checkedAt": "2026-11-20T11:35:57.358Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W47",
@@ -6250,12 +6250,12 @@
           "label": "19. Dezember 2026 bis 25. Dezember 2026"
         }
       ],
-      "importedAt": "19. November 2026",
-      "checkedAt": "2026-11-19T11:36:56.902Z",
+      "importedAt": "20. November 2026",
+      "checkedAt": "2026-11-20T11:35:57.358Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W48",
-      "totalRecipes": 100,
+      "totalRecipes": 98,
       "recipes": [
         {
           "id": "6a798cf311cc1340e0f65e58",
@@ -6713,25 +6713,6 @@
           ]
         },
         {
-          "id": "6a798dadc419eb8464db20c0",
-          "title": "Räuchertofu Gyros-Art mit Kartoffelsalat",
-          "diet": "Vegan",
-          "dietGroup": "vegetarian",
-          "time": "30 Minuten",
-          "difficulty": "mittel",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R06_W23_DE_R4872-9_Main_high-015f30ed.jpg",
-          "alt": "Foto des Gerichts Räuchertofu Gyros-Art mit Kartoffelsalat.",
-          "intro": "dazu selbstgemachtes Zaziki",
-          "sourceUrl": "https://www.hellofresh.de/recipes/rauchertofu-gyros-art-mit-kartoffelsalat-6a798dadc419eb8464db20c0",
-          "features": [
-            "classic-plates",
-            "Mediterran",
-            "nutri-score-b",
-            "source-of-fibre",
-            "Vegan"
-          ]
-        },
-        {
           "id": "6a798db9a64cfe1e1f5a71c9",
           "title": "Sauerkraut-Kartoffel-Eintopf mit Bacon",
           "diet": "Nicht vegetarisch",
@@ -7025,29 +7006,6 @@
             "Kalorien im Blick",
             "nutri-score-a",
             "Viel Gemüse",
-            "festive-flavours"
-          ]
-        },
-        {
-          "id": "6a798e1e11cc1340e0f66432",
-          "title": "Weihnachtliche Hütten-Spätzle mit Raclette-Soße",
-          "diet": "Vegetarisch",
-          "dietGroup": "vegetarian",
-          "time": "20 Minuten",
-          "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_W48_7431_R28357-AP-1-41_Main_xmas-2026__high-b3e12d82.jpg",
-          "alt": "Foto des Gerichts Weihnachtliche Hütten-Spätzle mit Raclette-Soße.",
-          "intro": "dazu Apfel-Balsamico-Brät",
-          "sourceUrl": "https://www.hellofresh.de/recipes/weihnachtliche-hutten-spatzle-mit-raclette-sosse-6a798e1e11cc1340e0f66432",
-          "features": [
-            "nutri-score-c",
-            "classic-plates",
-            "Viel Gemüse",
-            "Family",
-            "ineligible-reco",
-            "Schnell",
-            "regional-specialty",
-            "Vegetarisch",
             "festive-flavours"
           ]
         },
@@ -8363,8 +8321,8 @@
           "label": "19. Dezember 2026 bis 25. Dezember 2026"
         }
       ],
-      "importedAt": "19. November 2026",
-      "checkedAt": "2026-11-19T11:36:56.902Z",
+      "importedAt": "20. November 2026",
+      "checkedAt": "2026-11-20T11:35:57.358Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W49",
@@ -10499,8 +10457,8 @@
           "label": "19. Dezember 2026 bis 25. Dezember 2026"
         }
       ],
-      "importedAt": "19. November 2026",
-      "checkedAt": "2026-11-19T11:36:56.902Z",
+      "importedAt": "20. November 2026",
+      "checkedAt": "2026-11-20T11:35:57.358Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W50",
@@ -10608,7 +10566,7 @@
           "dietGroup": "non-vegetarian",
           "time": "20 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R23_W32_DE_EXP57722-3main_high-ed31193f.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R23_W32_DE_EXP57722-3main_high-e29dc3a5.jpg",
           "alt": "Foto des Gerichts Garnelen Poké Bowl mit Sriracha-Mayo.",
           "intro": "dazu Mais, Sesam-Slaw und Gurke",
           "sourceUrl": "https://www.hellofresh.de/recipes/garnelen-poke-bowl-mit-sriracha-mayo-6a9fdc5450d85bbd02ecbbb8",
@@ -12561,8 +12519,8 @@
           "label": "19. Dezember 2026 bis 25. Dezember 2026"
         }
       ],
-      "importedAt": "19. November 2026",
-      "checkedAt": "2026-11-19T11:36:56.902Z",
+      "importedAt": "20. November 2026",
+      "checkedAt": "2026-11-20T11:35:57.358Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W51",
@@ -14616,8 +14574,8 @@
           "label": "19. Dezember 2026 bis 25. Dezember 2026"
         }
       ],
-      "importedAt": "19. November 2026",
-      "checkedAt": "2026-11-19T11:36:56.902Z",
+      "importedAt": "20. November 2026",
+      "checkedAt": "2026-11-20T11:35:57.358Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W52",
