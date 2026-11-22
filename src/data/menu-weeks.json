@@ -30,7 +30,7 @@
       "label": "19. Dezember 2026 bis 25. Dezember 2026"
     }
   ],
-  "generatedAt": "2026-11-21T10:58:50.010Z",
+  "generatedAt": "2026-11-22T11:20:52.202Z",
   "menus": {
     "2026-W46": {
       "week": "2026-W46",
@@ -66,8 +66,8 @@
           "label": "19. Dezember 2026 bis 25. Dezember 2026"
         }
       ],
-      "importedAt": "21. November 2026",
-      "checkedAt": "2026-11-21T10:58:39.166Z",
+      "importedAt": "22. November 2026",
+      "checkedAt": "2026-11-22T11:20:42.351Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W46",
@@ -2203,8 +2203,8 @@
           "label": "19. Dezember 2026 bis 25. Dezember 2026"
         }
       ],
-      "importedAt": "21. November 2026",
-      "checkedAt": "2026-11-21T10:58:39.166Z",
+      "importedAt": "22. November 2026",
+      "checkedAt": "2026-11-22T11:20:42.351Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W47",
@@ -4320,12 +4320,12 @@
           "label": "19. Dezember 2026 bis 25. Dezember 2026"
         }
       ],
-      "importedAt": "21. November 2026",
-      "checkedAt": "2026-11-21T10:58:39.166Z",
+      "importedAt": "22. November 2026",
+      "checkedAt": "2026-11-22T11:20:42.351Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W48",
-      "totalRecipes": 99,
+      "totalRecipes": 100,
       "recipes": [
         {
           "id": "6a798cf311cc1340e0f65e58",
@@ -5095,6 +5095,29 @@
             "Kalorien im Blick",
             "nutri-score-a",
             "Viel Gemüse",
+            "festive-flavours"
+          ]
+        },
+        {
+          "id": "6a798e1e11cc1340e0f66432",
+          "title": "Weihnachtliche Hütten-Spätzle mit Raclette-Soße",
+          "diet": "Vegetarisch",
+          "dietGroup": "vegetarian",
+          "time": "20 Minuten",
+          "difficulty": "einfach",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_W48_7431_R28357-AP-1-41_Main_xmas-2026__high-b3e12d82.jpg",
+          "alt": "Foto des Gerichts Weihnachtliche Hütten-Spätzle mit Raclette-Soße.",
+          "intro": "dazu Apfel-Balsamico-Brät",
+          "sourceUrl": "https://www.hellofresh.de/recipes/weihnachtliche-hutten-spatzle-mit-raclette-sosse-6a798e1e11cc1340e0f66432",
+          "features": [
+            "nutri-score-c",
+            "classic-plates",
+            "Viel Gemüse",
+            "Family",
+            "ineligible-reco",
+            "Schnell",
+            "regional-specialty",
+            "Vegetarisch",
             "festive-flavours"
           ]
         },
@@ -6406,8 +6429,8 @@
           "label": "19. Dezember 2026 bis 25. Dezember 2026"
         }
       ],
-      "importedAt": "21. November 2026",
-      "checkedAt": "2026-11-21T10:58:39.166Z",
+      "importedAt": "22. November 2026",
+      "checkedAt": "2026-11-22T11:20:42.351Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W49",
@@ -8538,8 +8561,8 @@
           "label": "19. Dezember 2026 bis 25. Dezember 2026"
         }
       ],
-      "importedAt": "21. November 2026",
-      "checkedAt": "2026-11-21T10:58:39.166Z",
+      "importedAt": "22. November 2026",
+      "checkedAt": "2026-11-22T11:20:42.351Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W50",
@@ -10596,8 +10619,8 @@
           "label": "19. Dezember 2026 bis 25. Dezember 2026"
         }
       ],
-      "importedAt": "21. November 2026",
-      "checkedAt": "2026-11-21T10:58:39.166Z",
+      "importedAt": "22. November 2026",
+      "checkedAt": "2026-11-22T11:20:42.351Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W51",
@@ -12647,8 +12670,8 @@
           "label": "19. Dezember 2026 bis 25. Dezember 2026"
         }
       ],
-      "importedAt": "21. November 2026",
-      "checkedAt": "2026-11-21T10:58:39.166Z",
+      "importedAt": "22. November 2026",
+      "checkedAt": "2026-11-22T11:20:42.351Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W52",
