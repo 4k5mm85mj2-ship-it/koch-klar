@@ -30,7 +30,7 @@
       "label": "19. Dezember 2026 bis 25. Dezember 2026"
     }
   ],
-  "generatedAt": "2026-11-22T11:20:52.202Z",
+  "generatedAt": "2026-11-23T12:34:22.610Z",
   "menus": {
     "2026-W46": {
       "week": "2026-W46",
@@ -66,8 +66,8 @@
           "label": "19. Dezember 2026 bis 25. Dezember 2026"
         }
       ],
-      "importedAt": "22. November 2026",
-      "checkedAt": "2026-11-22T11:20:42.351Z",
+      "importedAt": "23. November 2026",
+      "checkedAt": "2026-11-23T12:34:10.212Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W46",
@@ -2203,8 +2203,8 @@
           "label": "19. Dezember 2026 bis 25. Dezember 2026"
         }
       ],
-      "importedAt": "22. November 2026",
-      "checkedAt": "2026-11-22T11:20:42.351Z",
+      "importedAt": "23. November 2026",
+      "checkedAt": "2026-11-23T12:34:10.212Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W47",
@@ -4320,12 +4320,12 @@
           "label": "19. Dezember 2026 bis 25. Dezember 2026"
         }
       ],
-      "importedAt": "22. November 2026",
-      "checkedAt": "2026-11-22T11:20:42.351Z",
+      "importedAt": "23. November 2026",
+      "checkedAt": "2026-11-23T12:34:10.212Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W48",
-      "totalRecipes": 100,
+      "totalRecipes": 98,
       "recipes": [
         {
           "id": "6a798cf311cc1340e0f65e58",
@@ -5099,29 +5099,6 @@
           ]
         },
         {
-          "id": "6a798e1e11cc1340e0f66432",
-          "title": "Weihnachtliche Hütten-Spätzle mit Raclette-Soße",
-          "diet": "Vegetarisch",
-          "dietGroup": "vegetarian",
-          "time": "20 Minuten",
-          "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_W48_7431_R28357-AP-1-41_Main_xmas-2026__high-b3e12d82.jpg",
-          "alt": "Foto des Gerichts Weihnachtliche Hütten-Spätzle mit Raclette-Soße.",
-          "intro": "dazu Apfel-Balsamico-Brät",
-          "sourceUrl": "https://www.hellofresh.de/recipes/weihnachtliche-hutten-spatzle-mit-raclette-sosse-6a798e1e11cc1340e0f66432",
-          "features": [
-            "nutri-score-c",
-            "classic-plates",
-            "Viel Gemüse",
-            "Family",
-            "ineligible-reco",
-            "Schnell",
-            "regional-specialty",
-            "Vegetarisch",
-            "festive-flavours"
-          ]
-        },
-        {
           "id": "6a798e26c419eb8464db237e",
           "title": "„Weihnachtsbaum“ mit herzhafter Bolognese",
           "diet": "Nicht vegetarisch",
@@ -5881,27 +5858,6 @@
           ]
         },
         {
-          "id": "6a798f4311cc1340e0f66888",
-          "title": "Spinat-Brezenknödel mit Rahmschwammerln",
-          "diet": "Vegetarisch",
-          "dietGroup": "vegetarian",
-          "time": "20 Minuten",
-          "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R73_W36_DE_R59399-2main_high-c868a0ce.jpg",
-          "alt": "Foto des Gerichts Spinat-Brezenknödel mit Rahmschwammerln.",
-          "intro": "aus Austernpilzen und Champignons",
-          "sourceUrl": "https://www.hellofresh.de/recipes/spinat-brezenknodel-mit-rahmschwammerln-6a798f4311cc1340e0f66888",
-          "features": [
-            "Family",
-            "Vegetarisch",
-            "classic-plates",
-            "classic-euro-dishes",
-            "Schnell",
-            "nutri-score-c",
-            "mushrooms"
-          ]
-        },
-        {
           "id": "6a798f56c419eb8464db28a5",
           "title": "Korean Fried Chicken mit Gochujang-Soja-Glasur",
           "diet": "Nicht vegetarisch",
@@ -6429,8 +6385,8 @@
           "label": "19. Dezember 2026 bis 25. Dezember 2026"
         }
       ],
-      "importedAt": "22. November 2026",
-      "checkedAt": "2026-11-22T11:20:42.351Z",
+      "importedAt": "23. November 2026",
+      "checkedAt": "2026-11-23T12:34:10.212Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W49",
@@ -6925,7 +6881,7 @@
           "dietGroup": "non-vegetarian",
           "time": "15 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R03_W40_DE_EXP57944-3_main_high-0931dd80.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R03_W40_DE_EXP57944-3_main_high-2bab7b69.jpg",
           "alt": "Foto des Gerichts Spaghetti mit Ragù Bianco vom Weiderind.",
           "intro": "dazu Lauch und Champignons",
           "sourceUrl": "https://www.hellofresh.de/recipes/spaghetti-mit-ragu-bianco-vom-weiderind-6a9fdc14548a82de3e1aa237",
@@ -7386,7 +7342,7 @@
           "dietGroup": "non-vegetarian",
           "time": "25 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R79_W37_DE_R56293-3main_high-6f333400.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R79_W37_DE_R56293-3main_high-1b38cf7a.jpg",
           "alt": "Foto des Gerichts Hähnchenstreifen mit Zitrus-Knoblauch-Kartoffeln.",
           "intro": "Zubereitung in Airfryer oder Pfanne",
           "sourceUrl": "https://www.hellofresh.de/recipes/hahnchenstreifen-mit-zitrus-knoblauch-kartoffeln-6a9fdc3f50d85bbd02ecb999",
@@ -8561,8 +8517,8 @@
           "label": "19. Dezember 2026 bis 25. Dezember 2026"
         }
       ],
-      "importedAt": "22. November 2026",
-      "checkedAt": "2026-11-22T11:20:42.351Z",
+      "importedAt": "23. November 2026",
+      "checkedAt": "2026-11-23T12:34:10.212Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W50",
@@ -10619,8 +10575,8 @@
           "label": "19. Dezember 2026 bis 25. Dezember 2026"
         }
       ],
-      "importedAt": "22. November 2026",
-      "checkedAt": "2026-11-22T11:20:42.351Z",
+      "importedAt": "23. November 2026",
+      "checkedAt": "2026-11-23T12:34:10.212Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W51",
@@ -12670,8 +12626,8 @@
           "label": "19. Dezember 2026 bis 25. Dezember 2026"
         }
       ],
-      "importedAt": "22. November 2026",
-      "checkedAt": "2026-11-22T11:20:42.351Z",
+      "importedAt": "23. November 2026",
+      "checkedAt": "2026-11-23T12:34:10.212Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W52",
