@@ -30,7 +30,7 @@
       "label": "19. Dezember 2026 bis 25. Dezember 2026"
     }
   ],
-  "generatedAt": "2026-11-23T12:34:22.610Z",
+  "generatedAt": "2026-11-24T13:40:16.191Z",
   "menus": {
     "2026-W46": {
       "week": "2026-W46",
@@ -66,8 +66,8 @@
           "label": "19. Dezember 2026 bis 25. Dezember 2026"
         }
       ],
-      "importedAt": "23. November 2026",
-      "checkedAt": "2026-11-23T12:34:10.212Z",
+      "importedAt": "24. November 2026",
+      "checkedAt": "2026-11-24T13:40:04.690Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W46",
@@ -2203,8 +2203,8 @@
           "label": "19. Dezember 2026 bis 25. Dezember 2026"
         }
       ],
-      "importedAt": "23. November 2026",
-      "checkedAt": "2026-11-23T12:34:10.212Z",
+      "importedAt": "24. November 2026",
+      "checkedAt": "2026-11-24T13:40:04.690Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W47",
@@ -4320,8 +4320,8 @@
           "label": "19. Dezember 2026 bis 25. Dezember 2026"
         }
       ],
-      "importedAt": "23. November 2026",
-      "checkedAt": "2026-11-23T12:34:10.212Z",
+      "importedAt": "24. November 2026",
+      "checkedAt": "2026-11-24T13:40:04.690Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W48",
@@ -6385,8 +6385,8 @@
           "label": "19. Dezember 2026 bis 25. Dezember 2026"
         }
       ],
-      "importedAt": "23. November 2026",
-      "checkedAt": "2026-11-23T12:34:10.212Z",
+      "importedAt": "24. November 2026",
+      "checkedAt": "2026-11-24T13:40:04.690Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W49",
@@ -6524,7 +6524,7 @@
           "difficulty": "einfach",
           "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y24_R24_W18_DE_R22393-1_TM_Main_edit_high-e5b5e70b.jpg",
           "alt": "Foto des Gerichts Nürnberger Bratwürstchen auf Kichererbsen.",
-          "intro": "mit Harissa-Aprikosen-Chutney und Zitronen-Aioli",
+          "intro": "mit Harissa-Aprikosen-Chutney und Zitronen-Mayonnaise",
           "sourceUrl": "https://www.hellofresh.de/recipes/nurnberger-bratwurstchen-auf-kichererbsen-6a9fdbf7d83fec55e3ccb774",
           "features": [
             "classic-plates",
@@ -6832,15 +6832,15 @@
         },
         {
           "id": "6a9fdc1350d85bbd02ecb65d",
-          "title": "Rindersteak mit Granatapfel-Gremolata",
+          "title": "Bio-Rumpsteak mit Granatapfel-Gremolata",
           "diet": "Nicht vegetarisch",
           "dietGroup": "non-vegetarian",
           "time": "35 Minuten",
           "difficulty": "mittel",
           "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R40_W02_DE_PM4843-26_Main_F1_high-c4da5861.jpg",
-          "alt": "Foto des Gerichts Rindersteak mit Granatapfel-Gremolata.",
+          "alt": "Foto des Gerichts Bio-Rumpsteak mit Granatapfel-Gremolata.",
           "intro": "Fächerkartoffel und frischem Salat",
-          "sourceUrl": "https://www.hellofresh.de/recipes/rindersteak-mit-granatapfel-gremolata-6a9fdc1350d85bbd02ecb65d",
+          "sourceUrl": "https://www.hellofresh.de/recipes/bio-rumpsteak-mit-granatapfel-gremolata-6a9fdc1350d85bbd02ecb65d",
           "features": [
             "classic-euro-dishes",
             "classic-plates",
@@ -8085,7 +8085,7 @@
           "dietGroup": "vegetarian",
           "time": "30 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R02_W37_GL_R59906-1_MT_main_high-cf3c597d.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R02_W37_GL_R59906-1_MT_main_high-860d1f51.jpg",
           "alt": "Foto des Gerichts Käsespätzle mit selbstgemachten Röstzwiebeln.",
           "intro": "dazu Gurkensalat und frische Kräuter",
           "sourceUrl": "https://www.hellofresh.de/recipes/kasespatzle-mit-selbstgemachten-rostzwiebeln-6a9fde1a50d85bbd02ece086",
@@ -8517,8 +8517,8 @@
           "label": "19. Dezember 2026 bis 25. Dezember 2026"
         }
       ],
-      "importedAt": "23. November 2026",
-      "checkedAt": "2026-11-23T12:34:10.212Z",
+      "importedAt": "24. November 2026",
+      "checkedAt": "2026-11-24T13:40:04.690Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W50",
@@ -9618,15 +9618,15 @@
         },
         {
           "id": "6a9fddc5548a82de3e1ac254",
-          "title": "Skandi-Seehecht in Sahne-Senf-Soße",
-          "diet": "Nicht vegetarisch",
+          "title": "Skandi-Tilapia in Sahne-Senf-Soße",
+          "diet": "Mit Fisch",
           "dietGroup": "non-vegetarian",
           "time": "25 Minuten",
           "difficulty": "mittel",
           "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y24_R21_W22_DE_R4504-66_Main_high-1c658598.jpg",
-          "alt": "Foto des Gerichts Skandi-Seehecht in Sahne-Senf-Soße.",
+          "alt": "Foto des Gerichts Skandi-Tilapia in Sahne-Senf-Soße.",
           "intro": "mit Zitronen-Reis und Gurkensalat",
-          "sourceUrl": "https://www.hellofresh.de/recipes/skandi-seehecht-in-sahne-senf-sosse-6a9fddc5548a82de3e1ac254",
+          "sourceUrl": "https://www.hellofresh.de/recipes/skandi-tilapia-in-sahne-senf-sosse-6a9fddc5548a82de3e1ac254",
           "features": [
             "nutri-score-b",
             "classic-euro-dishes",
@@ -10053,7 +10053,7 @@
           "dietGroup": "vegetarian",
           "time": "25 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/GC_Y25_R5001_W39_UK_GCPP22712297-39_Main_high-281a023f.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/GC_Y25_R5001_W39_UK_GCPP22712297-39_Main_high-fbe33da6.jpg",
           "alt": "Foto des Gerichts Vegane Portobello Tacos mit Chimichurri.",
           "intro": "eingelegten Zwiebeln und Avocado",
           "sourceUrl": "https://www.hellofresh.de/recipes/vegane-portobello-tacos-mit-chimichurri-6a9fde58d83fec55e3cce5a0",
@@ -10575,8 +10575,8 @@
           "label": "19. Dezember 2026 bis 25. Dezember 2026"
         }
       ],
-      "importedAt": "23. November 2026",
-      "checkedAt": "2026-11-23T12:34:10.212Z",
+      "importedAt": "24. November 2026",
+      "checkedAt": "2026-11-24T13:40:04.690Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W51",
@@ -11103,7 +11103,7 @@
           "dietGroup": "vegetarian",
           "time": "25 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R09_W15_DE_R27595-15_Main_high-f63a1c22.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R09_W15_DE_R27595-15_Main_high-e0aed7a3.jpg",
           "alt": "Foto des Gerichts Fajita-Tacos mit veganen Filetstreifen.",
           "intro": "dazu selbst gemachte Salsa Roja",
           "sourceUrl": "https://www.hellofresh.de/recipes/fajita-tacos-mit-veganen-filetstreifen-6a9fdcd9d83fec55e3ccc704",
@@ -12626,8 +12626,8 @@
           "label": "19. Dezember 2026 bis 25. Dezember 2026"
         }
       ],
-      "importedAt": "23. November 2026",
-      "checkedAt": "2026-11-23T12:34:10.212Z",
+      "importedAt": "24. November 2026",
+      "checkedAt": "2026-11-24T13:40:04.690Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W52",
