@@ -34,7 +34,7 @@
       "label": "26. Dezember 2026 bis 1. Januar 2027"
     }
   ],
-  "generatedAt": "2026-11-25T12:51:44.589Z",
+  "generatedAt": "2026-11-26T12:29:05.287Z",
   "menus": {
     "2026-W46": {
       "week": "2026-W46",
@@ -74,8 +74,8 @@
           "label": "26. Dezember 2026 bis 1. Januar 2027"
         }
       ],
-      "importedAt": "25. November 2026",
-      "checkedAt": "2026-11-25T12:51:23.498Z",
+      "importedAt": "26. November 2026",
+      "checkedAt": "2026-11-26T12:28:54.356Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W46",
@@ -2215,8 +2215,8 @@
           "label": "26. Dezember 2026 bis 1. Januar 2027"
         }
       ],
-      "importedAt": "24. November 2026",
-      "checkedAt": "2026-11-24T13:40:04.690Z",
+      "importedAt": "26. November 2026",
+      "checkedAt": "2026-11-26T12:28:54.356Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W47",
@@ -4336,8 +4336,8 @@
           "label": "26. Dezember 2026 bis 1. Januar 2027"
         }
       ],
-      "importedAt": "25. November 2026",
-      "checkedAt": "2026-11-25T12:51:23.498Z",
+      "importedAt": "26. November 2026",
+      "checkedAt": "2026-11-26T12:28:54.356Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W48",
@@ -6405,12 +6405,12 @@
           "label": "26. Dezember 2026 bis 1. Januar 2027"
         }
       ],
-      "importedAt": "25. November 2026",
-      "checkedAt": "2026-11-25T12:51:23.498Z",
+      "importedAt": "26. November 2026",
+      "checkedAt": "2026-11-26T12:28:54.356Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W49",
-      "totalRecipes": 99,
+      "totalRecipes": 100,
       "recipes": [
         {
           "id": "6a9fdbf350d85bbd02ecb43d",
@@ -6848,6 +6848,28 @@
             "Schnell",
             "Taste of Middle East",
             "Kalorien im Blick"
+          ]
+        },
+        {
+          "id": "6a9fdc1350d85bbd02ecb65d",
+          "title": "Bio-Rumpsteak mit Granatapfel-Gremolata",
+          "diet": "Nicht vegetarisch",
+          "dietGroup": "non-vegetarian",
+          "time": "35 Minuten",
+          "difficulty": "mittel",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R40_W02_DE_PM4843-26_Main_F1_high-c4da5861.jpg",
+          "alt": "Foto des Gerichts Bio-Rumpsteak mit Granatapfel-Gremolata.",
+          "intro": "Fächerkartoffel und frischem Salat",
+          "sourceUrl": "https://www.hellofresh.de/recipes/bio-rumpsteak-mit-granatapfel-gremolata-6a9fdc1350d85bbd02ecb65d",
+          "features": [
+            "classic-euro-dishes",
+            "classic-plates",
+            "Gesund genießen",
+            "Viel Gemüse",
+            "High Protein",
+            "nutri-score-a",
+            "source-of-fibre",
+            "Merchan-surcharge"
           ]
         },
         {
@@ -8519,8 +8541,8 @@
           "label": "26. Dezember 2026 bis 1. Januar 2027"
         }
       ],
-      "importedAt": "25. November 2026",
-      "checkedAt": "2026-11-25T12:51:23.498Z",
+      "importedAt": "26. November 2026",
+      "checkedAt": "2026-11-26T12:28:54.356Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W50",
@@ -8788,7 +8810,7 @@
           "dietGroup": "non-vegetarian",
           "time": "15 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y24_R24_W33_DE_R26934-1_MAIN_high-7ac3f3bf.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y24_R24_W33_DE_R26934-1_MAIN_high-3229ae88.jpg",
           "alt": "Foto des Gerichts Yaki Udon: Noodle-Bowl mit Weiderinderhack.",
           "intro": "in süßer Soja-Chili-Soße mit Pak Choi und Sesam",
           "sourceUrl": "https://www.hellofresh.de/recipes/yaki-udon-noodle-bowl-mit-weiderinderhack-6a9fdc6fd83fec55e3ccbf38",
@@ -10581,8 +10603,8 @@
           "label": "26. Dezember 2026 bis 1. Januar 2027"
         }
       ],
-      "importedAt": "25. November 2026",
-      "checkedAt": "2026-11-25T12:51:23.498Z",
+      "importedAt": "26. November 2026",
+      "checkedAt": "2026-11-26T12:28:54.356Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W51",
@@ -11586,7 +11608,7 @@
           "dietGroup": "non-vegetarian",
           "time": "30 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R72_W37_DE_R59907-5main_high-8c1a3b31.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R01_W37_GL_R59907-1_main_high-61339de3.jpg",
           "alt": "Foto des Gerichts Schnelles Klassisches Schweinegulasch.",
           "intro": "mit Petersilienkartoffeln",
           "sourceUrl": "https://www.hellofresh.de/recipes/schnelles-klassisches-schweinegulasch-6a9fdd65d83fec55e3ccd217",
@@ -12563,7 +12585,7 @@
           "dietGroup": "vegetarian",
           "time": "20 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R73_W36_DE_R59399-2main_high-3c6a9a4d.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R73_W36_DE_R59399-2main_edit_high-fa61623e.jpg",
           "alt": "Foto des Gerichts Spinat-Brezenknödel mit Rahmschwammerln.",
           "intro": "aus Austernpilzen und Champignons",
           "sourceUrl": "https://www.hellofresh.de/recipes/spinat-brezenknodel-mit-rahmschwammerln-6ad0d91aa26cf0c2c8ac4a38",
@@ -12636,8 +12658,8 @@
           "label": "26. Dezember 2026 bis 1. Januar 2027"
         }
       ],
-      "importedAt": "25. November 2026",
-      "checkedAt": "2026-11-25T12:51:23.498Z",
+      "importedAt": "26. November 2026",
+      "checkedAt": "2026-11-26T12:28:54.356Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W52",
@@ -13448,7 +13470,7 @@
           "dietGroup": "vegetarian",
           "time": "30 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R09_W42_DE_R44349-4_Main_high-e468bac2.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y25_R09_W42_DE_R44349-4_Main_high-fc551dc7.jpg",
           "alt": "Foto des Gerichts Veganes Chipotle Chili mit pickled Onions.",
           "intro": "dazu Süßkartoffel und Kidneybohnen",
           "sourceUrl": "https://www.hellofresh.de/recipes/veganes-chipotle-chili-mit-pickled-onions-6a9fdd6cd83fec55e3ccd2e6",
@@ -14613,8 +14635,8 @@
           "label": "26. Dezember 2026 bis 1. Januar 2027"
         }
       ],
-      "importedAt": "25. November 2026",
-      "checkedAt": "2026-11-25T12:51:23.498Z",
+      "importedAt": "26. November 2026",
+      "checkedAt": "2026-11-26T12:28:54.356Z",
       "dataStatus": "live",
       "sourceName": "HelloFresh Deutschland",
       "sourceUrl": "https://www.hellofresh.de/menus/2026-W53",
@@ -15571,7 +15593,7 @@
           "dietGroup": "non-vegetarian",
           "time": "45 Minuten",
           "difficulty": "einfach",
-          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R59_W41_DE_R59773-3_main_high-e8c4c58e.jpg",
+          "image": "https://media.hellofresh.com/q_80%2Cw_1200%2Cf_auto%2Cc_limit%2Cfl_lossy/recipes/image/HF_Y26_R59_W41_DE_R59773-3_main_high-0099ad0d.jpg",
           "alt": "Foto des Gerichts Mediterrane Bowl mit Hähnchen & Grana Padano.",
           "intro": "Roter Beete, Mandeln und Bulgur",
           "sourceUrl": "https://www.hellofresh.de/recipes/mediterrane-bowl-mit-hahnchen-and-grana-padano-6a9fdde050d85bbd02ecdb80",
